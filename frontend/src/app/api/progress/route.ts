@@ -1,6 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { auth } from '@/auth';
 import { prisma } from '@leetcast/database';
+import { z } from 'zod';
+
+const ProgressBodySchema = z.object({
+  podcastId: z.string().min(1),
+  progress: z.number().int().min(0),
+  completed: z.boolean().optional().default(false),
+});
 
 export async function POST(req: NextRequest) {
   const session = await auth();
@@ -8,12 +15,22 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  const body = await req.json();
-  const { podcastId, progress, completed } = body;
-
-  if (!podcastId || typeof progress !== 'number') {
-    return NextResponse.json({ error: 'Invalid body' }, { status: 400 });
+  let body: unknown;
+  try {
+    body = await req.json();
+  } catch {
+    return NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 });
   }
+
+  const parsed = ProgressBodySchema.safeParse(body);
+  if (!parsed.success) {
+    return NextResponse.json(
+      { error: 'Validation failed', details: parsed.error.flatten() },
+      { status: 400 }
+    );
+  }
+
+  const { podcastId, progress, completed } = parsed.data;
 
   const history = await prisma.playHistory.upsert({
     where: {
@@ -24,13 +41,13 @@ export async function POST(req: NextRequest) {
     },
     update: {
       progress,
-      completed: completed || false,
+      completed,
     },
     create: {
       userId: session.user.id,
       podcastId,
       progress,
-      completed: completed || false,
+      completed,
     },
   });
 

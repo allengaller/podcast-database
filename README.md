@@ -89,13 +89,14 @@ Admin 后台：http://localhost:3000/admin
 leetcast/
 ├── apps/
 │   ├── cli/              # 原始 CLI 工具（保留）
-│   ├── web/              # Next.js 14 Web App
 │   └── worker/           # BullMQ Worker（播客生成）
+├── frontend/             # Next.js 14 Web App (独立 workspace)
 ├── packages/
 │   ├── core/             # 共享业务逻辑（LeetCode API、TTS、FFmpeg 混音）
 │   └── database/         # Prisma + 数据库访问 + 选题策略
-├── docker-compose.yml    # 本地基础设施
-└── DEPLOY.md             # 部署指南
+├── docker-compose.yml    # 本地基础设施（PostgreSQL + Redis + MinIO）
+├── DEPLOY.md             # 部署指南
+└── EVALUATION.md         # 项目评估报告
 ```
 
 ---

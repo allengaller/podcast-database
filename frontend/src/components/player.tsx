@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState, useCallback } from 'react';
+import { useEffect, useRef, useState, useCallback, memo } from 'react';
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
 import { Play, Pause, SkipBack, SkipForward, Volume2 } from 'lucide-react';
@@ -13,7 +13,32 @@ interface PlayerProps {
   initialProgress?: number;
 }
 
-export function Player({ src, podcastId, transcript, initialProgress = 0 }: PlayerProps) {
+const WaveformBar = memo(function WaveformBar({
+  height,
+  active,
+}: {
+  height: number;
+  active: boolean;
+}) {
+  return (
+    <div
+      className={`w-1.5 rounded-full transition-all duration-300 ${
+        active ? 'bg-white/90' : 'bg-white/30'
+      }`}
+      style={{ height: `${height}%` }}
+    />
+  );
+});
+
+// Pre-compute random heights so they don't change on re-render
+const WAVEFORM_HEIGHTS = Array.from({ length: 40 }, () => 20 + Math.random() * 60);
+
+export const Player = memo(function Player({
+  src,
+  podcastId,
+  transcript,
+  initialProgress = 0,
+}: PlayerProps) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -21,6 +46,7 @@ export function Player({ src, podcastId, transcript, initialProgress = 0 }: Play
   const [volume, setVolume] = useState(1);
   const [playbackRate, setPlaybackRate] = useState(1);
   const saveTimer = useRef<NodeJS.Timeout | null>(null);
+  const progressRef = useRef(0);
 
   const saveProgress = useCallback(
     async (time: number, completed = false) => {
@@ -31,7 +57,7 @@ export function Player({ src, podcastId, transcript, initialProgress = 0 }: Play
           body: JSON.stringify({ podcastId, progress: Math.floor(time), completed }),
         });
       } catch {
-        // ignore
+        // silently ignore — will retry on next save cycle
       }
     },
     [podcastId]
@@ -49,6 +75,7 @@ export function Player({ src, podcastId, transcript, initialProgress = 0 }: Play
 
     const update = () => {
       setProgress(audio.currentTime);
+      progressRef.current = audio.currentTime;
       setDuration(audio.duration || 0);
     };
 
@@ -72,17 +99,18 @@ export function Player({ src, podcastId, transcript, initialProgress = 0 }: Play
     };
   }, [saveProgress]);
 
+  // Debounced save: only save after 10 seconds of continuous playback
   useEffect(() => {
     if (saveTimer.current) clearTimeout(saveTimer.current);
     saveTimer.current = setTimeout(() => {
-      void saveProgress(progress);
-    }, 5000);
+      void saveProgress(progressRef.current);
+    }, 10_000);
     return () => {
       if (saveTimer.current) clearTimeout(saveTimer.current);
     };
   }, [progress, saveProgress]);
 
-  const togglePlay = () => {
+  const togglePlay = useCallback(() => {
     const audio = audioRef.current;
     if (!audio) return;
     if (isPlaying) {
@@ -91,24 +119,30 @@ export function Player({ src, podcastId, transcript, initialProgress = 0 }: Play
       void audio.play();
     }
     setIsPlaying(!isPlaying);
-  };
+  }, [isPlaying]);
 
-  const seek = (time: number) => {
-    const audio = audioRef.current;
-    if (!audio) return;
-    audio.currentTime = time;
-    setProgress(time);
-  };
+  const seek = useCallback(
+    (time: number) => {
+      const audio = audioRef.current;
+      if (!audio) return;
+      audio.currentTime = time;
+      setProgress(time);
+    },
+    []
+  );
 
-  const skip = (seconds: number) => {
-    seek(Math.max(0, Math.min(duration, progress + seconds)));
-  };
+  const skip = useCallback(
+    (seconds: number) => {
+      seek(Math.max(0, Math.min(duration, progress + seconds)));
+    },
+    [seek, duration, progress]
+  );
 
-  const formatTime = (t: number) => {
+  const formatTime = useCallback((t: number) => {
     const m = Math.floor(t / 60);
     const s = Math.floor(t % 60);
     return `${m}:${s.toString().padStart(2, '0')}`;
-  };
+  }, []);
 
   const progressPercent = duration ? (progress / duration) * 100 : 0;
 
@@ -116,22 +150,15 @@ export function Player({ src, podcastId, transcript, initialProgress = 0 }: Play
     <div className="w-full rounded-3xl bg-gradient-to-br from-indigo-600 to-violet-700 p-6 sm:p-8 text-white shadow-2xl">
       <audio ref={audioRef} src={src} />
 
-      {/* 波形可视化占位 */}
+      {/* Waveform visualization */}
       <div className="flex items-end justify-center gap-1 h-24 mb-6">
-        {Array.from({ length: 40 }).map((_, i) => {
-          const h = 20 + Math.random() * 60;
+        {WAVEFORM_HEIGHTS.map((h, i) => {
           const active = (i / 40) * 100 <= progressPercent;
-          return (
-            <div
-              key={i}
-              className={`w-1.5 rounded-full transition-all duration-300 ${active ? 'bg-white/90' : 'bg-white/30'}`}
-              style={{ height: `${h}%` }}
-            />
-          );
+          return <WaveformBar key={i} height={h} active={active} />;
         })}
       </div>
 
-      {/* 进度条 */}
+      {/* Progress bar */}
       <div className="mb-6">
         <Slider
           value={[progress]}
@@ -149,7 +176,7 @@ export function Player({ src, podcastId, transcript, initialProgress = 0 }: Play
         </div>
       </div>
 
-      {/* 控制按钮 */}
+      {/* Control buttons */}
       <div className="flex items-center justify-center gap-6 mb-6">
         <Button
           variant="ghost"
@@ -181,7 +208,7 @@ export function Player({ src, podcastId, transcript, initialProgress = 0 }: Play
         </Button>
       </div>
 
-      {/* 音量 + 倍速 */}
+      {/* Volume + Playback rate */}
       <div className="flex items-center justify-between gap-4">
         <div className="flex items-center gap-3 flex-1">
           <Volume2 className="h-5 w-5 text-white/70" />
@@ -226,4 +253,4 @@ export function Player({ src, podcastId, transcript, initialProgress = 0 }: Play
       )}
     </div>
   );
-}
+});

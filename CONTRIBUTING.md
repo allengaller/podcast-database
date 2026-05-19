@@ -44,7 +44,7 @@ Enhancement suggestions are tracked as GitHub issues. When creating an enhanceme
 ### Prerequisites
 
 - Node.js >= 18.0.0
-- npm >= 9.0.0
+- pnpm >= 9.0.0 (we use pnpm workspaces, NOT npm)
 - Git
 
 ### Setup Steps
@@ -59,20 +59,23 @@ Enhancement suggestions are tracked as GitHub issues. When creating an enhanceme
 2. Install dependencies
 
    ```bash
-   npm install
+   pnpm install
    ```
 
 3. Set up environment variables
 
    ```bash
-   cp .env.example .env
+   cp .env.example apps/web/.env
+   cp .env.example apps/worker/.env
    # Edit .env with your API keys
    ```
 
-4. Run the development server
+4. Build shared packages & run the development server
 
    ```bash
-   npm run dev
+   pnpm --filter @leetcast/core build
+   pnpm --filter @leetcast/database build
+   pnpm --filter @leetcast/web dev
    ```
 
 ### Development Workflow
@@ -88,20 +91,19 @@ Enhancement suggestions are tracked as GitHub issues. When creating an enhanceme
 3. Run tests
 
    ```bash
-   npm test
+   pnpm test
    ```
 
 4. Run linting
 
    ```bash
-   npm run lint
-   npm run lint:fix
+   pnpm lint
    ```
 
 5. Run type checking
 
    ```bash
-   npm run typecheck
+   pnpm typecheck
    ```
 
 6. Commit your changes

@@ -15,6 +15,7 @@ export interface PodcastEpisode {
 export class MCPService {
   private static openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
+    baseURL: process.env.OPENAI_BASE_URL || undefined,
   });
 
   private static elevenlabs = new ElevenLabsClient({
@@ -22,7 +23,7 @@ export class MCPService {
   });
 
   static async generatePodcast(problem: LeetCodeProblem): Promise<PodcastEpisode> {
-    console.log(`[MCP] Requesting real podcast generation for: ${problem.title}...`);
+    console.log(`[MCP] Requesting podcast generation for: ${problem.title}...`);
 
     const apiKey = process.env.OPENAI_API_KEY;
     const elApiKey = process.env.ELEVENLABS_API_KEY;
@@ -45,28 +46,28 @@ export class MCPService {
       };
     } catch (error: unknown) {
       const errorMessage = error instanceof Error ? error.message : String(error);
-      console.error(`[MCP] Error in real generation: ${errorMessage}`);
-      throw new Error(`Failed to generate podcast via MCP: ${errorMessage}`);
+      console.error(`[MCP] Error in podcast generation: ${errorMessage}`);
+      throw new Error(`Failed to generate podcast: ${errorMessage}`);
     }
   }
 
   private static async generateScript(problem: LeetCodeProblem): Promise<string> {
     const prompt = `
     You are an expert technical podcast host. Create a 2-3 minute engaging podcast script explaining the LeetCode problem: "${problem.title}".
-    
+
     Problem Description:
     ${problem.description}
-    
+
     Difficulty: ${problem.difficulty}
     Topics: ${problem.topics.join(', ')}
-    
+
     The script should:
     1. Start with a catchy intro: "Welcome to LeetCast! Today we're diving into..."
     2. Explain the problem clearly in plain English.
     3. Discuss the core intuition or a common approach (like ${problem.topics[0]}).
     4. Mention the time and space complexity.
     5. End with an encouraging outro.
-    
+
     Format: Return ONLY the spoken text. No stage directions, no [Music], no host names. Just the words to be spoken.
     `;
 
@@ -95,36 +96,45 @@ export class MCPService {
       model_id: 'eleven_multilingual_v2',
     });
 
-    if (Buffer.isBuffer(audioStream)) {
-      await fs.writeFile(filePath, audioStream);
-    } else if (audioStream && typeof (audioStream as NodeJS.ReadableStream).pipe === 'function') {
-      const fileStream = fs.createWriteStream(filePath);
-      await new Promise<void>((resolve, reject) => {
-        (audioStream as NodeJS.ReadableStream).pipe(fileStream);
-        fileStream.on('finish', () => resolve());
-        fileStream.on('error', reject);
-      });
-    } else {
-      const response = audioStream;
-      if (Buffer.isBuffer(response)) {
-        await fs.writeFile(filePath, response);
-      } else if (
-        response &&
-        typeof (response as AsyncIterable<Buffer>)[Symbol.asyncIterator] === 'function'
-      ) {
-        const chunks: Buffer[] = [];
-        for await (const chunk of response as AsyncIterable<Buffer>) {
-          chunks.push(chunk);
-        }
-        await fs.writeFile(filePath, Buffer.concat(chunks));
-      }
-    }
+    await this.writeAudioStream(audioStream, filePath);
 
     return filePath;
   }
 
+  /**
+   * Write audio stream to file, handling Buffer, ReadableStream, and AsyncIterable.
+   */
+  private static async writeAudioStream(
+    stream: unknown,
+    filePath: string
+  ): Promise<void> {
+    if (Buffer.isBuffer(stream)) {
+      await fs.writeFile(filePath, stream);
+      return;
+    }
+
+    if (stream && typeof (stream as NodeJS.ReadableStream).pipe === 'function') {
+      const fileStream = fs.createWriteStream(filePath);
+      (stream as NodeJS.ReadableStream).pipe(fileStream);
+      return new Promise<void>((resolve, reject) => {
+        fileStream.on('finish', resolve);
+        fileStream.on('error', reject);
+      });
+    }
+
+    if (stream && typeof (stream as AsyncIterable<Buffer>)[Symbol.asyncIterator] === 'function') {
+      const chunks: Buffer[] = [];
+      for await (const chunk of stream as AsyncIterable<Buffer>) {
+        chunks.push(chunk);
+      }
+      await fs.writeFile(filePath, Buffer.concat(chunks));
+      return;
+    }
+
+    throw new Error('Unexpected audio stream type from ElevenLabs');
+  }
+
   private static estimateDuration(text: string): string {
-    // Roughly 150 words per minute
     const words = text.split(/\s+/).length;
     const minutes = Math.floor(words / 150);
     const seconds = Math.floor((words % 150) / (150 / 60));

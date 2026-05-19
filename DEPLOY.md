@@ -2,7 +2,7 @@
 
 ## 架构概览
 
-- **Web**: Next.js 14 (Vercel)
+- **Web**: Next.js 14 (Vercel) — 目录: `frontend/`
 - **Worker**: Docker 容器 (Railway / Render / Fly.io)
 - **Database**: PostgreSQL (Railway / Supabase / Render)
 - **Cache/Queue**: Redis (Upstash / Railway)
@@ -50,8 +50,8 @@ pnpm --filter database db:seed
 ## 3. Web 部署 (Vercel)
 
 1. 在 Vercel 导入 GitHub 仓库
-2. Root Directory 设为 `apps/web`
-3. Build Command: `cd ../.. && pnpm install && pnpm --filter @leetcast/web build`
+2. Root Directory 设为 `frontend`
+3. Build Command: `cd .. && pnpm install && pnpm --filter @leetcast/core build && pnpm --filter @leetcast/database build && cd frontend && next build`
 4. 添加所有环境变量
 5. 可选：配置 Vercel Cron Job 触发每日选题
 
