@@ -3,6 +3,8 @@ import { StrategyEngine, StrategyType } from '@leetcast/database';
 import { Queue } from 'bullmq';
 import IORedis from 'ioredis';
 import { z } from 'zod';
+import { timingSafeEqual } from 'crypto';
+import { rateLimit } from '@/lib/rate-limit';
 
 const redis = new IORedis(process.env.REDIS_URL || 'redis://localhost:6379', {
   maxRetriesPerRequest: null,
@@ -16,10 +18,26 @@ const AdminBodySchema = z.object({
   problemId: z.string().optional(),
 });
 
+function verifyAdminToken(token: string): boolean {
+  const expected = process.env.ADMIN_TOKEN;
+  if (!expected) return false;
+  const a = Buffer.from(token);
+  const b = Buffer.from(expected);
+  return a.length === b.length && timingSafeEqual(a, b);
+}
+
 export async function POST(req: NextRequest) {
-  // Admin token check
+  const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown';
+  const limit = rateLimit(`admin:${ip}`, { maxRequests: 5, windowMs: 60_000 });
+  if (!limit.allowed) {
+    return NextResponse.json(
+      { error: 'Too many requests' },
+      { status: 429, headers: { 'Retry-After': String(limit.retryAfter) } }
+    );
+  }
+
   const token = req.headers.get('x-admin-token');
-  if (!token || token !== process.env.ADMIN_TOKEN) {
+  if (!token || !verifyAdminToken(token)) {
     return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
   }
 

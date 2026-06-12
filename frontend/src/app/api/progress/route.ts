@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { auth } from '@/auth';
 import { prisma } from '@leetcast/database';
 import { z } from 'zod';
+import { rateLimit } from '@/lib/rate-limit';
 
 const ProgressBodySchema = z.object({
   podcastId: z.string().min(1),
@@ -13,6 +14,14 @@ export async function POST(req: NextRequest) {
   const session = await auth();
   if (!session?.user?.id) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  const limit = rateLimit(`progress:${session.user.id}`, { maxRequests: 30, windowMs: 60_000 });
+  if (!limit.allowed) {
+    return NextResponse.json(
+      { error: 'Too many requests' },
+      { status: 429, headers: { 'Retry-After': String(limit.retryAfter) } }
+    );
   }
 
   let body: unknown;

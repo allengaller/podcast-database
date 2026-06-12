@@ -15,37 +15,54 @@ export class AudioService {
     await fs.ensureDir(this.DOWNLOAD_DIR);
   }
 
+  /**
+   * Sanitize filename to prevent path traversal attacks.
+   * Only allows alphanumeric, hyphens, underscores, and dots.
+   */
+  private static sanitizeFilename(filename: string): string {
+    const sanitized = path.basename(filename).replace(/[^a-zA-Z0-9._-]/g, '_');
+    if (!sanitized || sanitized.startsWith('.')) {
+      throw new Error(`Invalid filename: ${filename}`);
+    }
+    return sanitized;
+  }
+
   static async downloadAudio(url: string, filename: string): Promise<string> {
     await this.ensureDownloadDir();
-    const filePath = path.join(this.DOWNLOAD_DIR, filename);
+    const safeName = this.sanitizeFilename(filename);
+    const filePath = path.join(this.DOWNLOAD_DIR, safeName);
 
-    if (await fs.pathExists(filePath)) {
-      return filePath;
+    // Ensure resolved path is within DOWNLOAD_DIR
+    const resolved = path.resolve(filePath);
+    if (!resolved.startsWith(path.resolve(this.DOWNLOAD_DIR))) {
+      throw new Error(`Path traversal detected: ${filename}`);
     }
 
-    const spinner = ora(`Downloading audio to ${filename}...`).start();
+    if (await fs.pathExists(resolved)) {
+      return resolved;
+    }
+
+    const spinner = ora(`Downloading audio to ${safeName}...`).start();
     try {
-      // In a real scenario, we'd download the actual file.
-      // For this prototype, we'll create a dummy file if the URL is placeholder.
       if (url.includes('example.com')) {
-        await fs.writeFile(filePath, 'Mock audio content');
+        await fs.writeFile(resolved, 'Mock audio content');
       } else {
         const response = await axios({
           url,
           method: 'GET',
           responseType: 'stream',
         });
-        const writer = fs.createWriteStream(filePath);
+        const writer = fs.createWriteStream(resolved);
         response.data.pipe(writer);
         await new Promise<void>((resolve, reject) => {
           writer.on('finish', () => resolve());
-          writer.on('error', (err) => reject(err));
+          writer.on('error', (err: Error) => reject(err));
         });
       }
-      spinner.succeed(chalk.green(`Downloaded: ${filename}`));
-      return filePath;
+      spinner.succeed(chalk.green(`Downloaded: ${safeName}`));
+      return resolved;
     } catch (error) {
-      spinner.fail(chalk.red(`Download failed: ${error}`));
+      spinner.fail(chalk.red(`Download failed: ${String(error)}`));
       throw error;
     }
   }
@@ -60,18 +77,17 @@ export class AudioService {
     if (platform === 'darwin') {
       command = `afplay "${filePath}"`;
     } else if (platform === 'win32') {
-      // Simple way to play on windows using powershell
       command = `powershell -c "(New-Object Media.SoundPlayer '${filePath}').PlaySync()"`;
     } else {
-      // Linux/Others - try to use common players
       command = `play "${filePath}" || aplay "${filePath}" || mpg123 "${filePath}"`;
     }
 
     try {
       await execAsync(command);
     } catch (error) {
-      if ((error as any).killed) return;
-      console.error(chalk.red(`Error playing audio: ${error}`));
+      const err = error as { killed?: boolean };
+      if (err.killed) return;
+      console.error(chalk.red(`Error playing audio: ${String(error)}`));
       console.log(chalk.yellow(`Tip: Please install a command-line audio player for your OS.`));
     }
   }

@@ -6,6 +6,7 @@
     "build": "tsc",
     "dev": "tsx src/index.ts",
     "start": "node dist/index.js",
+    "test": "jest",
     "lint": "pnpm exec eslint src/**/*.ts",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf dist"
@@ -20,7 +21,10 @@
     "ioredis": "^5.3.2"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "@types/node": "^20.8.10",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
     "tsx": "^4.7.0",
     "typescript": "^5.2.2"
   }

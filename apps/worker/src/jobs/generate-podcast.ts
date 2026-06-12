@@ -1,6 +1,7 @@
 import { Job } from 'bullmq';
 import { PodcastEngine, LeetCodeProblem, StorageService } from '@leetcast/core';
 import { prisma } from '@leetcast/database';
+import { Prisma } from '@prisma/client';
 import fs from 'fs-extra';
 
 export interface GeneratePodcastJobData {
@@ -16,7 +17,6 @@ export async function generatePodcastJob(job: Job<GeneratePodcastJobData>) {
 
   await job.updateProgress(10);
 
-  // 1. Fetch problem from DB
   const problem = await prisma.problem.findUnique({
     where: { id: problemId },
   });
@@ -27,19 +27,15 @@ export async function generatePodcastJob(job: Job<GeneratePodcastJobData>) {
 
   await job.updateProgress(20);
 
-  // 2. Generate podcast
   const result = await engine.generatePodcast(problem as LeetCodeProblem);
 
   await job.updateProgress(70);
 
-  // 3. Upload to storage
   const storageKey = `podcasts/${problemId}/${Date.now()}.mp3`;
   const audioUrl = await StorageService.uploadFile(result.audioPath, storageKey, 'audio/mpeg');
 
   await job.updateProgress(90);
 
-  // 4. Save to DB
-  // If this is daily, clear previous daily flag
   if (isDaily) {
     await prisma.podcast.updateMany({
       where: { isDaily: true },
@@ -54,15 +50,18 @@ export async function generatePodcastJob(job: Job<GeneratePodcastJobData>) {
       audioUrl,
       duration: result.duration,
       transcript: result.transcript,
-      chapters: result.chapters as any,
+      chapters: result.chapters as Prisma.InputJsonValue,
       isDaily: isDaily || false,
       dailyDate: dailyDate ? new Date(dailyDate) : null,
       status: 'ready',
     },
   });
 
-  // 5. Cleanup temp files
-  await fs.remove(result.audioPath).catch(() => {});
+  try {
+    await fs.remove(result.audioPath);
+  } catch (cleanupError) {
+    console.error(`[Worker] Failed to cleanup temp file ${result.audioPath}:`, cleanupError);
+  }
 
   await job.updateProgress(100);
 

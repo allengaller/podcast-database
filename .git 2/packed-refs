@@ -1,9 +1,0 @@
-# pack-refs with: peeled fully-peeled sorted 
-ecc550b7475597452f3c3e4e667a41265631c05f refs/remotes/origin/dependabot/github_actions/actions/checkout-6
-59b2368a0868b6257afd7d2c7fa7bf8dd3431632 refs/remotes/origin/dependabot/github_actions/actions/setup-node-6
-6d0742f7427e64207e68fcc5b7737645bcb1a542 refs/remotes/origin/dependabot/github_actions/codecov/codecov-action-6
-a29584f3e0c849a8fb0936c098819db28161832c refs/remotes/origin/dependabot/npm_and_yarn/commander-14.0.3
-c774ade14beb635b6e847adfee8b5f5a3f8d3137 refs/remotes/origin/dependabot/npm_and_yarn/eslint-config-prettier-10.1.8
-01bf07b85f16f2685e76cc60d0cd3a77547bffa2 refs/remotes/origin/dependabot/npm_and_yarn/multi-a28ee524ce
-5b4d2dd22a1a1ebb7be46e7b7f6fe67eec8e81c1 refs/remotes/origin/dependabot/npm_and_yarn/types/node-25.3.5
-486f43ee244bbca041986b65cc9670d6ef4f10a6 refs/remotes/origin/main

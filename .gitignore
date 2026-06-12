@@ -7,6 +7,14 @@ dist
 build
 *.tsbuildinfo
 
+# Compiled artifacts in src (should only be in dist/)
+src/**/*.js
+src/**/*.d.ts
+src/**/*.js.map
+src/**/*.d.ts.map
+!src/**/*.config.js
+!src/**/*.config.mjs
+
 # Environment
 .env
 .env.local
@@ -30,7 +38,20 @@ coverage
 *.swp
 *.swo
 *~
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Next.js
+.next
+frontend/.next
+
+# Turbo
+.turbo
+
+# Runtime PID files
+*.pid
 
 # Audio files
 downloads/*.mp3
@@ -41,10 +62,6 @@ downloads/*.ogg
 .cache
 *.cache
 
-# OS
-Thumbs.db
-.DS_Store
-
 # Temporary files
 tmp
 temp
@@ -53,4 +70,10 @@ temp
 # Debug
 *.cpuprofile
 *.heapsnapshot
+
+# Data
+data/
+
+# Worker logs
+worker.log
 
