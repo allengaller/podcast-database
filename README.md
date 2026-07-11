@@ -16,6 +16,7 @@
 - **海量题库** -- LeetCode Top 100 实时同步，支持标签/难度筛选
 - **学习追踪** -- 播放进度自动保存、连续打卡、排行榜、分享海报
 - **Admin 后台** -- 三种选题策略（难度渐进 / 经典题单 / 弱项强化）
+- **外部播客逐字稿** -- CLI 一键把任意 Apple Podcasts / RSS 链接转写为带时间戳、说话人分离的本地 Markdown
 - **生产就绪** -- 健康检查、Rate Limiting、CSP 安全头、指数退避重试
 
 ---
@@ -83,7 +84,7 @@ OPENAI_MODEL=qwen-max
 ```
 leetcast/
 ├── apps/
-│   ├── cli/                  # CLI 工具 + MCP Server
+│   ├── cli/                  # CLI 工具 + MCP Server（含 `transcribe` 外部播客转写命令）
 │   └── worker/               # BullMQ Worker（播客生成 + 健康检查）
 ├── frontend/                 # Next.js 14 Web App (App Router)
 │   └── src/
@@ -95,6 +96,8 @@ leetcast/
 │   ├── core/                 # 共享逻辑（LeetCode API、TTS、FFmpeg 混音、Storage）
 │   └── database/             # Prisma Schema + 选题策略 + Seed
 ├── docker-compose.yml        # PostgreSQL + Redis + MinIO
+├── data/                     # `transcribe` 命令产出的 Markdown 逐字稿
+├── downloads/                # yt-dlp 缓存的原始音频
 ├── .github/workflows/        # CI (build/test/lint) + Release (pnpm publish)
 └── .env.example              # 环境变量模板
 ```
@@ -159,6 +162,9 @@ leetcast/
 | `GITHUB_ID` / `GITHUB_SECRET` | GitHub OAuth | 是 |
 | `ADMIN_TOKEN` | Admin API 认证令牌 | 是 |
 | `CORS_ORIGIN` | CORS 允许的来源 | 否（默认 `*`） |
+| `ALIYUN_ACCESS_KEY_ID` / `ALIYUN_ACCESS_KEY_SECRET` | 通义听悟 AccessKey（外部播客转写） | 否 |
+| `TINGWU_APP_KEY` | 通义听悟 AppKey（外部播客转写） | 否 |
+| `S3_PUBLIC_URL` | MinIO/S3 公网访问入口（通义听悟拉取音频用） | 否 |
 
 ---
 
@@ -185,6 +191,7 @@ pnpm --filter @leetcast/database test
 | MCP 服务 | `apps/cli/src/__tests__/mcp.test.ts` | Mock/Real 播客生成 |
 | PodcastEngine | `packages/core/src/__tests__/podcast-engine.test.ts` | 脚本解析、章节标记、Mock 模式 |
 | HTML 工具 | `packages/core/src/__tests__/html-utils.test.ts` | 标签剥离、实体解码 |
+| 逐字稿格式化 | `packages/core/src/__tests__/transcript-formatter.test.ts` | 通义听悟结果 → Markdown 渲染 |
 | 选题策略 | `packages/database/src/__tests__/strategy.test.ts` | 四种策略全覆盖 |
 | Worker Job | `apps/worker/src/__tests__/generate-podcast.test.ts` | 任务处理、Daily 逻辑、错误处理 |
 
@@ -223,6 +230,129 @@ pnpm format           # Prettier 格式化
 pnpm db:push          # 推送 Prisma Schema 到数据库
 pnpm db:studio        # 打开 Prisma Studio
 ```
+
+---
+
+## 外部播客 → 本地 Markdown 逐字稿
+
+CLI 提供 `transcribe` 子命令：把任意 Apple Podcasts / RSS 链接的音频下载下来，
+通过 **阿里云通义听悟** 转写为带时间戳、说话人分离、章节标记的 Markdown 沉淀到 `data/`。
+
+### 工作流
+
+```
+yt-dlp 下载音频  →  MinIO/S3 上传  →  通义听悟 ASR  →  data/*.md
+```
+
+### 前置准备
+
+1. 安装 `yt-dlp`：
+
+   ```bash
+   brew install yt-dlp
+   ```
+
+2. 在阿里云控制台开通通义听悟并创建 App：
+   - AccessKey：https://ram.console.aliyun.com/manage/accesskey
+   - 通义听悟：https://tingwu.console.aliyun.com/
+   - 授权策略：`AliyunTingwuFullAccess`
+
+3. 启动 MinIO 并确保桶可公网访问（通义听悟要能 GET 到音频）：
+
+   ```bash
+   docker compose up -d minio
+   ```
+
+4. 在 `.env` 中填入：
+
+   ```env
+   ALIYUN_ACCESS_KEY_ID=...
+   ALIYUN_ACCESS_KEY_SECRET=...
+   TINGWU_APP_KEY=...
+   S3_PUBLIC_URL=http://localhost:9000/leetcast   # 或 CDN / 阿里云 OSS 公开 URL
+   ```
+
+### 使用
+
+```bash
+pnpm --filter @leetcast/cli transcribe \
+  --url "https://podcasts.apple.com/cn/podcast/teahour/id1486623337?i=1000761617014" \
+  --title "Teahour #N - 标题" \
+  --podcast "Teahour FM" \
+  --hosts "Terry,Daniel" \
+  --guests "Justin" \
+  --tags "podcast,teahour,llm" \
+  --hotwords "通义听悟,Rust" \
+  --chapter
+```
+
+### 命令行参数
+
+| Flag | 说明 |
+|---|---|
+| `--url` | 播客单集 URL（Apple Podcasts / RSS / 直链 mp3） |
+| `--title` | 集标题（用于 Markdown 标题与文件名） |
+| `--podcast` | 节目名（写入 frontmatter） |
+| `--hosts` | 主持列表（按 Speaker 1, 2, … 顺序映射） |
+| `--guests` | 嘉宾列表（接续 hosts 之后） |
+| `--tags` | 逗号分隔的标签，写入 frontmatter |
+| `--hotwords` | 逗号分隔的热词，用于 ASR 纠偏（人名、产品） |
+| `--chapter` | 开启自动章节识别 |
+| `--language` | 源语言（默认 `zh-CN`） |
+| `--out-dir` | 输出目录（默认 `./data`） |
+| `--downloads-dir` | 音频缓存目录（默认 `./downloads`） |
+
+### 输出示例
+
+`data/2026-07-10-Teahour-N-标题.md`：
+
+```markdown
+---
+title: Teahour #N - 标题
+podcast: Teahour FM
+source: "https://podcasts.apple.com/..."
+date: 2026-07-10
+duration: 1h 32m
+hosts: [Terry, Daniel]
+guests: [Justin]
+tags: [podcast, teahour, llm]
+tingwu_task_id: abc123...
+created_at: 2026-07-10T07:30:00.000Z
+---
+
+# Teahour #N - 标题
+
+## 元信息
+- **节目**: Teahour FM
+- **来源**: <https://podcasts.apple.com/...>
+- **主持**: Terry、Daniel
+- **嘉宾**: Justin
+- **时长**: 1h 32m
+
+## 摘要
+本期聊了...
+
+## 章节速览
+- **00:00** 开场
+- **5:23** 嘉宾自我介绍
+
+## 关键词
+`大模型`、`RAG`、`Agent`
+
+## 完整逐字稿
+### [0:12] Terry（主持）
+欢迎收听本期节目。
+
+### [0:15] Justin（嘉宾）
+我们今天聊聊大模型。
+```
+
+### 常见问题
+
+- **`yt-dlp: command not found`** —— `brew install yt-dlp`
+- **通义听悟报 `InvalidParameter.FileURL`** —— MinIO/S3 URL 不在公网。把桶设为公开读，或换成阿里云 OSS 的公开 URL
+- **任务长时间停留在 `RUNNING`** —— 单集超过 4 小时会慢，用 `ffmpeg -i in.m4a -c copy -segment_time 7200 chunk_%02d.m4a` 切分后逐个提交
+- **想换其他 ASR**（如 Whisper / 飞书妙记）—— 把 `packages/core/src/services/tingwu.ts` 换成对应实现即可，`transcript-formatter.ts` 接受的是结构化 JSON，调用方不变
 
 ---
 

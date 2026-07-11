@@ -204,6 +204,96 @@ leetcast/
 - Check existing issues before creating new ones
 - Be respectful and constructive in all interactions
 
+## Transcribing External Podcasts → Local Markdown
+
+The CLI ships a `transcribe` command that downloads a podcast episode
+(Apple Podcasts, RSS, etc.), uploads the audio to the project's MinIO/S3
+bucket, hands it off to **通义听悟** for speech-to-text, and writes a
+structured Markdown file to `data/`.
+
+### One-time setup
+
+1. Install `yt-dlp` (used to fetch the audio):
+
+   ```bash
+   brew install yt-dlp
+   ```
+
+2. Create an Alibaba Cloud AccessKey pair and a 通义听悟 App:
+
+   - AccessKey: https://ram.console.aliyun.com/manage/accesskey
+   - 通义听悟 App: https://tingwu.console.aliyun.com/
+   - Grant the AccessKey `AliyunTingwuFullAccess`.
+
+3. Add the credentials to your `apps/cli/.env`:
+
+   ```env
+   ALIYUN_ACCESS_KEY_ID=...
+   ALIYUN_ACCESS_KEY_SECRET=...
+   TINGWU_APP_KEY=...
+   ```
+
+   The S3/MinIO vars (`S3_ENDPOINT`, `S3_BUCKET`, `S3_ACCESS_KEY`,
+   `S3_SECRET_KEY`, `S3_PUBLIC_URL`) must also be set — the audio is
+   uploaded there so 通义听悟 can fetch it over HTTPS.
+
+4. Make sure MinIO/S3 is running and the bucket is publicly readable
+   (or set `S3_PUBLIC_URL` to a CDN/proxy that is):
+
+   ```bash
+   docker compose up -d minio
+   ```
+
+### Running it
+
+```bash
+pnpm --filter @leetcast/cli transcribe \
+  --url "https://podcasts.apple.com/cn/podcast/teahour/id1486623337?i=1000761617014" \
+  --title "Teahour #N - 标题" \
+  --podcast "Teahour FM" \
+  --hosts "Terry,Daniel" \
+  --guests "Justin" \
+  --tags "podcast,teahour,llm" \
+  --hotwords "通义听悟,ElevenLabs" \
+  --chapter
+```
+
+| Flag | Description |
+|---|---|
+| `--url` | Podcast episode URL (Apple Podcasts, RSS, direct mp3, etc.) |
+| `--title` | Episode title used for the markdown heading and filename |
+| `--podcast` | Show name for the frontmatter |
+| `--hosts` | Comma-separated host names (mapped to Speaker 1, 2, …) |
+| `--guests` | Comma-separated guest names (mapped to next Speaker IDs) |
+| `--tags` | Comma-separated tags added to frontmatter |
+| `--hotwords` | Comma-separated hotwords to bias ASR (people, products) |
+| `--chapter` | Enable automatic chapter detection |
+| `--language` | Source language code (default `zh-CN`) |
+| `--out-dir` | Override output directory (default `./data`) |
+| `--downloads-dir` | Override audio cache directory (default `./downloads`) |
+
+### Output
+
+The command writes one Markdown file like `data/2026-07-10-Teahour-N-标题.md`
+with the following sections:
+
+- **YAML frontmatter** — title, podcast, source URL, hosts/guests, duration, tags, tingwu task id
+- **元信息** — program / source / publish date / hosts / guests / duration
+- **摘要** — when 通义听悟 auto-summary is enabled in the App
+- **章节速览** — when `--chapter` is passed
+- **关键词** — auto-extracted keywords
+- **完整逐字稿** — per-speaker blocks with `[hh:mm:ss]` timestamps
+
+### Troubleshooting
+
+- **`yt-dlp: command not found`** — install it (`brew install yt-dlp`).
+- **通义听悟 returns `InvalidParameter.FileURL`** — the MinIO/S3 URL is
+  not reachable from the public internet. Either make the bucket public,
+  put a CDN in front of it, or pre-upload to Alibaba OSS and pass that URL.
+- **Task stays in `RUNNING` for >30 min** — long files (4h+) need a
+  longer timeout; split the audio with `ffmpeg -i in.m4a -c copy -segment_time 7200 chunk_%02d.m4a`
+  and transcribe each chunk separately.
+
 ## Recognition
 
 Contributors will be recognized in our README and release notes. Thank you for your contributions!

@@ -12,6 +12,7 @@
     "dev": "ts-node src/cli.ts",
     "mcp-server": "ts-node src/mcp-server.ts",
     "update-problems": "ts-node src/scripts/update-problems.ts",
+    "transcribe": "ts-node src/scripts/transcribe-podcast.ts",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
