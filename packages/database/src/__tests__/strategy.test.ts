@@ -1,7 +1,7 @@
 import { StrategyEngine } from '../strategy';
 
-// Mock prisma
-jest.mock('./index', () => ({
+// Mock prisma (database barrel lives at src/index.ts, hence '../index')
+jest.mock('../index', () => ({
   prisma: {
     userProgress: {
       findUnique: jest.fn(),
@@ -14,7 +14,7 @@ jest.mock('./index', () => ({
   },
 }));
 
-const { prisma } = require('./index');
+const { prisma } = require('../index');
 
 describe('StrategyEngine', () => {
   beforeEach(() => {

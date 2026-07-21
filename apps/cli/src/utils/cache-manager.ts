@@ -1,6 +1,6 @@
 import fs from 'fs-extra';
 import path from 'path';
-import { LeetCodeProblem } from '../types/leetcode';
+import { LeetCodeProblem } from '@leetcast/core';
 
 export class CacheManager {
   private static readonly CACHE_DIR = path.join(process.cwd(), 'data');

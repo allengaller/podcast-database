@@ -1,5 +1,4 @@
-import { MCPService } from '../services/mcp';
-import { LeetCodeProblem } from '../types/leetcode';
+import { MCPService, LeetCodeProblem } from '@leetcast/core';
 
 // Mock OpenAI and ElevenLabs
 jest.mock('openai', () => {

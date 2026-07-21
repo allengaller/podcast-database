@@ -1,7 +1,6 @@
 import { Job } from 'bullmq';
 import { PodcastEngine, LeetCodeProblem, StorageService } from '@leetcast/core';
-import { prisma } from '@leetcast/database';
-import { Prisma } from '@prisma/client';
+import { prisma, Prisma } from '@leetcast/database';
 import fs from 'fs-extra';
 
 export interface GeneratePodcastJobData {

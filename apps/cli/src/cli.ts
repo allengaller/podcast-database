@@ -2,8 +2,7 @@
 import 'dotenv/config';
 import { Command } from 'commander';
 import chalk from 'chalk';
-import { LeetCodeService } from './services/leetcode';
-import { MCPService } from './services/mcp';
+import { LeetCodeService, MCPService } from '@leetcast/core';
 import { AudioService } from './services/audio';
 import prompts from 'prompts';
 

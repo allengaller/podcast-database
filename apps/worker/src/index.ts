@@ -5,7 +5,9 @@ import { podcastQueue, podcastWorker } from './lib/queue';
 async function healthCheck(): Promise<{ status: string; checks: Record<string, string> }> {
   const checks: Record<string, string> = { worker: 'ok', redis: 'unknown' };
   try {
-    await podcastQueue.client.ping();
+    // BullMQ >= 5: `Queue.client` is a Promise<RedisClient>
+    const client = await podcastQueue.client;
+    await client.ping();
     checks.redis = 'ok';
   } catch {
     checks.redis = 'error';

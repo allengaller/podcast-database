@@ -4,8 +4,7 @@ import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
-import { MCPService } from "./services/mcp.js";
-import { LeetCodeService } from "./services/leetcode.js";
+import { MCPService, LeetCodeService } from '@leetcast/core';
 import dotenv from 'dotenv';
 
 dotenv.config();

@@ -1,4 +1,4 @@
-import { LeetCodeService } from '../services/leetcode';
+import { LeetCodeService } from '@leetcast/core';
 
 describe('LeetCodeService', () => {
   describe('getPopularProblems', () => {

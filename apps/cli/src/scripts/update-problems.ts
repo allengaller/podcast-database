@@ -1,6 +1,5 @@
-import { LeetCodeGraphQLClient } from '../services/graphql-client';
+import { LeetCodeGraphQLClient, LeetCodeProblem } from '@leetcast/core';
 import { CacheManager } from '../utils/cache-manager';
-import { LeetCodeProblem } from '../types/leetcode';
 import ora from 'ora';
 import chalk from 'chalk';
 

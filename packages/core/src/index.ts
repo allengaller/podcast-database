@@ -2,6 +2,7 @@ export * from './types/leetcode';
 export * from './types/tingwu';
 export * from './services/graphql-client';
 export * from './services/leetcode';
+export * from './services/mcp';
 export * from './services/storage';
 export * from './services/podcast-engine';
 export * from './services/tingwu';
