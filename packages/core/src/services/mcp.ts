@@ -122,10 +122,7 @@ export class MCPService {
   /**
    * Write audio stream to file, handling Buffer, ReadableStream, and AsyncIterable.
    */
-  private static async writeAudioStream(
-    stream: unknown,
-    filePath: string
-  ): Promise<void> {
+  private static async writeAudioStream(stream: unknown, filePath: string): Promise<void> {
     if (Buffer.isBuffer(stream)) {
       await fs.writeFile(filePath, stream);
       return;

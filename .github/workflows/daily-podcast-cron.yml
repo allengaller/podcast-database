@@ -1,0 +1,93 @@
+name: Daily Podcast Cron
+
+# Triggers the Admin "generate daily podcast" endpoint every day at 00:05 UTC
+# (08:05 Asia/Shanghai) so the morning's podcast is ready when users open the
+# site. Also runs on manual dispatch for ad-hoc publishes and on push to main
+# (to allow smoke-testing the workflow file itself).
+on:
+  schedule:
+    # 00:05 UTC daily. Adjust the hour to your audience's morning.
+    - cron: '5 0 * * *'
+  workflow_dispatch:
+    inputs:
+      strategy:
+        description: 'Daily problem selection strategy'
+        required: true
+        type: choice
+        default: 'progressive'
+        options:
+          - progressive
+          - classic
+          - weakspot
+      problem_id:
+        description: 'Force a specific problem id (overrides strategy)'
+        required: false
+        type: string
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/daily-podcast-cron.yml'
+
+concurrency:
+  # Skip a tick if the previous one is still running.
+  group: daily-podcast
+  cancel-in-progress: false
+
+jobs:
+  trigger-daily:
+    name: Trigger Admin API
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      # The deployed Web service URL. Override in your repo's
+      # Settings -> Secrets and variables -> Actions -> Variables.
+      LEETCAST_WEB_URL: ${{ vars.LEETCAST_WEB_URL }}
+      ADMIN_TOKEN: ${{ secrets.ADMIN_TOKEN }}
+    steps:
+      - name: Validate inputs
+        run: |
+          if [ -z "$LEETCAST_WEB_URL" ]; then
+            echo "::error::LEETCAST_WEB_URL repo variable is not set."
+            exit 1
+          fi
+          if [ -z "$ADMIN_TOKEN" ]; then
+            echo "::error::ADMIN_TOKEN secret is not set."
+            exit 1
+          fi
+
+      - name: Build request body
+        id: body
+        run: |
+          STRATEGY="${{ inputs.strategy || 'progressive' }}"
+          PROBLEM_ID="${{ inputs.problem_id }}"
+          if [ -n "$PROBLEM_ID" ]; then
+            BODY=$(printf '{"strategy":"%s","problemId":"%s"}' "$STRATEGY" "$PROBLEM_ID")
+          else
+            BODY=$(printf '{"strategy":"%s"}' "$STRATEGY")
+          fi
+          echo "body=$BODY" >> "$GITHUB_OUTPUT"
+
+      - name: POST /api/admin/daily
+        id: trigger
+        run: |
+          set -euo pipefail
+          STATUS=$(curl -sS -o response.json -w "%{http_code}" \
+            -X POST \
+            -H "Content-Type: application/json" \
+            -H "x-admin-token: $ADMIN_TOKEN" \
+            -d "${{ steps.body.outputs.body }}" \
+            "$LEETCAST_WEB_URL/api/admin/daily")
+          echo "HTTP $STATUS"
+          cat response.json
+          echo
+          if [ "$STATUS" -ge 200 ] && [ "$STATUS" -lt 300 ]; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            exit 1
+          fi
+
+      - name: Annotate success
+        if: steps.trigger.outputs.ok == 'true'
+        run: |
+          echo "::notice::Daily podcast enqueued: $LEETCAST_WEB_URL (job: $(jq -r .jobId response.json))"

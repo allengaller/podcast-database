@@ -116,7 +116,9 @@ export default function AdminPage() {
             </div>
 
             <Button
-              onClick={publishDaily}
+              onClick={() => {
+                void publishDaily();
+              }}
               disabled={loading || !token}
               className="w-full gap-2"
               size="lg"

@@ -6,6 +6,10 @@
 
 **LeetCast** 是一个面向程序员的每日一题播客平台。每天登录，听一集 LeetCode 解题讲解播客，利用碎片时间提升算法能力。
 
+> 🆕 **第一次跑？** 直接看 [QUICKSTART.md](./QUICKSTART.md) — 30 分钟内本地完整跑通。
+> 🚀 **要部署？** 看 [DEPLOY.md](./DEPLOY.md) — Vercel + Railway + GitHub Actions cron 全套。
+> 📊 **想了解项目健康度？** 看 [EVALUATION.md](./EVALUATION.md)。
+
 ---
 
 ## 核心特性
@@ -104,43 +108,43 @@ leetcast/
 
 ### 技术栈
 
-| 层 | 技术 |
-|---|---|
-| 前端 | Next.js 14 (App Router, RSC) + Tailwind CSS + shadcn/ui |
-| 认证 | NextAuth v5 (GitHub OAuth, Prisma Adapter) |
-| 任务队列 | BullMQ + Redis |
-| 数据库 | PostgreSQL 16 + Prisma ORM |
-| 对象存储 | MinIO / S3 兼容 |
-| AI/LLM | OpenAI GPT-4o（兼容阿里云百炼 DashScope） |
-| TTS | ElevenLabs (eleven_multilingual_v2) |
-| 音频处理 | FFmpeg (混音、BGM、片头片尾) |
-| 工程化 | pnpm workspace + Turborepo + ESLint + Prettier |
-| CI/CD | GitHub Actions + Docker |
+| 层       | 技术                                                    |
+| -------- | ------------------------------------------------------- |
+| 前端     | Next.js 14 (App Router, RSC) + Tailwind CSS + shadcn/ui |
+| 认证     | NextAuth v5 (GitHub OAuth, Prisma Adapter)              |
+| 任务队列 | BullMQ + Redis                                          |
+| 数据库   | PostgreSQL 16 + Prisma ORM                              |
+| 对象存储 | MinIO / S3 兼容                                         |
+| AI/LLM   | OpenAI GPT-4o（兼容阿里云百炼 DashScope）               |
+| TTS      | ElevenLabs (eleven_multilingual_v2)                     |
+| 音频处理 | FFmpeg (混音、BGM、片头片尾)                            |
+| 工程化   | pnpm workspace + Turborepo + ESLint + Prettier          |
+| CI/CD    | GitHub Actions + Docker                                 |
 
 ---
 
 ## 页面路由
 
-| 路由 | 类型 | 说明 |
-|---|---|---|
-| `/` | Server Component | 首页 -- 今日播客 + 自定义播放器 + 用户统计 |
-| `/problems` | Server Component | 题单浏览 + 搜索 + 难度/标签筛选 |
-| `/leaderboard` | Server Component | 排行榜（连续打卡 Top 20） |
-| `/profile` | Server Component | 个人中心（打卡日历、学习统计） |
-| `/admin` | Client Component | Admin 后台（选题策略 + 发布） |
-| `/login` | Server Component | GitHub OAuth 登录 |
+| 路由           | 类型             | 说明                                       |
+| -------------- | ---------------- | ------------------------------------------ |
+| `/`            | Server Component | 首页 -- 今日播客 + 自定义播放器 + 用户统计 |
+| `/problems`    | Server Component | 题单浏览 + 搜索 + 难度/标签筛选            |
+| `/leaderboard` | Server Component | 排行榜（连续打卡 Top 20）                  |
+| `/profile`     | Server Component | 个人中心（打卡日历、学习统计）             |
+| `/admin`       | Client Component | Admin 后台（选题策略 + 发布）              |
+| `/login`       | Server Component | GitHub OAuth 登录                          |
 
 ## API 路由
 
-| 路由 | 方法 | 认证 | 说明 |
-|---|---|---|---|
-| `/api/daily` | GET | Public | 获取今日播客 |
-| `/api/problems` | GET | Public | 题目列表（分页 + 搜索） |
-| `/api/progress` | POST | User | 保存播放进度 + 触发打卡 |
-| `/api/share` | GET | User | 生成分享海报 SVG |
-| `/api/admin/daily` | POST | Admin Token | 触发每日播客生成（BullMQ） |
-| `/api/health` | GET | Public | 健康检查（DB + Redis 连通性） |
-| `/api/auth/[...nextauth]` | GET/POST | -- | NextAuth 认证 |
+| 路由                      | 方法     | 认证        | 说明                          |
+| ------------------------- | -------- | ----------- | ----------------------------- |
+| `/api/daily`              | GET      | Public      | 获取今日播客                  |
+| `/api/problems`           | GET      | Public      | 题目列表（分页 + 搜索）       |
+| `/api/progress`           | POST     | User        | 保存播放进度 + 触发打卡       |
+| `/api/share`              | GET      | User        | 生成分享海报 SVG              |
+| `/api/admin/daily`        | POST     | Admin Token | 触发每日播客生成（BullMQ）    |
+| `/api/health`             | GET      | Public      | 健康检查（DB + Redis 连通性） |
+| `/api/auth/[...nextauth]` | GET/POST | --          | NextAuth 认证                 |
 
 ---
 
@@ -148,23 +152,23 @@ leetcast/
 
 完整模板见 `.env.example`。关键变量：
 
-| 变量 | 用途 | 必填 |
-|---|---|---|
-| `DATABASE_URL` | PostgreSQL 连接串 | 是 |
-| `REDIS_URL` | Redis 连接串 | 是 |
-| `S3_ENDPOINT` / `S3_ACCESS_KEY` / `S3_SECRET_KEY` / `S3_BUCKET` | MinIO / S3 存储 | 是 |
-| `OPENAI_API_KEY` | LLM 脚本生成 | 否（Mock 模式） |
-| `OPENAI_BASE_URL` | 自定义 LLM 端点（百炼） | 否 |
-| `OPENAI_MODEL` | 模型名称（默认 gpt-4o） | 否 |
-| `ELEVENLABS_API_KEY` | TTS 语音合成 | 否（Mock 模式） |
-| `HOST_VOICE_ID` / `ENGINEER_VOICE_ID` | ElevenLabs 音色 ID | 否 |
-| `AUTH_SECRET` | NextAuth 密钥 | 是 |
-| `GITHUB_ID` / `GITHUB_SECRET` | GitHub OAuth | 是 |
-| `ADMIN_TOKEN` | Admin API 认证令牌 | 是 |
-| `CORS_ORIGIN` | CORS 允许的来源 | 否（默认 `*`） |
-| `ALIYUN_ACCESS_KEY_ID` / `ALIYUN_ACCESS_KEY_SECRET` | 通义听悟 AccessKey（外部播客转写） | 否 |
-| `TINGWU_APP_KEY` | 通义听悟 AppKey（外部播客转写） | 否 |
-| `S3_PUBLIC_URL` | MinIO/S3 公网访问入口（通义听悟拉取音频用） | 否 |
+| 变量                                                            | 用途                                        | 必填            |
+| --------------------------------------------------------------- | ------------------------------------------- | --------------- |
+| `DATABASE_URL`                                                  | PostgreSQL 连接串                           | 是              |
+| `REDIS_URL`                                                     | Redis 连接串                                | 是              |
+| `S3_ENDPOINT` / `S3_ACCESS_KEY` / `S3_SECRET_KEY` / `S3_BUCKET` | MinIO / S3 存储                             | 是              |
+| `OPENAI_API_KEY`                                                | LLM 脚本生成                                | 否（Mock 模式） |
+| `OPENAI_BASE_URL`                                               | 自定义 LLM 端点（百炼）                     | 否              |
+| `OPENAI_MODEL`                                                  | 模型名称（默认 gpt-4o）                     | 否              |
+| `ELEVENLABS_API_KEY`                                            | TTS 语音合成                                | 否（Mock 模式） |
+| `HOST_VOICE_ID` / `ENGINEER_VOICE_ID`                           | ElevenLabs 音色 ID                          | 否              |
+| `AUTH_SECRET`                                                   | NextAuth 密钥                               | 是              |
+| `GITHUB_ID` / `GITHUB_SECRET`                                   | GitHub OAuth                                | 是              |
+| `ADMIN_TOKEN`                                                   | Admin API 认证令牌                          | 是              |
+| `CORS_ORIGIN`                                                   | CORS 允许的来源                             | 否（默认 `*`）  |
+| `ALIYUN_ACCESS_KEY_ID` / `ALIYUN_ACCESS_KEY_SECRET`             | 通义听悟 AccessKey（外部播客转写）          | 否              |
+| `TINGWU_APP_KEY`                                                | 通义听悟 AppKey（外部播客转写）             | 否              |
+| `S3_PUBLIC_URL`                                                 | MinIO/S3 公网访问入口（通义听悟拉取音频用） | 否              |
 
 ---
 
@@ -183,17 +187,17 @@ pnpm --filter @leetcast/database test
 
 ### 测试覆盖
 
-| 模块 | 测试文件 | 覆盖范围 |
-|---|---|---|
-| LeetCode API | `apps/cli/src/__tests__/leetcode.test.ts` | CRUD 查询 |
-| 缓存管理 | `apps/cli/src/__tests__/cache-manager.test.ts` | 加载/保存 |
-| 重试工具 | `apps/cli/src/__tests__/retry-utils.test.ts` | 指数退避 |
-| MCP 服务 | `apps/cli/src/__tests__/mcp.test.ts` | Mock/Real 播客生成 |
-| PodcastEngine | `packages/core/src/__tests__/podcast-engine.test.ts` | 脚本解析、章节标记、Mock 模式 |
-| HTML 工具 | `packages/core/src/__tests__/html-utils.test.ts` | 标签剥离、实体解码 |
-| 逐字稿格式化 | `packages/core/src/__tests__/transcript-formatter.test.ts` | 通义听悟结果 → Markdown 渲染 |
-| 选题策略 | `packages/database/src/__tests__/strategy.test.ts` | 四种策略全覆盖 |
-| Worker Job | `apps/worker/src/__tests__/generate-podcast.test.ts` | 任务处理、Daily 逻辑、错误处理 |
+| 模块          | 测试文件                                                   | 覆盖范围                       |
+| ------------- | ---------------------------------------------------------- | ------------------------------ |
+| LeetCode API  | `apps/cli/src/__tests__/leetcode.test.ts`                  | CRUD 查询                      |
+| 缓存管理      | `apps/cli/src/__tests__/cache-manager.test.ts`             | 加载/保存                      |
+| 重试工具      | `apps/cli/src/__tests__/retry-utils.test.ts`               | 指数退避                       |
+| MCP 服务      | `apps/cli/src/__tests__/mcp.test.ts`                       | Mock/Real 播客生成             |
+| PodcastEngine | `packages/core/src/__tests__/podcast-engine.test.ts`       | 脚本解析、章节标记、Mock 模式  |
+| HTML 工具     | `packages/core/src/__tests__/html-utils.test.ts`           | 标签剥离、实体解码             |
+| 逐字稿格式化  | `packages/core/src/__tests__/transcript-formatter.test.ts` | 通义听悟结果 → Markdown 渲染   |
+| 选题策略      | `packages/database/src/__tests__/strategy.test.ts`         | 四种策略全覆盖                 |
+| Worker Job    | `apps/worker/src/__tests__/generate-podcast.test.ts`       | 任务处理、Daily 逻辑、错误处理 |
 
 ---
 
@@ -288,19 +292,19 @@ pnpm --filter @leetcast/cli transcribe \
 
 ### 命令行参数
 
-| Flag | 说明 |
-|---|---|
-| `--url` | 播客单集 URL（Apple Podcasts / RSS / 直链 mp3） |
-| `--title` | 集标题（用于 Markdown 标题与文件名） |
-| `--podcast` | 节目名（写入 frontmatter） |
-| `--hosts` | 主持列表（按 Speaker 1, 2, … 顺序映射） |
-| `--guests` | 嘉宾列表（接续 hosts 之后） |
-| `--tags` | 逗号分隔的标签，写入 frontmatter |
-| `--hotwords` | 逗号分隔的热词，用于 ASR 纠偏（人名、产品） |
-| `--chapter` | 开启自动章节识别 |
-| `--language` | 源语言（默认 `zh-CN`） |
-| `--out-dir` | 输出目录（默认 `./data`） |
-| `--downloads-dir` | 音频缓存目录（默认 `./downloads`） |
+| Flag              | 说明                                            |
+| ----------------- | ----------------------------------------------- |
+| `--url`           | 播客单集 URL（Apple Podcasts / RSS / 直链 mp3） |
+| `--title`         | 集标题（用于 Markdown 标题与文件名）            |
+| `--podcast`       | 节目名（写入 frontmatter）                      |
+| `--hosts`         | 主持列表（按 Speaker 1, 2, … 顺序映射）         |
+| `--guests`        | 嘉宾列表（接续 hosts 之后）                     |
+| `--tags`          | 逗号分隔的标签，写入 frontmatter                |
+| `--hotwords`      | 逗号分隔的热词，用于 ASR 纠偏（人名、产品）     |
+| `--chapter`       | 开启自动章节识别                                |
+| `--language`      | 源语言（默认 `zh-CN`）                          |
+| `--out-dir`       | 输出目录（默认 `./data`）                       |
+| `--downloads-dir` | 音频缓存目录（默认 `./downloads`）              |
 
 ### 输出示例
 
@@ -310,7 +314,7 @@ pnpm --filter @leetcast/cli transcribe \
 ---
 title: Teahour #N - 标题
 podcast: Teahour FM
-source: "https://podcasts.apple.com/..."
+source: 'https://podcasts.apple.com/...'
 date: 2026-07-10
 duration: 1h 32m
 hosts: [Terry, Daniel]
@@ -323,6 +327,7 @@ created_at: 2026-07-10T07:30:00.000Z
 # Teahour #N - 标题
 
 ## 元信息
+
 - **节目**: Teahour FM
 - **来源**: <https://podcasts.apple.com/...>
 - **主持**: Terry、Daniel
@@ -330,20 +335,26 @@ created_at: 2026-07-10T07:30:00.000Z
 - **时长**: 1h 32m
 
 ## 摘要
+
 本期聊了...
 
 ## 章节速览
+
 - **00:00** 开场
 - **5:23** 嘉宾自我介绍
 
 ## 关键词
+
 `大模型`、`RAG`、`Agent`
 
 ## 完整逐字稿
+
 ### [0:12] Terry（主持）
+
 欢迎收听本期节目。
 
 ### [0:15] Justin（嘉宾）
+
 我们今天聊聊大模型。
 ```
 
@@ -377,13 +388,13 @@ docker compose up -d
 
 ## 文档索引
 
-| 文件 | 说明 |
-|---|---|
-| [DEPLOY.md](./DEPLOY.md) | 部署指南（Docker + Vercel） |
-| [CONTRIBUTING.md](./CONTRIBUTING.md) | 贡献指南 + 开发规范 |
-| [SECURITY.md](./SECURITY.md) | 安全策略 |
-| [ENGINEERING.md](./ENGINEERING.md) | 工程设计文档 |
-| [EVALUATION.md](./EVALUATION.md) | 项目评估报告 |
+| 文件                                 | 说明                        |
+| ------------------------------------ | --------------------------- |
+| [DEPLOY.md](./DEPLOY.md)             | 部署指南（Docker + Vercel） |
+| [CONTRIBUTING.md](./CONTRIBUTING.md) | 贡献指南 + 开发规范         |
+| [SECURITY.md](./SECURITY.md)         | 安全策略                    |
+| [ENGINEERING.md](./ENGINEERING.md)   | 工程设计文档                |
+| [EVALUATION.md](./EVALUATION.md)     | 项目评估报告                |
 
 ---
 

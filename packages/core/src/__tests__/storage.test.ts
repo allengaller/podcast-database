@@ -21,7 +21,6 @@ jest.mock('fs-extra', () => ({
 }));
 
 const S3ClientMock = S3Client as unknown as jest.Mock;
-const PutCommandMock = PutObjectCommand as unknown as jest.Mock;
 const GetCommandMock = GetObjectCommand as unknown as jest.Mock;
 const getSignedUrlMock = getSignedUrl as unknown as jest.Mock;
 const fsReadFileMock = fs.readFile as unknown as jest.Mock;
@@ -43,7 +42,8 @@ describe('StorageService', () => {
     // shared instance's `send` via prototype so the test isolates behavior.
     S3ClientMock.mockImplementation(() => ({ send: sendMock }));
     // Force the static `s3` field to pick up the latest mock implementation
-    (StorageService as unknown as { s3: unknown }).s3 = new (S3Client as unknown as new () => unknown)();
+    (StorageService as unknown as { s3: unknown }).s3 =
+      new (S3Client as unknown as new () => unknown)();
   });
 
   describe('uploadFile', () => {
@@ -82,7 +82,11 @@ describe('StorageService', () => {
   describe('uploadBuffer', () => {
     it('uploads a buffer directly and returns a public URL', async () => {
       sendMock.mockResolvedValueOnce({});
-      const url = await StorageService.uploadBuffer(Buffer.from('x'), 'k.bin', 'application/octet-stream');
+      const url = await StorageService.uploadBuffer(
+        Buffer.from('x'),
+        'k.bin',
+        'application/octet-stream'
+      );
 
       expect(fs.readFile).not.toHaveBeenCalled();
       expect(PutObjectCommand).toHaveBeenCalledWith(
@@ -101,7 +105,9 @@ describe('StorageService', () => {
       expect(GetCommandMock).toHaveBeenCalledWith(
         expect.objectContaining({ Bucket: 'leetcast', Key: 'podcasts/x.mp3' })
       );
-      expect(getSignedUrl).toHaveBeenCalledWith(expect.anything(), expect.anything(), { expiresIn: 3600 });
+      expect(getSignedUrl).toHaveBeenCalledWith(expect.anything(), expect.anything(), {
+        expiresIn: 3600,
+      });
       expect(url).toBe('https://signed.example/x');
     });
 
@@ -110,7 +116,9 @@ describe('StorageService', () => {
 
       await StorageService.getSignedDownloadUrl('podcasts/y.mp3', 60);
 
-      expect(getSignedUrl).toHaveBeenCalledWith(expect.anything(), expect.anything(), { expiresIn: 60 });
+      expect(getSignedUrl).toHaveBeenCalledWith(expect.anything(), expect.anything(), {
+        expiresIn: 60,
+      });
     });
   });
 });

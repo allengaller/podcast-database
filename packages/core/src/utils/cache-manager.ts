@@ -9,7 +9,10 @@ export class CacheManager {
   static async loadCache(): Promise<LeetCodeProblem[]> {
     if (await fs.pathExists(this.CACHE_FILE)) {
       try {
-        return await fs.readJson(this.CACHE_FILE);
+        // fs-extra's readJson returns `Promise<unknown>`; we trust the file
+        // format we wrote in saveCache and assert the shape at the boundary.
+        const raw = (await fs.readJson(this.CACHE_FILE)) as LeetCodeProblem[];
+        return raw;
       } catch (error) {
         console.error('Failed to read cache file:', error);
         return [];

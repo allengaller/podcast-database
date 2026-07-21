@@ -5,6 +5,7 @@ import IORedis from 'ioredis';
 import { z } from 'zod';
 import { timingSafeEqual } from 'crypto';
 import { rateLimit } from '@/lib/rate-limit';
+import { reportError } from '@/lib/sentry';
 
 const redis = new IORedis(process.env.REDIS_URL || 'redis://localhost:6379', {
   maxRetriesPerRequest: null,
@@ -58,20 +59,25 @@ export async function POST(req: NextRequest) {
 
   const { strategy, userId, problemId } = parsed.data;
 
-  const selectedProblemId =
-    problemId || (await StrategyEngine.selectDailyProblem(strategy as StrategyType, userId));
+  try {
+    const selectedProblemId =
+      problemId || (await StrategyEngine.selectDailyProblem(strategy as StrategyType, userId));
 
-  if (!selectedProblemId) {
-    return NextResponse.json({ error: 'No problem found' }, { status: 404 });
+    if (!selectedProblemId) {
+      return NextResponse.json({ error: 'No problem found' }, { status: 404 });
+    }
+
+    const today = new Date().toISOString().split('T')[0];
+
+    const job = await podcastQueue.add('generate-daily-podcast', {
+      problemId: selectedProblemId,
+      isDaily: true,
+      dailyDate: today,
+    });
+
+    return NextResponse.json({ jobId: job.id, problemId: selectedProblemId });
+  } catch (error) {
+    reportError(error, { route: 'admin/daily', strategy, problemId });
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
-
-  const today = new Date().toISOString().split('T')[0];
-
-  const job = await podcastQueue.add('generate-daily-podcast', {
-    problemId: selectedProblemId,
-    isDaily: true,
-    dailyDate: today,
-  });
-
-  return NextResponse.json({ jobId: job.id, problemId: selectedProblemId });
 }

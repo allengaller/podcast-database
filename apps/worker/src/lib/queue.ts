@@ -1,12 +1,13 @@
-import { Queue, Worker } from 'bullmq';
+import { Queue, Worker, Job } from 'bullmq';
 import IORedis from 'ioredis';
-import { generatePodcastJob } from '../jobs/generate-podcast';
+import { generatePodcastJob, GeneratePodcastJobData } from '../jobs/generate-podcast';
+import { reportError } from './sentry';
 
 const redis = new IORedis(process.env.REDIS_URL || 'redis://localhost:6379', {
   maxRetriesPerRequest: null,
 });
 
-export const podcastQueue = new Queue('podcast-generation', {
+export const podcastQueue = new Queue<GeneratePodcastJobData>('podcast-generation', {
   connection: redis,
   defaultJobOptions: {
     attempts: 3,
@@ -19,7 +20,7 @@ export const podcastQueue = new Queue('podcast-generation', {
   },
 });
 
-export const podcastWorker = new Worker(
+export const podcastWorker = new Worker<GeneratePodcastJobData>(
   'podcast-generation',
   async (job) => {
     return generatePodcastJob(job);
@@ -27,7 +28,7 @@ export const podcastWorker = new Worker(
   { connection: redis, concurrency: 2 }
 );
 
-podcastWorker.on('completed', (job) => {
+podcastWorker.on('completed', (job: Job<GeneratePodcastJobData>) => {
   console.log(
     JSON.stringify({
       level: 'info',
@@ -39,7 +40,7 @@ podcastWorker.on('completed', (job) => {
   );
 });
 
-podcastWorker.on('failed', (job, err) => {
+podcastWorker.on('failed', (job: Job<GeneratePodcastJobData> | undefined, err: Error) => {
   console.error(
     JSON.stringify({
       level: 'error',
@@ -53,4 +54,12 @@ podcastWorker.on('failed', (job, err) => {
       willRetry: (job?.attemptsMade ?? 0) < (job?.opts?.attempts ?? 1),
     })
   );
+  // Report to Sentry on the final attempt only; intermediate retries are noise.
+  if ((job?.attemptsMade ?? 0) >= (job?.opts?.attempts ?? 1)) {
+    reportError(err, {
+      jobId: job?.id,
+      problemId: job?.data.problemId,
+      attempts: job?.attemptsMade,
+    });
+  }
 });

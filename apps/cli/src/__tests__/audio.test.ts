@@ -131,7 +131,10 @@ describe('AudioService', () => {
       axiosMock.mockResolvedValueOnce({ data: stream });
 
       // Note: must NOT contain 'example.com' or downloadAudio takes the mock path.
-      const out = await AudioService.downloadAudio('https://cdn.s3.amazonaws.com/audio.mp3', 'real.mp3');
+      const out = await AudioService.downloadAudio(
+        'https://cdn.s3.amazonaws.com/audio.mp3',
+        'real.mp3'
+      );
 
       expect(out.endsWith('real.mp3')).toBe(true);
       expect(stream.pipe).toHaveBeenCalledWith(writer);
@@ -174,7 +177,10 @@ describe('AudioService', () => {
 
       await AudioService.playAudio('/tmp/x.mp3');
 
-      expect(execMock).toHaveBeenCalledWith(expect.stringContaining('afplay'), expect.any(Function));
+      expect(execMock).toHaveBeenCalledWith(
+        expect.stringContaining('afplay'),
+        expect.any(Function)
+      );
     });
 
     it('uses powershell on win32', async () => {
@@ -185,7 +191,10 @@ describe('AudioService', () => {
 
       await AudioService.playAudio('C:\\tmp\\x.mp3');
 
-      expect(execMock).toHaveBeenCalledWith(expect.stringContaining('powershell'), expect.any(Function));
+      expect(execMock).toHaveBeenCalledWith(
+        expect.stringContaining('powershell'),
+        expect.any(Function)
+      );
     });
 
     it('falls back to play/aplay/mpg123 on linux', async () => {
@@ -196,7 +205,10 @@ describe('AudioService', () => {
 
       await AudioService.playAudio('/tmp/x.mp3');
 
-      expect(execMock).toHaveBeenCalledWith(expect.stringMatching(/play|aplay|mpg123/), expect.any(Function));
+      expect(execMock).toHaveBeenCalledWith(
+        expect.stringMatching(/play|aplay|mpg123/),
+        expect.any(Function)
+      );
     });
 
     it('swallows killed exec errors silently (Ctrl+C)', async () => {

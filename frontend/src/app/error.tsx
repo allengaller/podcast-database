@@ -1,5 +1,8 @@
 'use client';
 
+import { useEffect } from 'react';
+import { reportError } from '@/lib/sentry';
+
 export default function Error({
   error,
   reset,
@@ -7,6 +10,10 @@ export default function Error({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  useEffect(() => {
+    reportError(error, { digest: error.digest });
+  }, [error]);
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-background">
       <div className="text-center">

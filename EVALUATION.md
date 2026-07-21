@@ -9,6 +9,7 @@
 LeetCast 是一个面向程序员的每日一题播客平台。利用 AI（GPT-4o / 阿里云百炼）生成 LeetCode 解题讲解脚本，再通过 ElevenLabs 多角色 TTS 合成音频，配合背景音乐生成完整播客。用户每日收听，追踪学习进度。
 
 **Tech Stack:**
+
 - Monorepo: pnpm workspace + Turborepo
 - Frontend: Next.js 14 (App Router) + Tailwind CSS + shadcn/ui
 - Backend Worker: BullMQ + Redis
@@ -20,6 +21,7 @@ LeetCast 是一个面向程序员的每日一题播客平台。利用 AI（GPT-4
 - CLI: Commander.js + Prompts
 
 **Code Scale:**
+
 - 总 TS/TSX 源码: ~5,600 行
 - 生产代码: ~5,300 行
 - 测试代码: ~300 行
@@ -27,6 +29,7 @@ LeetCast 是一个面向程序员的每日一题播客平台。利用 AI（GPT-4
 - 包/子包: 5 个 (cli, worker, web, core, database)
 
 **Git Maturity:**
+
 - 总提交: 7 次
 - 分支策略: main + develop
 - Dependabot: 已配置（7 个 pending PR）
@@ -37,6 +40,7 @@ LeetCast 是一个面向程序员的每日一题播客平台。利用 AI（GPT-4
 ## 二、架构评估 — 评分：6/10
 
 ### 优点
+
 - Monorepo 分层清晰：apps/ (cli, web, worker) + packages/ (core, database)，各包职责明确
 - Prisma Schema 设计合理：8 个 model，合理的索引、级联删除、唯一约束
 - 选题策略引擎（StrategyEngine）实现了三种策略：渐进/经典/弱项强化
@@ -44,6 +48,7 @@ LeetCast 是一个面向程序员的每日一题播客平台。利用 AI（GPT-4
 - 下一代 frontend (Next.js 14 App Router) 已接入 workspace
 
 ### 问题
+
 1. 存在大量 "文件 2" 副本（如 apps 2/, packages 2/, src 2/ 等），严重影响仓库整洁度
 2. root src/ 和 apps/cli/src/ 存在两套几乎相同的服务层代码，DUAL PATTERN 反模式
 3. frontend/ 目录独立于 monorepo workspace（有自己的 .git/），未纳入 pnpm-workspace.yaml
@@ -55,14 +60,16 @@ LeetCast 是一个面向程序员的每日一题播客平台。利用 AI（GPT-4
 ## 三、代码质量 — 评分：6/10
 
 ### 优点
+
 - TypeScript strict mode 开启，附加多项严格检查
 - ESLint + Prettier 统一代码风格
 - 代码命名规范，中文注释/日志清晰易读
 - Prisma Client 单例模式正确实现
 
 ### 问题
+
 1. ESLint 类型安全规则全部设为 "warn"，等效于关闭
-2. .eslintrc.json 的 ignorePatterns 包含 "*.js"，所有 JS 文件被跳过
+2. .eslintrc.json 的 ignorePatterns 包含 "\*.js"，所有 JS 文件被跳过
 3. seed.ts 中存在 `any` 类型
 4. AudioService 中类型断言不安全
 5. ElevenLabs 返回值处理过于复杂，缺乏抽象
@@ -72,6 +79,7 @@ LeetCast 是一个面向程序员的每日一题播客平台。利用 AI（GPT-4
 ## 四、测试覆盖 — 评分：3/10
 
 ### 问题
+
 1. 核心模块无测试：MCPService、StrategyEngine、AudioService、GraphQL Client
 2. 前端无测试：0 组件测试、0 API 路由测试、0 E2E 测试
 3. Worker 无测试
@@ -83,6 +91,7 @@ LeetCast 是一个面向程序员的每日一题播客平台。利用 AI（GPT-4
 ## 五、安全性 — 评分：5/10
 
 ### 问题
+
 1. docker-compose.yml 硬编码默认密码
 2. Admin Token 无 rate limiting
 3. 无输入验证库（zod）
@@ -95,6 +104,7 @@ LeetCast 是一个面向程序员的每日一题播客平台。利用 AI（GPT-4
 ## 六、性能 — 评分：5/10
 
 ### 问题
+
 1. 前端无代码分割/懒加载
 2. Player 波形可视化无 memo 优化
 3. 播放进度保存未做防抖
@@ -107,6 +117,7 @@ LeetCast 是一个面向程序员的每日一题播客平台。利用 AI（GPT-4
 ## 七、开发体验 — 评分：7/10
 
 ### 问题
+
 1. CONTRIBUTING.md 使用 npm 而非 pnpm
 2. CI workflow 使用 npm ci
 3. Dockerfile 使用 npm ci
@@ -118,11 +129,13 @@ LeetCast 是一个面向程序员的每日一题播客平台。利用 AI（GPT-4
 ## 总评：5.5/10
 
 最突出的优势:
+
 1. 产品定位清晰，差异化明显（LeetCode + Podcast）
 2. Monorepo 工程化基础设施搭建完整
 3. 文档覆盖全面，开发规范有据可循
 
 最需要改进的方面:
+
 1. 清理仓库中的 " 2" 副本和死代码
 2. 消除 DUAL PATTERN，统一服务层
 3. 大幅提升测试覆盖率

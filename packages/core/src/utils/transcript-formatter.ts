@@ -49,7 +49,7 @@ export interface MarkdownTranscriptResult {
  */
 export function toMarkdown(
   result: TingwuTranscriptionResult,
-  opts: MarkdownTranscriptOptions,
+  opts: MarkdownTranscriptOptions
 ): MarkdownTranscriptResult {
   const transcription = result.Transcription ?? {};
   const paragraphs = transcription.Paragraphs ?? [];
@@ -98,7 +98,7 @@ function yamlString(s: string): string {
 }
 
 function yamlList(items: string[]): string {
-  return `[${items.map(s => yamlString(s)).join(', ')}]`;
+  return `[${items.map((s) => yamlString(s)).join(', ')}]`;
 }
 
 // ---------- body ----------
@@ -108,7 +108,7 @@ function renderBody(
   paragraphs: TingwuParagraph[],
   chapters: TingwuChapter[],
   opts: MarkdownTranscriptOptions,
-  result: TingwuTranscriptionResult,
+  result: TingwuTranscriptionResult
 ): string {
   const sections: string[] = [];
 
@@ -141,23 +141,24 @@ function renderBody(
   // 章节
   if (chapters.length > 0) {
     const rows = chapters
-      .map(c => `- **${formatTimestamp(c.BeginTime)}** ${c.Title}${c.Summary ? ` — ${c.Summary}` : ''}`)
+      .map(
+        (c) =>
+          `- **${formatTimestamp(c.BeginTime)}** ${c.Title}${c.Summary ? ` — ${c.Summary}` : ''}`
+      )
       .join('\n');
     sections.push(`## 章节速览\n\n${rows}`);
   }
 
   // 关键词
   if (result.Keywords && result.Keywords.length > 0) {
-    sections.push(`## 关键词\n\n${result.Keywords.map(k => `\`${k}\``).join('、')}`);
+    sections.push(`## 关键词\n\n${result.Keywords.map((k) => `\`${k}\``).join('、')}`);
   }
 
   // 完整逐字稿
   if (paragraphs.length === 0) {
     sections.push(`## 完整逐字稿\n\n_通义听悟未返回段落数据，可能音频无声或服务异常。_`);
   } else {
-    const transcript = paragraphs
-      .map(p => renderParagraph(p, opts))
-      .join('\n\n');
+    const transcript = paragraphs.map((p) => renderParagraph(p, opts)).join('\n\n');
     sections.push(`## 完整逐字稿\n\n${transcript}`);
   }
 
@@ -167,7 +168,10 @@ function renderBody(
 function renderParagraph(p: TingwuParagraph, opts: MarkdownTranscriptOptions): string {
   const ts = formatTimestamp(p.BeginTime);
   const speakerLabel = labelSpeaker(p.SpeakerId, opts);
-  const sentences = (p.Sentences ?? []).map((s: TingwuTranscriptionSentence) => s.Text.trim()).filter(Boolean).join('');
+  const sentences = (p.Sentences ?? [])
+    .map((s: TingwuTranscriptionSentence) => s.Text.trim())
+    .filter(Boolean)
+    .join('');
   const text = (sentences || p.Text || '').trim();
   return `### [${ts}] ${speakerLabel}\n\n${text}`;
 }

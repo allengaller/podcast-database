@@ -1,4 +1,7 @@
-export type Difficulty = 'Easy' | 'Medium' | 'Hard';
+// `Difficulty` is a runtime string from the LeetCode GraphQL payload, so it
+// stays `string` for ergonomic JSON parsing. Callers that need to narrow it
+// should compare against the known literals (`'Easy' | 'Medium' | 'Hard'`).
+export type Difficulty = string;
 
 export interface LeetCodeProblem {
   id: string;

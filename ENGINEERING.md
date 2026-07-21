@@ -50,6 +50,7 @@ leetcast/
 ### ✅ 1. 完善 package.json
 
 **改进内容**:
+
 - 添加项目元数据（keywords, homepage, bugs, repository）
 - 添加作者信息和许可证
 - 新增开发脚本：
@@ -80,6 +81,7 @@ leetcast/
 **文件**: [.eslintrc.json](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.eslintrc.json)
 
 **特性**:
+
 - TypeScript 严格检查
 - 集成 Prettier 避免冲突
 - 未使用变量检查
@@ -91,6 +93,7 @@ leetcast/
 **文件**: [.prettierrc](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.prettierrc)
 
 **规则**:
+
 - 单引号
 - 分号必需
 - 行宽 100 字符
@@ -126,6 +129,7 @@ leetcast/
 **文件**: [jest.config.js](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/jest.config.js)
 
 **特性**:
+
 - TypeScript 支持 (ts-jest)
 - 覆盖率报告生成
 - 覆盖率阈值设置（50%）
@@ -149,7 +153,7 @@ leetcast/
    - 测试失败重试
    - 测试最大重试次数
 
-**目录**: [src/__tests__/](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/src/__tests__/)
+**目录**: [src/**tests**/](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/src/__tests__/)
 
 ---
 
@@ -166,12 +170,13 @@ leetcast/
 **文件**: [.gitignore](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.gitignore)
 
 **新增忽略项**:
-- 构建产物 (dist, build, *.tsbuildinfo)
-- 环境变量文件 (.env.*)
-- 日志文件 (*.log)
+
+- 构建产物 (dist, build, \*.tsbuildinfo)
+- 环境变量文件 (.env.\*)
+- 日志文件 (\*.log)
 - 测试覆盖率 (coverage)
 - IDE 配置 (.vscode, .idea)
-- 音频文件 (downloads/*.mp3)
+- 音频文件 (downloads/\*.mp3)
 - 系统文件 (.DS_Store, Thumbs.db)
 - 临时文件 (tmp, temp)
 
@@ -184,6 +189,7 @@ leetcast/
 **文件**: [.editorconfig](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.editorconfig)
 
 统一编辑器配置：
+
 - UTF-8 编码
 - 2 空格缩进
 - LF 换行符
@@ -201,6 +207,7 @@ leetcast/
 **文件**: [.vscode/launch.json](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.vscode/launch.json)
 
 调试配置：
+
 - CLI 调试
 - MCP Server 调试
 - Jest 测试调试
@@ -208,6 +215,7 @@ leetcast/
 **文件**: [.vscode/extensions.json](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.vscode/extensions.json)
 
 推荐扩展：
+
 - Prettier
 - ESLint
 - EditorConfig
@@ -225,10 +233,12 @@ leetcast/
 **触发条件**: push 和 PR 到 main/develop 分支
 
 **测试矩阵**:
+
 - Node.js: 18.x, 20.x, 22.x
 - OS: ubuntu-latest
 
 **步骤**:
+
 1. 安装依赖
 2. 运行 lint
 3. 运行类型检查
@@ -243,6 +253,7 @@ leetcast/
 **触发条件**: Release 创建时
 
 **步骤**:
+
 1. 构建项目
 2. 发布到 npm
 
@@ -255,6 +266,7 @@ leetcast/
 **文件**: [.github/dependabot.yml](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.github/dependabot.yml)
 
 **配置**:
+
 - npm 依赖：每周一更新
 - GitHub Actions：每周一更新
 - 限制 PR 数量
@@ -265,6 +277,7 @@ leetcast/
 **文件**: [SECURITY.md](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/SECURITY.md)
 
 **内容**:
+
 - 支持版本说明
 - 漏洞报告流程
 - 安全最佳实践
@@ -279,6 +292,7 @@ leetcast/
 **文件**: [CONTRIBUTING.md](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/CONTRIBUTING.md)
 
 **内容**:
+
 - 行为准则
 - Bug 报告指南
 - 功能建议流程
@@ -296,6 +310,7 @@ leetcast/
 遵循 [Keep a Changelog](https://keepachangelog.com/) 格式
 
 **内容**:
+
 - Unreleased 部分
 - 版本历史
 - 变更类型分类（Added, Changed, Fixed 等）
@@ -307,6 +322,7 @@ leetcast/
 **文件**: [tsconfig.json](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/tsconfig.json)
 
 **新增配置**:
+
 - `target: ES2022` - 指定 ECMAScript 版本
 - `lib: ["ES2022"]` - 包含 ES2022 库
 - `declarationMap: true` - 生成声明映射
@@ -331,10 +347,12 @@ leetcast/
 **文件**: [Dockerfile](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/Dockerfile)
 
 **多阶段构建**:
+
 1. **Builder 阶段**: 安装依赖并构建 TypeScript
 2. **Production 阶段**: 仅包含生产依赖和构建产物
 
 **优化**:
+
 - 使用 Alpine 镜像减小体积
 - 多阶段构建减少层数
 - 仅安装生产依赖
@@ -344,6 +362,7 @@ leetcast/
 **文件**: [docker-compose.yml](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/docker-compose.yml)
 
 **配置**:
+
 - 环境变量注入
 - 卷挂载（downloads, cache）
 - 容器命名
@@ -509,30 +528,30 @@ leetcast/
 
 ### 代码质量指标
 
-| 指标 | 工程化前 | 工程化后 | 改进 |
-|------|---------|---------|------|
-| ESLint 错误 | 未检查 | 0 | ✅ |
-| TypeScript 严格模式 | 部分 | 完全 | ✅ |
-| 测试覆盖率 | 0% | 基础覆盖 | ✅ |
-| 代码格式化 | 手动 | 自动 | ✅ |
+| 指标                | 工程化前 | 工程化后 | 改进 |
+| ------------------- | -------- | -------- | ---- |
+| ESLint 错误         | 未检查   | 0        | ✅   |
+| TypeScript 严格模式 | 部分     | 完全     | ✅   |
+| 测试覆盖率          | 0%       | 基础覆盖 | ✅   |
+| 代码格式化          | 手动     | 自动     | ✅   |
 
 ### 开发效率指标
 
-| 指标 | 工程化前 | 工程化后 | 改进 |
-|------|---------|---------|------|
-| CI/CD | 无 | 自动化 | ✅ |
-| 依赖更新 | 手动 | 自动 | ✅ |
-| 代码检查 | 手动 | 自动 | ✅ |
-| 文档完整性 | 30% | 90% | ✅ |
+| 指标       | 工程化前 | 工程化后 | 改进 |
+| ---------- | -------- | -------- | ---- |
+| CI/CD      | 无       | 自动化   | ✅   |
+| 依赖更新   | 手动     | 自动     | ✅   |
+| 代码检查   | 手动     | 自动     | ✅   |
+| 文档完整性 | 30%      | 90%      | ✅   |
 
 ### 项目成熟度指标
 
-| 指标 | 工程化前 | 工程化后 | 改进 |
-|------|---------|---------|------|
-| 开源就绪度 | 低 | 高 | ✅ |
-| 安全性 | 低 | 中 | ✅ |
-| 可维护性 | 中 | 高 | ✅ |
-| 可扩展性 | 中 | 高 | ✅ |
+| 指标       | 工程化前 | 工程化后 | 改进 |
+| ---------- | -------- | -------- | ---- |
+| 开源就绪度 | 低       | 高       | ✅   |
+| 安全性     | 低       | 中       | ✅   |
+| 可维护性   | 中       | 高       | ✅   |
+| 可扩展性   | 中       | 高       | ✅   |
 
 ---
 

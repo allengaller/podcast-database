@@ -1,6 +1,9 @@
 import 'dotenv/config';
 import http from 'http';
 import { podcastQueue, podcastWorker } from './lib/queue';
+import { initSentry, reportError } from './lib/sentry';
+
+initSentry();
 
 async function healthCheck(): Promise<{ status: string; checks: Record<string, string> }> {
   const checks: Record<string, string> = { worker: 'ok', redis: 'unknown' };
@@ -43,4 +46,7 @@ async function main() {
   process.on('SIGINT', shutdown);
 }
 
-main().catch(console.error);
+main().catch((err) => {
+  reportError(err, { phase: 'worker-main' });
+  console.error(err);
+});

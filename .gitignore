@@ -77,3 +77,4 @@ data/
 # Worker logs
 worker.log
 
+frontend/test-results

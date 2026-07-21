@@ -60,10 +60,12 @@ When using LeetCast:
 ### API Keys
 
 This project requires API keys for:
+
 - OpenAI API
 - ElevenLabs API
 
 These keys should be:
+
 - Stored in environment variables
 - Never committed to version control
 - Rotated regularly
@@ -72,6 +74,7 @@ These keys should be:
 ### External Services
 
 LeetCast interacts with:
+
 - LeetCode GraphQL API
 - OpenAI API
 - ElevenLabs API

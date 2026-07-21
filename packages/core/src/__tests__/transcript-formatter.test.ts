@@ -1,8 +1,4 @@
-import {
-  toMarkdown,
-  formatTimestamp,
-  formatDuration,
-} from '../utils/transcript-formatter';
+import { toMarkdown, formatTimestamp, formatDuration } from '../utils/transcript-formatter';
 import { TingwuTranscriptionResult } from '../types/tingwu';
 
 describe('formatTimestamp', () => {

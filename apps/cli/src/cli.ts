@@ -19,9 +19,16 @@ program
   .action(async () => {
     const problems = await LeetCodeService.getPopularProblems();
     console.log(chalk.bold.blue('\n--- Popular LeetCode Problems ---\n'));
-    problems.forEach(p => {
-      const difficultyColor = p.difficulty === 'Easy' ? chalk.green : (p.difficulty === 'Medium' ? chalk.yellow : chalk.red);
-      console.log(`${chalk.bold(p.id.padStart(3))} | ${p.title.padEnd(40)} | ${difficultyColor(p.difficulty)}`);
+    problems.forEach((p) => {
+      const difficultyColor =
+        p.difficulty === 'Easy'
+          ? chalk.green
+          : p.difficulty === 'Medium'
+            ? chalk.yellow
+            : chalk.red;
+      console.log(
+        `${chalk.bold(p.id.padStart(3))} | ${p.title.padEnd(40)} | ${difficultyColor(p.difficulty)}`
+      );
     });
     console.log('');
   });
@@ -37,11 +44,11 @@ program
     }
 
     console.log(chalk.cyan(`Selected: ${problem.title} (${problem.difficulty})`));
-    
+
     try {
       const podcast = await MCPService.generatePodcast(problem);
       console.log(chalk.green(`Podcast generated: ${podcast.title}`));
-      
+
       const filePath = await AudioService.downloadAudio(podcast.audioUrl, `lc-${id}.mp3`);
       await AudioService.playAudio(filePath);
     } catch (error) {
@@ -60,9 +67,16 @@ program
     }
 
     console.log(chalk.bold.blue(`\n--- Search Results for "${query}" ---\n`));
-    results.forEach(p => {
-      const difficultyColor = p.difficulty === 'Easy' ? chalk.green : (p.difficulty === 'Medium' ? chalk.yellow : chalk.red);
-      console.log(`${chalk.bold(p.id.padStart(3))} | ${p.title.padEnd(40)} | ${difficultyColor(p.difficulty)}`);
+    results.forEach((p) => {
+      const difficultyColor =
+        p.difficulty === 'Easy'
+          ? chalk.green
+          : p.difficulty === 'Medium'
+            ? chalk.yellow
+            : chalk.red;
+      console.log(
+        `${chalk.bold(p.id.padStart(3))} | ${p.title.padEnd(40)} | ${difficultyColor(p.difficulty)}`
+      );
     });
     console.log('');
   });
@@ -77,10 +91,10 @@ program
       type: 'select',
       name: 'problem',
       message: 'Select a problem to listen to:',
-      choices: problems.map(p => ({
+      choices: problems.map((p) => ({
         title: `${p.id} - ${p.title} (${p.difficulty})`,
-        value: p
-      }))
+        value: p,
+      })),
     });
 
     if (response.problem) {

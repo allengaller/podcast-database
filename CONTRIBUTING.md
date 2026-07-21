@@ -220,7 +220,6 @@ structured Markdown file to `data/`.
    ```
 
 2. Create an Alibaba Cloud AccessKey pair and a 通义听悟 App:
-
    - AccessKey: https://ram.console.aliyun.com/manage/accesskey
    - 通义听悟 App: https://tingwu.console.aliyun.com/
    - Grant the AccessKey `AliyunTingwuFullAccess`.
@@ -258,19 +257,19 @@ pnpm --filter @leetcast/cli transcribe \
   --chapter
 ```
 
-| Flag | Description |
-|---|---|
-| `--url` | Podcast episode URL (Apple Podcasts, RSS, direct mp3, etc.) |
-| `--title` | Episode title used for the markdown heading and filename |
-| `--podcast` | Show name for the frontmatter |
-| `--hosts` | Comma-separated host names (mapped to Speaker 1, 2, …) |
-| `--guests` | Comma-separated guest names (mapped to next Speaker IDs) |
-| `--tags` | Comma-separated tags added to frontmatter |
-| `--hotwords` | Comma-separated hotwords to bias ASR (people, products) |
-| `--chapter` | Enable automatic chapter detection |
-| `--language` | Source language code (default `zh-CN`) |
-| `--out-dir` | Override output directory (default `./data`) |
-| `--downloads-dir` | Override audio cache directory (default `./downloads`) |
+| Flag              | Description                                                 |
+| ----------------- | ----------------------------------------------------------- |
+| `--url`           | Podcast episode URL (Apple Podcasts, RSS, direct mp3, etc.) |
+| `--title`         | Episode title used for the markdown heading and filename    |
+| `--podcast`       | Show name for the frontmatter                               |
+| `--hosts`         | Comma-separated host names (mapped to Speaker 1, 2, …)      |
+| `--guests`        | Comma-separated guest names (mapped to next Speaker IDs)    |
+| `--tags`          | Comma-separated tags added to frontmatter                   |
+| `--hotwords`      | Comma-separated hotwords to bias ASR (people, products)     |
+| `--chapter`       | Enable automatic chapter detection                          |
+| `--language`      | Source language code (default `zh-CN`)                      |
+| `--out-dir`       | Override output directory (default `./data`)                |
+| `--downloads-dir` | Override audio cache directory (default `./downloads`)      |
 
 ### Output
 

@@ -1,9 +1,6 @@
-import { Server } from "@modelcontextprotocol/sdk/server/index.js";
-import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import {
-  CallToolRequestSchema,
-  ListToolsRequestSchema,
-} from "@modelcontextprotocol/sdk/types.js";
+import { Server } from '@modelcontextprotocol/sdk/server/index.js';
+import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
+import { CallToolRequestSchema, ListToolsRequestSchema } from '@modelcontextprotocol/sdk/types.js';
 import { MCPService, LeetCodeService } from '@leetcast/core';
 import dotenv from 'dotenv';
 
@@ -11,8 +8,8 @@ dotenv.config();
 
 const server = new Server(
   {
-    name: "leetcast-server",
-    version: "1.0.0",
+    name: 'leetcast-server',
+    version: '1.0.0',
   },
   {
     capabilities: {
@@ -29,17 +26,17 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
   return {
     tools: [
       {
-        name: "generate_podcast",
-        description: "Generate a podcast episode for a LeetCode problem",
+        name: 'generate_podcast',
+        description: 'Generate a podcast episode for a LeetCode problem',
         inputSchema: {
-          type: "object",
+          type: 'object',
           properties: {
             problemId: {
-              type: "string",
+              type: 'string',
               description: "The ID of the LeetCode problem (e.g., '1')",
             },
           },
-          required: ["problemId"],
+          required: ['problemId'],
         },
       },
     ],
@@ -51,15 +48,15 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
  * This connects the MCP protocol to our MCPService logic.
  */
 server.setRequestHandler(CallToolRequestSchema, async (request) => {
-  if (request.params.name === "generate_podcast") {
+  if (request.params.name === 'generate_podcast') {
     const problemId = request.params.arguments?.problemId as string;
-    
+
     const problem = await LeetCodeService.getProblemById(problemId);
     if (!problem) {
       return {
         content: [
           {
-            type: "text",
+            type: 'text',
             text: `Problem with ID ${problemId} not found.`,
           },
         ],
@@ -72,20 +69,20 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       return {
         content: [
           {
-            type: "text",
+            type: 'text',
             text: `Successfully generated podcast: ${podcast.title}\nDuration: ${podcast.duration}\n\nTranscript excerpt: ${podcast.transcript.substring(0, 200)}...`,
           },
           {
-            type: "text",
+            type: 'text',
             text: `Audio saved to: ${podcast.audioUrl}`,
-          }
+          },
         ],
       };
     } catch (error) {
       return {
         content: [
           {
-            type: "text",
+            type: 'text',
             text: `Failed to generate podcast: ${error}`,
           },
         ],
@@ -100,10 +97,10 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("LeetCast MCP Server running on stdio");
+  console.error('LeetCast MCP Server running on stdio');
 }
 
 main().catch((error) => {
-  console.error("Server error:", error);
+  console.error('Server error:', error);
   process.exit(1);
 });

@@ -1,10 +1,6 @@
 import crypto from 'crypto';
 import axios, { AxiosInstance } from 'axios';
-import {
-  TingwuSubmitOptions,
-  TingwuTaskStatus,
-  TingwuTranscriptionResult,
-} from '../types/tingwu';
+import { TingwuSubmitOptions, TingwuTaskStatus, TingwuTranscriptionResult } from '../types/tingwu';
 
 /**
  * Alibaba Cloud 通义听悟 (Tingwu) REST client.
@@ -33,13 +29,17 @@ export class TingwuService {
     });
   }
 
-  private static getCredentials(): { accessKeyId: string; accessKeySecret: string; appKey: string } {
+  private static getCredentials(): {
+    accessKeyId: string;
+    accessKeySecret: string;
+    appKey: string;
+  } {
     const accessKeyId = process.env.ALIYUN_ACCESS_KEY_ID;
     const accessKeySecret = process.env.ALIYUN_ACCESS_KEY_SECRET;
     const appKey = process.env.TINGWU_APP_KEY;
     if (!accessKeyId || !accessKeySecret || !appKey) {
       throw new Error(
-        'Missing 通义听悟 credentials. Set ALIYUN_ACCESS_KEY_ID, ALIYUN_ACCESS_KEY_SECRET, and TINGWU_APP_KEY in the environment.',
+        'Missing 通义听悟 credentials. Set ALIYUN_ACCESS_KEY_ID, ALIYUN_ACCESS_KEY_SECRET, and TINGWU_APP_KEY in the environment.'
       );
     }
     return { accessKeyId, accessKeySecret, appKey };
@@ -53,7 +53,7 @@ export class TingwuService {
     method: 'GET' | 'POST',
     action: string,
     query: Record<string, string | number | undefined>,
-    body: unknown,
+    body: unknown
   ): Record<string, string> {
     const { accessKeyId, accessKeySecret } = this.getCredentials();
 
@@ -63,10 +63,10 @@ export class TingwuService {
 
     // Canonical query string (sorted keys, RFC 3986 encoding).
     const sortedQueryKeys = Object.keys(query)
-      .filter(k => query[k] !== undefined)
+      .filter((k) => query[k] !== undefined)
       .sort();
     const canonicalQueryString = sortedQueryKeys
-      .map(k => `${encodeRFC3986(k)}=${encodeRFC3986(String(query[k]))}`)
+      .map((k) => `${encodeRFC3986(k)}=${encodeRFC3986(String(query[k]))}`)
       .join('&');
 
     // Canonical headers (sorted lowercase names).
@@ -81,7 +81,7 @@ export class TingwuService {
 
     const canonicalHeaders = Object.keys(headersToSign)
       .sort()
-      .map(k => `${k}:${trim(headersToSign[k])}`)
+      .map((k) => `${k}:${trim(headersToSign[k])}`)
       .join('\n');
     const signedHeaders = Object.keys(headersToSign).sort().join(';');
 
@@ -143,11 +143,12 @@ export class TingwuService {
             SpeakerCount: undefined,
           },
           AutoPunctuationEnabled: opts.autoPunctuation ?? true,
-          HotWordList: opts.hotwords && opts.hotwords.length > 0
-            ? {
-                HotWords: opts.hotwords.map(w => ({ Word: w })),
-              }
-            : undefined,
+          HotWordList:
+            opts.hotwords && opts.hotwords.length > 0
+              ? {
+                  HotWords: opts.hotwords.map((w) => ({ Word: w })),
+                }
+              : undefined,
         },
         ...(opts.chapterDetection
           ? {
@@ -159,7 +160,10 @@ export class TingwuService {
 
     const headers = this.sign('POST', 'CreateTask', { region: this.DEFAULT_REGION }, body);
     const res = await this.client().post('/openapi/tingwu/v2/tasks', body, { headers });
-    const taskId = res.data?.Data?.TaskId ?? res.data?.TaskId;
+    // Aliyun SDK returns loosely-typed JSON; the wire shape is documented but
+    // not exported as types. Cast through `unknown` to keep ESLint happy.
+    const payload = res.data as { Data?: { TaskId?: string }; TaskId?: string } | undefined;
+    const taskId = payload?.Data?.TaskId ?? payload?.TaskId;
     if (!taskId) {
       throw new Error(`通义听悟 CreateTask returned no TaskId: ${JSON.stringify(res.data)}`);
     }
@@ -172,24 +176,24 @@ export class TingwuService {
    */
   static async waitForCompletion(
     taskId: string,
-    opts: { intervalMs?: number; timeoutMs?: number } = {},
+    opts: { intervalMs?: number; timeoutMs?: number } = {}
   ): Promise<TingwuTaskStatus> {
     const interval = opts.intervalMs ?? 5000;
     const timeout = opts.timeoutMs ?? 30 * 60 * 1000; // 30 min default
     const start = Date.now();
 
-    while (true) {
+    for (;;) {
       const status = await this.getTask(taskId);
       if (status.TaskStatus === 'COMPLETED') return status;
       if (status.TaskStatus === 'FAILED') {
         throw new Error(
-          `通义听悟 task ${taskId} failed: ${status.ErrorCode ?? 'unknown'} ${status.ErrorMessage ?? ''}`,
+          `通义听悟 task ${taskId} failed: ${status.ErrorCode ?? 'unknown'} ${status.ErrorMessage ?? ''}`
         );
       }
       if (Date.now() - start > timeout) {
         throw new Error(`通义听悟 task ${taskId} timed out after ${timeout / 1000}s`);
       }
-      await new Promise(r => setTimeout(r, interval));
+      await new Promise((r) => setTimeout(r, interval));
     }
   }
 
@@ -199,17 +203,18 @@ export class TingwuService {
       'GET',
       'GetTaskInfo',
       { region: this.DEFAULT_REGION, TaskId: taskId },
-      undefined,
+      undefined
     );
     const res = await this.client().get('/openapi/tingwu/v2/tasks', {
       headers,
       params: { region: this.DEFAULT_REGION, TaskId: taskId },
     });
-    const data = res.data?.Data ?? res.data;
+    const payload = res.data as ({ Data?: TingwuTaskStatus } & TingwuTaskStatus) | undefined;
+    const data = payload?.Data ?? payload;
     if (!data?.TaskId) {
       throw new Error(`通义听悟 GetTaskInfo returned no task: ${JSON.stringify(res.data)}`);
     }
-    return data as TingwuTaskStatus;
+    return data;
   }
 
   /**
@@ -229,7 +234,10 @@ export class TingwuService {
 
 /** RFC 3986 encoding helper (more strict than encodeURIComponent). */
 function encodeRFC3986(s: string): string {
-  return encodeURIComponent(s).replace(/[!'()*]/g, c => '%' + c.charCodeAt(0).toString(16).toUpperCase());
+  return encodeURIComponent(s).replace(
+    /[!'()*]/g,
+    (c) => '%' + c.charCodeAt(0).toString(16).toUpperCase()
+  );
 }
 
 /** Trim trailing/leading whitespace and collapse inner newlines for signing. */

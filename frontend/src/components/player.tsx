@@ -121,15 +121,12 @@ export const Player = memo(function Player({
     setIsPlaying(!isPlaying);
   }, [isPlaying]);
 
-  const seek = useCallback(
-    (time: number) => {
-      const audio = audioRef.current;
-      if (!audio) return;
-      audio.currentTime = time;
-      setProgress(time);
-    },
-    []
-  );
+  const seek = useCallback((time: number) => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio.currentTime = time;
+    setProgress(time);
+  }, []);
 
   const skip = useCallback(
     (seconds: number) => {

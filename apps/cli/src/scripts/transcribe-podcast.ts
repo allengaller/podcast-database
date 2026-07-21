@@ -24,10 +24,7 @@ import ora from 'ora';
 import chalk from 'chalk';
 import { StorageService } from '@leetcast/core';
 import { TingwuService } from '@leetcast/core';
-import {
-  formatDuration,
-  toMarkdown,
-} from '@leetcast/core';
+import { formatDuration, toMarkdown } from '@leetcast/core';
 
 const execFileAsync = promisify(execFile);
 
@@ -57,7 +54,11 @@ function parseArgs(): Args {
   const title = get('--title');
   if (!url || !title) {
     console.error(chalk.red('Usage: transcribe --url <podcast-url> --title "<episode title>"'));
-    console.error(chalk.gray('Optional: --podcast <name> --hosts "A,B" --guests "X,Y" --tags "t1,t2" --hotwords "kw1,kw2" --chapter'));
+    console.error(
+      chalk.gray(
+        'Optional: --podcast <name> --hosts "A,B" --guests "X,Y" --tags "t1,t2" --hotwords "kw1,kw2" --chapter'
+      )
+    );
     process.exit(2);
   }
   return {
@@ -80,15 +81,22 @@ async function downloadWithYtDlp(url: string, outDir: string): Promise<string> {
   const spinner = ora(`Downloading audio with yt-dlp`).start();
   try {
     // yt-dlp picks the best audio-only format and writes to <outDir>/%(title)s.%(ext)s
-    await execFileAsync('yt-dlp', [
-      '--no-playlist',
-      '--no-mtime',
-      '-x', // extract audio
-      '--audio-format', 'm4a',
-      '--audio-quality', '0',
-      '-o', path.join(outDir, '%(title)s.%(ext)s'),
-      url,
-    ], { maxBuffer: 64 * 1024 * 1024 });
+    await execFileAsync(
+      'yt-dlp',
+      [
+        '--no-playlist',
+        '--no-mtime',
+        '-x', // extract audio
+        '--audio-format',
+        'm4a',
+        '--audio-quality',
+        '0',
+        '-o',
+        path.join(outDir, '%(title)s.%(ext)s'),
+        url,
+      ],
+      { maxBuffer: 64 * 1024 * 1024 }
+    );
   } catch (err) {
     spinner.fail(chalk.red('yt-dlp download failed'));
     throw err;
@@ -98,11 +106,11 @@ async function downloadWithYtDlp(url: string, outDir: string): Promise<string> {
   const entries = await fs.readdir(outDir);
   const candidates = await Promise.all(
     entries
-      .filter(f => /\.(m4a|mp3|wav|opus)$/i.test(f))
-      .map(async f => {
+      .filter((f) => /\.(m4a|mp3|wav|opus)$/i.test(f))
+      .map(async (f) => {
         const stat = await fs.stat(path.join(outDir, f));
         return { path: path.join(outDir, f), mtime: stat.mtimeMs };
-      }),
+      })
   );
   candidates.sort((a, b) => b.mtime - a.mtime);
   if (candidates.length === 0) {
@@ -134,7 +142,12 @@ async function submitTranscription(args: Args, audioUrl: string): Promise<string
       speakerDiarization: true,
       autoPunctuation: true,
       chapterDetection: args.chapter ?? false,
-      hotwords: args.hotwords ? args.hotwords.split(',').map(s => s.trim()).filter(Boolean) : undefined,
+      hotwords: args.hotwords
+        ? args.hotwords
+            .split(',')
+            .map((s) => s.trim())
+            .filter(Boolean)
+        : undefined,
     });
     spinner.succeed(chalk.green(`Submitted task: ${taskId}`));
     return taskId;
@@ -144,7 +157,9 @@ async function submitTranscription(args: Args, audioUrl: string): Promise<string
   }
 }
 
-async function waitForTranscription(taskId: string): Promise<ReturnType<typeof TingwuService.parseTranscription>> {
+async function waitForTranscription(
+  taskId: string
+): Promise<ReturnType<typeof TingwuService.parseTranscription>> {
   const spinner = ora('Waiting for 通义听悟 to finish').start();
   const start = Date.now();
   const status = await TingwuService.waitForCompletion(taskId, {
@@ -164,7 +179,11 @@ function buildFilename(title: string): string {
   return `${stamp}-${safe}.md`;
 }
 
-async function writeMarkdown(args: Args, result: ReturnType<typeof TingwuService.parseTranscription>, taskId: string): Promise<string> {
+async function writeMarkdown(
+  args: Args,
+  result: ReturnType<typeof TingwuService.parseTranscription>,
+  taskId: string
+): Promise<string> {
   const filename = buildFilename(args.title);
   const outPath = path.join(args.outDir!, filename);
   await fs.ensureDir(args.outDir!);
@@ -173,9 +192,24 @@ async function writeMarkdown(args: Args, result: ReturnType<typeof TingwuService
     title: args.title,
     podcast: args.podcast ?? 'Teahour',
     sourceUrl: args.url,
-    hosts: args.hosts ? args.hosts.split(',').map(s => s.trim()).filter(Boolean) : undefined,
-    guests: args.guests ? args.guests.split(',').map(s => s.trim()).filter(Boolean) : undefined,
-    tags: args.tags ? args.tags.split(',').map(s => s.trim()).filter(Boolean) : ['podcast', 'transcript'],
+    hosts: args.hosts
+      ? args.hosts
+          .split(',')
+          .map((s) => s.trim())
+          .filter(Boolean)
+      : undefined,
+    guests: args.guests
+      ? args.guests
+          .split(',')
+          .map((s) => s.trim())
+          .filter(Boolean)
+      : undefined,
+    tags: args.tags
+      ? args.tags
+          .split(',')
+          .map((s) => s.trim())
+          .filter(Boolean)
+      : ['podcast', 'transcript'],
     extraFrontmatter: { tingwu_task_id: taskId },
   });
 
@@ -201,7 +235,7 @@ async function main() {
   console.log(`  Output:  ${mdPath}`);
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error(chalk.red(`\n❌ ${err instanceof Error ? err.message : String(err)}`));
   if (err instanceof Error && err.stack) console.error(chalk.gray(err.stack));
   process.exit(1);

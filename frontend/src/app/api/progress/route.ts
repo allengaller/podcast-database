@@ -3,6 +3,7 @@ import { auth } from '@/auth';
 import { prisma } from '@leetcast/database';
 import { z } from 'zod';
 import { rateLimit } from '@/lib/rate-limit';
+import { reportError } from '@/lib/sentry';
 
 const ProgressBodySchema = z.object({
   podcastId: z.string().min(1),
@@ -41,48 +42,53 @@ export async function POST(req: NextRequest) {
 
   const { podcastId, progress, completed } = parsed.data;
 
-  const history = await prisma.playHistory.upsert({
-    where: {
-      userId_podcastId: {
-        userId: session.user.id,
-        podcastId,
-      },
-    },
-    update: {
-      progress,
-      completed,
-    },
-    create: {
-      userId: session.user.id,
-      podcastId,
-      progress,
-      completed,
-    },
-  });
-
-  // Check-in logic: if completed, ensure check-in for today
-  if (completed) {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    await prisma.checkIn.upsert({
+  try {
+    const history = await prisma.playHistory.upsert({
       where: {
-        userId_date: {
+        userId_podcastId: {
           userId: session.user.id,
-          date: today,
+          podcastId,
         },
       },
-      update: {},
+      update: {
+        progress,
+        completed,
+      },
       create: {
         userId: session.user.id,
-        date: today,
+        podcastId,
+        progress,
+        completed,
       },
     });
 
-    // Update streak
-    await updateStreak(session.user.id);
-  }
+    // Check-in logic: if completed, ensure check-in for today
+    if (completed) {
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      await prisma.checkIn.upsert({
+        where: {
+          userId_date: {
+            userId: session.user.id,
+            date: today,
+          },
+        },
+        update: {},
+        create: {
+          userId: session.user.id,
+          date: today,
+        },
+      });
 
-  return NextResponse.json(history);
+      // Update streak
+      await updateStreak(session.user.id);
+    }
+
+    return NextResponse.json(history);
+  } catch (error) {
+    reportError(error, { route: 'progress', podcastId, completed });
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
+  }
 }
 
 async function updateStreak(userId: string) {

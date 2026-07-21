@@ -37,9 +37,7 @@ export class ErrorBoundary extends Component<Props, State> {
         <div className="flex min-h-[200px] items-center justify-center rounded-xl border border-border/40 bg-muted/30 p-8 text-center">
           <div>
             <p className="text-lg font-semibold">出了点问题</p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              页面渲染出错，请刷新页面重试。
-            </p>
+            <p className="mt-2 text-sm text-muted-foreground">页面渲染出错，请刷新页面重试。</p>
             <button
               className="mt-4 rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700"
               onClick={() => this.setState({ hasError: false })}

@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-return */
+// The LeetCode GraphQL response shape is loosely typed by upstream; we treat
+// the wire payload as `any` here and rely on the call-site <T> to assert the
+// final shape. Narrowing every nested key would require duplicating the schema.
 import axios from 'axios';
 import { GraphQLResponse } from '../types/leetcode';
 import { retryWithBackoff, sleep } from '../utils/retry-utils';

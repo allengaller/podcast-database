@@ -48,9 +48,11 @@ jest.mock('fs-extra', () => ({
 }));
 
 jest.mock('child_process', () => ({
-  exec: jest.fn((_cmd: string, cb: (err: null, result: { stdout: string; stderr: string }) => void) => {
-    cb(null, { stdout: '5.0\n', stderr: '' });
-  }),
+  exec: jest.fn(
+    (_cmd: string, cb: (err: null, result: { stdout: string; stderr: string }) => void) => {
+      cb(null, { stdout: '5.0\n', stderr: '' });
+    }
+  ),
 }));
 
 const mockProblem: LeetCodeProblem = {
