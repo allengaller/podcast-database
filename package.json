@@ -24,7 +24,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.3",
     "prettier": "^3.5.2",
-    "turbo": "^2.9.3",
+    "turbo": "^2.10.5",
     "typescript": "^5.2.2"
   },
   "engines": {
