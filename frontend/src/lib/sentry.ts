@@ -18,3 +18,30 @@ export function reportMessage(message: string, level: 'info' | 'warning' | 'erro
   if (!isSentryEnabled()) return;
   Sentry.captureMessage(message, level);
 }
+
+/**
+ * Wrap an API route handler so each request gets a Sentry span named after
+ * the route. Errors propagate to the caller and are also reported to Sentry
+ * with the route as context. When Sentry is disabled this is a transparent
+ * no-op (besides propagating errors normally).
+ */
+export function withSentrySpan<T>(
+  name: string,
+  fn: () => Promise<T>,
+  context?: Record<string, unknown>
+): Promise<T> {
+  if (!isSentryEnabled()) {
+    return fn().catch((err) => {
+      reportError(err, { route: name, ...context });
+      throw err;
+    });
+  }
+  return Sentry.startSpan({ name, op: 'http.server' }, async () => {
+    try {
+      return await fn();
+    } catch (err) {
+      reportError(err, { route: name, ...context });
+      throw err;
+    }
+  });
+}

@@ -162,7 +162,9 @@ export const Player = memo(function Player({
           max={duration || 1}
           step={1}
           onValueChange={(v) => {
-            const val = Array.isArray(v) ? v[0] : v;
+            const val: number = Array.isArray(v)
+              ? ((v as readonly number[])[0] ?? 0)
+              : (v as number);
             seek(val);
           }}
           className="cursor-pointer"
@@ -214,7 +216,9 @@ export const Player = memo(function Player({
             max={100}
             step={1}
             onValueChange={(v) => {
-              const val = Array.isArray(v) ? v[0] : v;
+              const val: number = Array.isArray(v)
+                ? ((v as readonly number[])[0] ?? 0)
+                : (v as number);
               const vol = val / 100;
               setVolume(vol);
               if (audioRef.current) audioRef.current.volume = vol;

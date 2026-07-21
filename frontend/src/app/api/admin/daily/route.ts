@@ -5,7 +5,7 @@ import IORedis from 'ioredis';
 import { z } from 'zod';
 import { timingSafeEqual } from 'crypto';
 import { rateLimit } from '@/lib/rate-limit';
-import { reportError } from '@/lib/sentry';
+import { withSentrySpan } from '@/lib/sentry';
 
 const redis = new IORedis(process.env.REDIS_URL || 'redis://localhost:6379', {
   maxRetriesPerRequest: null,
@@ -28,38 +28,38 @@ function verifyAdminToken(token: string): boolean {
 }
 
 export async function POST(req: NextRequest) {
-  const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown';
-  const limit = rateLimit(`admin:${ip}`, { maxRequests: 5, windowMs: 60_000 });
-  if (!limit.allowed) {
-    return NextResponse.json(
-      { error: 'Too many requests' },
-      { status: 429, headers: { 'Retry-After': String(limit.retryAfter) } }
-    );
-  }
+  return withSentrySpan('POST /api/admin/daily', async () => {
+    const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || 'unknown';
+    const limit = rateLimit(`admin:${ip}`, { maxRequests: 5, windowMs: 60_000 });
+    if (!limit.allowed) {
+      return NextResponse.json(
+        { error: 'Too many requests' },
+        { status: 429, headers: { 'Retry-After': String(limit.retryAfter) } }
+      );
+    }
 
-  const token = req.headers.get('x-admin-token');
-  if (!token || !verifyAdminToken(token)) {
-    return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
-  }
+    const token = req.headers.get('x-admin-token');
+    if (!token || !verifyAdminToken(token)) {
+      return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
+    }
 
-  let body: unknown;
-  try {
-    body = await req.json();
-  } catch {
-    return NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 });
-  }
+    let body: unknown;
+    try {
+      body = await req.json();
+    } catch {
+      return NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 });
+    }
 
-  const parsed = AdminBodySchema.safeParse(body);
-  if (!parsed.success) {
-    return NextResponse.json(
-      { error: 'Validation failed', details: parsed.error.flatten() },
-      { status: 400 }
-    );
-  }
+    const parsed = AdminBodySchema.safeParse(body);
+    if (!parsed.success) {
+      return NextResponse.json(
+        { error: 'Validation failed', details: parsed.error.flatten() },
+        { status: 400 }
+      );
+    }
 
-  const { strategy, userId, problemId } = parsed.data;
+    const { strategy, userId, problemId } = parsed.data;
 
-  try {
     const selectedProblemId =
       problemId || (await StrategyEngine.selectDailyProblem(strategy as StrategyType, userId));
 
@@ -76,8 +76,5 @@ export async function POST(req: NextRequest) {
     });
 
     return NextResponse.json({ jobId: job.id, problemId: selectedProblemId });
-  } catch (error) {
-    reportError(error, { route: 'admin/daily', strategy, problemId });
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
-  }
+  });
 }

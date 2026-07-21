@@ -3,7 +3,7 @@ import { auth } from '@/auth';
 import { prisma } from '@leetcast/database';
 import { z } from 'zod';
 import { rateLimit } from '@/lib/rate-limit';
-import { reportError } from '@/lib/sentry';
+import { withSentrySpan } from '@/lib/sentry';
 
 const ProgressBodySchema = z.object({
   podcastId: z.string().min(1),
@@ -12,37 +12,37 @@ const ProgressBodySchema = z.object({
 });
 
 export async function POST(req: NextRequest) {
-  const session = await auth();
-  if (!session?.user?.id) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
-  }
+  return withSentrySpan('POST /api/progress', async () => {
+    const session = await auth();
+    if (!session?.user?.id) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
 
-  const limit = rateLimit(`progress:${session.user.id}`, { maxRequests: 30, windowMs: 60_000 });
-  if (!limit.allowed) {
-    return NextResponse.json(
-      { error: 'Too many requests' },
-      { status: 429, headers: { 'Retry-After': String(limit.retryAfter) } }
-    );
-  }
+    const limit = rateLimit(`progress:${session.user.id}`, { maxRequests: 30, windowMs: 60_000 });
+    if (!limit.allowed) {
+      return NextResponse.json(
+        { error: 'Too many requests' },
+        { status: 429, headers: { 'Retry-After': String(limit.retryAfter) } }
+      );
+    }
 
-  let body: unknown;
-  try {
-    body = await req.json();
-  } catch {
-    return NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 });
-  }
+    let body: unknown;
+    try {
+      body = await req.json();
+    } catch {
+      return NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 });
+    }
 
-  const parsed = ProgressBodySchema.safeParse(body);
-  if (!parsed.success) {
-    return NextResponse.json(
-      { error: 'Validation failed', details: parsed.error.flatten() },
-      { status: 400 }
-    );
-  }
+    const parsed = ProgressBodySchema.safeParse(body);
+    if (!parsed.success) {
+      return NextResponse.json(
+        { error: 'Validation failed', details: parsed.error.flatten() },
+        { status: 400 }
+      );
+    }
 
-  const { podcastId, progress, completed } = parsed.data;
+    const { podcastId, progress, completed } = parsed.data;
 
-  try {
     const history = await prisma.playHistory.upsert({
       where: {
         userId_podcastId: {
@@ -85,10 +85,7 @@ export async function POST(req: NextRequest) {
     }
 
     return NextResponse.json(history);
-  } catch (error) {
-    reportError(error, { route: 'progress', podcastId, completed });
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
-  }
+  });
 }
 
 async function updateStreak(userId: string) {

@@ -38,14 +38,16 @@ export default defineConfig({
     },
   ],
 
-  // Boot the Next dev server before tests if a URL isn't already running.
+  // Boot the Next production server before tests if a URL isn't already
+  // running. We use `next start` (not `next dev`) so route compilation does
+  // not race the first request — every page is precompiled at build time.
   webServer: process.env.SKIP_WEBSERVER
     ? undefined
     : {
-        command: 'pnpm dev',
+        command: 'pnpm start',
         url: process.env.BASE_URL || 'http://localhost:3000',
         reuseExistingServer: !process.env.CI,
-        timeout: 120_000,
+        timeout: 60_000,
         stdout: 'ignore',
         stderr: 'pipe',
       },

@@ -50,8 +50,17 @@ jobs:
         uses: codecov/codecov-action@v4
         if: matrix.node-version == '20.x'
         with:
-          files: ./coverage/lcov.info
-          fail_ci_if_error: false
+          files: ./packages/*/coverage/lcov.info,./apps/*/coverage/lcov.info
+          fail_ci_if_error: true
+          status:
+            project:
+              default:
+                target: 75%
+                threshold: 2%
+            patch:
+              default:
+                target: 75%
+          token: ${{ secrets.CODECOV_TOKEN }}
 
   e2e:
     name: Playwright E2E (smoke)

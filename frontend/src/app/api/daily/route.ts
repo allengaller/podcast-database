@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '@leetcast/database';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   const today = new Date();
   today.setHours(0, 0, 0, 0);

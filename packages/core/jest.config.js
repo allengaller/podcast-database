@@ -7,10 +7,13 @@ module.exports = {
   coverageDirectory: 'coverage',
   coverageThreshold: {
     global: {
-      branches: 50,
-      functions: 50,
-      lines: 50,
-      statements: 50,
+      // Tracked at 85% lines / 70% branches: matches current state of
+      // services/* + utils/*. The PodcastEngine has a few uncovered branches
+      // around fallback paths that we will close in a follow-up.
+      branches: 70,
+      functions: 95,
+      lines: 85,
+      statements: 85,
     },
   },
 };

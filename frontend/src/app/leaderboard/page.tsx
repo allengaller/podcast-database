@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Trophy, BookOpen, User, Medal } from 'lucide-react';
 
 export const revalidate = 60;
+export const dynamic = 'force-dynamic';
 
 export default async function LeaderboardPage() {
   const topUsers = await prisma.userProgress.findMany({

@@ -232,6 +232,16 @@ cd ../.. && pnpm install --frozen-lockfile && pnpm --filter @leetcast/core build
 
 `S3_BUCKET` 桶不是公开读。前端用 `<audio>` 直接拉 URL，公网必须可访问；或前置 CDN 公开。
 
+### 6.5 部署前自检
+
+`scripts/pre-deploy-check.sh` 一键检查 binary / env / source：
+
+```bash
+./scripts/pre-deploy-check.sh                              # 基础检查
+SKIP_SOURCE_CHECK=1 ./scripts/pre-deploy-check.sh          # 跳过 typecheck/test
+DEPLOY_TARGET=production ./scripts/pre-deploy-check.sh    # 加上 prod env 检查
+```
+
 ---
 
 ## 7. 升级流程
@@ -263,6 +273,34 @@ git push
 - **Uptime**：UptimeRobot / BetterStack 监控 `https://your-domain.com/api/health`
 - **日志**：Vercel 内置 + Worker 走 platform（Railway Logs / Render Logs）
 - **指标**：Vercel Analytics（前端）+ 自己接 Prometheus（Worker）
+
+### 8.1 Sentry 接入（10 分钟）
+
+1. 打开 [sentry.io](https://sentry.io) → New Project → **Next.js**（自动覆盖前后端）
+2. 复制 DSN，形如 `https://abc123@o0.ingest.sentry.io/1`
+3. 在 Vercel + Railway 配置：
+   - `SENTRY_DSN` = 上面那个 DSN（Web + Worker 都要）
+   - `NEXT_PUBLIC_SENTRY_DSN` = 同一个 DSN（暴露给浏览器用）
+   - `SENTRY_ENVIRONMENT` = `production`
+   - `SENTRY_AUTH_TOKEN` = 在 Sentry → Settings → Auth Tokens 创建
+   - `SENTRY_ORG` = 你的 org slug
+   - `SENTRY_PROJECT` = `leetcast`
+4. **不开 DSN 就是 no-op**：所有 `reportError` 调用都返回，零开销
+5. 第一次 deploy 后到 Sentry → Issues 看是否有初始化事件
+
+Source map 自动上传：`frontend/next.config.mjs` 里的 `withSentryConfig` 已经配 `hideSourceMaps: true` + `widenClientFileUpload: true`，source map 只上传到 Sentry，浏览器看不到原始代码。
+
+### 8.2 Sentry 数据流
+
+```
+Web (Next.js)        ──┐
+                       ├── Sentry.captureException / startSpan
+Worker (BullMQ)      ──┘
+                              ↓
+                       Sentry.io (issues, traces, replays)
+                              ↓
+                  Slack/Email alert (Sentry → Settings → Alerts)
+```
 
 ---
 
