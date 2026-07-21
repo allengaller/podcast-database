@@ -1,10 +1,15 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+// We previously used `next/font/google` to self-host Inter, but the
+// build-time fetch fails in sandboxed CI environments without outbound
+// network. Tailwind's `font-sans` already resolves to a system stack
+// (`ui-sans-serif, system-ui, ...`), so the visual result is similar.
+// Set NEXT_USE_NEXT_FONT=1 in environments that can reach Google Fonts
+// to opt back into self-hosted Inter (then re-add the import here).
+const fontClass = '';
 
 export const metadata: Metadata = {
   title: 'LeetCast - 每日一题播客',
@@ -31,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN" className={cn('dark', inter.variable)} suppressHydrationWarning>
+    <html lang="zh-CN" className={cn('dark', fontClass)} suppressHydrationWarning>
       <body className="min-h-screen bg-background text-foreground antialiased font-sans">
         <TooltipProvider>{children}</TooltipProvider>
       </body>

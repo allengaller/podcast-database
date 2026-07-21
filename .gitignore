@@ -78,3 +78,5 @@ data/
 worker.log
 
 frontend/test-results
+frontend/.next
+test-results/

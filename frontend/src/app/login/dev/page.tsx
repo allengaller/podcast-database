@@ -3,26 +3,26 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { headers } from 'next/headers';
 import { notFound } from 'next/navigation';
 
 /**
- * Dev-only login page. The route is mounted at /login/dev but the
- * Credentials provider only exists when NODE_ENV !== 'production', so this
- * page intentionally returns 404 in production builds (see
- * src/app/login/dev/not-found.tsx for the matching response shape).
+ * Dev-only login page. The route is mounted at /login/dev but is gated
+ * behind `LEETCAST_ENABLE_DEV_LOGIN=1` so it 404s by default in production.
+ * The Credentials provider in `src/auth.ts` is independently gated behind
+ * `NODE_ENV !== 'production'`, so even if this page is reachable, the
+ * underlying provider is missing in prod and NextAuth will reject the
+ * sign-in attempt.
  */
-export default async function DevLoginPage() {
-  if (process.env.NODE_ENV === 'production') {
+export default function DevLoginPage() {
+  if (process.env.LEETCAST_ENABLE_DEV_LOGIN !== '1') {
     notFound();
   }
-  void headers(); // ensure this is a server component (no static prerender)
   return (
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-950 via-slate-950 to-slate-950 p-4">
       <Card className="w-full max-w-sm border-border/40 bg-card/80 backdrop-blur">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl">Dev Login (E2E only)</CardTitle>
-          <CardDescription>仅在 NODE_ENV !== production 下可用</CardDescription>
+          <CardDescription>仅在 LEETCAST_ENABLE_DEV_LOGIN=1 时可用</CardDescription>
         </CardHeader>
         <CardContent>
           <form

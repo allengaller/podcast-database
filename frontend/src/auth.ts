@@ -4,7 +4,11 @@ import Credentials from 'next-auth/providers/credentials';
 import { PrismaAdapter } from '@auth/prisma-adapter';
 import { prisma } from '@leetcast/database';
 
-const isDev = process.env.NODE_ENV !== 'production';
+// The dev/E2E providers are gated behind a single explicit flag rather
+// than NODE_ENV so the deployment target is unambiguous: prod never has
+// the dev provider unless LEETCAST_ENABLE_DEV_LOGIN=1 is set, and the
+// same flag toggles the /login/dev page in lock-step.
+const enableDevLogin = process.env.LEETCAST_ENABLE_DEV_LOGIN === '1';
 const hasDatabase = Boolean(process.env.DATABASE_URL);
 
 /**
@@ -15,7 +19,7 @@ const hasDatabase = Boolean(process.env.DATABASE_URL);
  * It is gated behind `NODE_ENV !== 'production'` so it is impossible to
  * reach in a deployed environment, even by accident.
  */
-const devProviders = isDev
+const devProviders = enableDevLogin
   ? [
       Credentials({
         id: 'dev',
