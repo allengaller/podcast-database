@@ -26,11 +26,16 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
 # Testing
 coverage
 .nyc_output
 *.lcov
+test-results/
+playwright-report/
+frontend/test-results
+frontend/playwright-report
 
 # IDE
 .vscode
@@ -76,7 +81,3 @@ data/
 
 # Worker logs
 worker.log
-
-frontend/test-results
-frontend/.next
-test-results/

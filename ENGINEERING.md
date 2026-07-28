@@ -70,7 +70,7 @@ leetcast/
 - 添加 engines 字段指定 Node.js 版本要求
 - 配置 lint-staged 自动修复代码
 
-**文件**: [package.json](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/package.json)
+**文件**: [package.json](./package.json)
 
 ---
 
@@ -78,7 +78,7 @@ leetcast/
 
 #### ESLint 配置
 
-**文件**: [.eslintrc.json](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.eslintrc.json)
+**文件**: [.eslintrc.json](./.eslintrc.json)
 
 **特性**:
 
@@ -90,7 +90,7 @@ leetcast/
 
 #### Prettier 配置
 
-**文件**: [.prettierrc](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.prettierrc)
+**文件**: [.prettierrc](./.prettierrc)
 
 **规则**:
 
@@ -100,7 +100,7 @@ leetcast/
 - 缩进 2 空格
 - 尾随逗号 ES5
 
-**文件**: [.prettierignore](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.prettierignore)
+**文件**: [.prettierignore](./.prettierignore)
 
 ---
 
@@ -108,11 +108,11 @@ leetcast/
 
 #### Husky 配置
 
-**文件**: [.husky/pre-commit](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.husky/pre-commit)
+**文件**: [.husky/pre-commit](./.husky/pre-commit)
 
 提交前自动运行 lint 检查
 
-**文件**: [.husky/pre-push](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.husky/pre-push)
+**文件**: [.husky/pre-push](./.husky/pre-push)
 
 推送前自动运行类型检查
 
@@ -126,18 +126,24 @@ leetcast/
 
 #### Jest 配置
 
-**文件**: [jest.config.js](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/jest.config.js)
+工程化早期在仓库根有单一的 `jest.config.js`。项目迁移到 pnpm Workspace + Turborepo 后，Jest 配置下沉到每个子包：
+
+- [apps/cli/jest.config.js](./apps/cli/jest.config.js)
+- [apps/worker/jest.config.js](./apps/worker/jest.config.js)
+- [packages/core/jest.config.js](./packages/core/jest.config.js)
+- [packages/database/jest.config.js](./packages/database/jest.config.js)
 
 **特性**:
 
 - TypeScript 支持 (ts-jest)
 - 覆盖率报告生成
-- 覆盖率阈值设置（50%）
+- 覆盖率阈值（CI 端 75%，Codecov 校验）
 - 自动 mock 清理
+- 由根 `pnpm test` 经 Turborepo 并行调度
 
 #### 测试用例
 
-创建了以下测试文件：
+最早一批测试文件（随后已迁移到 `apps/cli/src/__tests__/`）：
 
 1. **leetcode.test.ts** - LeetCode 服务测试
    - 测试题目获取
@@ -153,13 +159,15 @@ leetcast/
    - 测试失败重试
    - 测试最大重试次数
 
-**目录**: [src/**tests**/](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/src/__tests__/)
+W1 hardening（commit `1ea322a`）补齐 36 个新测试，覆盖 MCP、PodcastEngine、HTML 工具、TranscriptFormatter、选题策略、Worker Job 等核心模块。
+
+**目录**: [apps/cli/src/**tests**/](./apps/cli/src/__tests__/) · [packages/core/src/__tests__/](./packages/core/src/__tests__/) · [packages/database/src/__tests__/](./packages/database/src/__tests__/) · [apps/worker/src/__tests__/](./apps/worker/src/__tests__/)
 
 ---
 
 ### ✅ 5. 许可证
 
-**文件**: [LICENSE](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/LICENSE)
+**文件**: [LICENSE](./LICENSE)
 
 采用 MIT 许可证，允许商业使用和修改
 
@@ -167,7 +175,7 @@ leetcast/
 
 ### ✅ 6. .gitignore 完善
 
-**文件**: [.gitignore](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.gitignore)
+**文件**: [.gitignore](./.gitignore)
 
 **新增忽略项**:
 
@@ -186,7 +194,7 @@ leetcast/
 
 #### EditorConfig
 
-**文件**: [.editorconfig](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.editorconfig)
+**文件**: [.editorconfig](./.editorconfig)
 
 统一编辑器配置：
 
@@ -197,22 +205,20 @@ leetcast/
 
 #### VS Code 配置
 
-**文件**: [.vscode/settings.json](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.vscode/settings.json)
+> ⚠️ Monorepo 化后 `.vscode/` 不再入库（参见 `.gitignore` 的 `.vscode` 行），改由各贡献者按需在本地创建。
 
-- 保存时自动格式化
+如果需要恢复以下配置，可以放到 `.vscode/settings.json`（本地、不提交）：
+
+- 保存时自动格式化（Prettier）
 - ESLint 自动修复
-- TypeScript 版本指定
+- TypeScript 版本指定（建议 5.6.x 与 `package.json` 的 devDependencies 对齐）
 - 文件排除规则
 
-**文件**: [.vscode/launch.json](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.vscode/launch.json)
+调试配置（建议放进 `.vscode/launch.json`）：
 
-调试配置：
-
-- CLI 调试
+- CLI 调试（`pnpm --filter @leetcast/cli dev`）
 - MCP Server 调试
-- Jest 测试调试
-
-**文件**: [.vscode/extensions.json](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.vscode/extensions.json)
+- Jest 测试调试（指向具体子包的 jest.config.js）
 
 推荐扩展：
 
@@ -221,6 +227,7 @@ leetcast/
 - EditorConfig
 - TypeScript Nightly
 - Jest
+- Playwright Test（用于 `frontend/e2e`）
 
 ---
 
@@ -228,7 +235,7 @@ leetcast/
 
 #### GitHub Actions - CI
 
-**文件**: [.github/workflows/ci.yml](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.github/workflows/ci.yml)
+**文件**: [.github/workflows/ci.yml](./.github/workflows/ci.yml)
 
 **触发条件**: push 和 PR 到 main/develop 分支
 
@@ -248,7 +255,7 @@ leetcast/
 
 #### GitHub Actions - Release
 
-**文件**: [.github/workflows/release.yml](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.github/workflows/release.yml)
+**文件**: [.github/workflows/release.yml](./.github/workflows/release.yml)
 
 **触发条件**: Release 创建时
 
@@ -263,7 +270,7 @@ leetcast/
 
 #### Dependabot
 
-**文件**: [.github/dependabot.yml](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.github/dependabot.yml)
+**文件**: [.github/dependabot.yml](./.github/dependabot.yml)
 
 **配置**:
 
@@ -274,7 +281,7 @@ leetcast/
 
 #### 安全策略
 
-**文件**: [SECURITY.md](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/SECURITY.md)
+**文件**: [SECURITY.md](./SECURITY.md)
 
 **内容**:
 
@@ -289,7 +296,7 @@ leetcast/
 
 #### 贡献指南
 
-**文件**: [CONTRIBUTING.md](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/CONTRIBUTING.md)
+**文件**: [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 **内容**:
 
@@ -305,7 +312,7 @@ leetcast/
 
 #### 变更日志
 
-**文件**: [CHANGELOG.md](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/CHANGELOG.md)
+**文件**: [CHANGELOG.md](./CHANGELOG.md)
 
 遵循 [Keep a Changelog](https://keepachangelog.com/) 格式
 
@@ -319,7 +326,7 @@ leetcast/
 
 ### ✅ 11. TypeScript 配置增强
 
-**文件**: [tsconfig.json](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/tsconfig.json)
+**文件**: [tsconfig.json](./tsconfig.json)
 
 **新增配置**:
 
@@ -344,7 +351,7 @@ leetcast/
 
 #### Dockerfile
 
-**文件**: [Dockerfile](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/Dockerfile)
+**文件**: [Dockerfile](./Dockerfile)
 
 **多阶段构建**:
 
@@ -359,7 +366,7 @@ leetcast/
 
 #### Docker Compose
 
-**文件**: [docker-compose.yml](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/docker-compose.yml)
+**文件**: [docker-compose.yml](./docker-compose.yml)
 
 **配置**:
 
@@ -369,7 +376,7 @@ leetcast/
 
 #### .dockerignore
 
-**文件**: [.dockerignore](file:///Users/allengaller/Documents/GitHub/standup-coder/leetcast/.dockerignore)
+**文件**: [.dockerignore](./.dockerignore)
 
 排除不必要的文件，减小镜像体积
 
