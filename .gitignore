@@ -43,6 +43,7 @@ frontend/playwright-report
 *.swp
 *.swo
 *~
+.qoder
 
 # OS
 .DS_Store
