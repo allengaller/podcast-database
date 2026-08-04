@@ -13,7 +13,8 @@ podcasts/
 ├── README.md          ← 本文件
 ├── _template.md       ← 标准档模板(每档播客一个 Markdown,照此填写)
 ├── zh/                ← 中文播客
-│   ├── tech/          科技 / AI          (10 档)
+│   ├── ai/            AI / 大模型          (4 档)
+│   ├── tech/          科技 / 互联网         (10 档)
 │   ├── business/      商业 / 创业         (8 档)
 │   ├── finance/       财经 / 投资          (2 档)
 │   ├── culture/       文化 / 人文          (7 档)
@@ -21,11 +22,12 @@ podcasts/
 │   ├── life/          生活 / 喜剧 / 自我成长 (9 档)
 │   └── story/         罪案 / 悬疑 / 历史     (6 档)
 └── en/                ← 英文 / 国际播客
+    ├── ai/            AI / 大模型          (11 档)
     ├── tech/          科技 / 风投          (14 档)
     ├── business/      商业 / 创业          (8 档)
     ├── news/          新闻 / 时政          (9 档)
     ├── science/       科学 / 科普          (7 档)
-    ├── culture/       文化 / 访谈          (7 档)
+    ├── culture/       文化 / 访谈          (8 档)
     ├── comedy/        喜剧 / 娱乐          (9 档)
     ├── true-crime/    真实犯罪            (6 档)
     ├── history/       历史               (6 档)
