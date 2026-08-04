@@ -13,20 +13,27 @@ podcasts/
 ├── README.md          ← 本文件
 ├── _template.md       ← 标准档模板(每档播客一个 Markdown,照此填写)
 ├── zh/                ← 中文播客
-│   ├── tech/          科技 / AI
-│   ├── business/      商业 / 创业
-│   ├── finance/       财经 / 投资
-│   ├── culture/       文化 / 人文
-│   ├── news/          新闻 / 时政
-│   └── life/          生活 / 喜剧
+│   ├── tech/          科技 / AI          (10 档)
+│   ├── business/      商业 / 创业         (8 档)
+│   ├── finance/       财经 / 投资          (2 档)
+│   ├── culture/       文化 / 人文          (7 档)
+│   ├── news/          新闻 / 时政          (2 档)
+│   ├── life/          生活 / 喜剧 / 自我成长 (9 档)
+│   └── story/         罪案 / 悬疑 / 历史     (6 档)
 └── en/                ← 英文 / 国际播客
-    ├── tech/          科技 / 风投
-    ├── business/      商业 / 创业
-    ├── news/          新闻 / 时政
-    ├── science/       科学 / 科普
-    ├── culture/       文化 / 访谈
-    └── comedy/        喜剧 / 娱乐
+    ├── tech/          科技 / 风投          (14 档)
+    ├── business/      商业 / 创业          (8 档)
+    ├── news/          新闻 / 时政          (9 档)
+    ├── science/       科学 / 科普          (7 档)
+    ├── culture/       文化 / 访谈          (7 档)
+    ├── comedy/        喜剧 / 娱乐          (9 档)
+    ├── true-crime/    真实犯罪            (6 档)
+    ├── history/       历史               (6 档)
+    ├── education/     教育 / 知识          (4 档)
+    └── health/        健康 / 健身          (3 档)
 ```
+
+> 目录后数字为当前档数(截至 2026-08-03)。每个分类含「已收录(full)」和「待收录(stub,`status: todo`)」两类,详见下方「编写原则」与「当前进度」。
 
 **一条规则:一个播客一个 Markdown 文件。** 文件名用英文 slug(如 `acquired.md`、`keji-zao-zhidao.md`),放在对应语言 + 赛道的目录下。跨赛道的节目按**主赛道**归类,在 frontmatter `tags` 里补次要标签。
 
@@ -40,7 +47,7 @@ podcasts/
 | `slug` | ✅ | 英文小写连字符 slug,与文件名一致 |
 | `language` | ✅ | `zh` / `en` |
 | `category` | ✅ | 与所在目录的赛道一致 |
-| `status` | ✅ | `active`(在更)/ `ended`(完结)/ `hiatus`(暂停) |
+| `status` | ✅ | `active`(在更)/ `ended`(完结)/ `hiatus`(暂停)/ `todo`(仅占位 stub,细节待核实) |
 | `network` | ✅ | 出品方 / 播客网络(独立出品写"独立") |
 | `hosts` | ✅ | 主播数组,可附身份简注 |
 | `platforms` | ✅ | 分发平台(Apple / Spotify / 小宇宙 / YouTube 等) |
@@ -56,14 +63,14 @@ podcasts/
 3. **不确定的留 `TODO`** —— 具体订阅数、最新单集、精确 RSS URL、近期排名这类易变 / 难核实信息,标 `TODO` 而非编造。每篇末尾的「资料来源 / 待核」区块汇总待核实项。
 4. **代表单集选能体现节目风格的** —— 不必追最新,优先选知名度高、能代表节目定位的。
 5. **保持中立** —— 描述定位与影响力,不做营销口吻。
+6. **Stub 条目** —— 对于知名度高但当前尚未核实细节的节目,**先建 stub 文件占位**:`status: todo`,frontmatter 仅填 `title`/`slug`/`language`/`category`/`status: todo`,正文写"待收录,欢迎补充"。已收录(`status` 非 `todo`)的条目视为已核实。**绝不为了凑数而编造主播、出品方或代表单集。**
 
 ## 当前进度
 
-- **批次 1(2026-08-03)**:中英文共 ~40 档头部播客,覆盖各主赛道。详见各目录。
-- **后续路线**:按同一模板持续扩充——
-  - 中文:补齐财经(如《面基》《投资人》)、历史、犯罪等垂类。
-  - 英文:补齐 true-crime(`Serial`、`Crime Junkies`)、history(`Dan Carlin's Hardcore History`)、education、kids 等。
-  - 长尾:小众精品、独立播客、地域性节目。
+- **批次 1(2026-08-03)**:中英文共 **41 档**已收录(full)头部播客,每档完整字段。
+- **批次 2(2026-08-03)**:遍历各分类扩充 + 新增垂类——中文新增 `story/`(罪案/历史),英文新增 `true-crime/`、`history/`、`education/`、`health/`。共补 **77 档 stub**(`status: todo`,仅占位、细节待核实,欢迎补充)。
+- **当前合计**:**117 档**(中文 44 + 英文 73)。各分类档数见上方「目录结构」。
+- **后续路线**:持续把 stub 升级为 full 条目(逐档核实主播/出品/形式/代表单集),并继续补长尾与小众精品。
 
 ## 贡献方式
 

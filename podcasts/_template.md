@@ -3,7 +3,7 @@ title: "播客名称（中英文原标题）"
 slug: english-slug-lowercase-hyphenated
 language: zh | en
 category: tech | business | finance | culture | news | science | life | comedy
-status: active | ended | hiatus
+status: active | ended | hiatus | todo   # todo = 仅占位,细节待核实(见 README「Stub 条目」)
 network: "出品方 / 播客网络（如 JustPod / Wondery / 独立出品）"
 hosts:
   - "主播一（身份简注，可选）"
