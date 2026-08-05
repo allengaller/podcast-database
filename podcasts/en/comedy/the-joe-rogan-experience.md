@@ -14,7 +14,7 @@ rss: "private (Spotify exclusive feed)"
 subscribe_links:
   spotify: "TODO"
 added_date: 2026-08-03
-updated_date: 2026-08-03
+updated_date: 2026-08-05
 tags:
   - longform-interview
   - comedy
@@ -56,7 +56,14 @@ Mass, broad audience — far beyond typical podcast listeners; skews male and is
 - Business model: exclusive Spotify deal + sponsorships.
 - Note: frequently controversial; episodes have sparked misinformation / platform-policy debates.
 
+## 2026 update (Forbes 最高收入榜)
+
+- **Forbes 2026 收入榜首**:年入 **$82M** (#1),统计周期 2025-06 ~ 2026-06,稳居全球收入最高播客主持人。
+- **2024 Spotify 续约**:新签 3 年合约,总价值最高达 **$250M**(以最低保底 + 分成模式)。
+- **量级**:每月更新约 15 期,下载/播放量合计超 **8000 万次**。
+- **2024 美国大选**:公开表态支持 Donald Trump,引发广泛讨论,也让播客行业整体影响力被重新评估。
+
 ## Sources / TODOs
 
-- Info from the show and public reporting.
+- Info from the show, public reporting, and Forbes 2026-07-30 榜单(福布斯中国独家翻译稿)。
 - `rss`: private (Spotify-exclusive feed); `subscribe_links.spotify`: TODO.

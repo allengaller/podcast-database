@@ -97,8 +97,38 @@ podcasts/
     - `Robot Brains Podcast`(Pieter Abbeel / UC Berkeley)——英文 AI + 机器人深度访谈天花板,ACM Prize in Computing 2021 得主主持
   - **本批次总档数**:AI 类从 29 档 → 31 档(中文 13 不变,英文 16 → 18)
   - **淘汰候选**:Acquired AI 特别篇(商业播客,非 AI 分类)/ Hardcore History 科技专题(历史播客,非 AI 分类)——不归 AI 分类
-- **当前合计**:**133 档**(中文 53 + 英文 80),其中深档 full **68 档**、stub **65 档**。各分类档数见上方「目录结构」。
-- **后续路线**:① 继续把高优先级 stub 升级为深档 full(例如 `AI 大爆炸`、其他英文 tech/business/news 类的 stub);② 跨类目研究 AI / 科技 / 商业之间的节目迁移(可考虑将「Acquired」放入英文 business 分类、「Hardcore History」放入英文 history 分类);③ 继续延展"中英头部播客全档覆盖"目标。
+- **批次 7(2026-08-05)**:**AI 类收官 + 跨入 en/business 头批**。AI 类仅剩的 1 档 stub 升级为深档,同时把 en/business 全 stub 类目一次性升级头牌 5 档。
+  - 升级 / 抓取 6 档(净增 0 档):
+    - `AI BigBang 大爆炸`(zh/ai 唯一 stub → 深档 66 行)
+    - `How I Built This with Guy Raz`(en/business 单薄版 → 深档,2016-09 NPR / Wondery 上线)
+    - `Masters of Scale with Reid Hoffman`(en/business 单薄版 → 深档,2017 WaitWhat / LinkedIn 上线)
+    - `Indie Hackers`(en/business 纯 stub → 深档,Courtland & Channing Allen)
+    - `a16z Podcast`(en/business 单薄版 → 深档,Sonal Chokshi 主编,5+ feed 网络)
+    - `SaaStr Podcast`(en/business 纯 stub → 深档,Jason Lemkin 主理 + SaaStr Annual / SaaStr AI London 矩阵)
+  - **本批次总档数**:**总档数不变**(zh/ai 13 档全部升级为深档,en/business 8 档中 5 档升级为深档,剩 3 档 stub:`b2b-growth` / `founder-s-journal` / `office-hours-with-patrick-o-shaughnessy`)。**深档 +6,stub -6**
+  - **en/business 类目进度**:8 档中 5 档(How I Built This / Masters of Scale / a16z Podcast / Indie Hackers / SaaStr)升级为深档,3 档 stub 待办:`b2b-growth` / `founder-s-journal` / `office-hours-with-patrick-o-shaughnessy`
+  - **AI 类里程碑**:`zh/ai` 13 档全部为深档,`en/ai` 18 档全部为深档,合计 AI 类 31 档全深档,AI 类整体收官
+- **当前合计**:**165 档**(中文 63 + 英文 102),其中深档 full **79 档**、stub **86 档**。各分类档数见上方「目录结构」。
+- **每日 cron 推荐(2026-08-05 启动)**:系统 cron 任务(描述:"本机 `/Document/Github/allengaller/podcast-database` 全面获取最新全网的各类热门播客")每日触发,**输出在 [`../recommendations/`](../recommendations/)**——只放短索引 `YYYY-MM-DD.md`,不重复造档。**工作流要求见 [`../recommendations/README.md`](../recommendations/README.md)「融合安置」原则:推荐对象已是 deep 档 → 不建新档;有 2026 年新事实 → 回写 `podcasts/<lang>/<category>/<slug>.md` 原档并推进 `updated_date`;真正新档 → 先建 stub 占位。**当日无新增事实时,仅生成短索引,**不强行回写**。首份索引 [`../recommendations/2026-08-05.md`](../recommendations/2026-08-05.md) 精选 14 档(全为 deep 档,无新增事实 → 原档未触动)。
+- **批次 8(2026-08-05 cron)**:Forbes 2026-07-30「收入最高播客主持人」榜单 + 2026 学术研究双重验证,共触动 20 档:
+  - **回写 4 档 active 深档** Forbes 2026 收入数据(推进 `updated_date` 到 2026-08-05):
+    - `The Joe Rogan Experience`(en/comedy) — Forbes 2026 #1, **$82M**
+    - `SmartLess`(en/comedy) — Forbes 2026 #5, **$37M**
+    - `The Diary of a CEO`(en/culture) — Forbes 2026 #3, **$45M**
+    - `Huberman Lab`(en/science) — Forbes 2026 #18, **$18M**
+  - **升级 5 档 stub → 深档**(填完整字段 + 加 Forbes 数据):
+    - `The Bill Simmons Podcast`(en/comedy) — Forbes 2026 #13, **$22M**
+    - `Armchair Expert`(en/culture) — Forbes 2026 #11, **$25M**
+    - `On Purpose with Jay Shetty`(en/culture) — Forbes 2026 #14, **$21M**
+    - `Pod Save America`(en/news) — Forbes 2026 #9, **$28M**
+    - `Crime Junkie`(en/true-crime) — Forbes 2026 #4, **$42M**
+  - **建 10 档新 stub**(Forbes 2026 收入榜上语料库无的):
+    - en/business:`TBPN`(OpenAI 2026-04 以 $150M 收购)、`The Prof G Pod`(Vox Media 续约 7:3 分成)
+    - en/culture:`The Mel Robbins Podcast`、`Call Her Daddy`、`The Breakfast Club`、`The Joe Budden Podcast`、`Giggly Squad`
+    - en/news:`New Heights`、`Pardon My Take`、`The Tucker Carlson Show`
+  - **建 6 档新 stub**(2026 学术研究《新闻世界》2025-10 点名的中文书业头部):`看理想圆桌` / `没理想编辑部` / `跳岛FM` / `螺丝在拧紧` / `读库立体声` / `Talk三联`(全部归 zh/culture)
+  - **本批次净增 16 档**(10 英文 Forbes + 6 中文书业,5 档 stub 升级为深档)。**深档 +5(74→79),stub +11(75→86),总档数 +16(149→165)**
+- **后续路线**:① 继续把高优先级 stub 升级为深档 full(en/business 剩 3 档 + 大量 en/tech / en/news / en/comedy / en/culture / en/education / en/health / en/history / en/true-crime 等);② 跨类目研究 AI / 科技 / 商业之间的节目迁移(可考虑将「Acquired」放入英文 business 分类、「Hardcore History」放入英文 history 分类);③ 继续延展"中英头部播客全档覆盖"目标;④ AI 类已收官(zh/ai 13 + en/ai 18 全深档),后续 AI 类仅做字段更新与小型 stub 收尾;⑤ **每日 cron 索引**作为常态化资产持续累积,索引文件按 `YYYY-MM-DD.md` 命名,内容与 `recommendations/README.md` 工作流保持一致;⑥ 批次 8 新增的 16 档 stub 等下一批次(8-06 cron)起按优先级升级为深档(TBPN / On Purpose / New Heights 优先,中文书业 6 档第二批)。
 
 ## 贡献方式
 
