@@ -8,34 +8,38 @@
 
 ## 目录结构
 
-```
+```text
+<!-- corpus:begin:tree -->
 podcasts/
-├── README.md          ← 本文件
-├── _template.md       ← 标准档模板(每档播客一个 Markdown,照此填写)
+├── README.md          ← 结构 / 字段 / 原则(本文件)
+├── _template.md       ← 标准档模板
+├── INDEX.md           ← 总索引(自动生成)
 ├── zh/                ← 中文播客
-│   ├── ai/            AI / 大模型          (13 档)
-│   ├── tech/          科技 / 互联网         (10 档)
-│   ├── business/      商业 / 创业         (8 档)
-│   ├── finance/       财经 / 投资          (2 档)
-│   ├── culture/       文化 / 人文          (7 档)
-│   ├── news/          新闻 / 时政          (2 档)
-│   ├── life/          生活 / 喜剧 / 自我成长 (9 档)
-│   └── story/         罪案 / 悬疑 / 历史     (6 档)
+│   ├── ai/            AI / 大模型      (12 档 · 深档 12)
+│   ├── business/      商业 / 创业       (9 档 · 深档 3)
+│   ├── comedy/        喜剧 / 脱口秀      (1 档 · 深档 0)
+│   ├── culture/       文化 / 人文       (18 档 · 深档 11)
+│   ├── finance/       财经 / 投资       (2 档 · 深档 1)
+│   ├── life/          生活 / 自我成长     (9 档 · 深档 5)
+│   ├── news/          新闻 / 时政       (4 档 · 深档 0)
+│   ├── story/         罪案 / 悬疑 / 历史  (6 档 · 深档 0)
+│   ├── tech/          科技 / 互联网      (12 档 · 深档 5)
 └── en/                ← 英文 / 国际播客
-    ├── ai/            AI / 大模型          (18 档)
-    ├── tech/          科技 / 风投          (14 档)
-    ├── business/      商业 / 创业          (8 档)
-    ├── news/          新闻 / 时政          (9 档)
-    ├── science/       科学 / 科普          (7 档)
-    ├── culture/       文化 / 访谈          (8 档)
-    ├── comedy/        喜剧 / 娱乐          (9 档)
-    ├── true-crime/    真实犯罪            (6 档)
-    ├── history/       历史               (6 档)
-    ├── education/     教育 / 知识          (4 档)
-    └── health/        健康 / 健身          (3 档)
+    ├── ai/            AI / 大模型      (20 档 · 深档 18)
+    ├── business/      商业 / 创业       (14 档 · 深档 7)
+    ├── comedy/        喜剧 / 娱乐       (10 档 · 深档 4)
+    ├── culture/       文化 / 访谈       (15 档 · 深档 10)
+    ├── education/     教育 / 知识       (4 档 · 深档 0)
+    ├── health/        健康 / 健身       (3 档 · 深档 0)
+    ├── history/       历史            (6 档 · 深档 0)
+    ├── news/          新闻 / 时政       (14 档 · 深档 7)
+    ├── science/       科学 / 科普       (7 档 · 深档 3)
+    ├── tech/          科技 / 风投       (14 档 · 深档 5)
+    └── true-crime/    真实犯罪          (6 档 · 深档 1)
+<!-- corpus:end:tree -->
 ```
 
-> 目录后数字为当前档数(截至 2026-08-03)。每个分类含「已收录(full)」和「待收录(stub,`status: todo`)」两类,详见下方「编写原则」与「当前进度」。
+> 目录树与各分类档数(含深档数)由 `scripts/stats.py` 自动生成,勿手改。每个分类含「已收录(deep,`status: active/ended/hiatus`)」和「待收录(stub,`status: todo`)」两类,详见下方「编写原则」与「当前进度」。
 
 **一条规则:一个播客一个 Markdown 文件。** 文件名用英文 slug(如 `acquired.md`、`keji-zao-zhidao.md`),放在对应语言 + 赛道的目录下。跨赛道的节目按**主赛道**归类,在 frontmatter `tags` 里补次要标签。
 
@@ -108,8 +112,10 @@ podcasts/
   - **本批次总档数**:**总档数不变**(zh/ai 13 档全部升级为深档,en/business 8 档中 5 档升级为深档,剩 3 档 stub:`b2b-growth` / `founder-s-journal` / `office-hours-with-patrick-o-shaughnessy`)。**深档 +6,stub -6**
   - **en/business 类目进度**:8 档中 5 档(How I Built This / Masters of Scale / a16z Podcast / Indie Hackers / SaaStr)升级为深档,3 档 stub 待办:`b2b-growth` / `founder-s-journal` / `office-hours-with-patrick-o-shaughnessy`
   - **AI 类里程碑**:`zh/ai` 13 档全部为深档,`en/ai` 18 档全部为深档,合计 AI 类 31 档全深档,AI 类整体收官
-- **当前合计**:**165 档**(中文 63 + 英文 102),其中深档 full **79 档**、stub **86 档**。各分类档数见上方「目录结构」。
-- **每日 cron 推荐(2026-08-05 启动)**:系统 cron 任务(描述:"本机 `/Document/Github/allengaller/podcast-database` 全面获取最新全网的各类热门播客")每日触发,**输出在 [`../recommendations/`](../recommendations/)**——只放短索引 `YYYY-MM-DD.md`,不重复造档。**工作流要求见 [`../recommendations/README.md`](../recommendations/README.md)「融合安置」原则:推荐对象已是 deep 档 → 不建新档;有 2026 年新事实 → 回写 `podcasts/<lang>/<category>/<slug>.md` 原档并推进 `updated_date`;真正新档 → 先建 stub 占位。**当日无新增事实时,仅生成短索引,**不强行回写**。首份索引 [`../recommendations/2026-08-05.md`](../recommendations/2026-08-05.md) 精选 14 档(全为 deep 档,无新增事实 → 原档未触动)。
+<!-- corpus:begin:summary -->
+**当前合计**:**186 档**(中文 73 + 英文 113),其中深档 92 档、stub 94 档(截至 2026-09-04;由 `scripts/stats.py` 自动统计,勿手改)
+<!-- corpus:end:summary -->
+- **每日 cron 推荐(2026-08-05 启动)**:系统 cron 任务(描述:"本机 `/Document/Github/allengaller/podcast-database` 全面获取最新全网的各类热门播客")每日触发,**输出在 [`../recommendations/`](../recommendations/)**——只放短索引 `YYYY-MM-DD.md`,不重复造档。**工作流要求见 [`../recommendations/README.md`](../recommendations/README.md)「融合安置」原则:推荐对象已是 deep 档 → 不建新档;有 2026 年新事实 → 回写 `podcasts/<lang>/<category>/<slug>.md` 原档并推进 `updated_date`;真正新档 → 先建 stub 占位。**当日无新增事实时,仅生成短索引,**不强行回写**。首份索引 [`../recommendations/2026-08-05.md`](../recommendations/2026-08-05.md) 精选 14 档(全为 deep 档,无新增事实 → 原档未触动)。**2026-09-04:cron 恢复产出**(第 2 份索引 + 25 档新 stub,已随批次 9 收编入库并完成去重);约定 cron 产物**当日 commit**,避免再次积压未提交档。
 - **批次 8(2026-08-05 cron)**:Forbes 2026-07-30「收入最高播客主持人」榜单 + 2026 学术研究双重验证,共触动 20 档:
   - **回写 4 档 active 深档** Forbes 2026 收入数据(推进 `updated_date` 到 2026-08-05):
     - `The Joe Rogan Experience`(en/comedy) — Forbes 2026 #1, **$82M**
@@ -128,7 +134,15 @@ podcasts/
     - en/news:`New Heights`、`Pardon My Take`、`The Tucker Carlson Show`
   - **建 6 档新 stub**(2026 学术研究《新闻世界》2025-10 点名的中文书业头部):`看理想圆桌` / `没理想编辑部` / `跳岛FM` / `螺丝在拧紧` / `读库立体声` / `Talk三联`(全部归 zh/culture)
   - **本批次净增 16 档**(10 英文 Forbes + 6 中文书业,5 档 stub 升级为深档)。**深档 +5(74→79),stub +11(75→86),总档数 +16(149→165)**
-- **后续路线**:① 继续把高优先级 stub 升级为深档 full(en/business 剩 3 档 + 大量 en/tech / en/news / en/comedy / en/culture / en/education / en/health / en/history / en/true-crime 等);② 跨类目研究 AI / 科技 / 商业之间的节目迁移(可考虑将「Acquired」放入英文 business 分类、「Hardcore History」放入英文 history 分类);③ 继续延展"中英头部播客全档覆盖"目标;④ AI 类已收官(zh/ai 13 + en/ai 18 全深档),后续 AI 类仅做字段更新与小型 stub 收尾;⑤ **每日 cron 索引**作为常态化资产持续累积,索引文件按 `YYYY-MM-DD.md` 命名,内容与 `recommendations/README.md` 工作流保持一致;⑥ 批次 8 新增的 16 档 stub 等下一批次(8-06 cron)起按优先级升级为深档(TBPN / On Purpose / New Heights 优先,中文书业 6 档第二批)。
+- **批次 9(2026-09-04)**:**批次 8 遗留 16 档 stub 全量升级为深档 + 工程化落地 + 全库去重**。全部条目经 web 检索核实(Forbes 2026-07-30 收入榜 / 各节目官网 / Apple・Spotify・小宇宙平台页 / 维基与媒体报道),不确定项仍标 TODO:
+  - **en/business**:`TBPN`(John Coogan + Jordi Hays,2024-10 开播,2026-04 被 OpenAI 收购;Forbes 2026 **#2,$70M**)、`The Prof G Pod`(Scott Galloway,2026 周一至周五多板块;Forbes 2026 **#17,$19M**)
+  - **en/culture**:`The Mel Robbins Podcast`(SiriusXM;Forbes 2026 **#6,$35M**)、`Call Her Daddy`(Alex Cooper,2024 起 ~$125M/3 年 SiriusXM 约;Forbes 2026 **#8,$32M**)、`The Breakfast Club`(2026-06-01 起 Netflix 首个每日直播节目;Charlamagne 个人 $27M)、`The Joe Budden Podcast`(Forbes 2026 **$20M**)、`Giggly Squad`(Forbes 2026 **$18M**)
+  - **en/news**:`New Heights`(Kelce 兄弟;Forbes 2026 **#7,$35M**)、`Pardon My Take`(2016-02-29 开播,2026 上 Netflix)、`The Tucker Carlson Show`(TCN;Forbes 2026 **#16,$20M**)
+  - **zh/culture(中文书业 6 档,出品方与主播均已核实)**:`看理想圆桌`(看理想/理想国)、`没理想编辑部`(看理想新媒体部)、`跳岛FM`(中信出版·大方)、`螺丝在拧紧`(单读/吴琦)、`读库立体声`(读库/张立宪)、`Talk三联`(三联中读)
+  - **同日清理(去重 -7)**:删除 `en/tech` 双档 lex-fridman-podcast / hard-fork(保留 `en/ai` 更全版本)、`zh/ai/ban-na-tie`(保留 `zh/business` 95 行版本并归位 business)、`zh/culture/tiaodao-fm`(跳岛FM 重名档,内容有误)、`en/tech/hit-parade`(实为 The Rest Is History 误档,原档已在 en/history)、`zh/business/wan-dian-liao-late-talk` 与 `zh/tech/gui-gu-101`(与已有 deep 档重复的当日 cron stub)
+  - **同日收编(+25)**:2026-09-04 cron 产出的 25 档新 stub(去重后)随本批次入库,含 `zh/comedy` 新类目(多新鲜呐);详见 [`../recommendations/2026-09-04.md`](../recommendations/2026-09-04.md)
+  - **同日工程化**:`scripts/validate_corpus.py`(frontmatter / 重复档 / 日期校验)、`scripts/stats.py`(本目录树与「当前合计」自动生成 + `INDEX.md`)、`scripts/export.py`(`dist/podcasts.json`/`.csv`)、CI `corpus-ci`、`make-stub.py` 修复(动态日期 + 中文标题强制 `--slug`)
+- **后续路线**:① 批次 2 遗留 stub 按类目逐批升级(en/business 剩 3 档 `b2b-growth` / `founder-s-journal` / `office-hours-*` + `en/tech/stratechery` 等优先);② 2026-09-04 新收编 25 档 stub 升级(按当日索引建议:`luo-yonghao-shi-zi-lu-kou` / `chen-lu-yu-man-tan` / `zhang-xiaojun-shangye-fangtan-lu` 优先);③ 跨类目迁移评估(Acquired → en/business、Hardcore History → en/history);④ **cron 产物当日 commit** 约定生效;⑤ zh 薄类目(finance 2 档 / news 档)扩充或合并,待决策(见 [`../ROADMAP.md`](../ROADMAP.md))。
 
 ## 贡献方式
 

@@ -3,53 +3,64 @@ title: "The Joe Budden Podcast"
 slug: the-joe-budden-podcast
 language: en
 category: culture
-status: todo
-network: "独立运营(2019 起;此前 Spotify 2020-2022 独家)"
+status: active
+network: "独立(Joe Budden Network;CEO Ian Schwartzman)"
 hosts:
-  - "Joe Budden"
-  - "Ian Schwartzman (co-host / partner)"
+  - "Joe Budden — 说唱歌手转型的主播 / 文化评论人"
 platforms:
+  - "YouTube(直播)"
   - "Apple Podcasts"
   - "Spotify"
-  - "YouTube"
-  - "Patreon"
+  - "Patreon(会员层)"
 rss: "TODO"
 subscribe_links:
   apple: "TODO"
   spotify: "TODO"
   youtube: "TODO"
   patreon: "TODO"
+  forbes: "https://www.forbes.com/sites/mattcraig/2026/07/30/why-podcast-pioneer-joe-budden-will-never-sell-out/"
 added_date: 2026-08-05
-updated_date: 2026-08-05
-tags:
-  - hip-hop
-  - culture
-  - patreon
-  - independent
-  - 待收录
+updated_date: 2026-09-04
+tags: [hip-hop, music, culture, commentary, patreon, independent]
 ---
 
 # The Joe Budden Podcast
 
-> **待收录(stub)。** 本条目仅占位,Patreon 平台最大体量播客,前说唱歌手 Joe Budden 主理,
-> 2025-08 与 *Law & Order* 主创 Dick Wolf 合作推真实罪案播客。
+## Summary
 
-## 关键事实(Forbes 2026 收入榜 + 公开报道)
+**嘻哈评论与文化叙事的独立标杆** —— 前说唱歌手 Joe Budden 转型主播后的旗舰节目:周更长谈,覆盖嘻哈产业、音乐点评与黑人文化议题。经历 Spotify 独家期(2020–2022)后全面独立,以 Patreon 会员 + 自有网络(Joe Budden Network)运营;Forbes 2026 以《Why Podcast Pioneer Joe Budden Will Never Sell Out》为题报道其"拒绝出售、自建网络"的路线,年收入 **$20M**。
 
-- **Forbes 2026 收入榜 #15**:年入 **$20M**,Joe Budden 45 岁(前说唱歌手)。
-- **Patreon 体量**:拥有超 **7 万名付费订阅用户**,Patreon 平台最大体量播客。
-- **独立网络**:Joe Budden 与商业伙伴 Ian Schwartzman 搭建完全独立运营的播客网络,正在开发搭载社群运营工具的技术平台,拟授权给其他创作者。
-- **2025-08 新节目**:Schwartzman 与雅虎财经合作推出高管访谈播客;Joe Budden 与 Dick Wolf 联合推真实罪案播客。
-- **历史**:2015 起步于 YouTube 频道,2019 转音频播客,2020-2022 与 Spotify 独家,后转独立运营。
+## Hosts
 
-## 待补充
+- **Joe Budden** — 主理人;2018 年从《Everyday Struggle》起转型评论人,被视为"播客化的 hip-hop 之声"。
+- **Ian Schwartzman** — 合伙人 / Joe Budden Network CEO(商务运营,非联袂主播;2024 旧档曾误记为 co-host,批次 9 更正)。
+- 联袂阵容历经多轮更替(Rory & Mal 时期至 2021 结束;此后 Ice / Ish / Parks 等轮换)—— 现任固定阵容 **TODO 待核**。
 
-- 主播背景(Joe Budden 1980 年生,前说唱歌手,MTV2 *Love & Hip Hop* 真人秀常驻)
-- 内容定位与形式
-- 代表单集
-- 平台与订阅链接
+## Format
 
-## 资料来源 / 待核
+- **Category**:嘻哈 / 文化评论(本库 en/culture)
+- **Format**:圆桌长谈 + 音乐产业点评 + 嘉宾
+- **Cadence**:周更 + 会员加更
+- **Language**:English
+- **Distribution**:YouTube 直播 + 全平台音频 + Patreon 会员独享层
 
-- Forbes 2026-07-30 榜单(福布斯中国独家翻译稿);Patreon 公开数据。
-- `rss` / `subscribe_links`:TODO。
+## Audience
+
+嘻哈乐迷、音乐产业关注者、黑人流行文化核心听众;以"内行敢言"著称 —— 与 DJ Akademiks 等的连线冲突、对行业合同的剖析常年制造话题。
+
+## Reach & assessment
+
+- Forbes《The Highest-Paid Podcasters of 2026》:**$20M**(与 Tucker Carlson 并列量级)。
+- Forbes 专访核心叙事:"通过一轮轮主播更替与平台合约,他已成为播客的代名词之一"—— 独立网络模式的代表样本。
+- Schwartzman 将主持一档高管访谈节目(Forbes 报道提及)—— 具体节目 **TODO**。
+
+## Notable episodes / events
+
+- **Rory & Mal 离队风波(2021)** — 独立播客界最著名的团队分裂事件。
+- **Spotify 独家期(2020–2022)与自立门户** — 主播与平台博弈的标志案例。
+- **Forbes 2026 封面级报道** — "永不卖身"路线的行业注脚。
+
+## Sources / TODOs
+
+- Forbes 2026-07-30:《Why Podcast Pioneer Joe Budden Will Never Sell Out》及收入榜
+- 现任联袂阵容 / Patreon 会员规模 / 各平台订阅链接 —— **TODO**

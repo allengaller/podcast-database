@@ -20,13 +20,19 @@
 | 新增一档播客,照模板填 | [`podcasts/_template.md`](./podcasts/_template.md) |
 | 浏览中文播客 | [`podcasts/zh/`](./podcasts/zh/) |
 | 浏览英文播客 | [`podcasts/en/`](./podcasts/en/) |
+| 查总索引(全库一表) | [`podcasts/INDEX.md`](./podcasts/INDEX.md) |
+| 看每日推荐索引 | [`recommendations/`](./recommendations/) |
+| 了解发展路线图 | [`ROADMAP.md`](./ROADMAP.md) |
 | 查阅历史 LeetCast 代码 | [`tools/`](./tools/) · 见 [`tools/ARCHIVE.md`](./tools/ARCHIVE.md) |
 
 ## 当前进度
 
 - **批次 1(2026-08-03)**:中英文共 **41 档**头部播客(已收录 full),每档完整字段。
 - **批次 2(2026-08-03)**:遍历各分类扩充 + 新增垂类(中文 `story/`、英文 `true-crime/` `history/` `education/` `health/`),共补 **77 档 stub**(`status: todo`,仅占位、细节待核实)。
-- **当前合计(截至批次 8,2026-08-05)**:**165 档**(中文 63 + 英文 102),其中深档 full **79 档**、stub **86 档**。详见 [`podcasts/README.md`](./podcasts/README.md)「当前进度」与各批次段。
+- **批次 9(2026-09-04)**:批次 8 遗留 **16 档 stub 全部升级为深档**(全部经 web 检索核实,Forbes 2026 收入榜数据回填);同日**收编 cron 遗留未提交 stub 25 档、清理重复档 7 档**,并落地校验 / 统计 / 导出脚本与 CI。详见 [`podcasts/README.md`](./podcasts/README.md)「当前进度」批次 9 段。
+<!-- corpus:begin:summary -->
+**当前合计**:**186 档**(中文 73 + 英文 113),其中深档 92 档、stub 94 档(截至 2026-09-04;由 `scripts/stats.py` 自动统计,勿手改)
+<!-- corpus:end:summary -->
 
 ## 编写原则(摘要)
 
@@ -43,12 +49,19 @@
 ```
 .
 ├── README.md           ← 本文件(语料库入口)
+├── ROADMAP.md          ← 发展路线图(P0-P3 + 执行记录)
 ├── .gitignore
 ├── podcasts/           ← 语料库主体(Markdown)
 │   ├── README.md       结构 / 字段 / 原则 / 路线
 │   ├── _template.md    标准档模板
+│   ├── INDEX.md        总索引(由 scripts/stats.py 自动生成)
 │   ├── zh/             中文播客(按赛道分目录)
 │   └── en/             英文播客(按赛道分目录)
+├── recommendations/    ← 每日 cron 推荐索引(YYYY-MM-DD.md)
+├── scripts/            ← 语料库工具(validate / stats / export / make-stub)
+├── dist/               ← 机读导出(podcasts.json / podcasts.csv,自动生成)
+├── GTM/                ← 上市策略单页(静态)
+├── .github/            ← CI(corpus-ci:校验 + 统计/导出新鲜度)
 └── tools/              ← LeetCast 历史代码归档(不再维护)
     └── ARCHIVE.md      归档说明
 ```

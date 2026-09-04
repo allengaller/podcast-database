@@ -3,53 +3,65 @@ title: "Pardon My Take"
 slug: pardon-my-take
 language: en
 category: news
-status: todo
-network: "Barstool Sports / Netflix(2024-12 起)"
+status: active
+network: "Barstool Sports"
 hosts:
-  - "Dan Katz (Big Cat)"
-  - "Eric Sollenberger (PFT Commenter)"
+  - "Dan \"Big Cat\" Katz"
+  - "PFT Commenter(Eric Sollenberger)"
 platforms:
   - "Apple Podcasts"
   - "Spotify"
   - "YouTube"
-  - "Barstool Sports"
-  - "Netflix"
+  - "Netflix(2026 起,视频版)"
 rss: "TODO"
 subscribe_links:
   apple: "TODO"
   spotify: "TODO"
-  youtube: "TODO"
+  youtube: "https://www.youtube.com/@PardonMyTakePodcast"
+  netflix: "https://www.netflix.com/title/82667228"
+  barstool: "https://www.barstoolsports.com/shows/11/pardon-my-take"
 added_date: 2026-08-05
-updated_date: 2026-08-05
-tags:
-  - sports
-  - nfl
-  - comedy
-  - barstool
-  - 待收录
+updated_date: 2026-09-04
+tags: [sports, comedy, NFL, barstool, morning-show]
 ---
 
 # Pardon My Take
 
-> **待收录(stub)。** 本条目仅占位,Barstool Sports 旗下王牌体育播客,
-> 2024-12 与 Netflix 签下重磅合约,**节目不再在 YouTube 上线**(平台独家性强化)。
+## Summary
 
-## 关键事实(Forbes 2026 收入榜 + 公开报道)
+**Barstool Sports 旗下的体育喜剧旗舰**:Big Cat 与 PFT Commenter 以"正经胡说"的方式解读体育世界,2016-02-29 开播即冲上 iTunes 榜首量级,是美国收听量最大的体育播客之一。2026 年节目视频版登陆 Netflix(同期推出十周年纪念书《Pardon My Book》);两位主播在 Awful Announcing 采访中表示要做这档节目"直到我们死掉(til we die)"。
 
-- **Forbes 2026 收入榜 #19**:年入 **$18M**,Dan Katz + Eric Sollenberger 合计。
-- **2024-12 Netflix 合约**:节目搬至 Netflix 流媒体平台播出,**YouTube 同步下线**。
-- **Barstool Sports 矩阵**:与 *Wake Up Barstool* 日间脱口秀形成内容矩阵,二人作为轮换嘉宾阵容成员。
-- **主持风格**:"大猫"(Big Cat) + "PFT 评论员"(PFT Commenter)组合,体育 + 喜剧双轨。
-- **2025 行业意义**:与 *New Heights* / *The Bill Simmons Podcast* 并列美国体育播客三巨头之一。
+## Hosts
 
-## 待补充
+- **Dan "Big Cat" Katz** — Barstool 头牌主播之一,体育 meme 文化代表人物。
+- **PFT Commenter(Eric Sollenberger)** — 以"阴谋论式体育评论"人设出道的联袂主播,负责 NFL 深度线。
 
-- 主播背景(Dan Katz / Eric Sollenberger 在 Barstool Sports 履历)
-- 内容定位与形式
-- 代表单集
-- 平台与订阅链接
+## Format
 
-## 资料来源 / 待核
+- **Category**:体育 × 喜剧(本库归 en/news,体育新闻向)
+- **Format**:双主播对谈 + 运动员/教练嘉宾 + 固定栏目(Hot Seat / Cool Throne、Who's Back of the Week、Mount Rushmore 等经典板块)
+- **Cadence**:每周 3 期(周一 / 周三 / 周五,长期稳定)
+- **Language**:English
+- **Distribution**:音频全平台 + YouTube 视频 + Netflix(2026 起)
 
-- Forbes 2026-07-30 榜单(福布斯中国独家翻译稿);Barstool / Netflix 2024-12 官方公告。
-- `rss` / `subscribe_links`:TODO。
+## Audience
+
+18–40 岁男性体育迷为主;听众把节目当"体育版晨间脱口秀"—— 要的是情绪价值与梗,不是数据复盘。
+
+## Reach & assessment
+
+- 长期位居美国体育播客收听量前三;2016 年开播当年即被《Time》等媒体点名的现象级节目。
+- 2026:视频版上 Netflix(如《Jerry O'Connell's 2026 Fantasy Preview》等期);十周年书《Pardon My Book: Ten Years of the Best (and Worst) in Sports》出版。
+- Big Cat 明确表态"除非出大事不会离开 Barstool"(Reddit 转引采访)。
+
+## Notable episodes / segments
+
+- **《Pardon My Book》十周年纪念(2026)** — 十年节目精华成书。
+- **Netflix 视频版上线(2026)** — 含 Chris Long、Jerry O'Connell 等期。
+- **经典栏目**:Mount Rushmore / Hot Seat・Cool Throne / Who's Back of the Week —— 体育喜剧播客的板块模板,被大量同行模仿。
+
+## Sources / TODOs
+
+- Barstool 节目页 / Netflix 页 / Wikipedia:`https://en.wikipedia.org/wiki/Pardon_My_Take`
+- Awful Announcing《Pardon My Take hosts want to do show "til we die"》
+- Apple / Spotify 精确订阅链接 / 收听数据 —— **TODO**

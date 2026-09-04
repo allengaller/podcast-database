@@ -3,52 +3,64 @@ title: "Call Her Daddy"
 slug: call-her-daddy
 language: en
 category: culture
-status: todo
-network: "SiriusXM(2024 起;此前 Spotify 独家)"
+status: active
+network: "SiriusXM(2024 起,~$125M/3 年;Unwell Network 全球广告代理)"
 hosts:
-  - "Alex Cooper"
+  - "Alex Cooper — Unwell Network 创始人"
 platforms:
   - "Apple Podcasts"
   - "Spotify"
   - "YouTube"
-  - "SiriusXM"
+  - "SiriusXM app(Podcasts+ 无广告层)"
 rss: "TODO"
 subscribe_links:
   apple: "TODO"
   spotify: "TODO"
   youtube: "TODO"
+  siriusxm: "https://www.siriusxm.com/blog/alex-cooper"
 added_date: 2026-08-05
-updated_date: 2026-08-05
-tags:
-  - women-host
-  - sex-relationships
-  - pop-culture
-  - celebrity-interview
-  - 待收录
+updated_date: 2026-09-04
+tags: [women, relationships, sex, comedy, interview, unwell-network]
 ---
 
 # Call Her Daddy
 
-> **待收录(stub)。** 本条目仅占位,Alex Cooper 主理,SiriusXM 旗下,
-> 2022 福布斯 30 Under 30 入选者;节目同时通过 Unwell 播客网络扩张。
+## Summary
 
-## 关键事实(Forbes 2026 收入榜 + 公开报道)
+**全球女性听众最大的播客** —— Alex Cooper 2018 年创办,从 Barstool 的两性八卦节目成长为女性生活方式 / 亲密关系 / 名人访谈的综合旗舰。2021–2024 为 Spotify 独家;2024 年以约 **$125M/3 年**转投 SiriusXM(接近前 Spotify 合约的两倍),并携其创办的 **Unwell Network** 整体入驻(SiriusXM 获全球广告代理权)。SiriusXM 称其为"全球最顶尖的女性主播"。
 
-- **Forbes 2026 收入榜 #8**:年入 **$32M**,Alex Cooper 31 岁。
-- **2024-08 SiriusXM 重磅合约**:3 年附带多项激励条款,潜在总价值最高达 **$125M**。
-- **Unwell 播客网络**:Alex Cooper 在 SiriusXM 旗下搭建 Unwell 播客矩阵,运营 2 套卫星广播频道。
-- **2025 影视拓展**:Unwell 与 Disney+ 合作打造 *Hannah Montana* 重聚特辑。
-- **2025 风波**:Unwell 与旗下第二大人气主播 Alix Earle 解除合作;《Vanity Fair》报道曝光公司内部工作氛围。
-- **赛道地位**:与 *Diary of a CEO* / *Call Her Daddy* / *Armchair Expert* 并列美国"女性视角大流量"播客代表。
+## Hosts
 
-## 待补充
+- **Alex Cooper** — "Father Cooper";从大学运动员转型主播,2023 年创立 Unwell Network(旗下多档节目 + 2026-02-11 起 SiriusXM 端 Unwell On Air 频道与 Unwell Music 音乐频道 Ch.3)。
+- 历史搭档 Sofia Franklyn(2018 共同创办,2020 拆伙分道)—— 单飞后节目转为 Alex 个人旗舰。
 
-- 主播背景(Alex Cooper 1994 年生,2022 福布斯 30 Under 30)
-- 内容定位与形式
-- 代表单集
-- 平台与订阅链接
+## Format
 
-## 资料来源 / 待核
+- **Category**:女性 / 两性关系 / 名人访谈(本库 en/culture)
+- **Format**:单口("Father Cooper" 直答听众来信)+ 名人深度访谈
+- **Cadence**:周更(具体频率 2026 口径 **TODO**)
+- **Language**:English
+- **Distribution**:全平台音频 + SiriusXM Podcasts+ 无广告早听
 
-- Forbes 2026-07-30 榜单(福布斯中国独家翻译稿);SiriusXM 2024-08 官方公告。
-- `rss` / `subscribe_links`:TODO。
+## Audience
+
+以 18–34 岁女性为核心的泛大众听众 —— "女生的睡前闺蜜 + 巨星访谈室"双定位;SiriusXM 官方口径"女性听众最多的播客"。
+
+## Reach & assessment
+
+- Forbes《The Highest-Paid Podcasters of 2026》:**#8,$32M**。
+- 2024 SiriusXM 约 $125M/3 年 —— 女性播客 IP 最大额合约之一;Unwell On Air / Unwell Music 频道上线(2026-02-11)。
+- 从 Barstool($60M 级 Spotify 约 2021)到自立 network 的完整"IP 增值曲线",是播客行业个人 IP 商业化教科书案例。
+
+## Notable episodes / events
+
+- **Sofia Franklyn 拆伙事件(2020)** — "Daddy Gang"分裂的年度行业大戏,节目转向 Alex 单核。
+- **转投 SiriusXM(2024)** — $125M 级合约 + Unwell Network 整体入驻。
+- **Unwell On Air / Unwell Music 上线(2026-02-11)** — 从节目到频道的平台化扩张。
+- 代表性访谈单集(政要 / 巨星系列)—— 具体期目 **TODO**。
+
+## Sources / TODOs
+
+- SiriusXM IR 通稿:`https://investor.siriusxm.com/news-events/press-releases/detail/2141/…`
+- The Hollywood Reporter / Billboard Pro(2026 频道扩张报道)
+- Forbes 2026-07-30 收入榜;各平台精确订阅链接 —— **TODO**
