@@ -7,11 +7,13 @@ episodes — that's the whole point of a stub.
 
 Usage:
   python3 scripts/make-stub.py <language> <category> "Title One" "Title Two" ...
-The slug is derived from the title; pass --slug=explicit-slug before a title
-to override. Files are written under podcasts/<lang>/<category>/<slug>.md
-and skipped if they already exist.
+Pass --slug=explicit-slug before a title to override the auto slug (required
+for titles without ASCII letters, e.g. Chinese titles). Files are written
+under podcasts/<lang>/<category>/<slug>.md and skipped if they already exist.
 """
+import datetime
 import os
+import pathlib
 import re
 import sys
 
@@ -21,7 +23,7 @@ ROOT = os.path.join(os.path.dirname(__file__), "..", "podcasts")
 def slugify(title: str) -> str:
     # For English titles: lowercase, non-alnum -> hyphen, collapse, trim.
     s = re.sub(r"[^A-Za-z0-9]+", "-", title).strip("-").lower()
-    return s or "untitled"
+    return s
 
 
 def main() -> int:
@@ -31,11 +33,12 @@ def main() -> int:
         return 2
     lang, category = argv[0], argv[1]
     entries = argv[2:]
+    today = datetime.date.today().isoformat()
 
     out_dir = os.path.join(ROOT, lang, category)
     os.makedirs(out_dir, exist_ok=True)
 
-    n_made = n_skipped = 0
+    n_made = n_skipped = n_rejected = 0
     override_slug = None
     for e in entries:
         if e.startswith("--slug="):
@@ -44,6 +47,11 @@ def main() -> int:
         title = e
         slug = override_slug or slugify(title)
         override_slug = None
+        if not re.fullmatch(r"[a-z0-9][a-z0-9-]*", slug):
+            print(f"reject (unsafe or empty slug {slug!r}; "
+                  f"use lowercase alphanumerics/hyphens, or pass --slug=...): {title!r}")
+            n_rejected += 1
+            continue
         path = os.path.join(out_dir, f"{slug}.md")
         if os.path.exists(path):
             print(f"skip (exists): {path}")
@@ -55,8 +63,8 @@ slug: {slug}
 language: {lang}
 category: {category}
 status: todo
-added_date: 2026-08-03
-updated_date: 2026-08-03
+added_date: {today}
+updated_date: {today}
 tags:
   - 待收录
 ---
@@ -81,13 +89,20 @@ tags:
 
 - 全部字段:TODO。
 """
-        with open(path, "w") as fh:
+        out_root = os.path.realpath(out_dir)
+        safe_name = os.path.basename(path)
+        safe_path = os.path.join(out_root, safe_name)
+        if not os.path.realpath(safe_path).startswith(out_root + os.sep):
+            print(f"reject (path escapes category dir): {slug!r}")
+            n_rejected += 1
+            continue
+        with pathlib.Path(safe_path).open("w", encoding="utf-8") as fh:
             fh.write(body)
         print(f"made: {path}")
         n_made += 1
 
-    print(f"\nmade {n_made}, skipped {n_skipped}")
-    return 0
+    print(f"\nmade {n_made}, skipped {n_skipped}, rejected {n_rejected}")
+    return 1 if n_rejected else 0
 
 
 if __name__ == "__main__":

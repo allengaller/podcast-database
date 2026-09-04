@@ -1,0 +1,28 @@
+name: corpus-ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install pyyaml
+
+      - name: Validate corpus entries
+        run: python3 scripts/validate_corpus.py
+
+      - name: Check stats freshness (README / INDEX.md)
+        run: python3 scripts/stats.py --check
+
+      - name: Check exports freshness (dist/podcasts.*)
+        run: python3 scripts/export.py --check
