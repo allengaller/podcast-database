@@ -3,8 +3,12 @@ node_modules
 package-lock.json
 
 # Build
-dist
 build
+# dist/: 语料库机读导出物(dist/podcasts.json / .csv)随仓库提交,其余忽略
+dist/*
+!dist/podcasts.json
+!dist/podcasts.csv
+tools/**/dist/
 *.tsbuildinfo
 
 # Compiled artifacts in src (should only be in dist/)
@@ -43,6 +47,7 @@ frontend/playwright-report
 *.swp
 *.swo
 *~
+.qoder
 
 # OS
 .DS_Store
@@ -81,3 +86,7 @@ data/
 
 # Worker logs
 worker.log
+
+# Local tool artifacts
+.video_agent/
+.mimosa/
