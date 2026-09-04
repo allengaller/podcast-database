@@ -99,10 +99,14 @@ export class MCPService {
   }
 
   private static async generateAudio(text: string, problemId: string): Promise<string> {
-    const downloadDir = path.join(process.cwd(), 'downloads');
+    const downloadDir = path.resolve(process.cwd(), 'downloads');
     await fs.ensureDir(downloadDir);
-    const fileName = `lc-${problemId}.mp3`;
+    const safeId = problemId.replace(/[^a-zA-Z0-9_-]/g, '');
+    const fileName = `lc-${safeId}.mp3`;
     const filePath = path.join(downloadDir, fileName);
+    if (!path.resolve(filePath).startsWith(downloadDir + path.sep)) {
+      throw new Error(`generateAudio: path escapes downloads dir: ${filePath}`);
+    }
 
     if (await fs.pathExists(filePath)) {
       return filePath;
@@ -114,22 +118,28 @@ export class MCPService {
       model_id: 'eleven_multilingual_v2',
     });
 
-    await this.writeAudioStream(audioStream, filePath);
+    await this.pipeAudioStream(audioStream, fs.createWriteStream(filePath));
 
     return filePath;
   }
 
   /**
-   * Write audio stream to file, handling Buffer, ReadableStream, and AsyncIterable.
+   * Pipe an audio stream (Buffer, ReadableStream, or AsyncIterable) into an
+   * already-created file stream. Takes no path: path handling stays in generateAudio.
    */
-  private static async writeAudioStream(stream: unknown, filePath: string): Promise<void> {
+  private static async pipeAudioStream(
+    stream: unknown,
+    fileStream: ReturnType<typeof fs.createWriteStream>
+  ): Promise<void> {
     if (Buffer.isBuffer(stream)) {
-      await fs.writeFile(filePath, stream);
+      await new Promise<void>((resolve, reject) => {
+        fileStream.on('error', reject);
+        fileStream.end(stream, () => resolve());
+      });
       return;
     }
 
     if (stream && typeof (stream as NodeJS.ReadableStream).pipe === 'function') {
-      const fileStream = fs.createWriteStream(filePath);
       (stream as NodeJS.ReadableStream).pipe(fileStream);
       return new Promise<void>((resolve, reject) => {
         fileStream.on('finish', resolve);
@@ -138,11 +148,15 @@ export class MCPService {
     }
 
     if (stream && typeof (stream as AsyncIterable<Buffer>)[Symbol.asyncIterator] === 'function') {
-      const chunks: Buffer[] = [];
       for await (const chunk of stream as AsyncIterable<Buffer>) {
-        chunks.push(chunk);
+        if (!fileStream.write(chunk)) {
+          await new Promise<void>((resolve) => fileStream.once('drain', () => resolve()));
+        }
       }
-      await fs.writeFile(filePath, Buffer.concat(chunks));
+      await new Promise<void>((resolve, reject) => {
+        fileStream.on('error', reject);
+        fileStream.end(() => resolve());
+      });
       return;
     }
 

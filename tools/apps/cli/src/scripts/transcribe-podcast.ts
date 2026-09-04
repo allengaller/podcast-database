@@ -174,6 +174,7 @@ function buildFilename(title: string): string {
   const stamp = new Date().toISOString().slice(0, 10);
   const safe = title
     .replace(/[\\/:*?"<>|]/g, '')
+    .replace(/\.\./g, '')
     .replace(/\s+/g, '-')
     .slice(0, 80);
   return `${stamp}-${safe}.md`;
@@ -185,8 +186,12 @@ async function writeMarkdown(
   taskId: string
 ): Promise<string> {
   const filename = buildFilename(args.title);
-  const outPath = path.join(args.outDir!, filename);
-  await fs.ensureDir(args.outDir!);
+  const outDir = path.resolve(args.outDir!);
+  const outPath = path.join(outDir, filename);
+  if (!path.resolve(outPath).startsWith(outDir + path.sep)) {
+    throw new Error(`transcribe: output path escapes outDir: ${outPath}`);
+  }
+  await fs.ensureDir(outDir);
 
   const { markdown } = toMarkdown(result, {
     title: args.title,
