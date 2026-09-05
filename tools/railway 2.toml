@@ -1,0 +1,43 @@
+# Railway configuration for the LeetCast worker.
+# Place this at the repo root so Railway (and any platform that
+# understands the spec, e.g. Fly.io) can discover the service.
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "apps/worker/Dockerfile"
+
+[deploy]
+# Restart policy: restart on failure with exponential backoff up to 10 min.
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 5
+
+# Healthcheck hits the worker's /health endpoint. Railway will mark the
+# service unhealthy if it does not respond within 30s twice in a row.
+healthcheckPath = "/health"
+healthcheckTimeout = 30
+
+# Run the compiled Node.js worker (apps/worker/Dockerfile already does
+# `pnpm --filter @leetcast/worker build` and the start command is set
+# in package.json: `node dist/index.js`).
+[start]
+cmd = "node dist/index.js"
+
+[env]
+# Sensible production defaults. Override in Railway's Variables tab.
+NODE_ENV = "production"
+PORT = "3001"
+# Uncomment to enable the Sentry integration in production. The Sentry
+# init is a no-op when SENTRY_DSN is unset, so leaving this empty is safe.
+# SENTRY_DSN = ""
+# SENTRY_ENVIRONMENT = "production"
+# SENTRY_TRACES_SAMPLE_RATE = "0.1"
+
+# Required runtime variables — Railway will refuse to start without these:
+#   DATABASE_URL     Postgres connection string (use the Railway Postgres plugin)
+#   REDIS_URL        Redis connection string (use the Upstash or Railway Redis plugin)
+#   S3_ENDPOINT      MinIO or S3-compatible endpoint
+#   S3_BUCKET        Bucket name (e.g. "leetcast")
+#   S3_ACCESS_KEY    Bucket access key
+#   S3_SECRET_KEY    Bucket secret key
+#   S3_PUBLIC_URL    Publicly reachable URL (CDN or signed-URL endpoint)
+#   OPENAI_API_KEY   OpenAI or 百炼 key (optional; mock mode if unset)
+#   ELEVENLABS_API_KEY  ElevenLabs key (optional; mock mode if unset)

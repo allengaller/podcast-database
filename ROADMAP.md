@@ -62,3 +62,4 @@
 ## 执行记录
 
 - **2026-09-04**:本路线图沉淀并当日执行完毕 —— P0 全量完成;批次 9 完成(16 档升级深档 / 7 档去重 / 收编 25 档 cron 遗留,全库 **186 档 / 92 deep / 94 stub**);P2#12 导出管线提前落地;cron 执行器决策待定(见上)。详细结果见当日 git log 与 `podcasts/README.md`「当前进度」。
+- **2026-09-05**:批次 10 完成 —— 8 档升级深档(罗永浩的十字路口 / 陈鲁豫·慢谈 / 张小珺商业访谈录 / 声动早咖啡 / 面基 / B2B Growth / Founder's Journal / Stratechery),删除 2 档误档(office-hours-with-patrick-o-shaughnessy、zh/tech 声动早咖啡重复 stub);**深档突破 100**,全库 **184 档 / deep 100 / stub 84**;zh/finance 全深档,zh/news 深档破零。批次 11 候选已列入 `podcasts/README.md`「后续路线」。

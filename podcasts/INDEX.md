@@ -2,7 +2,7 @@
 
 > 由 `scripts/stats.py` 自动生成,请勿手改。状态为 `active` / `ended` / `hiatus` 的是深档,`todo` 为待收录 stub。
 
-## 中文播客(zh) · 73 档
+## 中文播客(zh) · 72 档
 
 | 节目 | 赛道 | 状态 | 主播(首位) | 最近更新 | 条目 |
 | --- | --- | --- | --- | --- | --- |
@@ -23,7 +23,7 @@
 | 创业内幕 | business | todo(stub) | — | 2026-08-03 | [`chuang-ye-nei-mu`](zh/business/chuang-ye-nei-mu.md) |
 | 半拿铁 | 商业沉浮录 | business | active | 刘飞(主理人,前互联网大厂产品经理) | 2026-08-05 | [`ban-na-tie`](zh/business/ban-na-tie.md) |
 | 商业就是这样 | business | active | 肖文杰 | 2026-08-03 | [`shangye-jiushi-zheyang`](zh/business/shangye-jiushi-zheyang.md) |
-| 张小珺Jùn|商业访谈录 | business | todo(stub) | 张小珺（资深财经记者,前《财经天下》《人物》作者） | 2026-09-04 | [`zhang-xiaojun-shangye-fangtan-lu`](zh/business/zhang-xiaojun-shangye-fangtan-lu.md) |
+| 张小珺Jùn|商业访谈录 | business | active | 张小珺 — 商业报道出身的访谈人(详细履历 **TODO**) | 2026-09-05 | [`zhang-xiaojun-shangye-fangtan-lu`](zh/business/zhang-xiaojun-shangye-fangtan-lu.md) |
 | 搞钱女孩 | business | todo(stub) | — | 2026-08-03 | [`gao-qian-nv-hai`](zh/business/gao-qian-nv-hai.md) |
 | 深聊投资人 | business | todo(stub) | — | 2026-08-03 | [`shen-liao-tou-zi-ren`](zh/business/shen-liao-tou-zi-ren.md) |
 | 知行小酒馆 | business | todo(stub) | — | 2026-08-03 | [`zhi-xing-xiao-jiu-guan`](zh/business/zhi-xing-xiao-jiu-guan.md) |
@@ -45,9 +45,9 @@
 | 言外之易 | culture | todo(stub) | 易立竞（资深媒体人,前《人物》主笔 / 《立场》主持人） | 2026-09-04 | [`yan-wai-zhi-yi`](zh/culture/yan-wai-zhi-yi.md) |
 | 读库立体声 | culture | active | 张立宪(老六)— 读库主编 / 出版人 | 2026-09-04 | [`duku-liti-sheng`](zh/culture/duku-liti-sheng.md) |
 | 跳岛FM | culture | active | 主播由大方团队轮值(首位主播筱狸/董子琪,前界面文化记者,2020-03 至 2020-10;此后宝婷等接力) | 2026-09-04 | [`tiao-dao-fm`](zh/culture/tiao-dao-fm.md) |
-| 陈鲁豫·慢谈 | culture | todo(stub) | 陈鲁豫（资深媒体人,前凤凰卫视《鲁豫有约》主持人） | 2026-09-04 | [`chen-lu-yu-man-tan`](zh/culture/chen-lu-yu-man-tan.md) |
+| 陈鲁豫·慢谈 | culture | active | 陈鲁豫 — 资深媒体人 / 主持人(凤凰卫视《鲁豫有约》主持多年) | 2026-09-05 | [`chen-lu-yu-man-tan`](zh/culture/chen-lu-yu-man-tan.md) |
 | 疯投圈 | finance | active | 黄海 | 2026-08-03 | [`feng-tou-quan`](zh/finance/feng-tou-quan.md) |
-| 面基 | finance | todo(stub) | — | 2026-08-03 | [`mian-ji`](zh/finance/mian-ji.md) |
+| 面基 | finance | active | 老钱(主理人,金融从业背景;具体履历 **TODO**) | 2026-09-05 | [`mian-ji`](zh/finance/mian-ji.md) |
 | 什么电台 | life | active | 阿彬 | 2026-08-03 | [`shenme-diantai`](zh/life/shenme-diantai.md) |
 | 儿童不宜 | life | todo(stub) | — | 2026-08-03 | [`er-tong-bu-yi`](zh/life/er-tong-bu-yi.md) |
 | 凹凸电波 | life | active | 伍叁伍肆 | 2026-08-03 | [`ao-tu-dian-bo`](zh/life/ao-tu-dian-bo.md) |
@@ -59,7 +59,7 @@
 | 自我进化论 | life | todo(stub) | — | 2026-08-03 | [`zi-wo-jin-hua-lun`](zh/life/zi-wo-jin-hua-lun.md) |
 | 907编辑部 | news | todo(stub) | 澎湃国际新闻部编辑团队 | 2026-09-04 | [`907-bian-ji-bu`](zh/news/907-bian-ji-bu.md) |
 | Sinica Podcast | news | todo(stub) | — | 2026-08-03 | [`sinica`](zh/news/sinica.md) |
-| 声动早咖啡(商业日更) | news | todo(stub) | — | 2026-08-03 | [`sheng-dong-zao-ka-fei-news`](zh/news/sheng-dong-zao-ka-fei-news.md) |
+| 声动早咖啡 | news | active | 声动活泼团队轮值主播(具体班底 **TODO**) | 2026-09-05 | [`sheng-dong-zao-ka-fei-news`](zh/news/sheng-dong-zao-ka-fei-news.md) |
 | 岛岛连线 | news | todo(stub) | 王骁（前观察者网 / 风云直播主持人） | 2026-09-04 | [`dao-dao-lian-xian`](zh/news/dao-dao-lian-xian.md) |
 | 怡楽播客 | story | todo(stub) | — | 2026-08-03 | [`yi-le-bo-ke`](zh/story/yi-le-bo-ke.md) |
 | 犯罪象限 | story | todo(stub) | — | 2026-08-03 | [`fan-zui-xiang-xian`](zh/story/fan-zui-xiang-xian.md) |
@@ -71,16 +71,15 @@
 | SaaS 客研室 | tech | todo(stub) | — | 2026-08-03 | [`saas-ke-yan-shi`](zh/tech/saas-ke-yan-shi.md) |
 | TechBuzz China by Pandaily | tech | todo(stub) | — | 2026-08-03 | [`techbuzz-china`](zh/tech/techbuzz-china.md) |
 | 声东击西 | tech | active | 一凡 | 2026-08-03 | [`sheng-dong-ji-xi`](zh/tech/sheng-dong-ji-xi.md) |
-| 声动早咖啡 | tech | todo(stub) | — | 2026-08-03 | [`sheng-dong-zao-ka-fei`](zh/tech/sheng-dong-zao-ka-fei.md) |
 | 捕蛇者说 | tech | active | 杨森 | 2026-08-03 | [`bu-she-zhe-shuo`](zh/tech/bu-she-zhe-shuo.md) |
 | 硅基聊天室 | tech | todo(stub) | B 站 AI 内容团队 | 2026-09-04 | [`gui-ji-liao-tian-shi`](zh/tech/gui-ji-liao-tian-shi.md) |
 | 硅谷101 | tech | active | 陈茜（Zara） | 2026-08-03 | [`guigu-101`](zh/tech/guigu-101.md) |
 | 硬地骇客 | tech | active | Macing | 2026-08-03 | [`yingdi-haike`](zh/tech/yingdi-haike.md) |
 | 科技早知道 | tech | active | 王俊煜（斑马,前豌豆荚创始人） | 2026-08-03 | [`keji-zao-zhidao`](zh/tech/keji-zao-zhidao.md) |
-| 罗永浩的十字路口 | tech | todo(stub) | 罗永浩（细红线科技创始人,前英语教师 / 锤子科技创始人 / 抖音带货一哥） | 2026-09-04 | [`luo-yonghao-shi-zi-lu-kou`](zh/tech/luo-yonghao-shi-zi-lu-kou.md) |
+| 罗永浩的十字路口 | tech | active | 罗永浩 — 细红线科技创始人 / 前锤子科技创始人 / 前交个朋友主播 | 2026-09-05 | [`luo-yonghao-shi-zi-lu-kou`](zh/tech/luo-yonghao-shi-zi-lu-kou.md) |
 | 道听途说 | tech | todo(stub) | — | 2026-08-03 | [`dao-ting-tu-shuo`](zh/tech/dao-ting-tu-shuo.md) |
 
-## 英文 / 国际播客(en) · 113 档
+## 英文 / 国际播客(en) · 112 档
 
 | 节目 | 赛道 | 状态 | 主播(首位) | 最近更新 | 条目 |
 | --- | --- | --- | --- | --- | --- |
@@ -104,14 +103,13 @@
 | The AI Podcast (NVIDIA) | ai | active | Noah Kravitz — NVIDIA 资深内容与品牌团队，技术记者出身，长期主持 NVIDIA 官方播客（2017- ） | 2026-08-04 | [`the-ai-podcast-nvidia`](en/ai/the-ai-podcast-nvidia.md) |
 | The Cognitive Revolution | ai | active | Nathan Labenz — Waymark 联合创始人（AI 驱动视频创作工具公司）；前 Cognitive Computation / health tech 创业者；X 平台活跃 AI 观察者 | 2026-08-04 | [`the-cognitive-revolution`](en/ai/the-cognitive-revolution.md) |
 | The TWIML AI Podcast (formerly This Week in Machine Learning & AI) | ai | active | Sam Charrington — TWIML 创始人，分析师/前科技公司产品经理，长期关注 ML/AI 平台与企业落地 | 2026-08-04 | [`twiml-ai-podcast`](en/ai/twiml-ai-podcast.md) |
-| B2B Growth | business | todo(stub) | — | 2026-08-03 | [`b2b-growth`](en/business/b2b-growth.md) |
+| B2B Growth | business | active | 轮值主持(Sweet Fish 团队;James Carbary 任执行制作人) | 2026-09-05 | [`b2b-growth`](en/business/b2b-growth.md) |
 | BG2 Pod | business | todo(stub) | Brad Gerstner（Altimeter Capital 创始人） | 2026-09-04 | [`bg2-pod`](en/business/bg2-pod.md) |
-| Founder's Journal | business | todo(stub) | — | 2026-08-03 | [`founder-s-journal`](en/business/founder-s-journal.md) |
+| Founder's Journal | business | active | Alex Lieberman — Morning Brew 联合创始人(前 CEO / 执行董事长) | 2026-09-05 | [`founder-s-journal`](en/business/founder-s-journal.md) |
 | How I Built This with Guy Raz | business | active | Guy Raz (NPR correspondent, host of TED Radio Hour, founder of Built In Public) | 2026-08-05 | [`how-i-built-this`](en/business/how-i-built-this.md) |
 | Indie Hackers | business | active | Courtland Allen (founder, originally from Stripe; co-host) | 2026-08-05 | [`indie-hackers`](en/business/indie-hackers.md) |
 | Masters of Scale with Reid Hoffman | business | active | Reid Hoffman (LinkedIn co-founder, Greylock partner) | 2026-08-05 | [`masters-of-scale`](en/business/masters-of-scale.md) |
 | Money Stuff: The Podcast | business | todo(stub) | Matt Levine（Bloomberg Opinion 专栏作家,《Money Stuff》原版主笔） | 2026-09-04 | [`money-stuff`](en/business/money-stuff.md) |
-| Office Hours with Patrick O'Shaughnessy | business | todo(stub) | — | 2026-08-03 | [`office-hours-with-patrick-o-shaughnessy`](en/business/office-hours-with-patrick-o-shaughnessy.md) |
 | SaaStr Podcast | business | active | Jason Lemkin (founder & CEO of SaaStr; primary host) | 2026-08-05 | [`saastr-podcast`](en/business/saastr-podcast.md) |
 | TBPN | business | active | John Coogan — 联合创始人 / 主播,科技创业者 / YouTube 创作者 | 2026-09-04 | [`tbpn`](en/business/tbpn.md) |
 | The Knowledge Project | business | todo(stub) | Shane Parrish（blog.farnamstreet.com 创始人,前 CIA 情报分析师） | 2026-09-04 | [`the-knowledge-project`](en/business/the-knowledge-project.md) |
@@ -186,7 +184,7 @@
 | My First Million | tech | todo(stub) | — | 2026-08-03 | [`my-first-million`](en/tech/my-first-million.md) |
 | Pivot | tech | todo(stub) | — | 2026-08-03 | [`pivot`](en/tech/pivot.md) |
 | Search Engine | tech | todo(stub) | PJ Vogt（前 Reply All 联合主理人,Gimlet Media 创始团队成员） | 2026-09-04 | [`search-engine`](en/tech/search-engine.md) |
-| Stratechery Update | tech | todo(stub) | — | 2026-08-03 | [`stratechery`](en/tech/stratechery.md) |
+| Stratechery (Update + Interview) | tech | active | Ben Thompson — 策略分析师,Stratechery 创始人(2014) | 2026-09-05 | [`stratechery`](en/tech/stratechery.md) |
 | The Vergecast | tech | active | Nilay Patel | 2026-08-03 | [`the-vergecast`](en/tech/the-vergecast.md) |
 | This Week in Startups | tech | active | Jason Calacanis | 2026-08-03 | [`this-week-in-startups`](en/tech/this-week-in-startups.md) |
 | Training Data | tech | todo(stub) | Sonya Huang / Pat Grady（红杉资本合伙人） | 2026-09-04 | [`training-data`](en/tech/training-data.md) |

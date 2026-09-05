@@ -16,17 +16,17 @@ podcasts/
 ├── INDEX.md           ← 总索引(自动生成)
 ├── zh/                ← 中文播客
 │   ├── ai/            AI / 大模型      (12 档 · 深档 12)
-│   ├── business/      商业 / 创业       (9 档 · 深档 3)
+│   ├── business/      商业 / 创业       (9 档 · 深档 4)
 │   ├── comedy/        喜剧 / 脱口秀      (1 档 · 深档 0)
-│   ├── culture/       文化 / 人文       (18 档 · 深档 11)
-│   ├── finance/       财经 / 投资       (2 档 · 深档 1)
+│   ├── culture/       文化 / 人文       (18 档 · 深档 12)
+│   ├── finance/       财经 / 投资       (2 档 · 深档 2)
 │   ├── life/          生活 / 自我成长     (9 档 · 深档 5)
-│   ├── news/          新闻 / 时政       (4 档 · 深档 0)
+│   ├── news/          新闻 / 时政       (4 档 · 深档 1)
 │   ├── story/         罪案 / 悬疑 / 历史  (6 档 · 深档 0)
-│   ├── tech/          科技 / 互联网      (12 档 · 深档 5)
+│   ├── tech/          科技 / 互联网      (11 档 · 深档 6)
 └── en/                ← 英文 / 国际播客
     ├── ai/            AI / 大模型      (20 档 · 深档 18)
-    ├── business/      商业 / 创业       (14 档 · 深档 7)
+    ├── business/      商业 / 创业       (13 档 · 深档 9)
     ├── comedy/        喜剧 / 娱乐       (10 档 · 深档 4)
     ├── culture/       文化 / 访谈       (15 档 · 深档 10)
     ├── education/     教育 / 知识       (4 档 · 深档 0)
@@ -34,7 +34,7 @@ podcasts/
     ├── history/       历史            (6 档 · 深档 0)
     ├── news/          新闻 / 时政       (14 档 · 深档 7)
     ├── science/       科学 / 科普       (7 档 · 深档 3)
-    ├── tech/          科技 / 风投       (14 档 · 深档 5)
+    ├── tech/          科技 / 风投       (14 档 · 深档 6)
     └── true-crime/    真实犯罪          (6 档 · 深档 1)
 <!-- corpus:end:tree -->
 ```
@@ -113,7 +113,7 @@ podcasts/
   - **en/business 类目进度**:8 档中 5 档(How I Built This / Masters of Scale / a16z Podcast / Indie Hackers / SaaStr)升级为深档,3 档 stub 待办:`b2b-growth` / `founder-s-journal` / `office-hours-with-patrick-o-shaughnessy`
   - **AI 类里程碑**:`zh/ai` 13 档全部为深档,`en/ai` 18 档全部为深档,合计 AI 类 31 档全深档,AI 类整体收官
 <!-- corpus:begin:summary -->
-**当前合计**:**186 档**(中文 73 + 英文 113),其中深档 92 档、stub 94 档(截至 2026-09-04;由 `scripts/stats.py` 自动统计,勿手改)
+**当前合计**:**184 档**(中文 72 + 英文 112),其中深档 100 档、stub 84 档(截至 2026-09-05;由 `scripts/stats.py` 自动统计,勿手改)
 <!-- corpus:end:summary -->
 - **每日 cron 推荐(2026-08-05 启动)**:系统 cron 任务(描述:"本机 `/Document/Github/allengaller/podcast-database` 全面获取最新全网的各类热门播客")每日触发,**输出在 [`../recommendations/`](../recommendations/)**——只放短索引 `YYYY-MM-DD.md`,不重复造档。**工作流要求见 [`../recommendations/README.md`](../recommendations/README.md)「融合安置」原则:推荐对象已是 deep 档 → 不建新档;有 2026 年新事实 → 回写 `podcasts/<lang>/<category>/<slug>.md` 原档并推进 `updated_date`;真正新档 → 先建 stub 占位。**当日无新增事实时,仅生成短索引,**不强行回写**。首份索引 [`../recommendations/2026-08-05.md`](../recommendations/2026-08-05.md) 精选 14 档(全为 deep 档,无新增事实 → 原档未触动)。**2026-09-04:cron 恢复产出**(第 2 份索引 + 25 档新 stub,已随批次 9 收编入库并完成去重);约定 cron 产物**当日 commit**,避免再次积压未提交档。
 - **批次 8(2026-08-05 cron)**:Forbes 2026-07-30「收入最高播客主持人」榜单 + 2026 学术研究双重验证,共触动 20 档:
@@ -142,7 +142,12 @@ podcasts/
   - **同日清理(去重 -7)**:删除 `en/tech` 双档 lex-fridman-podcast / hard-fork(保留 `en/ai` 更全版本)、`zh/ai/ban-na-tie`(保留 `zh/business` 95 行版本并归位 business)、`zh/culture/tiaodao-fm`(跳岛FM 重名档,内容有误)、`en/tech/hit-parade`(实为 The Rest Is History 误档,原档已在 en/history)、`zh/business/wan-dian-liao-late-talk` 与 `zh/tech/gui-gu-101`(与已有 deep 档重复的当日 cron stub)
   - **同日收编(+25)**:2026-09-04 cron 产出的 25 档新 stub(去重后)随本批次入库,含 `zh/comedy` 新类目(多新鲜呐);详见 [`../recommendations/2026-09-04.md`](../recommendations/2026-09-04.md)
   - **同日工程化**:`scripts/validate_corpus.py`(frontmatter / 重复档 / 日期校验)、`scripts/stats.py`(本目录树与「当前合计」自动生成 + `INDEX.md`)、`scripts/export.py`(`dist/podcasts.json`/`.csv`)、CI `corpus-ci`、`make-stub.py` 修复(动态日期 + 中文标题强制 `--slug`)
-- **后续路线**:① 批次 2 遗留 stub 按类目逐批升级(en/business 剩 3 档 `b2b-growth` / `founder-s-journal` / `office-hours-*` + `en/tech/stratechery` 等优先);② 2026-09-04 新收编 25 档 stub 升级(按当日索引建议:`luo-yonghao-shi-zi-lu-kou` / `chen-lu-yu-man-tan` / `zhang-xiaojun-shangye-fangtan-lu` 优先);③ 跨类目迁移评估(Acquired → en/business、Hardcore History → en/history);④ **cron 产物当日 commit** 约定生效;⑤ zh 薄类目(finance 2 档 / news 档)扩充或合并,待决策(见 [`../ROADMAP.md`](../ROADMAP.md))。
+- **批次 10(2026-09-05)**:**索引优先档 + 批次 2 英文遗留 + 薄类目扩充,升级 8 档 / 删除 1 档误档**。全部经 web 检索核实:
+  - **中文 5 档升级深档**:`罗永浩的十字路口`(zh/tech,2025-08-19 上线,开播一周年全网累计播放 **3.49 亿**,抖音精选单集均 600 万+)、`陈鲁豫·慢谈`(zh/culture,B 站独家 2025-08-18,单期 2h+,粉丝 70 万)、`张小珺Jùn|商业访谈录`(zh/business,中国 AI 领袖访谈第一阵地,EP59 杨植麟为代表)、`声动早咖啡`(zh/news,声动活泼晨间商业简报,工作日 15 分钟)、`面基`(zh/finance,独立金融播客头部,老钱主理,E155+)
+  - **英文 3 档升级深档**:`B2B Growth`(en/business,Sweet Fish Media,2016 至今的 B2B 营销日更)、`Founder's Journal`(en/business,Morning Brew 联创 Alex Lieberman)、`Stratechery`(en/tech,Update + Interview 双轨 + Exponent / Sharp Tech 联袂,订阅制标杆,2024 十周年)
+  - **删除 1 档误档**:`en/business/office-hours-with-patrick-o-shaughnessy`(批次 2 误档 —— 经多轮检索确认 **无此独立节目**:"Office Hours" 是《Invest Like the Best》的单集栏目,Patrick O'Shaughnessy 本尊主持的是 Invest Like the Best;Jim O'Shaughnessy 主持 Infinite Loops。**批次 11 应补录 Invest Like the Best 正主档**)
+  - **zh/finance 薄类目**由 1 深 1 stub 变为 2 深档;zh/news 实现深档零的突破(声动早咖啡)
+- **后续路线**:① 批次 11 候选:补录 `Invest Like the Best`(en/business 正主);升级 en/business 收编 stub(`money-stuff` / `20vc` / `bg2-pod` / `the-knowledge-project`)与 zh 收编 stub(`907编辑部` / `岛岛连线` / `硅基聊天室` / `小天章` / `涟漪效应` / `如此城市` / `上海书评` / `言外之易` / `多新鲜呐` 等);② 跨类目迁移评估(Acquired → en/business、Hardcore History → en/history);③ **cron 产物当日 commit** 约定持续;④ 数据 License 与 cron 执行器归属待决策(见 [`../ROADMAP.md`](../ROADMAP.md))。
 
 ## 贡献方式
 

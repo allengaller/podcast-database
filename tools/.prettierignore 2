@@ -1,0 +1,7 @@
+dist
+node_modules
+coverage
+*.log
+.env
+.DS_Store
+downloads
