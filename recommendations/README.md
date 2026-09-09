@@ -52,9 +52,14 @@ recommendations/
 
 ## 工作流触发
 
-由 `mavis cron` 配置的定时任务触发,任务描述(系统级):
+由本仓库的 GitHub Actions cron 触发,workflow 定义在 [`.github/workflows/cron-daily.yml`](../../.github/workflows/cron-daily.yml),**每日 06:00 UTC(14:00 北京时间)自动运行**。
 
-> 本机 `/Document/Github/allengaller/podcast-database` 全面获取最新全网的各类热门播客,优质播客,给出推荐原因,给出精彩节目名称,给出播放地址。
+工作流步骤:
+
+1. 运行 `scripts/cron/daily_recommendations.py`(脚本本身是骨架创建器,幂等)
+2. 若当日 `recommendations/YYYY-MM-DD.md` 已存在 → 无操作
+3. 若不存在 → 写入 frontmatter + 占位骨架,作为 PR commit 推回 `main`
+4. 后续由人工 / model agent 通过 PR 回填「趋势摘要」「趋势来源」与「今日 N 档」表格
 
 **任务执行方应遵循的工作流要求**(本 README 即为该工作流的规范文档):
 
@@ -77,4 +82,5 @@ recommendations/
 ## 历史
 
 - **2026-08-05 起点**:用户首次明确提出"融合安置"工作流,删除原堆砌型 `2026-08-05-daily-picks.md`,改为短索引 + 流程规范
-- 本目录后续由 cron 自动增量维护
+- **2026-09-04**:外部 Mavis cron 恢复产出(第 2份 + 25 stub 收编,随批次 9 入库);当时约定 cron 产物当日 commit,避免再次积压未提交档
+- **2026-09-09**:cron 迁回本仓 —— 由 `.github/workflows/cron-daily.yml` 触发,`scripts/cron/daily_recommendations.py` 创建当日骨架(幂等);研究内容由人工 / model agent PR 回填,外部 Mavis cron 退役

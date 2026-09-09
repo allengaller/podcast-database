@@ -1,0 +1,40 @@
+name: cron-daily
+
+on:
+  schedule:
+    # 每日 06:00 UTC = 14:00 北京时间(避开 GitHub Actions 拥堵窗口)
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  daily-recommendations:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # 提交成果需 push 回 main,需 fetch 完整历史
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Create today's recommendation index skeleton
+        run: python3 scripts/cron/daily_recommendations.py
+
+      - name: Commit (only if a new file was created)
+        run: |
+          git add recommendations/
+          if git diff --cached --quiet; then
+            echo "no changes, skipping commit"
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -m "chore(cron): 创建每日推荐索引骨架 ($(date -u +%Y-%m-%d))"
+          git push
