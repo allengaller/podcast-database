@@ -2,7 +2,7 @@
 
 > 由 `scripts/stats.py` 自动生成,请勿手改。状态为 `active` / `ended` / `hiatus` 的是深档,`todo` 为待收录 stub。
 
-## 中文播客(zh) · 72 档
+## 中文播客(zh) · 74 档
 
 | 节目 | 赛道 | 状态 | 主播(首位) | 最近更新 | 条目 |
 | --- | --- | --- | --- | --- | --- |
@@ -41,6 +41,7 @@
 | 没理想编辑部 | culture | active | 荞木(看理想编辑) | 2026-09-04 | [`mei-lixiang-bianjibu`](zh/culture/mei-lixiang-bianjibu.md) |
 | 涟漪效应 | culture | todo(stub) | 澎湃人物 / 镜相栏目编辑团队 | 2026-09-04 | [`lian-yi-xiao-ying`](zh/culture/lian-yi-xiao-ying.md) |
 | 看理想圆桌 | culture | active | 看理想编辑部轮值主持 + 嘉宾制 | 2026-09-04 | [`kan-lixiang-yuanzhuo`](zh/culture/kan-lixiang-yuanzhuo.md) |
+| 自然光 | culture | active | 窦文涛(主理人,前凤凰卫视《锵锵三人行》1998 起、《圆桌派》主持人) | 2026-09-09 | [`zi-ran-guang`](zh/culture/zi-ran-guang.md) |
 | 螺丝在拧紧 | culture | active | 吴琦 —《单读》主编,文化与非虚构对谈主持人 | 2026-09-04 | [`luosi-zai-ningjin`](zh/culture/luosi-zai-ningjin.md) |
 | 言外之易 | culture | todo(stub) | 易立竞（资深媒体人,前《人物》主笔 / 《立场》主持人） | 2026-09-04 | [`yan-wai-zhi-yi`](zh/culture/yan-wai-zhi-yi.md) |
 | 读库立体声 | culture | active | 张立宪(老六)— 读库主编 / 出版人 | 2026-09-04 | [`duku-liti-sheng`](zh/culture/duku-liti-sheng.md) |
@@ -60,7 +61,8 @@
 | 907编辑部 | news | todo(stub) | 澎湃国际新闻部编辑团队 | 2026-09-04 | [`907-bian-ji-bu`](zh/news/907-bian-ji-bu.md) |
 | Sinica Podcast | news | todo(stub) | — | 2026-08-03 | [`sinica`](zh/news/sinica.md) |
 | 声动早咖啡 | news | active | 声动活泼团队轮值主播(具体班底 **TODO**) | 2026-09-05 | [`sheng-dong-zao-ka-fei-news`](zh/news/sheng-dong-zao-ka-fei-news.md) |
-| 岛岛连线 | news | todo(stub) | 王骁（前观察者网 / 风云直播主持人） | 2026-09-04 | [`dao-dao-lian-xian`](zh/news/dao-dao-lian-xian.md) |
+| 岛岛连线 | news | active | 王骁 Stella(主理人,前观察者网 / 风云直播主持人) | 2026-09-09 | [`dao-dao-lian-xian`](zh/news/dao-dao-lian-xian.md) |
+| 端闻 | news | active | 端传媒编辑团队(轮值主播,具体名单 TODO) | 2026-09-09 | [`duan-wen`](zh/news/duan-wen.md) |
 | 怡楽播客 | story | todo(stub) | — | 2026-08-03 | [`yi-le-bo-ke`](zh/story/yi-le-bo-ke.md) |
 | 犯罪象限 | story | todo(stub) | — | 2026-08-03 | [`fan-zui-xiang-xian`](zh/story/fan-zui-xiang-xian.md) |
 | 竹林之中 | story | todo(stub) | — | 2026-08-03 | [`zhu-lin-zhi-zhong`](zh/story/zhu-lin-zhi-zhong.md) |

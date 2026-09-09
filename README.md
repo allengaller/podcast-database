@@ -32,7 +32,7 @@
 - **批次 9(2026-09-04)**:批次 8 遗留 **16 档 stub 全部升级为深档**(全部经 web 检索核实,Forbes 2026 收入榜数据回填);同日**收编 cron 遗留未提交 stub 25 档、清理重复档 7 档**,并落地校验 / 统计 / 导出脚本与 CI。详见 [`podcasts/README.md`](./podcasts/README.md)「当前进度」批次 9 段。
 - **批次 10(2026-09-05)**:**8 档升级深档**(罗永浩的十字路口 / 陈鲁豫·慢谈 / 张小珺商业访谈录 / 声动早咖啡 / 面基 / B2B Growth / Founder's Journal / Stratechery),**删除 2 档误档**(office-hours-with-patrick-o-shaughnessy、zh/tech 声动早咖啡重复 stub);zh/news 实现深档零的突破。详见 [`podcasts/README.md`](./podcasts/README.md)「当前进度」批次 10 段。
 <!-- corpus:begin:summary -->
-**当前合计**:**184 档**(中文 72 + 英文 112),其中深档 100 档、stub 84 档(截至 2026-09-05;由 `scripts/stats.py` 自动统计,勿手改)
+**当前合计**:**186 档**(中文 74 + 英文 112),其中深档 103 档、stub 83 档(截至 2026-09-09;由 `scripts/stats.py` 自动统计,勿手改)
 <!-- corpus:end:summary -->
 
 ## 编写原则(摘要)
@@ -77,4 +77,11 @@
 
 ---
 
-License: 见 [`tools/LICENSE`](./tools/LICENSE)(随 LeetCast 归档保留)。
+## License
+
+本仓库采用 **双协议**:
+
+- **数据部分**(`podcasts/`、`recommendations/`、`dist/`、`GTM/`、根 `README.md`、`ROADMAP.md`、`scripts/`)采用 **[Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE-data)** —— 允许任意分享与改编(含商业),须署名。
+- **代码部分**(`tools/`,LeetCast 历史归档)采用 **MIT License**(见 [`tools/LICENSE`](./tools/LICENSE),Copyright (c) 2024 LeetCast)。
+
+完整说明与归属示例见 [`LICENSE-data`](./LICENSE-data)。
