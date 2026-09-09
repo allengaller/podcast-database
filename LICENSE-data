@@ -1,0 +1,47 @@
+Creative Commons Attribution 4.0 International
+================================================
+
+This license applies to the **data portion** of this repository, namely:
+
+- `podcasts/`           — 播客研究语料库(Markdown)
+- `recommendations/`    — 每日推荐索引
+- `dist/`               — 机读导出(JSON / CSV,由 `scripts/export.py` 自动生成)
+- `GTM/`                — 上市策略单页(静态)
+- `README.md`           — 本仓库根 README
+- `ROADMAP.md`          — 发展路线图
+- `scripts/`            — 语料库工具脚本
+
+---
+
+You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially
+
+Under the following terms:
+
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- **No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+---
+
+### Notices
+
+You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
+
+No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
+
+### Suggested attribution
+
+> 数据来源:[podcast-database](https://github.com/allengaller/podcast-database)(CC BY 4.0)。包含基于原作者的修改。
+
+---
+
+### Excluded from this license
+
+The `tools/` directory is **not** covered by this license. `tools/LICENSE`(MIT License,Copyright (c) 2024 LeetCast)governs the historical LeetCast codebase that was archived into this repository on 2026-08-03. See [`tools/LICENSE`](./tools/LICENSE) and [`tools/ARCHIVE.md`](./tools/ARCHIVE.md) for details.
+
+---
+
+Full Creative Commons legal code: <https://creativecommons.org/licenses/by/4.0/legalcode>
+Human-readable deed:           <https://creativecommons.org/licenses/by/4.0/deed.zh-hans>
