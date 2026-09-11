@@ -2,7 +2,7 @@
 
 > 由 `scripts/stats.py` 自动生成,请勿手改。状态为 `active` / `ended` / `hiatus` 的是深档,`todo` 为待收录 stub。
 
-## 中文播客(zh) · 79 档
+## 中文播客(zh) · 82 档
 
 | 节目 | 赛道 | 状态 | 主播(首位) | 最近更新 | 条目 |
 | --- | --- | --- | --- | --- | --- |
@@ -18,7 +18,7 @@
 | 硬地骇客(Hard Hacker / Indie Hacker 中文社区) | ai | active | 三位 10 年+互联网创业者(社区匿名,公开场合以"硬地骇客团队"出现) | 2026-08-05 | [`ying-di-hai-ke`](zh/ai/ying-di-hai-ke.md) |
 | 老石谈芯 | ai | active | 老石(本名待核) | 2026-08-04 | [`lao-shi-tan-xin`](zh/ai/lao-shi-tan-xin.md) |
 | 钱皓频道 | ai | active | 钱皓(皓哥) | 2026-08-04 | [`qian-hao-pin-dao`](zh/ai/qian-hao-pin-dao.md) |
-| BB商业与品牌 | business | todo(stub) | TODO | 2026-09-11 | [`bb-shang-ye`](zh/business/bb-shang-ye.md) |
+| BB商业与品牌 | business | active | BB商业与品牌主播团队(具体名单 TODO) | 2026-09-11 | [`bb-shang-ye`](zh/business/bb-shang-ye.md) |
 | 三五环 | business | active | 刘飞 | 2026-08-03 | [`san-wu-huan`](zh/business/san-wu-huan.md) |
 | 创业内幕 | business | todo(stub) | — | 2026-08-03 | [`chuang-ye-nei-mu`](zh/business/chuang-ye-nei-mu.md) |
 | 半拿铁 | 商业沉浮录 | business | active | 刘飞(主理人,前互联网大厂产品经理) | 2026-08-05 | [`ban-na-tie`](zh/business/ban-na-tie.md) |
@@ -37,14 +37,17 @@
 | 如此城市 CityTells | culture | active | 澎湃研究所·试说新语工作室(编辑团队) | 2026-09-11 | [`ru-ci-cheng-shi`](zh/culture/ru-ci-cheng-shi.md) |
 | 小天章 | culture | active | 章泽天(主理 / 京东集团 CFO 顾问) | 2026-09-11 | [`xiao-tian-zhang`](zh/culture/xiao-tian-zhang.md) |
 | 岩中花述 | culture | active | 陈鲁豫(主理) | 2026-09-11 | [`yan-zhong-hua-shu`](zh/culture/yan-zhong-hua-shu.md) |
+| 开放三明治 | culture | active | 中国三明治编辑团队(轮值主播) | 2026-09-11 | [`san-ming-zhi`](zh/culture/san-ming-zhi.md) |
 | 忽左忽右 | culture | active | 程衍樑（Ian） | 2026-08-03 | [`hu-zuo-hu-you`](zh/culture/hu-zuo-hu-you.md) |
 | 故事FM | culture | active | 寇爱哲 | 2026-08-03 | [`gushi-fm`](zh/culture/gushi-fm.md) |
+| 是个人物 | culture | active | 《人物》杂志主笔团队(轮值主播) | 2026-09-11 | [`ren-wu`](zh/culture/ren-wu.md) |
 | 正午 | culture | active | 郭玉洁(主理人,作家 / 资深媒体人) | 2026-09-11 | [`zheng-wu`](zh/culture/zheng-wu.md) |
 | 没理想编辑部 | culture | active | 荞木(看理想编辑) | 2026-09-04 | [`mei-lixiang-bianjibu`](zh/culture/mei-lixiang-bianjibu.md) |
 | 涟漪效应 | culture | active | 澎湃人物 / 镜相栏目编辑团队(轮值主播) | 2026-09-11 | [`lian-yi-xiao-ying`](zh/culture/lian-yi-xiao-ying.md) |
-| 澎湃·镜相 | culture | todo(stub) | — | 2026-09-11 | [`peng-pai-jing-xiang`](zh/culture/peng-pai-jing-xiang.md) |
+| 澎湃·镜相 | culture | active | 澎湃新闻镜相栏目编辑团队 | 2026-09-11 | [`peng-pai-jing-xiang`](zh/culture/peng-pai-jing-xiang.md) |
 | 看理想圆桌 | culture | active | 看理想编辑部轮值主持 + 嘉宾制 | 2026-09-04 | [`kan-lixiang-yuanzhuo`](zh/culture/kan-lixiang-yuanzhuo.md) |
 | 真实故事 | culture | active | 雷磊(创始人,资深媒体人 / 非虚构写作者) | 2026-09-11 | [`zhen-shi-gu-shi`](zh/culture/zhen-shi-gu-shi.md) |
+| 端传媒 | culture | active | 端传媒编辑团队(轮值主播,具体名单 TODO) | 2026-09-11 | [`duan-chuan-mei`](zh/culture/duan-chuan-mei.md) |
 | 自然光 | culture | active | 窦文涛(主理人,前凤凰卫视《锵锵三人行》1998 起、《圆桌派》主持人) | 2026-09-09 | [`zi-ran-guang`](zh/culture/zi-ran-guang.md) |
 | 螺丝在拧紧 | culture | active | 吴琦 —《单读》主编,文化与非虚构对谈主持人 | 2026-09-04 | [`luosi-zai-ningjin`](zh/culture/luosi-zai-ningjin.md) |
 | 言外之易 | culture | active | 易立竞(主理 / 资深媒体人,前《人物》主笔 / 《立场》主持人) | 2026-09-11 | [`yan-wai-zhi-yi`](zh/culture/yan-wai-zhi-yi.md) |
@@ -55,20 +58,20 @@
 | 疯投圈 | finance | active | 黄海 | 2026-08-03 | [`feng-tou-quan`](zh/finance/feng-tou-quan.md) |
 | 面基 | finance | active | 老钱(主理人,金融从业背景;具体履历 **TODO**) | 2026-09-05 | [`mian-ji`](zh/finance/mian-ji.md) |
 | 什么电台 | life | active | 阿彬 | 2026-08-03 | [`shenme-diantai`](zh/life/shenme-diantai.md) |
-| 儿童不宜 | life | todo(stub) | — | 2026-08-03 | [`er-tong-bu-yi`](zh/life/er-tong-bu-yi.md) |
 | 凹凸电波 | life | active | 伍叁伍肆 | 2026-08-03 | [`ao-tu-dian-bo`](zh/life/ao-tu-dian-bo.md) |
 | 午夜上发条 | life | todo(stub) | — | 2026-08-03 | [`wu-ye-shang-fa-tiao`](zh/life/wu-ye-shang-fa-tiao.md) |
 | 大方 | life | active | 大方 | 2026-08-03 | [`da-fang`](zh/life/da-fang.md) |
-| 天真不天真 | life | todo(stub) | — | 2026-08-03 | [`tian-zhen-bu-tian-zhen`](zh/life/tian-zhen-bu-tian-zhen.md) |
+| 天真不天真 | life | active | 主理团队(具体名单 TODO) | 2026-09-11 | [`tian-zhen-bu-tian-zhen`](zh/life/tian-zhen-bu-tian-zhen.md) |
 | 无聊斋 | life | active | 大老王 | 2026-08-03 | [`wu-liao-zhai`](zh/life/wu-liao-zhai.md) |
 | 日谈公园 | life | active | 李叔 | 2026-08-03 | [`ri-tan-gong-yuan`](zh/life/ri-tan-gong-yuan.md) |
 | 自我进化论 | life | active | 颜晓静(主理人) | 2026-09-11 | [`zi-wo-jin-hua-lun`](zh/life/zi-wo-jin-hua-lun.md) |
+| 谭立人 | life | active | 谭立人(主理) | 2026-09-11 | [`er-tong-bu-yi`](zh/life/er-tong-bu-yi.md) |
 | 907编辑部 | news | todo(stub) | 澎湃国际新闻部编辑团队 | 2026-09-04 | [`907-bian-ji-bu`](zh/news/907-bian-ji-bu.md) |
 | Sinica Podcast | news | todo(stub) | — | 2026-08-03 | [`sinica`](zh/news/sinica.md) |
 | 声动早咖啡 | news | active | 声动活泼团队轮值主播(具体班底 **TODO**) | 2026-09-05 | [`sheng-dong-zao-ka-fei-news`](zh/news/sheng-dong-zao-ka-fei-news.md) |
 | 岛岛连线 | news | active | 王骁 Stella(主理人,前观察者网 / 风云直播主持人) | 2026-09-09 | [`dao-dao-lian-xian`](zh/news/dao-dao-lian-xian.md) |
 | 端闻 | news | active | 端传媒编辑团队(轮值主播,具体名单 TODO) | 2026-09-09 | [`duan-wen`](zh/news/duan-wen.md) |
-| 怡楽播客 | story | todo(stub) | — | 2026-08-03 | [`yi-le-bo-ke`](zh/story/yi-le-bo-ke.md) |
+| 怡楽播客 | story | todo(stub) | TODO | 2026-09-11 | [`yi-le-bo-ke`](zh/story/yi-le-bo-ke.md) |
 | 犯罪象限 | story | active | 犯罪象限主播团队(具体名单 TODO) | 2026-09-11 | [`fan-zui-xiang-xian`](zh/story/fan-zui-xiang-xian.md) |
 | 竹林之中 | story | todo(stub) | — | 2026-08-03 | [`zhu-lin-zhi-zhong`](zh/story/zhu-lin-zhi-zhong.md) |
 | 记录在案(财新) | story | active | 财新调查记者团队(轮值主播) | 2026-09-11 | [`ji-lu-zai-an`](zh/story/ji-lu-zai-an.md) |
@@ -86,7 +89,7 @@
 | 罗永浩的十字路口 | tech | active | 罗永浩 — 细红线科技创始人 / 前锤子科技创始人 / 前交个朋友主播 | 2026-09-05 | [`luo-yonghao-shi-zi-lu-kou`](zh/tech/luo-yonghao-shi-zi-lu-kou.md) |
 | 道听途说 | tech | todo(stub) | — | 2026-08-03 | [`dao-ting-tu-shuo`](zh/tech/dao-ting-tu-shuo.md) |
 
-## 英文 / 国际播客(en) · 121 档
+## 英文 / 国际播客(en) · 130 档
 
 | 节目 | 赛道 | 状态 | 主播(首位) | 最近更新 | 条目 |
 | --- | --- | --- | --- | --- | --- |
@@ -136,17 +139,24 @@
 | 99% Invisible | culture | todo(stub) | — | 2026-08-03 | [`99-invisible`](en/culture/99-invisible.md) |
 | Armchair Expert | culture | active | Dax Shepard | 2026-08-05 | [`armchair-expert`](en/culture/armchair-expert.md) |
 | Call Her Daddy | culture | active | Alex Cooper — Unwell Network 创始人 | 2026-09-04 | [`call-her-daddy`](en/culture/call-her-daddy.md) |
+| Death, Sex & Money | culture | todo(stub) | — | 2026-09-11 | [`death-sex-money`](en/culture/death-sex-money.md) |
+| Decoder Ring | culture | todo(stub) | — | 2026-09-11 | [`decoder-ring`](en/culture/decoder-ring.md) |
 | Ear Hustle | culture | active | Earlonne Woods(联合主理,前 San Quentin 州立监狱服刑 21 年,2018 出狱) | 2026-09-11 | [`ear-hustle`](en/culture/ear-hustle.md) |
+| Everything is Alive | culture | todo(stub) | — | 2026-09-11 | [`everything-is-alive`](en/culture/everything-is-alive.md) |
 | Fresh Air | culture | active | Terry Gross | 2026-08-03 | [`fresh-air`](en/culture/fresh-air.md) |
 | Giggly Squad | culture | active | Hannah Berner — 喜剧演员 /《Summer House》前主演 | 2026-09-04 | [`giggly-squad`](en/culture/giggly-squad.md) |
 | Heavyweight | culture | todo(stub) | — | 2026-09-11 | [`heavyweight`](en/culture/heavyweight.md) |
+| Invisibilia | culture | todo(stub) | — | 2026-09-11 | [`invisibilia`](en/culture/invisibilia.md) |
+| Longform | culture | todo(stub) | — | 2026-09-11 | [`longform`](en/culture/longform.md) |
 | Modern Wisdom | culture | todo(stub) | Chris Williamson（YouTuber / 播客主） | 2026-09-04 | [`modern-wisdom`](en/culture/modern-wisdom.md) |
 | On Purpose with Jay Shetty | culture | active | Jay Shetty | 2026-08-05 | [`on-purpose-with-jay-shetty`](en/culture/on-purpose-with-jay-shetty.md) |
 | S-Town | culture | todo(stub) | — | 2026-09-11 | [`s-town`](en/culture/s-town.md) |
+| Scene on Radio | culture | todo(stub) | — | 2026-09-11 | [`scene-on-radio`](en/culture/scene-on-radio.md) |
 | Song Exploder | culture | todo(stub) | — | 2026-09-11 | [`song-exploder`](en/culture/song-exploder.md) |
 | StoryCorps | culture | todo(stub) | — | 2026-09-11 | [`storycorps`](en/culture/storycorps.md) |
 | The Breakfast Club | culture | active | Charlamagne Tha God(Lenard McKelvey) | 2026-09-04 | [`the-breakfast-club`](en/culture/the-breakfast-club.md) |
 | The Diary Of A CEO | culture | active | Steven Bartlett | 2026-08-05 | [`diary-of-a-ceo`](en/culture/diary-of-a-ceo.md) |
+| The Experiment | culture | todo(stub) | — | 2026-09-11 | [`the-experiment`](en/culture/the-experiment.md) |
 | The Joe Budden Podcast | culture | active | Joe Budden — 说唱歌手转型的主播 / 文化评论人 | 2026-09-04 | [`the-joe-budden-podcast`](en/culture/the-joe-budden-podcast.md) |
 | The Mel Robbins Podcast | culture | active | Mel Robbins — 励志演说家 /《The 5 Second Rule》《The Let Them Theory》作者 | 2026-09-04 | [`the-mel-robbins-podcast`](en/culture/the-mel-robbins-podcast.md) |
 | The Moth | culture | active | George Dawes Green(创始人,1997 起至今) | 2026-09-11 | [`the-moth`](en/culture/the-moth.md) |
@@ -155,6 +165,7 @@
 | The Tim Ferriss Show | culture | active | Tim Ferriss | 2026-08-03 | [`the-tim-ferriss-show`](en/culture/the-tim-ferriss-show.md) |
 | This American Life | culture | active | Ira Glass(创始人/主理,1995 起至今) | 2026-09-11 | [`this-american-life`](en/culture/this-american-life.md) |
 | WTF with Marc Maron | culture | todo(stub) | — | 2026-08-03 | [`wtf-with-marc-maron`](en/culture/wtf-with-marc-maron.md) |
+| Wind of Change | culture | todo(stub) | — | 2026-09-11 | [`wind-of-change`](en/culture/wind-of-change.md) |
 | 50 Things That Made the Modern Economy | education | todo(stub) | — | 2026-08-03 | [`50-things-that-made-the-modern-economy`](en/education/50-things-that-made-the-modern-economy.md) |
 | Freakonomics Radio | education | todo(stub) | — | 2026-08-03 | [`freakonomics-radio`](en/education/freakonomics-radio.md) |
 | Stuff You Should Know | education | todo(stub) | — | 2026-08-03 | [`stuff-you-should-know`](en/education/stuff-you-should-know.md) |
@@ -169,6 +180,7 @@
 | The Rest is History | history | todo(stub) | — | 2026-08-03 | [`the-rest-is-history`](en/history/the-rest-is-history.md) |
 | Throughline | history | todo(stub) | — | 2026-08-03 | [`throughline`](en/history/throughline.md) |
 | Consider This from NPR | news | todo(stub) | — | 2026-08-03 | [`consider-this-from-npr`](en/news/consider-this-from-npr.md) |
+| In the Dark | news | todo(stub) | — | 2026-09-11 | [`in-the-dark`](en/news/in-the-dark.md) |
 | New Heights | news | active | Jason Kelce — 前费城老鹰队中锋,Super Bowl LII 冠军 | 2026-09-04 | [`new-heights`](en/news/new-heights.md) |
 | Pardon My Take | news | active | Dan "Big Cat" Katz | 2026-09-04 | [`pardon-my-take`](en/news/pardon-my-take.md) |
 | Planet Money | news | active | Rotating (NPR economics reporters) | 2026-08-03 | [`planet-money`](en/news/planet-money.md) |
