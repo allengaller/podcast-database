@@ -2,7 +2,7 @@
 
 > 由 `scripts/stats.py` 自动生成,请勿手改。状态为 `active` / `ended` / `hiatus` 的是深档,`todo` 为待收录 stub。
 
-## 中文播客(zh) · 74 档
+## 中文播客(zh) · 78 档
 
 | 节目 | 赛道 | 状态 | 主播(首位) | 最近更新 | 条目 |
 | --- | --- | --- | --- | --- | --- |
@@ -28,6 +28,7 @@
 | 深聊投资人 | business | todo(stub) | — | 2026-08-03 | [`shen-liao-tou-zi-ren`](zh/business/shen-liao-tou-zi-ren.md) |
 | 知行小酒馆 | business | todo(stub) | — | 2026-08-03 | [`zhi-xing-xiao-jiu-guan`](zh/business/zhi-xing-xiao-jiu-guan.md) |
 | 多新鲜呐 | comedy | todo(stub) | 于谦（相声演员,德云社） | 2026-09-04 | [`duo-xin-xian-na`](zh/comedy/duo-xin-xian-na.md) |
+| GQ 报道 | culture | todo(stub) | — | 2026-09-11 | [`gq-bao-dao`](zh/culture/gq-bao-dao.md) |
 | Talk三联 | culture | active | 《三联生活周刊》记者 / 主笔轮值(肖楚舟・主笔、魏倩・主笔、孙若茜・主任记者等;主编李鸿谷不定期对谈) | 2026-09-04 | [`talk-sanlian`](zh/culture/talk-sanlian.md) |
 | 上海书评 | culture | todo(stub) | 许子东、骆以军、许纪霖、姜进、毛尖 等作家学者（近读工作室） | 2026-09-04 | [`shang-hai-shu-ping`](zh/culture/shang-hai-shu-ping.md) |
 | 东亚观察局 | culture | active | 杨一 | 2026-08-03 | [`dong-ya-guan-cha-ju`](zh/culture/dong-ya-guan-cha-ju.md) |
@@ -38,13 +39,16 @@
 | 岩中花述 | culture | todo(stub) | — | 2026-08-03 | [`yan-zhong-hua-shu`](zh/culture/yan-zhong-hua-shu.md) |
 | 忽左忽右 | culture | active | 程衍樑（Ian） | 2026-08-03 | [`hu-zuo-hu-you`](zh/culture/hu-zuo-hu-you.md) |
 | 故事FM | culture | active | 寇爱哲 | 2026-08-03 | [`gushi-fm`](zh/culture/gushi-fm.md) |
+| 正午 | culture | todo(stub) | — | 2026-09-11 | [`zheng-wu`](zh/culture/zheng-wu.md) |
 | 没理想编辑部 | culture | active | 荞木(看理想编辑) | 2026-09-04 | [`mei-lixiang-bianjibu`](zh/culture/mei-lixiang-bianjibu.md) |
 | 涟漪效应 | culture | todo(stub) | 澎湃人物 / 镜相栏目编辑团队 | 2026-09-04 | [`lian-yi-xiao-ying`](zh/culture/lian-yi-xiao-ying.md) |
 | 看理想圆桌 | culture | active | 看理想编辑部轮值主持 + 嘉宾制 | 2026-09-04 | [`kan-lixiang-yuanzhuo`](zh/culture/kan-lixiang-yuanzhuo.md) |
+| 真实故事 | culture | todo(stub) | — | 2026-09-11 | [`zhen-shi-gu-shi`](zh/culture/zhen-shi-gu-shi.md) |
 | 自然光 | culture | active | 窦文涛(主理人,前凤凰卫视《锵锵三人行》1998 起、《圆桌派》主持人) | 2026-09-09 | [`zi-ran-guang`](zh/culture/zi-ran-guang.md) |
 | 螺丝在拧紧 | culture | active | 吴琦 —《单读》主编,文化与非虚构对谈主持人 | 2026-09-04 | [`luosi-zai-ningjin`](zh/culture/luosi-zai-ningjin.md) |
 | 言外之易 | culture | todo(stub) | 易立竞（资深媒体人,前《人物》主笔 / 《立场》主持人） | 2026-09-04 | [`yan-wai-zhi-yi`](zh/culture/yan-wai-zhi-yi.md) |
 | 读库立体声 | culture | active | 张立宪(老六)— 读库主编 / 出版人 | 2026-09-04 | [`duku-liti-sheng`](zh/culture/duku-liti-sheng.md) |
+| 谷雨实验室 | culture | todo(stub) | — | 2026-09-11 | [`gu-yu-shi-yan-shi`](zh/culture/gu-yu-shi-yan-shi.md) |
 | 跳岛FM | culture | active | 主播由大方团队轮值(首位主播筱狸/董子琪,前界面文化记者,2020-03 至 2020-10;此后宝婷等接力) | 2026-09-04 | [`tiao-dao-fm`](zh/culture/tiao-dao-fm.md) |
 | 陈鲁豫·慢谈 | culture | active | 陈鲁豫 — 资深媒体人 / 主持人(凤凰卫视《鲁豫有约》主持多年) | 2026-09-05 | [`chen-lu-yu-man-tan`](zh/culture/chen-lu-yu-man-tan.md) |
 | 疯投圈 | finance | active | 黄海 | 2026-08-03 | [`feng-tou-quan`](zh/finance/feng-tou-quan.md) |
@@ -81,7 +85,7 @@
 | 罗永浩的十字路口 | tech | active | 罗永浩 — 细红线科技创始人 / 前锤子科技创始人 / 前交个朋友主播 | 2026-09-05 | [`luo-yonghao-shi-zi-lu-kou`](zh/tech/luo-yonghao-shi-zi-lu-kou.md) |
 | 道听途说 | tech | todo(stub) | — | 2026-08-03 | [`dao-ting-tu-shuo`](zh/tech/dao-ting-tu-shuo.md) |
 
-## 英文 / 国际播客(en) · 112 档
+## 英文 / 国际播客(en) · 116 档
 
 | 节目 | 赛道 | 状态 | 主播(首位) | 最近更新 | 条目 |
 | --- | --- | --- | --- | --- | --- |
@@ -98,7 +102,7 @@
 | Lex Fridman Podcast | ai | active | Lex Fridman | 2026-08-04 | [`lex-fridman-podcast`](en/ai/lex-fridman-podcast.md) |
 | Me, Myself, and AI | ai | active | Sam Ransbotham | 2026-08-04 | [`me-myself-and-ai`](en/ai/me-myself-and-ai.md) |
 | No Priors | ai | active | Sarah Guo — Conviction 创始人（前 Greylock Partners 合伙人，10 年） | 2026-08-04 | [`no-priors`](en/ai/no-priors.md) |
-| Possible | ai | todo(stub) | Reid Hoffman（LinkedIn 联合创始人,Greylock 合伙人） | 2026-09-04 | [`possible`](en/ai/possible.md) |
+| Possible | ai | active | Reid Hoffman(LinkedIn 联合创始人,Greylock 合伙人) | 2026-09-11 | [`possible`](en/ai/possible.md) |
 | Practical AI | ai | active | Daniel Whitenack（Data Dan）— 数据科学家、Prediction Guard 创始人；曾服务两家 startup 和 4000+ 员工的国际 NGO；Purdue University 客座讲师 | 2026-08-04 | [`practical-ai`](en/ai/practical-ai.md) |
 | Robot Brains Podcast | ai | active | Pieter Abbeel(主持人,UC Berkeley 教授 / BAIR 联合主任 / Berkeley Robot Learning Lab 主任 / 前 Covariant 创始人 / 总裁 / 首席科学家) | 2026-08-05 | [`robot-brains-podcast`](en/ai/robot-brains-podcast.md) |
 | The AI Daily Brief (Nathaniel Whittemore) | ai | active | Nathaniel Whittemore — AI 行业内容创作者 / 媒体人 | 2026-08-04 | [`ai-daily-brief`](en/ai/ai-daily-brief.md) |
@@ -106,17 +110,17 @@
 | The Cognitive Revolution | ai | active | Nathan Labenz — Waymark 联合创始人（AI 驱动视频创作工具公司）；前 Cognitive Computation / health tech 创业者；X 平台活跃 AI 观察者 | 2026-08-04 | [`the-cognitive-revolution`](en/ai/the-cognitive-revolution.md) |
 | The TWIML AI Podcast (formerly This Week in Machine Learning & AI) | ai | active | Sam Charrington — TWIML 创始人，分析师/前科技公司产品经理，长期关注 ML/AI 平台与企业落地 | 2026-08-04 | [`twiml-ai-podcast`](en/ai/twiml-ai-podcast.md) |
 | B2B Growth | business | active | 轮值主持(Sweet Fish 团队;James Carbary 任执行制作人) | 2026-09-05 | [`b2b-growth`](en/business/b2b-growth.md) |
-| BG2 Pod | business | todo(stub) | Brad Gerstner（Altimeter Capital 创始人） | 2026-09-04 | [`bg2-pod`](en/business/bg2-pod.md) |
+| BG2 Pod | business | active | Brad Gerstner(Altimeter Capital 创始人 / CIO) | 2026-09-11 | [`bg2-pod`](en/business/bg2-pod.md) |
 | Founder's Journal | business | active | Alex Lieberman — Morning Brew 联合创始人(前 CEO / 执行董事长) | 2026-09-05 | [`founder-s-journal`](en/business/founder-s-journal.md) |
 | How I Built This with Guy Raz | business | active | Guy Raz (NPR correspondent, host of TED Radio Hour, founder of Built In Public) | 2026-08-05 | [`how-i-built-this`](en/business/how-i-built-this.md) |
 | Indie Hackers | business | active | Courtland Allen (founder, originally from Stripe; co-host) | 2026-08-05 | [`indie-hackers`](en/business/indie-hackers.md) |
 | Masters of Scale with Reid Hoffman | business | active | Reid Hoffman (LinkedIn co-founder, Greylock partner) | 2026-08-05 | [`masters-of-scale`](en/business/masters-of-scale.md) |
-| Money Stuff: The Podcast | business | todo(stub) | Matt Levine（Bloomberg Opinion 专栏作家,《Money Stuff》原版主笔） | 2026-09-04 | [`money-stuff`](en/business/money-stuff.md) |
+| Money Stuff: The Podcast | business | active | Matt Levine(Bloomberg Opinion 金融专栏作家,《Money Stuff》原版主笔) | 2026-09-11 | [`money-stuff`](en/business/money-stuff.md) |
 | SaaStr Podcast | business | active | Jason Lemkin (founder & CEO of SaaStr; primary host) | 2026-08-05 | [`saastr-podcast`](en/business/saastr-podcast.md) |
 | TBPN | business | active | John Coogan — 联合创始人 / 主播,科技创业者 / YouTube 创作者 | 2026-09-04 | [`tbpn`](en/business/tbpn.md) |
-| The Knowledge Project | business | todo(stub) | Shane Parrish（blog.farnamstreet.com 创始人,前 CIA 情报分析师） | 2026-09-04 | [`the-knowledge-project`](en/business/the-knowledge-project.md) |
+| The Knowledge Project | business | active | Shane Parrish(Farnam Street 创始人,前加拿大情报分析师) | 2026-09-11 | [`the-knowledge-project`](en/business/the-knowledge-project.md) |
 | The Prof G Pod with Scott Galloway | business | active | Scott Galloway — NYU Stern 教授 / 畅销书作者 / 连续创业者(单人主理,板块轮换) | 2026-09-04 | [`the-prof-g-pod`](en/business/the-prof-g-pod.md) |
-| The Twenty Minute VC (20VC) | business | todo(stub) | Harry Stebbings（VC,20VC 创始人） | 2026-09-04 | [`20vc`](en/business/20vc.md) |
+| The Twenty Minute VC (20VC) | business | active | Harry Stebbings(20VC 创始人,前 VC 投资人) | 2026-09-11 | [`20vc`](en/business/20vc.md) |
 | a16z Podcast | business | active | Sonal Chokshi (Editor in Chief, host across most feeds since ~2018) | 2026-08-05 | [`a16z-podcast`](en/business/a16z-podcast.md) |
 | Comedy Bang! Bang! | comedy | todo(stub) | — | 2026-08-03 | [`comedy-bang-bang`](en/comedy/comedy-bang-bang.md) |
 | Conan O'Brien Needs A Friend | comedy | active | Conan O'Brien | 2026-08-03 | [`conan-obrien-needs-a-friend`](en/comedy/conan-obrien-needs-a-friend.md) |
@@ -131,6 +135,7 @@
 | 99% Invisible | culture | todo(stub) | — | 2026-08-03 | [`99-invisible`](en/culture/99-invisible.md) |
 | Armchair Expert | culture | active | Dax Shepard | 2026-08-05 | [`armchair-expert`](en/culture/armchair-expert.md) |
 | Call Her Daddy | culture | active | Alex Cooper — Unwell Network 创始人 | 2026-09-04 | [`call-her-daddy`](en/culture/call-her-daddy.md) |
+| Ear Hustle | culture | todo(stub) | — | 2026-09-11 | [`ear-hustle`](en/culture/ear-hustle.md) |
 | Fresh Air | culture | active | Terry Gross | 2026-08-03 | [`fresh-air`](en/culture/fresh-air.md) |
 | Giggly Squad | culture | active | Hannah Berner — 喜剧演员 /《Summer House》前主演 | 2026-09-04 | [`giggly-squad`](en/culture/giggly-squad.md) |
 | Modern Wisdom | culture | todo(stub) | Chris Williamson（YouTuber / 播客主） | 2026-09-04 | [`modern-wisdom`](en/culture/modern-wisdom.md) |
@@ -139,9 +144,11 @@
 | The Diary Of A CEO | culture | active | Steven Bartlett | 2026-08-05 | [`diary-of-a-ceo`](en/culture/diary-of-a-ceo.md) |
 | The Joe Budden Podcast | culture | active | Joe Budden — 说唱歌手转型的主播 / 文化评论人 | 2026-09-04 | [`the-joe-budden-podcast`](en/culture/the-joe-budden-podcast.md) |
 | The Mel Robbins Podcast | culture | active | Mel Robbins — 励志演说家 /《The 5 Second Rule》《The Let Them Theory》作者 | 2026-09-04 | [`the-mel-robbins-podcast`](en/culture/the-mel-robbins-podcast.md) |
+| The Moth | culture | todo(stub) | — | 2026-09-11 | [`the-moth`](en/culture/the-moth.md) |
 | The School of Greatness | culture | todo(stub) | — | 2026-08-03 | [`the-school-of-greatness`](en/culture/the-school-of-greatness.md) |
 | The Telepathy Tapes | culture | todo(stub) | Ky Dickens（纪录片导演,《The Science of Seance》《The 13th Step》导演） | 2026-09-04 | [`the-telepathy-tapes`](en/culture/the-telepathy-tapes.md) |
 | The Tim Ferriss Show | culture | active | Tim Ferriss | 2026-08-03 | [`the-tim-ferriss-show`](en/culture/the-tim-ferriss-show.md) |
+| This American Life | culture | todo(stub) | — | 2026-09-11 | [`this-american-life`](en/culture/this-american-life.md) |
 | WTF with Marc Maron | culture | todo(stub) | — | 2026-08-03 | [`wtf-with-marc-maron`](en/culture/wtf-with-marc-maron.md) |
 | 50 Things That Made the Modern Economy | education | todo(stub) | — | 2026-08-03 | [`50-things-that-made-the-modern-economy`](en/education/50-things-that-made-the-modern-economy.md) |
 | Freakonomics Radio | education | todo(stub) | — | 2026-08-03 | [`freakonomics-radio`](en/education/freakonomics-radio.md) |
@@ -162,11 +169,12 @@
 | Planet Money | news | active | Rotating (NPR economics reporters) | 2026-08-03 | [`planet-money`](en/news/planet-money.md) |
 | Pod Save America | news | active | Jon Favreau | 2026-08-05 | [`pod-save-america`](en/news/pod-save-america.md) |
 | Post Reports | news | todo(stub) | — | 2026-08-03 | [`post-reports`](en/news/post-reports.md) |
+| Reveal | news | todo(stub) | — | 2026-09-11 | [`reveal`](en/news/reveal.md) |
 | Sway | news | todo(stub) | — | 2026-08-03 | [`sway`](en/news/sway.md) |
 | The Argument | news | todo(stub) | — | 2026-08-03 | [`the-argument`](en/news/the-argument.md) |
 | The Daily | news | active | Michael Barbaro | 2026-08-03 | [`the-daily`](en/news/the-daily.md) |
 | The Rachel Maddow Show | news | todo(stub) | — | 2026-08-03 | [`the-rachel-maddow-show`](en/news/the-rachel-maddow-show.md) |
-| The Rest Is Politics | news | todo(stub) | Alastair Campbell（前英国首相布莱尔幕僚长,前工党总联络官） | 2026-09-04 | [`the-rest-is-politics`](en/news/the-rest-is-politics.md) |
+| The Rest Is Politics | news | active | Alastair Campbell(前英国首相布莱尔幕僚长,前工党总联络官) | 2026-09-11 | [`the-rest-is-politics`](en/news/the-rest-is-politics.md) |
 | The Shawn Ryan Show | news | todo(stub) | Shawn Ryan（前 Navy SEAL,前 CIA 承包商） | 2026-09-04 | [`the-shawn-ryan-show`](en/news/the-shawn-ryan-show.md) |
 | The Tucker Carlson Show | news | active | Tucker Carlson — 前 Fox News 黄金档主播(2023 离任) | 2026-09-04 | [`the-tucker-carlson-show`](en/news/the-tucker-carlson-show.md) |
 | Today in Focus | news | active | Nosheen Iqbal | 2026-08-03 | [`today-in-focus`](en/news/today-in-focus.md) |
@@ -183,9 +191,9 @@
 | Founders Podcast | tech | todo(stub) | — | 2026-08-03 | [`founders`](en/tech/founders.md) |
 | Lenny's Podcast | tech | active | Lenny Rachitsky | 2026-08-03 | [`lennys-podcast`](en/tech/lennys-podcast.md) |
 | Logan Bartlett Show | tech | todo(stub) | — | 2026-08-03 | [`logan-bartlett-show`](en/tech/logan-bartlett-show.md) |
-| My First Million | tech | todo(stub) | — | 2026-08-03 | [`my-first-million`](en/tech/my-first-million.md) |
+| My First Million | tech | active | Shaan Puri(连续创业者,前 Bebo CEO) | 2026-09-11 | [`my-first-million`](en/tech/my-first-million.md) |
 | Pivot | tech | todo(stub) | — | 2026-08-03 | [`pivot`](en/tech/pivot.md) |
-| Search Engine | tech | todo(stub) | PJ Vogt（前 Reply All 联合主理人,Gimlet Media 创始团队成员） | 2026-09-04 | [`search-engine`](en/tech/search-engine.md) |
+| Search Engine | tech | active | PJ Vogt(前 Reply All 联合主理人,Gimlet Media 创始团队成员) | 2026-09-11 | [`search-engine`](en/tech/search-engine.md) |
 | Stratechery (Update + Interview) | tech | active | Ben Thompson — 策略分析师,Stratechery 创始人(2014) | 2026-09-05 | [`stratechery`](en/tech/stratechery.md) |
 | The Vergecast | tech | active | Nilay Patel | 2026-08-03 | [`the-vergecast`](en/tech/the-vergecast.md) |
 | This Week in Startups | tech | active | Jason Calacanis | 2026-08-03 | [`this-week-in-startups`](en/tech/this-week-in-startups.md) |
