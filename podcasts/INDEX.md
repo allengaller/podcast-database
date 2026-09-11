@@ -20,7 +20,7 @@
 | 钱皓频道 | ai | active | 钱皓(皓哥) | 2026-08-04 | [`qian-hao-pin-dao`](zh/ai/qian-hao-pin-dao.md) |
 | BB商业与品牌 | business | active | BB商业与品牌主播团队(具体名单 TODO) | 2026-09-11 | [`bb-shang-ye`](zh/business/bb-shang-ye.md) |
 | 三五环 | business | active | 刘飞 | 2026-08-03 | [`san-wu-huan`](zh/business/san-wu-huan.md) |
-| 创业内幕 | business | todo(stub) | — | 2026-08-03 | [`chuang-ye-nei-mu`](zh/business/chuang-ye-nei-mu.md) |
+| 创业内幕 Startup Insider | business | active | 主播团队(具体名单 TODO) | 2026-09-11 | [`chuang-ye-nei-mu`](zh/business/chuang-ye-nei-mu.md) |
 | 半拿铁 | 商业沉浮录 | business | active | 刘飞(主理人,前互联网大厂产品经理) | 2026-08-05 | [`ban-na-tie`](zh/business/ban-na-tie.md) |
 | 商业就是这样 | business | active | 肖文杰 | 2026-08-03 | [`shangye-jiushi-zheyang`](zh/business/shangye-jiushi-zheyang.md) |
 | 张小珺Jùn|商业访谈录 | business | active | 张小珺 — 商业报道出身的访谈人(详细履历 **TODO**) | 2026-09-05 | [`zhang-xiaojun-shangye-fangtan-lu`](zh/business/zhang-xiaojun-shangye-fangtan-lu.md) |
@@ -73,9 +73,9 @@
 | 端闻 | news | active | 端传媒编辑团队(轮值主播,具体名单 TODO) | 2026-09-09 | [`duan-wen`](zh/news/duan-wen.md) |
 | 怡楽播客 | story | todo(stub) | TODO | 2026-09-11 | [`yi-le-bo-ke`](zh/story/yi-le-bo-ke.md) |
 | 犯罪象限 | story | active | 犯罪象限主播团队(具体名单 TODO) | 2026-09-11 | [`fan-zui-xiang-xian`](zh/story/fan-zui-xiang-xian.md) |
-| 竹林之中 | story | todo(stub) | — | 2026-08-03 | [`zhu-lin-zhi-zhong`](zh/story/zhu-lin-zhi-zhong.md) |
+| 竹林之中 | story | active | 竹林之中主播团队(具体名单 TODO) | 2026-09-11 | [`zhu-lin-zhi-zhong`](zh/story/zhu-lin-zhi-zhong.md) |
 | 记录在案(财新) | story | active | 财新调查记者团队(轮值主播) | 2026-09-11 | [`ji-lu-zai-an`](zh/story/ji-lu-zai-an.md) |
-| 霓达播客 | story | todo(stub) | — | 2026-08-03 | [`ni-da-bo-ke`](zh/story/ni-da-bo-ke.md) |
+| 霓达播客 | story | active | 霓达主播团队(具体名单 TODO) | 2026-09-11 | [`ni-da-bo-ke`](zh/story/ni-da-bo-ke.md) |
 | 黑猫侦探社俱乐部 | story | active | 咪仔(主创 / 资深内容策划) | 2026-09-11 | [`hei-mao-zhen-tan-she`](zh/story/hei-mao-zhen-tan-she.md) |
 | Digital Gym | tech | todo(stub) | — | 2026-08-03 | [`digital-gym`](zh/tech/digital-gym.md) |
 | SaaS 客研室 | tech | todo(stub) | — | 2026-08-03 | [`saas-ke-yan-shi`](zh/tech/saas-ke-yan-shi.md) |
@@ -87,7 +87,7 @@
 | 硬地骇客 | tech | active | Macing | 2026-08-03 | [`yingdi-haike`](zh/tech/yingdi-haike.md) |
 | 科技早知道 | tech | active | 王俊煜（斑马,前豌豆荚创始人） | 2026-08-03 | [`keji-zao-zhidao`](zh/tech/keji-zao-zhidao.md) |
 | 罗永浩的十字路口 | tech | active | 罗永浩 — 细红线科技创始人 / 前锤子科技创始人 / 前交个朋友主播 | 2026-09-05 | [`luo-yonghao-shi-zi-lu-kou`](zh/tech/luo-yonghao-shi-zi-lu-kou.md) |
-| 道听途说 | tech | todo(stub) | — | 2026-08-03 | [`dao-ting-tu-shuo`](zh/tech/dao-ting-tu-shuo.md) |
+| 道听途说 | tech | active | 橘子(Orange Elephant) | 2026-09-11 | [`dao-ting-tu-shuo`](zh/tech/dao-ting-tu-shuo.md) |
 
 ## 英文 / 国际播客(en) · 130 档
 
