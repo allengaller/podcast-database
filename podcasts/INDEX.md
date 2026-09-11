@@ -28,7 +28,7 @@
 | 深聊投资人 | business | todo(stub) | — | 2026-08-03 | [`shen-liao-tou-zi-ren`](zh/business/shen-liao-tou-zi-ren.md) |
 | 知行小酒馆 | business | todo(stub) | — | 2026-08-03 | [`zhi-xing-xiao-jiu-guan`](zh/business/zhi-xing-xiao-jiu-guan.md) |
 | 多新鲜呐 | comedy | todo(stub) | 于谦（相声演员,德云社） | 2026-09-04 | [`duo-xin-xian-na`](zh/comedy/duo-xin-xian-na.md) |
-| GQ 报道 | culture | todo(stub) | — | 2026-09-11 | [`gq-bao-dao`](zh/culture/gq-bao-dao.md) |
+| GQ 报道 | culture | active | GQ 编辑部 / 轮值主笔 | 2026-09-11 | [`gq-bao-dao`](zh/culture/gq-bao-dao.md) |
 | Talk三联 | culture | active | 《三联生活周刊》记者 / 主笔轮值(肖楚舟・主笔、魏倩・主笔、孙若茜・主任记者等;主编李鸿谷不定期对谈) | 2026-09-04 | [`talk-sanlian`](zh/culture/talk-sanlian.md) |
 | 上海书评 | culture | todo(stub) | 许子东、骆以军、许纪霖、姜进、毛尖 等作家学者（近读工作室） | 2026-09-04 | [`shang-hai-shu-ping`](zh/culture/shang-hai-shu-ping.md) |
 | 东亚观察局 | culture | active | 杨一 | 2026-08-03 | [`dong-ya-guan-cha-ju`](zh/culture/dong-ya-guan-cha-ju.md) |
@@ -39,16 +39,16 @@
 | 岩中花述 | culture | todo(stub) | — | 2026-08-03 | [`yan-zhong-hua-shu`](zh/culture/yan-zhong-hua-shu.md) |
 | 忽左忽右 | culture | active | 程衍樑（Ian） | 2026-08-03 | [`hu-zuo-hu-you`](zh/culture/hu-zuo-hu-you.md) |
 | 故事FM | culture | active | 寇爱哲 | 2026-08-03 | [`gushi-fm`](zh/culture/gushi-fm.md) |
-| 正午 | culture | todo(stub) | — | 2026-09-11 | [`zheng-wu`](zh/culture/zheng-wu.md) |
+| 正午 | culture | active | 郭玉洁(主理人,作家 / 资深媒体人) | 2026-09-11 | [`zheng-wu`](zh/culture/zheng-wu.md) |
 | 没理想编辑部 | culture | active | 荞木(看理想编辑) | 2026-09-04 | [`mei-lixiang-bianjibu`](zh/culture/mei-lixiang-bianjibu.md) |
 | 涟漪效应 | culture | todo(stub) | 澎湃人物 / 镜相栏目编辑团队 | 2026-09-04 | [`lian-yi-xiao-ying`](zh/culture/lian-yi-xiao-ying.md) |
 | 看理想圆桌 | culture | active | 看理想编辑部轮值主持 + 嘉宾制 | 2026-09-04 | [`kan-lixiang-yuanzhuo`](zh/culture/kan-lixiang-yuanzhuo.md) |
-| 真实故事 | culture | todo(stub) | — | 2026-09-11 | [`zhen-shi-gu-shi`](zh/culture/zhen-shi-gu-shi.md) |
+| 真实故事 | culture | active | 雷磊(创始人,资深媒体人 / 非虚构写作者) | 2026-09-11 | [`zhen-shi-gu-shi`](zh/culture/zhen-shi-gu-shi.md) |
 | 自然光 | culture | active | 窦文涛(主理人,前凤凰卫视《锵锵三人行》1998 起、《圆桌派》主持人) | 2026-09-09 | [`zi-ran-guang`](zh/culture/zi-ran-guang.md) |
 | 螺丝在拧紧 | culture | active | 吴琦 —《单读》主编,文化与非虚构对谈主持人 | 2026-09-04 | [`luosi-zai-ningjin`](zh/culture/luosi-zai-ningjin.md) |
 | 言外之易 | culture | todo(stub) | 易立竞（资深媒体人,前《人物》主笔 / 《立场》主持人） | 2026-09-04 | [`yan-wai-zhi-yi`](zh/culture/yan-wai-zhi-yi.md) |
 | 读库立体声 | culture | active | 张立宪(老六)— 读库主编 / 出版人 | 2026-09-04 | [`duku-liti-sheng`](zh/culture/duku-liti-sheng.md) |
-| 谷雨实验室 | culture | todo(stub) | — | 2026-09-11 | [`gu-yu-shi-yan-shi`](zh/culture/gu-yu-shi-yan-shi.md) |
+| 谷雨实验室 | culture | active | 腾讯新闻谷雨团队(总编辑 + 调查记者) | 2026-09-11 | [`gu-yu-shi-yan-shi`](zh/culture/gu-yu-shi-yan-shi.md) |
 | 跳岛FM | culture | active | 主播由大方团队轮值(首位主播筱狸/董子琪,前界面文化记者,2020-03 至 2020-10;此后宝婷等接力) | 2026-09-04 | [`tiao-dao-fm`](zh/culture/tiao-dao-fm.md) |
 | 陈鲁豫·慢谈 | culture | active | 陈鲁豫 — 资深媒体人 / 主持人(凤凰卫视《鲁豫有约》主持多年) | 2026-09-05 | [`chen-lu-yu-man-tan`](zh/culture/chen-lu-yu-man-tan.md) |
 | 疯投圈 | finance | active | 黄海 | 2026-08-03 | [`feng-tou-quan`](zh/finance/feng-tou-quan.md) |
@@ -135,7 +135,7 @@
 | 99% Invisible | culture | todo(stub) | — | 2026-08-03 | [`99-invisible`](en/culture/99-invisible.md) |
 | Armchair Expert | culture | active | Dax Shepard | 2026-08-05 | [`armchair-expert`](en/culture/armchair-expert.md) |
 | Call Her Daddy | culture | active | Alex Cooper — Unwell Network 创始人 | 2026-09-04 | [`call-her-daddy`](en/culture/call-her-daddy.md) |
-| Ear Hustle | culture | todo(stub) | — | 2026-09-11 | [`ear-hustle`](en/culture/ear-hustle.md) |
+| Ear Hustle | culture | active | Earlonne Woods(联合主理,前 San Quentin 州立监狱服刑 21 年,2018 出狱) | 2026-09-11 | [`ear-hustle`](en/culture/ear-hustle.md) |
 | Fresh Air | culture | active | Terry Gross | 2026-08-03 | [`fresh-air`](en/culture/fresh-air.md) |
 | Giggly Squad | culture | active | Hannah Berner — 喜剧演员 /《Summer House》前主演 | 2026-09-04 | [`giggly-squad`](en/culture/giggly-squad.md) |
 | Modern Wisdom | culture | todo(stub) | Chris Williamson（YouTuber / 播客主） | 2026-09-04 | [`modern-wisdom`](en/culture/modern-wisdom.md) |
@@ -144,11 +144,11 @@
 | The Diary Of A CEO | culture | active | Steven Bartlett | 2026-08-05 | [`diary-of-a-ceo`](en/culture/diary-of-a-ceo.md) |
 | The Joe Budden Podcast | culture | active | Joe Budden — 说唱歌手转型的主播 / 文化评论人 | 2026-09-04 | [`the-joe-budden-podcast`](en/culture/the-joe-budden-podcast.md) |
 | The Mel Robbins Podcast | culture | active | Mel Robbins — 励志演说家 /《The 5 Second Rule》《The Let Them Theory》作者 | 2026-09-04 | [`the-mel-robbins-podcast`](en/culture/the-mel-robbins-podcast.md) |
-| The Moth | culture | todo(stub) | — | 2026-09-11 | [`the-moth`](en/culture/the-moth.md) |
+| The Moth | culture | active | George Dawes Green(创始人,1997 起至今) | 2026-09-11 | [`the-moth`](en/culture/the-moth.md) |
 | The School of Greatness | culture | todo(stub) | — | 2026-08-03 | [`the-school-of-greatness`](en/culture/the-school-of-greatness.md) |
 | The Telepathy Tapes | culture | todo(stub) | Ky Dickens（纪录片导演,《The Science of Seance》《The 13th Step》导演） | 2026-09-04 | [`the-telepathy-tapes`](en/culture/the-telepathy-tapes.md) |
 | The Tim Ferriss Show | culture | active | Tim Ferriss | 2026-08-03 | [`the-tim-ferriss-show`](en/culture/the-tim-ferriss-show.md) |
-| This American Life | culture | todo(stub) | — | 2026-09-11 | [`this-american-life`](en/culture/this-american-life.md) |
+| This American Life | culture | active | Ira Glass(创始人/主理,1995 起至今) | 2026-09-11 | [`this-american-life`](en/culture/this-american-life.md) |
 | WTF with Marc Maron | culture | todo(stub) | — | 2026-08-03 | [`wtf-with-marc-maron`](en/culture/wtf-with-marc-maron.md) |
 | 50 Things That Made the Modern Economy | education | todo(stub) | — | 2026-08-03 | [`50-things-that-made-the-modern-economy`](en/education/50-things-that-made-the-modern-economy.md) |
 | Freakonomics Radio | education | todo(stub) | — | 2026-08-03 | [`freakonomics-radio`](en/education/freakonomics-radio.md) |
@@ -169,7 +169,7 @@
 | Planet Money | news | active | Rotating (NPR economics reporters) | 2026-08-03 | [`planet-money`](en/news/planet-money.md) |
 | Pod Save America | news | active | Jon Favreau | 2026-08-05 | [`pod-save-america`](en/news/pod-save-america.md) |
 | Post Reports | news | todo(stub) | — | 2026-08-03 | [`post-reports`](en/news/post-reports.md) |
-| Reveal | news | todo(stub) | — | 2026-09-11 | [`reveal`](en/news/reveal.md) |
+| Reveal | news | active | Al Letson(主理人 / 执行制片人,2015 起至今) | 2026-09-11 | [`reveal`](en/news/reveal.md) |
 | Sway | news | todo(stub) | — | 2026-08-03 | [`sway`](en/news/sway.md) |
 | The Argument | news | todo(stub) | — | 2026-08-03 | [`the-argument`](en/news/the-argument.md) |
 | The Daily | news | active | Michael Barbaro | 2026-08-03 | [`the-daily`](en/news/the-daily.md) |
