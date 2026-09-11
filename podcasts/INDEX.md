@@ -2,7 +2,7 @@
 
 > 由 `scripts/stats.py` 自动生成,请勿手改。状态为 `active` / `ended` / `hiatus` 的是深档,`todo` 为待收录 stub。
 
-## 中文播客(zh) · 78 档
+## 中文播客(zh) · 79 档
 
 | 节目 | 赛道 | 状态 | 主播(首位) | 最近更新 | 条目 |
 | --- | --- | --- | --- | --- | --- |
@@ -24,9 +24,9 @@
 | 半拿铁 | 商业沉浮录 | business | active | 刘飞(主理人,前互联网大厂产品经理) | 2026-08-05 | [`ban-na-tie`](zh/business/ban-na-tie.md) |
 | 商业就是这样 | business | active | 肖文杰 | 2026-08-03 | [`shangye-jiushi-zheyang`](zh/business/shangye-jiushi-zheyang.md) |
 | 张小珺Jùn|商业访谈录 | business | active | 张小珺 — 商业报道出身的访谈人(详细履历 **TODO**) | 2026-09-05 | [`zhang-xiaojun-shangye-fangtan-lu`](zh/business/zhang-xiaojun-shangye-fangtan-lu.md) |
-| 搞钱女孩 | business | todo(stub) | — | 2026-08-03 | [`gao-qian-nv-hai`](zh/business/gao-qian-nv-hai.md) |
-| 深聊投资人 | business | todo(stub) | — | 2026-08-03 | [`shen-liao-tou-zi-ren`](zh/business/shen-liao-tou-zi-ren.md) |
-| 知行小酒馆 | business | todo(stub) | — | 2026-08-03 | [`zhi-xing-xiao-jiu-guan`](zh/business/zhi-xing-xiao-jiu-guan.md) |
+| 搞钱女孩 | business | active | 搞钱女孩主播团队(具体名单 TODO) | 2026-09-11 | [`gao-qian-nv-hai`](zh/business/gao-qian-nv-hai.md) |
+| 深聊投资人 | business | active | 深聊投资人主播团队(投资人 / 媒体人,具体名单 TODO) | 2026-09-11 | [`shen-liao-tou-zi-ren`](zh/business/shen-liao-tou-zi-ren.md) |
+| 知行小酒馆 | business | active | 知行小酒馆主播团队(具体名单 TODO) | 2026-09-11 | [`zhi-xing-xiao-jiu-guan`](zh/business/zhi-xing-xiao-jiu-guan.md) |
 | 多新鲜呐 | comedy | todo(stub) | 于谦（相声演员,德云社） | 2026-09-04 | [`duo-xin-xian-na`](zh/comedy/duo-xin-xian-na.md) |
 | GQ 报道 | culture | active | GQ 编辑部 / 轮值主笔 | 2026-09-11 | [`gq-bao-dao`](zh/culture/gq-bao-dao.md) |
 | Talk三联 | culture | active | 《三联生活周刊》记者 / 主笔轮值(肖楚舟・主笔、魏倩・主笔、孙若茜・主任记者等;主编李鸿谷不定期对谈) | 2026-09-04 | [`talk-sanlian`](zh/culture/talk-sanlian.md) |
@@ -42,6 +42,7 @@
 | 正午 | culture | active | 郭玉洁(主理人,作家 / 资深媒体人) | 2026-09-11 | [`zheng-wu`](zh/culture/zheng-wu.md) |
 | 没理想编辑部 | culture | active | 荞木(看理想编辑) | 2026-09-04 | [`mei-lixiang-bianjibu`](zh/culture/mei-lixiang-bianjibu.md) |
 | 涟漪效应 | culture | todo(stub) | 澎湃人物 / 镜相栏目编辑团队 | 2026-09-04 | [`lian-yi-xiao-ying`](zh/culture/lian-yi-xiao-ying.md) |
+| 澎湃·镜相 | culture | todo(stub) | — | 2026-09-11 | [`peng-pai-jing-xiang`](zh/culture/peng-pai-jing-xiang.md) |
 | 看理想圆桌 | culture | active | 看理想编辑部轮值主持 + 嘉宾制 | 2026-09-04 | [`kan-lixiang-yuanzhuo`](zh/culture/kan-lixiang-yuanzhuo.md) |
 | 真实故事 | culture | active | 雷磊(创始人,资深媒体人 / 非虚构写作者) | 2026-09-11 | [`zhen-shi-gu-shi`](zh/culture/zhen-shi-gu-shi.md) |
 | 自然光 | culture | active | 窦文涛(主理人,前凤凰卫视《锵锵三人行》1998 起、《圆桌派》主持人) | 2026-09-09 | [`zi-ran-guang`](zh/culture/zi-ran-guang.md) |
@@ -61,31 +62,31 @@
 | 天真不天真 | life | todo(stub) | — | 2026-08-03 | [`tian-zhen-bu-tian-zhen`](zh/life/tian-zhen-bu-tian-zhen.md) |
 | 无聊斋 | life | active | 大老王 | 2026-08-03 | [`wu-liao-zhai`](zh/life/wu-liao-zhai.md) |
 | 日谈公园 | life | active | 李叔 | 2026-08-03 | [`ri-tan-gong-yuan`](zh/life/ri-tan-gong-yuan.md) |
-| 自我进化论 | life | todo(stub) | — | 2026-08-03 | [`zi-wo-jin-hua-lun`](zh/life/zi-wo-jin-hua-lun.md) |
+| 自我进化论 | life | active | 颜晓静(主理人) | 2026-09-11 | [`zi-wo-jin-hua-lun`](zh/life/zi-wo-jin-hua-lun.md) |
 | 907编辑部 | news | todo(stub) | 澎湃国际新闻部编辑团队 | 2026-09-04 | [`907-bian-ji-bu`](zh/news/907-bian-ji-bu.md) |
 | Sinica Podcast | news | todo(stub) | — | 2026-08-03 | [`sinica`](zh/news/sinica.md) |
 | 声动早咖啡 | news | active | 声动活泼团队轮值主播(具体班底 **TODO**) | 2026-09-05 | [`sheng-dong-zao-ka-fei-news`](zh/news/sheng-dong-zao-ka-fei-news.md) |
 | 岛岛连线 | news | active | 王骁 Stella(主理人,前观察者网 / 风云直播主持人) | 2026-09-09 | [`dao-dao-lian-xian`](zh/news/dao-dao-lian-xian.md) |
 | 端闻 | news | active | 端传媒编辑团队(轮值主播,具体名单 TODO) | 2026-09-09 | [`duan-wen`](zh/news/duan-wen.md) |
 | 怡楽播客 | story | todo(stub) | — | 2026-08-03 | [`yi-le-bo-ke`](zh/story/yi-le-bo-ke.md) |
-| 犯罪象限 | story | todo(stub) | — | 2026-08-03 | [`fan-zui-xiang-xian`](zh/story/fan-zui-xiang-xian.md) |
+| 犯罪象限 | story | active | 犯罪象限主播团队(具体名单 TODO) | 2026-09-11 | [`fan-zui-xiang-xian`](zh/story/fan-zui-xiang-xian.md) |
 | 竹林之中 | story | todo(stub) | — | 2026-08-03 | [`zhu-lin-zhi-zhong`](zh/story/zhu-lin-zhi-zhong.md) |
-| 记录在案(财新) | story | todo(stub) | — | 2026-08-03 | [`ji-lu-zai-an`](zh/story/ji-lu-zai-an.md) |
+| 记录在案(财新) | story | active | 财新调查记者团队(轮值主播) | 2026-09-11 | [`ji-lu-zai-an`](zh/story/ji-lu-zai-an.md) |
 | 霓达播客 | story | todo(stub) | — | 2026-08-03 | [`ni-da-bo-ke`](zh/story/ni-da-bo-ke.md) |
 | 黑猫侦探社俱乐部 | story | todo(stub) | — | 2026-08-03 | [`hei-mao-zhen-tan-she`](zh/story/hei-mao-zhen-tan-she.md) |
 | Digital Gym | tech | todo(stub) | — | 2026-08-03 | [`digital-gym`](zh/tech/digital-gym.md) |
 | SaaS 客研室 | tech | todo(stub) | — | 2026-08-03 | [`saas-ke-yan-shi`](zh/tech/saas-ke-yan-shi.md) |
-| TechBuzz China by Pandaily | tech | todo(stub) | — | 2026-08-03 | [`techbuzz-china`](zh/tech/techbuzz-china.md) |
+| TechBuzz China by Pandaily | tech | active | Pandaily 英文编辑团队(轮值主播) | 2026-09-11 | [`techbuzz-china`](zh/tech/techbuzz-china.md) |
 | 声东击西 | tech | active | 一凡 | 2026-08-03 | [`sheng-dong-ji-xi`](zh/tech/sheng-dong-ji-xi.md) |
 | 捕蛇者说 | tech | active | 杨森 | 2026-08-03 | [`bu-she-zhe-shuo`](zh/tech/bu-she-zhe-shuo.md) |
-| 硅基聊天室 | tech | todo(stub) | B 站 AI 内容团队 | 2026-09-04 | [`gui-ji-liao-tian-shi`](zh/tech/gui-ji-liao-tian-shi.md) |
+| 硅基聊天室 | tech | active | B 站 AI 内容团队 | 2026-09-11 | [`gui-ji-liao-tian-shi`](zh/tech/gui-ji-liao-tian-shi.md) |
 | 硅谷101 | tech | active | 陈茜（Zara） | 2026-08-03 | [`guigu-101`](zh/tech/guigu-101.md) |
 | 硬地骇客 | tech | active | Macing | 2026-08-03 | [`yingdi-haike`](zh/tech/yingdi-haike.md) |
 | 科技早知道 | tech | active | 王俊煜（斑马,前豌豆荚创始人） | 2026-08-03 | [`keji-zao-zhidao`](zh/tech/keji-zao-zhidao.md) |
 | 罗永浩的十字路口 | tech | active | 罗永浩 — 细红线科技创始人 / 前锤子科技创始人 / 前交个朋友主播 | 2026-09-05 | [`luo-yonghao-shi-zi-lu-kou`](zh/tech/luo-yonghao-shi-zi-lu-kou.md) |
 | 道听途说 | tech | todo(stub) | — | 2026-08-03 | [`dao-ting-tu-shuo`](zh/tech/dao-ting-tu-shuo.md) |
 
-## 英文 / 国际播客(en) · 116 档
+## 英文 / 国际播客(en) · 121 档
 
 | 节目 | 赛道 | 状态 | 主播(首位) | 最近更新 | 条目 |
 | --- | --- | --- | --- | --- | --- |
@@ -138,8 +139,12 @@
 | Ear Hustle | culture | active | Earlonne Woods(联合主理,前 San Quentin 州立监狱服刑 21 年,2018 出狱) | 2026-09-11 | [`ear-hustle`](en/culture/ear-hustle.md) |
 | Fresh Air | culture | active | Terry Gross | 2026-08-03 | [`fresh-air`](en/culture/fresh-air.md) |
 | Giggly Squad | culture | active | Hannah Berner — 喜剧演员 /《Summer House》前主演 | 2026-09-04 | [`giggly-squad`](en/culture/giggly-squad.md) |
+| Heavyweight | culture | todo(stub) | — | 2026-09-11 | [`heavyweight`](en/culture/heavyweight.md) |
 | Modern Wisdom | culture | todo(stub) | Chris Williamson（YouTuber / 播客主） | 2026-09-04 | [`modern-wisdom`](en/culture/modern-wisdom.md) |
 | On Purpose with Jay Shetty | culture | active | Jay Shetty | 2026-08-05 | [`on-purpose-with-jay-shetty`](en/culture/on-purpose-with-jay-shetty.md) |
+| S-Town | culture | todo(stub) | — | 2026-09-11 | [`s-town`](en/culture/s-town.md) |
+| Song Exploder | culture | todo(stub) | — | 2026-09-11 | [`song-exploder`](en/culture/song-exploder.md) |
+| StoryCorps | culture | todo(stub) | — | 2026-09-11 | [`storycorps`](en/culture/storycorps.md) |
 | The Breakfast Club | culture | active | Charlamagne Tha God(Lenard McKelvey) | 2026-09-04 | [`the-breakfast-club`](en/culture/the-breakfast-club.md) |
 | The Diary Of A CEO | culture | active | Steven Bartlett | 2026-08-05 | [`diary-of-a-ceo`](en/culture/diary-of-a-ceo.md) |
 | The Joe Budden Podcast | culture | active | Joe Budden — 说唱歌手转型的主播 / 文化评论人 | 2026-09-04 | [`the-joe-budden-podcast`](en/culture/the-joe-budden-podcast.md) |
@@ -193,6 +198,7 @@
 | Logan Bartlett Show | tech | todo(stub) | — | 2026-08-03 | [`logan-bartlett-show`](en/tech/logan-bartlett-show.md) |
 | My First Million | tech | active | Shaan Puri(连续创业者,前 Bebo CEO) | 2026-09-11 | [`my-first-million`](en/tech/my-first-million.md) |
 | Pivot | tech | todo(stub) | — | 2026-08-03 | [`pivot`](en/tech/pivot.md) |
+| Reply All | tech | todo(stub) | — | 2026-09-11 | [`reply-all`](en/tech/reply-all.md) |
 | Search Engine | tech | active | PJ Vogt(前 Reply All 联合主理人,Gimlet Media 创始团队成员) | 2026-09-11 | [`search-engine`](en/tech/search-engine.md) |
 | Stratechery (Update + Interview) | tech | active | Ben Thompson — 策略分析师,Stratechery 创始人(2014) | 2026-09-05 | [`stratechery`](en/tech/stratechery.md) |
 | The Vergecast | tech | active | Nilay Patel | 2026-08-03 | [`the-vergecast`](en/tech/the-vergecast.md) |
