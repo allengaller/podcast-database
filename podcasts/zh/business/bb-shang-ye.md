@@ -4,17 +4,23 @@ slug: bb-shang-ye
 language: zh
 category: business
 status: todo
+network: "TODO"
+hosts:
+  - "TODO"
+platforms:
+  - "TODO"
+rss: "TODO"
+subscribe_links: {}
 added_date: 2026-08-03
-updated_date: 2026-08-03
+updated_date: 2026-09-11
 tags:
-  - 待收录
+  - 商业
+  - 品牌
 ---
 
 # BB商业与品牌
 
-> **待收录(stub)。** 本条目仅占位,主播 / 出品方 / 形式 / 代表单集等细节
-> 尚未核实,欢迎补充。详见 [`_template.md`](../_template.md) 与
-> [README「Stub 条目」](../README.md#编写原则重要)。
+> **待补充(stub)。** 本条目仅占位。`network` / `hosts` / `platforms` / `rss` / `subscribe_links` 均为 TODO。
 
 ## 待补充
 

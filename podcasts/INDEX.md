@@ -18,7 +18,7 @@
 | 硬地骇客(Hard Hacker / Indie Hacker 中文社区) | ai | active | 三位 10 年+互联网创业者(社区匿名,公开场合以"硬地骇客团队"出现) | 2026-08-05 | [`ying-di-hai-ke`](zh/ai/ying-di-hai-ke.md) |
 | 老石谈芯 | ai | active | 老石(本名待核) | 2026-08-04 | [`lao-shi-tan-xin`](zh/ai/lao-shi-tan-xin.md) |
 | 钱皓频道 | ai | active | 钱皓(皓哥) | 2026-08-04 | [`qian-hao-pin-dao`](zh/ai/qian-hao-pin-dao.md) |
-| BB商业与品牌 | business | todo(stub) | — | 2026-08-03 | [`bb-shang-ye`](zh/business/bb-shang-ye.md) |
+| BB商业与品牌 | business | todo(stub) | TODO | 2026-09-11 | [`bb-shang-ye`](zh/business/bb-shang-ye.md) |
 | 三五环 | business | active | 刘飞 | 2026-08-03 | [`san-wu-huan`](zh/business/san-wu-huan.md) |
 | 创业内幕 | business | todo(stub) | — | 2026-08-03 | [`chuang-ye-nei-mu`](zh/business/chuang-ye-nei-mu.md) |
 | 半拿铁 | 商业沉浮录 | business | active | 刘飞(主理人,前互联网大厂产品经理) | 2026-08-05 | [`ban-na-tie`](zh/business/ban-na-tie.md) |
@@ -30,24 +30,24 @@
 | 多新鲜呐 | comedy | todo(stub) | 于谦（相声演员,德云社） | 2026-09-04 | [`duo-xin-xian-na`](zh/comedy/duo-xin-xian-na.md) |
 | GQ 报道 | culture | active | GQ 编辑部 / 轮值主笔 | 2026-09-11 | [`gq-bao-dao`](zh/culture/gq-bao-dao.md) |
 | Talk三联 | culture | active | 《三联生活周刊》记者 / 主笔轮值(肖楚舟・主笔、魏倩・主笔、孙若茜・主任记者等;主编李鸿谷不定期对谈) | 2026-09-04 | [`talk-sanlian`](zh/culture/talk-sanlian.md) |
-| 上海书评 | culture | todo(stub) | 许子东、骆以军、许纪霖、姜进、毛尖 等作家学者（近读工作室） | 2026-09-04 | [`shang-hai-shu-ping`](zh/culture/shang-hai-shu-ping.md) |
+| 上海书评 | culture | active | 近读工作室团队 + 嘉宾轮值(许子东、骆以军、许纪霖、姜进、毛尖 等) | 2026-09-11 | [`shang-hai-shu-ping`](zh/culture/shang-hai-shu-ping.md) |
 | 东亚观察局 | culture | active | 杨一 | 2026-08-03 | [`dong-ya-guan-cha-ju`](zh/culture/dong-ya-guan-cha-ju.md) |
 | 乱翻书 | culture | active | 潘乱 | 2026-08-03 | [`luan-fan-shu`](zh/culture/luan-fan-shu.md) |
 | 大内密谈 | culture | active | 相征 | 2026-08-03 | [`da-nei-mi-tan`](zh/culture/da-nei-mi-tan.md) |
-| 如此城市 CityTells | culture | todo(stub) | 澎湃研究所·试说新语工作室 | 2026-09-04 | [`ru-ci-cheng-shi`](zh/culture/ru-ci-cheng-shi.md) |
-| 小天章 | culture | todo(stub) | 章泽天（京东集团 CFO 顾问） | 2026-09-04 | [`xiao-tian-zhang`](zh/culture/xiao-tian-zhang.md) |
-| 岩中花述 | culture | todo(stub) | — | 2026-08-03 | [`yan-zhong-hua-shu`](zh/culture/yan-zhong-hua-shu.md) |
+| 如此城市 CityTells | culture | active | 澎湃研究所·试说新语工作室(编辑团队) | 2026-09-11 | [`ru-ci-cheng-shi`](zh/culture/ru-ci-cheng-shi.md) |
+| 小天章 | culture | active | 章泽天(主理 / 京东集团 CFO 顾问) | 2026-09-11 | [`xiao-tian-zhang`](zh/culture/xiao-tian-zhang.md) |
+| 岩中花述 | culture | active | 陈鲁豫(主理) | 2026-09-11 | [`yan-zhong-hua-shu`](zh/culture/yan-zhong-hua-shu.md) |
 | 忽左忽右 | culture | active | 程衍樑（Ian） | 2026-08-03 | [`hu-zuo-hu-you`](zh/culture/hu-zuo-hu-you.md) |
 | 故事FM | culture | active | 寇爱哲 | 2026-08-03 | [`gushi-fm`](zh/culture/gushi-fm.md) |
 | 正午 | culture | active | 郭玉洁(主理人,作家 / 资深媒体人) | 2026-09-11 | [`zheng-wu`](zh/culture/zheng-wu.md) |
 | 没理想编辑部 | culture | active | 荞木(看理想编辑) | 2026-09-04 | [`mei-lixiang-bianjibu`](zh/culture/mei-lixiang-bianjibu.md) |
-| 涟漪效应 | culture | todo(stub) | 澎湃人物 / 镜相栏目编辑团队 | 2026-09-04 | [`lian-yi-xiao-ying`](zh/culture/lian-yi-xiao-ying.md) |
+| 涟漪效应 | culture | active | 澎湃人物 / 镜相栏目编辑团队(轮值主播) | 2026-09-11 | [`lian-yi-xiao-ying`](zh/culture/lian-yi-xiao-ying.md) |
 | 澎湃·镜相 | culture | todo(stub) | — | 2026-09-11 | [`peng-pai-jing-xiang`](zh/culture/peng-pai-jing-xiang.md) |
 | 看理想圆桌 | culture | active | 看理想编辑部轮值主持 + 嘉宾制 | 2026-09-04 | [`kan-lixiang-yuanzhuo`](zh/culture/kan-lixiang-yuanzhuo.md) |
 | 真实故事 | culture | active | 雷磊(创始人,资深媒体人 / 非虚构写作者) | 2026-09-11 | [`zhen-shi-gu-shi`](zh/culture/zhen-shi-gu-shi.md) |
 | 自然光 | culture | active | 窦文涛(主理人,前凤凰卫视《锵锵三人行》1998 起、《圆桌派》主持人) | 2026-09-09 | [`zi-ran-guang`](zh/culture/zi-ran-guang.md) |
 | 螺丝在拧紧 | culture | active | 吴琦 —《单读》主编,文化与非虚构对谈主持人 | 2026-09-04 | [`luosi-zai-ningjin`](zh/culture/luosi-zai-ningjin.md) |
-| 言外之易 | culture | todo(stub) | 易立竞（资深媒体人,前《人物》主笔 / 《立场》主持人） | 2026-09-04 | [`yan-wai-zhi-yi`](zh/culture/yan-wai-zhi-yi.md) |
+| 言外之易 | culture | active | 易立竞(主理 / 资深媒体人,前《人物》主笔 / 《立场》主持人) | 2026-09-11 | [`yan-wai-zhi-yi`](zh/culture/yan-wai-zhi-yi.md) |
 | 读库立体声 | culture | active | 张立宪(老六)— 读库主编 / 出版人 | 2026-09-04 | [`duku-liti-sheng`](zh/culture/duku-liti-sheng.md) |
 | 谷雨实验室 | culture | active | 腾讯新闻谷雨团队(总编辑 + 调查记者) | 2026-09-11 | [`gu-yu-shi-yan-shi`](zh/culture/gu-yu-shi-yan-shi.md) |
 | 跳岛FM | culture | active | 主播由大方团队轮值(首位主播筱狸/董子琪,前界面文化记者,2020-03 至 2020-10;此后宝婷等接力) | 2026-09-04 | [`tiao-dao-fm`](zh/culture/tiao-dao-fm.md) |
@@ -73,7 +73,7 @@
 | 竹林之中 | story | todo(stub) | — | 2026-08-03 | [`zhu-lin-zhi-zhong`](zh/story/zhu-lin-zhi-zhong.md) |
 | 记录在案(财新) | story | active | 财新调查记者团队(轮值主播) | 2026-09-11 | [`ji-lu-zai-an`](zh/story/ji-lu-zai-an.md) |
 | 霓达播客 | story | todo(stub) | — | 2026-08-03 | [`ni-da-bo-ke`](zh/story/ni-da-bo-ke.md) |
-| 黑猫侦探社俱乐部 | story | todo(stub) | — | 2026-08-03 | [`hei-mao-zhen-tan-she`](zh/story/hei-mao-zhen-tan-she.md) |
+| 黑猫侦探社俱乐部 | story | active | 咪仔(主创 / 资深内容策划) | 2026-09-11 | [`hei-mao-zhen-tan-she`](zh/story/hei-mao-zhen-tan-she.md) |
 | Digital Gym | tech | todo(stub) | — | 2026-08-03 | [`digital-gym`](zh/tech/digital-gym.md) |
 | SaaS 客研室 | tech | todo(stub) | — | 2026-08-03 | [`saas-ke-yan-shi`](zh/tech/saas-ke-yan-shi.md) |
 | TechBuzz China by Pandaily | tech | active | Pandaily 英文编辑团队(轮值主播) | 2026-09-11 | [`techbuzz-china`](zh/tech/techbuzz-china.md) |
