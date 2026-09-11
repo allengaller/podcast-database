@@ -18,7 +18,7 @@ podcasts/
 │   ├── ai/            AI / 大模型      (12 档 · 深档 12)
 │   ├── business/      商业 / 创业       (9 档 · 深档 9)
 │   ├── comedy/        喜剧 / 脱口秀      (1 档 · 深档 0)
-│   ├── culture/       文化 / 人文       (27 档 · 深档 27)
+│   ├── culture/       文化 / 人文       (34 档 · 深档 27)
 │   ├── finance/       财经 / 投资       (2 档 · 深档 2)
 │   ├── life/          生活 / 自我成长     (9 档 · 深档 8)
 │   ├── news/          新闻 / 时政       (5 档 · 深档 3)
@@ -28,13 +28,13 @@ podcasts/
     ├── ai/            AI / 大模型      (20 档 · 深档 19)
     ├── business/      商业 / 创业       (13 档 · 深档 13)
     ├── comedy/        喜剧 / 娱乐       (10 档 · 深档 4)
-    ├── culture/       文化 / 访谈       (30 档 · 深档 13)
+    ├── culture/       文化 / 访谈       (40 档 · 深档 13)
     ├── education/     教育 / 知识       (4 档 · 深档 0)
     ├── health/        健康 / 健身       (3 档 · 深档 0)
     ├── history/       历史            (6 档 · 深档 0)
     ├── news/          新闻 / 时政       (16 档 · 深档 9)
     ├── science/       科学 / 科普       (7 档 · 深档 3)
-    ├── tech/          科技 / 风投       (15 档 · 深档 8)
+    ├── tech/          科技 / 风投       (16 档 · 深档 8)
     └── true-crime/    真实犯罪          (6 档 · 深档 1)
 <!-- corpus:end:tree -->
 ```
@@ -113,7 +113,7 @@ podcasts/
   - **en/business 类目进度**:8 档中 5 档(How I Built This / Masters of Scale / a16z Podcast / Indie Hackers / SaaStr)升级为深档,3 档 stub 待办:`b2b-growth` / `founder-s-journal` / `office-hours-with-patrick-o-shaughnessy`
   - **AI 类里程碑**:`zh/ai` 13 档全部为深档,`en/ai` 18 档全部为深档,合计 AI 类 31 档全深档,AI 类整体收官
 <!-- corpus:begin:summary -->
-**当前合计**:**212 档**(中文 82 + 英文 130),其中深档 145 档、stub 67 档(截至 2026-09-11;由 `scripts/stats.py` 自动统计,勿手改)
+**当前合计**:**230 档**(中文 89 + 英文 141),其中深档 145 档、stub 85 档(截至 2026-09-11;由 `scripts/stats.py` 自动统计,勿手改)
 <!-- corpus:end:summary -->
 - **每日 cron 推荐(2026-08-05 启动)**:系统 cron 任务(描述:"本机 `/Document/Github/allengaller/podcast-database` 全面获取最新全网的各类热门播客")每日触发,**输出在 [`../recommendations/`](../recommendations/)**——只放短索引 `YYYY-MM-DD.md`,不重复造档。**工作流要求见 [`../recommendations/README.md`](../recommendations/README.md)「融合安置」原则:推荐对象已是 deep 档 → 不建新档;有 2026 年新事实 → 回写 `podcasts/<lang>/<category>/<slug>.md` 原档并推进 `updated_date`;真正新档 → 先建 stub 占位。**当日无新增事实时,仅生成短索引,**不强行回写**。首份索引 [`../recommendations/2026-08-05.md`](../recommendations/2026-08-05.md) 精选 14 档(全为 deep 档,无新增事实 → 原档未触动)。**2026-09-04:cron 恢复产出**(第 2 份索引 + 25 档新 stub,已随批次 9 收编入库并完成去重);约定 cron 产物**当日 commit**,避免再次积压未提交档。
 - **批次 8(2026-08-05 cron)**:Forbes 2026-07-30「收入最高播客主持人」榜单 + 2026 学术研究双重验证,共触动 20 档:

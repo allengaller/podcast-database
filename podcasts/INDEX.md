@@ -2,7 +2,7 @@
 
 > 由 `scripts/stats.py` 自动生成,请勿手改。状态为 `active` / `ended` / `hiatus` 的是深档,`todo` 为待收录 stub。
 
-## 中文播客(zh) · 82 档
+## 中文播客(zh) · 89 档
 
 | 节目 | 赛道 | 状态 | 主播(首位) | 最近更新 | 条目 |
 | --- | --- | --- | --- | --- | --- |
@@ -28,11 +28,15 @@
 | 深聊投资人 | business | active | 深聊投资人主播团队(投资人 / 媒体人,具体名单 TODO) | 2026-09-11 | [`shen-liao-tou-zi-ren`](zh/business/shen-liao-tou-zi-ren.md) |
 | 知行小酒馆 | business | active | 知行小酒馆主播团队(具体名单 TODO) | 2026-09-11 | [`zhi-xing-xiao-jiu-guan`](zh/business/zhi-xing-xiao-jiu-guan.md) |
 | 多新鲜呐 | comedy | todo(stub) | 于谦（相声演员,德云社） | 2026-09-04 | [`duo-xin-xian-na`](zh/comedy/duo-xin-xian-na.md) |
+| GQ 实验室 | culture | todo(stub) | — | 2026-09-11 | [`gq-lab`](zh/culture/gq-lab.md) |
 | GQ 报道 | culture | active | GQ 编辑部 / 轮值主笔 | 2026-09-11 | [`gq-bao-dao`](zh/culture/gq-bao-dao.md) |
 | Talk三联 | culture | active | 《三联生活周刊》记者 / 主笔轮值(肖楚舟・主笔、魏倩・主笔、孙若茜・主任记者等;主编李鸿谷不定期对谈) | 2026-09-04 | [`talk-sanlian`](zh/culture/talk-sanlian.md) |
 | 上海书评 | culture | active | 近读工作室团队 + 嘉宾轮值(许子东、骆以军、许纪霖、姜进、毛尖 等) | 2026-09-11 | [`shang-hai-shu-ping`](zh/culture/shang-hai-shu-ping.md) |
 | 东亚观察局 | culture | active | 杨一 | 2026-08-03 | [`dong-ya-guan-cha-ju`](zh/culture/dong-ya-guan-cha-ju.md) |
 | 乱翻书 | culture | active | 潘乱 | 2026-08-03 | [`luan-fan-shu`](zh/culture/luan-fan-shu.md) |
+| 人间 theLivings | culture | todo(stub) | — | 2026-09-11 | [`ren-jian-the-livings`](zh/culture/ren-jian-the-livings.md) |
+| 冰川思想库 | culture | todo(stub) | — | 2026-09-11 | [`bing-chuan-si-xiang-ku`](zh/culture/bing-chuan-si-xiang-ku.md) |
+| 剥洋葱 | culture | todo(stub) | — | 2026-09-11 | [`bo-yang-cong`](zh/culture/bo-yang-cong.md) |
 | 大内密谈 | culture | active | 相征 | 2026-08-03 | [`da-nei-mi-tan`](zh/culture/da-nei-mi-tan.md) |
 | 如此城市 CityTells | culture | active | 澎湃研究所·试说新语工作室(编辑团队) | 2026-09-11 | [`ru-ci-cheng-shi`](zh/culture/ru-ci-cheng-shi.md) |
 | 小天章 | culture | active | 章泽天(主理 / 京东集团 CFO 顾问) | 2026-09-11 | [`xiao-tian-zhang`](zh/culture/xiao-tian-zhang.md) |
@@ -40,7 +44,10 @@
 | 开放三明治 | culture | active | 中国三明治编辑团队(轮值主播) | 2026-09-11 | [`san-ming-zhi`](zh/culture/san-ming-zhi.md) |
 | 忽左忽右 | culture | active | 程衍樑（Ian） | 2026-08-03 | [`hu-zuo-hu-you`](zh/culture/hu-zuo-hu-you.md) |
 | 故事FM | culture | active | 寇爱哲 | 2026-08-03 | [`gushi-fm`](zh/culture/gushi-fm.md) |
+| 故事硬核 | culture | todo(stub) | — | 2026-09-11 | [`gu-shi-ying-he`](zh/culture/gu-shi-ying-he.md) |
+| 文化纵横 | culture | todo(stub) | — | 2026-09-11 | [`wen-hua-zong-heng`](zh/culture/wen-hua-zong-heng.md) |
 | 是个人物 | culture | active | 《人物》杂志主笔团队(轮值主播) | 2026-09-11 | [`ren-wu`](zh/culture/ren-wu.md) |
+| 棱镜 | culture | todo(stub) | — | 2026-09-11 | [`leng-jing`](zh/culture/leng-jing.md) |
 | 正午 | culture | active | 郭玉洁(主理人,作家 / 资深媒体人) | 2026-09-11 | [`zheng-wu`](zh/culture/zheng-wu.md) |
 | 没理想编辑部 | culture | active | 荞木(看理想编辑) | 2026-09-04 | [`mei-lixiang-bianjibu`](zh/culture/mei-lixiang-bianjibu.md) |
 | 涟漪效应 | culture | active | 澎湃人物 / 镜相栏目编辑团队(轮值主播) | 2026-09-11 | [`lian-yi-xiao-ying`](zh/culture/lian-yi-xiao-ying.md) |
@@ -89,7 +96,7 @@
 | 罗永浩的十字路口 | tech | active | 罗永浩 — 细红线科技创始人 / 前锤子科技创始人 / 前交个朋友主播 | 2026-09-05 | [`luo-yonghao-shi-zi-lu-kou`](zh/tech/luo-yonghao-shi-zi-lu-kou.md) |
 | 道听途说 | tech | active | 橘子(Orange Elephant) | 2026-09-11 | [`dao-ting-tu-shuo`](zh/tech/dao-ting-tu-shuo.md) |
 
-## 英文 / 国际播客(en) · 130 档
+## 英文 / 国际播客(en) · 141 档
 
 | 节目 | 赛道 | 状态 | 主播(首位) | 最近更新 | 条目 |
 | --- | --- | --- | --- | --- | --- |
@@ -138,7 +145,9 @@
 | The Joe Rogan Experience | comedy | active | Joe Rogan | 2026-08-05 | [`the-joe-rogan-experience`](en/comedy/the-joe-rogan-experience.md) |
 | 99% Invisible | culture | todo(stub) | — | 2026-08-03 | [`99-invisible`](en/culture/99-invisible.md) |
 | Armchair Expert | culture | active | Dax Shepard | 2026-08-05 | [`armchair-expert`](en/culture/armchair-expert.md) |
+| Beautiful Stories from Anonymous People | culture | todo(stub) | — | 2026-09-11 | [`beautiful-stories`](en/culture/beautiful-stories.md) |
 | Call Her Daddy | culture | active | Alex Cooper — Unwell Network 创始人 | 2026-09-04 | [`call-her-daddy`](en/culture/call-her-daddy.md) |
+| Dear Sugars | culture | todo(stub) | — | 2026-09-11 | [`dear-sugars`](en/culture/dear-sugars.md) |
 | Death, Sex & Money | culture | todo(stub) | — | 2026-09-11 | [`death-sex-money`](en/culture/death-sex-money.md) |
 | Decoder Ring | culture | todo(stub) | — | 2026-09-11 | [`decoder-ring`](en/culture/decoder-ring.md) |
 | Ear Hustle | culture | active | Earlonne Woods(联合主理,前 San Quentin 州立监狱服刑 21 年,2018 出狱) | 2026-09-11 | [`ear-hustle`](en/culture/ear-hustle.md) |
@@ -148,18 +157,26 @@
 | Heavyweight | culture | todo(stub) | — | 2026-09-11 | [`heavyweight`](en/culture/heavyweight.md) |
 | Invisibilia | culture | todo(stub) | — | 2026-09-11 | [`invisibilia`](en/culture/invisibilia.md) |
 | Longform | culture | todo(stub) | — | 2026-09-11 | [`longform`](en/culture/longform.md) |
+| Love + Radio | culture | todo(stub) | — | 2026-09-11 | [`love-and-radio`](en/culture/love-and-radio.md) |
 | Modern Wisdom | culture | todo(stub) | Chris Williamson（YouTuber / 播客主） | 2026-09-04 | [`modern-wisdom`](en/culture/modern-wisdom.md) |
 | On Purpose with Jay Shetty | culture | active | Jay Shetty | 2026-08-05 | [`on-purpose-with-jay-shetty`](en/culture/on-purpose-with-jay-shetty.md) |
+| On the Media | culture | todo(stub) | — | 2026-09-11 | [`on-the-media`](en/culture/on-the-media.md) |
 | S-Town | culture | todo(stub) | — | 2026-09-11 | [`s-town`](en/culture/s-town.md) |
 | Scene on Radio | culture | todo(stub) | — | 2026-09-11 | [`scene-on-radio`](en/culture/scene-on-radio.md) |
+| Sold Out | culture | todo(stub) | — | 2026-09-11 | [`sold-out`](en/culture/sold-out.md) |
 | Song Exploder | culture | todo(stub) | — | 2026-09-11 | [`song-exploder`](en/culture/song-exploder.md) |
 | StoryCorps | culture | todo(stub) | — | 2026-09-11 | [`storycorps`](en/culture/storycorps.md) |
+| Strangers | culture | todo(stub) | — | 2026-09-11 | [`strangers`](en/culture/strangers.md) |
 | The Breakfast Club | culture | active | Charlamagne Tha God(Lenard McKelvey) | 2026-09-04 | [`the-breakfast-club`](en/culture/the-breakfast-club.md) |
 | The Diary Of A CEO | culture | active | Steven Bartlett | 2026-08-05 | [`diary-of-a-ceo`](en/culture/diary-of-a-ceo.md) |
+| The Documentary | culture | todo(stub) | — | 2026-09-11 | [`the-documentary`](en/culture/the-documentary.md) |
 | The Experiment | culture | todo(stub) | — | 2026-09-11 | [`the-experiment`](en/culture/the-experiment.md) |
 | The Joe Budden Podcast | culture | active | Joe Budden — 说唱歌手转型的主播 / 文化评论人 | 2026-09-04 | [`the-joe-budden-podcast`](en/culture/the-joe-budden-podcast.md) |
 | The Mel Robbins Podcast | culture | active | Mel Robbins — 励志演说家 /《The 5 Second Rule》《The Let Them Theory》作者 | 2026-09-04 | [`the-mel-robbins-podcast`](en/culture/the-mel-robbins-podcast.md) |
+| The Memory Palace | culture | todo(stub) | — | 2026-09-11 | [`the-memory-palace`](en/culture/the-memory-palace.md) |
 | The Moth | culture | active | George Dawes Green(创始人,1997 起至今) | 2026-09-11 | [`the-moth`](en/culture/the-moth.md) |
+| The New Yorker Radio Hour | culture | todo(stub) | — | 2026-09-11 | [`new-yorker-radio-hour`](en/culture/new-yorker-radio-hour.md) |
+| The Profile | culture | todo(stub) | — | 2026-09-11 | [`the-profile`](en/culture/the-profile.md) |
 | The School of Greatness | culture | todo(stub) | — | 2026-08-03 | [`the-school-of-greatness`](en/culture/the-school-of-greatness.md) |
 | The Telepathy Tapes | culture | todo(stub) | Ky Dickens（纪录片导演,《The Science of Seance》《The 13th Step》导演） | 2026-09-04 | [`the-telepathy-tapes`](en/culture/the-telepathy-tapes.md) |
 | The Tim Ferriss Show | culture | active | Tim Ferriss | 2026-08-03 | [`the-tim-ferriss-show`](en/culture/the-tim-ferriss-show.md) |
@@ -206,6 +223,7 @@
 | All-In Podcast | tech | active | Chamath Palihapitiya | 2026-08-03 | [`all-in`](en/tech/all-in.md) |
 | Exponent | tech | todo(stub) | — | 2026-08-03 | [`exponent`](en/tech/exponent.md) |
 | Founders Podcast | tech | todo(stub) | — | 2026-08-03 | [`founders`](en/tech/founders.md) |
+| Land of the Giants | tech | todo(stub) | — | 2026-09-11 | [`land-of-the-giants`](en/tech/land-of-the-giants.md) |
 | Lenny's Podcast | tech | active | Lenny Rachitsky | 2026-08-03 | [`lennys-podcast`](en/tech/lennys-podcast.md) |
 | Logan Bartlett Show | tech | todo(stub) | — | 2026-08-03 | [`logan-bartlett-show`](en/tech/logan-bartlett-show.md) |
 | My First Million | tech | active | Shaan Puri(连续创业者,前 Bebo CEO) | 2026-09-11 | [`my-first-million`](en/tech/my-first-million.md) |
