@@ -21,6 +21,7 @@
 | 浏览中文播客 | [`podcasts/zh/`](./podcasts/zh/) |
 | 浏览英文播客 | [`podcasts/en/`](./podcasts/en/) |
 | 查总索引(全库一表) | [`podcasts/INDEX.md`](./podcasts/INDEX.md) |
+| 网页版浏览 / 检索(Web App) | [`web/index.html`](./web/index.html) |
 | 精读置顶节目(学习专题) | [`podcasts/featured/`](./podcasts/featured/) |
 | 看每日推荐索引 | [`recommendations/`](./recommendations/) |
 | 了解发展路线图 | [`ROADMAP.md`](./ROADMAP.md) |
@@ -32,6 +33,14 @@
 
 - [《硅谷 101》学习专题](./podcasts/featured/guigu-101.md) —— 中文硅谷深访头部节目,2020 年开播,260+ 集
 - [《This Week in Tech (TWiT)》学习专题](./podcasts/featured/this-week-in-tech.md) —— 英文科技新闻圆桌活化石,2005 年开播,1100+ 期
+
+## 网页版(Web App)
+
+[`web/`](./web/) 是一个**零依赖**静态站(纯 HTML/CSS/JS,无构建步骤):浏览 / 检索 231 档语料、按语言 / 赛道 / 状态筛选、查看订阅入口,并直接阅读两个置顶学习专题。数据来自 `dist/podcasts.json`,本地预览:
+
+```bash
+python3 -m http.server 8123   # 仓库根目录运行,访问 http://127.0.0.1:8123/web/
+```
 
 ## 当前进度
 
@@ -70,6 +79,7 @@
 ├── recommendations/    ← 每日 cron 推荐索引(YYYY-MM-DD.md)
 ├── scripts/            ← 语料库工具(validate / stats / export / make-stub)
 ├── dist/               ← 机读导出(podcasts.json / podcasts.csv,自动生成)
+├── web/                ← 网页版浏览(零依赖静态站:浏览 / 检索 / 精读专题)
 ├── GTM/                ← 上市策略单页(静态)
 ├── .github/            ← CI(corpus-ci:校验 + 统计/导出新鲜度)
 └── tools/              ← LeetCast 历史代码归档(不再维护)

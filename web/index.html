@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="全网热点播客深度研究语料库:浏览、检索 230+ 档中英文头部播客档案,并精读置顶学习专题。">
+<title>Podcast Corpus · 播客语料库</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%239a3d12'/%3E%3Ccircle cx='32' cy='26' r='7' fill='%23faf8f5'/%3E%3Cpath d='M20 44a12 12 0 0 1 24 0' stroke='%23faf8f5' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <h1>Podcast Corpus</h1>
+      <p class="tagline">全网热点播客深度研究语料库 · 浏览 / 检索 / 精读</p>
+    </div>
+    <nav class="tabs" id="tabs" aria-label="主导航">
+      <button class="tab active" data-tab="browse" type="button">语料库</button>
+      <button class="tab" data-tab="featured" type="button">置顶专题</button>
+    </nav>
+  </div>
+  <div class="wrap stats" id="stats" aria-label="语料库统计"></div>
+</header>
+
+<main class="wrap">
+
+  <section id="view-browse">
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="搜索标题 / 主播 / 出品方 / 标签…(按 / 聚焦)" autocomplete="off" spellcheck="false">
+      <div class="seg" id="langSeg" role="group" aria-label="语言">
+        <button type="button" data-lang="all" class="active">全部</button>
+        <button type="button" data-lang="zh">中文</button>
+        <button type="button" data-lang="en">English</button>
+      </div>
+      <select id="sort" aria-label="排序">
+        <option value="updated">按最近更新</option>
+        <option value="added">按最新收录</option>
+        <option value="title">按标题</option>
+      </select>
+    </div>
+    <div class="chiprow" id="catRow" role="group" aria-label="赛道"></div>
+    <div class="chiprow" id="statusRow" role="group" aria-label="收录状态"></div>
+    <p class="result-count" id="resultCount"></p>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="emptyState" hidden>
+      <p>没有匹配的档案 —— 试试放宽搜索词或切换筛选。</p>
+    </div>
+  </section>
+
+  <section id="view-featured" hidden>
+    <nav class="guide-nav" id="guideNav" aria-label="专题列表"></nav>
+    <article class="guide" id="guideBody">
+      <p class="guide-loading">加载专题中…</p>
+    </article>
+  </section>
+
+</main>
+
+<div id="scrim" class="scrim" hidden></div>
+<aside id="sheet" class="sheet" hidden aria-modal="true" role="dialog" aria-label="档案详情"></aside>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>数据源:<code>dist/podcasts.json</code>(由 <code>scripts/export.py</code> 自动生成,勿手改) ·
+      语料采用 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> ·
+      仓库:<a href="https://github.com/allengaller/podcast-database" target="_blank" rel="noopener">allen galler / podcast-database</a></p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
