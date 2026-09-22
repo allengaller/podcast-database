@@ -32,7 +32,7 @@
 | # | 事项 | 状态 |
 | --- | --- | --- |
 | 9 | 批次 9:批次 8 遗留的 16 档 stub 升级为深档(TBPN / New Heights / Pardon My Take / Prof G / 英文文化 5 档 / Tucker Carlson / 中文书业 6 档);核实不了的如实留 stub,不编造 | ✅ |
-| 10 | 每日 cron 盘点:外部 Mavis cron 2026-09-04 已恢复产出(本日索引 + 25 stub 已收编入库);为避免双写,暂不在本工作区重复建档,执行器迁移待决策 | ⏸ |
+| 10 | 每日 cron 盘点:执行器已定为本仓 `cron-daily` 工作流;2026-09-22 起停用每日空骨架自动提交(连续 11+ 天 total_picks: 0),改为手动触发,待回填机制建立后恢复 schedule | ✅ 2026-09-22 |
 | 11 | 中文薄类目(zh/finance 2 档、zh/news 2 档):扩充至 5+ 或并入相邻类目 | ⏸ 待决策 |
 
 ## P2 · 从语料走向资产(本季度)
@@ -54,12 +54,13 @@
 
 ## 待决策事项(需要用户拍板)
 
-- **每日 cron 执行器**:Mavis 外部 cron(现状,2026-09-04 已恢复产出)vs 迁移至本工作区自动化 —— 二选一,避免双写
+- ~~每日 cron 执行器~~ 已定:本仓 `cron-daily` 工作流;2026-09-22 停用每日自动提交(见 P1#10)
 - **zh 薄类目处理**:finance/news 档位偏少,扩充还是合并
-- **数据 License**:是否采用 CC BY 4.0
-- ~~dist/ 是否随仓库发布~~ 已定:提交 JSON/CSV,CI 校验新鲜度
+- ~~数据 License~~ 已定:数据部分 CC BY 4.0(见根 README License 一节)
+- ~~dist/ 是否随仓库发布~~ 已定:提交 JSON/CSV,CI 校验新鲜度(2026-09-22 落实)
 
 ## 执行记录
 
 - **2026-09-04**:本路线图沉淀并当日执行完毕 —— P0 全量完成;批次 9 完成(16 档升级深档 / 7 档去重 / 收编 25 档 cron 遗留,全库 **186 档 / 92 deep / 94 stub**);P2#12 导出管线提前落地;cron 执行器决策待定(见上)。详细结果见当日 git log 与 `podcasts/README.md`「当前进度」。
 - **2026-09-05**:批次 10 完成 —— 8 档升级深档(罗永浩的十字路口 / 陈鲁豫·慢谈 / 张小珺商业访谈录 / 声动早咖啡 / 面基 / B2B Growth / Founder's Journal / Stratechery),删除 2 档误档(office-hours-with-patrick-o-shaughnessy、zh/tech 声动早咖啡重复 stub);**深档突破 100**,全库 **184 档 / deep 100 / stub 84**;zh/finance 全深档,zh/news 深档破零。批次 11 候选已列入 `podcasts/README.md`「后续路线」。
+- **2026-09-22**:整体评估后的三项修复 —— ① corpus-ci 长期红灯修复(根因:全局 `~/.gitignore_global` 的 `dist/` 规则一直挡住导出提交,`git add -f` 收编 `dist/podcasts.{json,csv}`);② 清理 34 个 macOS 复制产生的 " 2" 重复文件(8/21 事故在批次 10 复发,全部与原件逐字节一致),新增 `* 2` ignore 规则防复发;③ 停用 cron 每日空骨架自动提交(改为手动触发)。另:新增 `podcasts/featured/` 置顶学习专题(首批:硅谷101 / This Week in Tech)。

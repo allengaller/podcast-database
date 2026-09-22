@@ -1,9 +1,8 @@
 name: cron-daily
 
 on:
-  schedule:
-    # 每日 06:00 UTC = 14:00 北京时间(避开 GitHub Actions 拥堵窗口)
-    - cron: "0 6 * * *"
+  # 2026-09-22 停用每日自动提交:连续 11+ 天只产出 total_picks: 0 的空骨架,
+  # 每天污染 main 历史。等研究回填机制建立后,再恢复 schedule。
   workflow_dispatch:
 
 permissions:
