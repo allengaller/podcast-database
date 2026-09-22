@@ -90,13 +90,13 @@
 | 声东击西 | tech | active | 一凡 | 2026-08-03 | [`sheng-dong-ji-xi`](zh/tech/sheng-dong-ji-xi.md) |
 | 捕蛇者说 | tech | active | 杨森 | 2026-08-03 | [`bu-she-zhe-shuo`](zh/tech/bu-she-zhe-shuo.md) |
 | 硅基聊天室 | tech | active | B 站 AI 内容团队 | 2026-09-11 | [`gui-ji-liao-tian-shi`](zh/tech/gui-ji-liao-tian-shi.md) |
-| 硅谷101 | tech | active | 陈茜（Zara） | 2026-08-03 | [`guigu-101`](zh/tech/guigu-101.md) |
+| 硅谷101 | tech | active | 泓君（Jane，创始人 & CEO / 主理人；前《财经》驻美记者、《商业价值》杂志 & 钛媒体主笔） | 2026-09-22 | [`guigu-101`](zh/tech/guigu-101.md) |
 | 硬地骇客 | tech | active | Macing | 2026-08-03 | [`yingdi-haike`](zh/tech/yingdi-haike.md) |
 | 科技早知道 | tech | active | 王俊煜（斑马,前豌豆荚创始人） | 2026-08-03 | [`keji-zao-zhidao`](zh/tech/keji-zao-zhidao.md) |
 | 罗永浩的十字路口 | tech | active | 罗永浩 — 细红线科技创始人 / 前锤子科技创始人 / 前交个朋友主播 | 2026-09-05 | [`luo-yonghao-shi-zi-lu-kou`](zh/tech/luo-yonghao-shi-zi-lu-kou.md) |
 | 道听途说 | tech | active | 橘子(Orange Elephant) | 2026-09-11 | [`dao-ting-tu-shuo`](zh/tech/dao-ting-tu-shuo.md) |
 
-## 英文 / 国际播客(en) · 141 档
+## 英文 / 国际播客(en) · 142 档
 
 | 节目 | 赛道 | 状态 | 主播(首位) | 最近更新 | 条目 |
 | --- | --- | --- | --- | --- | --- |
@@ -233,6 +233,7 @@
 | Stratechery (Update + Interview) | tech | active | Ben Thompson — 策略分析师,Stratechery 创始人(2014) | 2026-09-05 | [`stratechery`](en/tech/stratechery.md) |
 | The Vergecast | tech | active | Nilay Patel | 2026-08-03 | [`the-vergecast`](en/tech/the-vergecast.md) |
 | This Week in Startups | tech | active | Jason Calacanis | 2026-08-03 | [`this-week-in-startups`](en/tech/this-week-in-startups.md) |
+| This Week in Tech (TWiT) | tech | active | Leo Laporte（创始人/主持人；TWiT.tv 网络创始人，前 TechTV《The Screen Savers》主持人） | 2026-09-22 | [`this-week-in-tech`](en/tech/this-week-in-tech.md) |
 | Training Data | tech | todo(stub) | Sonya Huang / Pat Grady（红杉资本合伙人） | 2026-09-04 | [`training-data`](en/tech/training-data.md) |
 | Waveform: The MKBHD Podcast | tech | todo(stub) | — | 2026-08-03 | [`waveform-the-mkbhd-podcast`](en/tech/waveform-the-mkbhd-podcast.md) |
 | Crime Junkie | true-crime | active | Ashley Flowers | 2026-08-05 | [`crime-junkie`](en/true-crime/crime-junkie.md) |

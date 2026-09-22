@@ -21,9 +21,17 @@
 | 浏览中文播客 | [`podcasts/zh/`](./podcasts/zh/) |
 | 浏览英文播客 | [`podcasts/en/`](./podcasts/en/) |
 | 查总索引(全库一表) | [`podcasts/INDEX.md`](./podcasts/INDEX.md) |
+| 精读置顶节目(学习专题) | [`podcasts/featured/`](./podcasts/featured/) |
 | 看每日推荐索引 | [`recommendations/`](./recommendations/) |
 | 了解发展路线图 | [`ROADMAP.md`](./ROADMAP.md) |
 | 查阅历史 LeetCast 代码 | [`tools/`](./tools/) · 见 [`tools/ARCHIVE.md`](./tools/ARCHIVE.md) |
+
+## 置顶学习专题
+
+对需要**逐集精读**的头部节目,建立"节目速览 + 学习路径 + 精选单集 + 单集笔记模板 + 进度追踪"式置顶专题,收录在 [`podcasts/featured/`](./podcasts/featured/)(不参与语料库校验与统计,源档案仍在 `zh/`、`en/` 常规目录):
+
+- [《硅谷 101》学习专题](./podcasts/featured/guigu-101.md) —— 中文硅谷深访头部节目,2020 年开播,260+ 集
+- [《This Week in Tech (TWiT)》学习专题](./podcasts/featured/this-week-in-tech.md) —— 英文科技新闻圆桌活化石,2005 年开播,1100+ 期
 
 ## 当前进度
 
@@ -32,7 +40,7 @@
 - **批次 9(2026-09-04)**:批次 8 遗留 **16 档 stub 全部升级为深档**(全部经 web 检索核实,Forbes 2026 收入榜数据回填);同日**收编 cron 遗留未提交 stub 25 档、清理重复档 7 档**,并落地校验 / 统计 / 导出脚本与 CI。详见 [`podcasts/README.md`](./podcasts/README.md)「当前进度」批次 9 段。
 - **批次 10(2026-09-05)**:**8 档升级深档**(罗永浩的十字路口 / 陈鲁豫·慢谈 / 张小珺商业访谈录 / 声动早咖啡 / 面基 / B2B Growth / Founder's Journal / Stratechery),**删除 2 档误档**(office-hours-with-patrick-o-shaughnessy、zh/tech 声动早咖啡重复 stub);zh/news 实现深档零的突破。详见 [`podcasts/README.md`](./podcasts/README.md)「当前进度」批次 10 段。
 <!-- corpus:begin:summary -->
-**当前合计**:**230 档**(中文 89 + 英文 141),其中深档 145 档、stub 85 档(截至 2026-09-11;由 `scripts/stats.py` 自动统计,勿手改)
+**当前合计**:**231 档**(中文 89 + 英文 142),其中深档 146 档、stub 85 档(截至 2026-09-22;由 `scripts/stats.py` 自动统计,勿手改)
 <!-- corpus:end:summary -->
 
 ## 编写原则(摘要)
@@ -56,6 +64,7 @@
 │   ├── README.md       结构 / 字段 / 原则 / 路线
 │   ├── _template.md    标准档模板
 │   ├── INDEX.md        总索引(由 scripts/stats.py 自动生成)
+│   ├── featured/       置顶学习专题(逐集精读指南)
 │   ├── zh/             中文播客(按赛道分目录)
 │   └── en/             英文播客(按赛道分目录)
 ├── recommendations/    ← 每日 cron 推荐索引(YYYY-MM-DD.md)

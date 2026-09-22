@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-11",
+  "generated_at": "2026-09-22",
   "counts": {
-    "total": 230,
+    "total": 231,
     "zh": 89,
-    "en": 141,
-    "deep": 145,
+    "en": 142,
+    "deep": 146,
     "stub": 85
   },
   "entries": [
@@ -3500,6 +3500,43 @@
       "_deep": true
     },
     {
+      "title": "This Week in Tech (TWiT)",
+      "slug": "this-week-in-tech",
+      "language": "en",
+      "category": "tech",
+      "status": "active",
+      "network": "TWiT.tv (TWiT Network)",
+      "hosts": [
+        "Leo Laporte（创始人/主持人；TWiT.tv 网络创始人，前 TechTV《The Screen Savers》主持人）",
+        "常驻圆桌嘉宾：Amy Webb（未来学家）、Iain Thomson（The Register）、Alex Wilhelm（TechCrunch）、Christina Warren（Microsoft）、Brianna Wu（开发者）"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "twit.tv / RSS",
+        "Pocket Casts / Overcast / TuneIn 等"
+      ],
+      "rss": "https://feeds.twit.tv/twit.xml",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/this-week-in-tech-audio/id73329404",
+        "spotify": "https://open.spotify.com/show/2EQSsoEOeYqptLKCWk1TB7",
+        "youtube": "https://www.youtube.com/ThisWeekinTech"
+      },
+      "added_date": "2026-09-22",
+      "updated_date": "2026-09-22",
+      "tags": [
+        "tech news",
+        "roundtable",
+        "consumer tech",
+        "AI",
+        "regulation",
+        "journalism"
+      ],
+      "_path": "podcasts/en/tech/this-week-in-tech.md",
+      "_deep": true
+    },
+    {
       "title": "Training Data",
       "slug": "training-data",
       "language": "en",
@@ -6311,22 +6348,26 @@
       "status": "active",
       "network": "硅谷101 / 独立出品",
       "hosts": [
-        "陈茜（Zara）"
+        "泓君（Jane，创始人 & CEO / 主理人；前《财经》驻美记者、《商业价值》杂志 & 钛媒体主笔）",
+        "陈茜（联合创始人 & COO；前 CNBC 双语主持人，主持视频版与子栏目《101 Weekly》）",
+        "轮值主播：杜秀、麻花、刘一鸣、Yiwen、Yushan、Faith 静远（见官方 hosts 页）"
       ],
       "platforms": [
         "Apple Podcasts",
         "小宇宙",
         "Spotify",
-        "YouTube"
+        "YouTube",
+        "Castbox / Amazon Music / TuneIn"
       ],
-      "rss": "TODO",
+      "rss": "https://feeds.fireside.fm/sv101/rss",
       "subscribe_links": {
-        "apple": "TODO",
-        "xiaoyuzhou": "TODO",
-        "youtube": "TODO"
+        "apple": "https://podcasts.apple.com/us/podcast/%E7%A1%85%E8%B0%B7101/id1498541229",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/5e5c52c9418a84a04625e6cc",
+        "spotify": "https://open.spotify.com/show/0wngyWmgWZB8aXMg9DooJ5",
+        "youtube": "https://www.youtube.com/@valley101podcast"
       },
       "added_date": "2026-08-03",
-      "updated_date": "2026-08-03",
+      "updated_date": "2026-09-22",
       "tags": [
         "硅谷",
         "科技",
