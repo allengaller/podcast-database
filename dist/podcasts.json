@@ -1,0 +1,6483 @@
+{
+  "generated_at": "2026-09-11",
+  "counts": {
+    "total": 230,
+    "zh": 89,
+    "en": 141,
+    "deep": 145,
+    "stub": 85
+  },
+  "entries": [
+    {
+      "title": "American Alchemy",
+      "slug": "american-alchemy",
+      "language": "en",
+      "category": "ai",
+      "status": "todo",
+      "network": "Jesse Michels 独立出品",
+      "hosts": [
+        "Jesse Michels（科技 / 历史 / 神秘学交叉内容创作者）"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "AI",
+        "历史",
+        "神秘学",
+        "长访谈"
+      ],
+      "_path": "podcasts/en/ai/american-alchemy.md",
+      "_deep": false
+    },
+    {
+      "title": "Data Skeptic",
+      "slug": "data-skeptic",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "独立",
+      "hosts": [
+        "Kyle Polich",
+        "Linh Da Pham"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "RSS",
+        "dataskeptic.com"
+      ],
+      "rss": "https://dataskeptic.com/podcast/feed.xml",
+      "subscribe_links": {
+        "apple_podcasts_id": "TODO",
+        "spotify_id": "TODO",
+        "website": "https://dataskeptic.com",
+        "youtube_channel": "TODO"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "data science",
+        "machine learning",
+        "AI",
+        "statistics",
+        "beginner-friendly",
+        "miniseries"
+      ],
+      "_path": "podcasts/en/ai/data-skeptic.md",
+      "_deep": true
+    },
+    {
+      "title": "Dwarkesh Podcast",
+      "slug": "dwarkesh-podcast",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "独立出品（Dwarkesh Patel 个人主理，先 YouTube 后全平台）",
+      "hosts": [
+        "Dwarkesh Patel（独立播客主理人）"
+      ],
+      "platforms": [
+        "YouTube（主阵地，订阅量百万级）",
+        "Apple Podcasts",
+        "Spotify",
+        "X / Twitter（长 clip 矩阵）"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "youtube": "https://www.youtube.com/@DwarkeshPatel",
+        "apple": "TODO",
+        "spotify": "TODO"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "AGI",
+        "长访谈",
+        "frontier-research",
+        "alignment",
+        "philosophy",
+        "history",
+        "思想史"
+      ],
+      "_path": "podcasts/en/ai/dwarkesh-podcast.md",
+      "_deep": true
+    },
+    {
+      "title": "Eye on AI",
+      "slug": "eye-on-ai",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "独立",
+      "hosts": [
+        "Jack Lindsay"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "RSS"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple_podcasts_id": "TODO",
+        "spotify_id": "TODO",
+        "youtube_channel": "TODO"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "long-form interview",
+        "AI research",
+        "AI policy",
+        "weekly"
+      ],
+      "_path": "podcasts/en/ai/eye-on-ai.md",
+      "_deep": true
+    },
+    {
+      "title": "Gradient Dissent — Stories from the AI Engineering trenches",
+      "slug": "gradient-dissent",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "Weights & Biases 出品（公司播客）",
+      "hosts": [
+        "Lukas Biewald — Weights & Biases 联合创始人兼 CEO",
+        "其他 W&B 团队成员(轮换主持)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "Google Podcasts"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO",
+        "youtube": "https://www.youtube.com/@WeightsBiases",
+        "website": "https://wandb.ai/fully-connected"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "MLOps",
+        "ML-engineering",
+        "model-training",
+        "Weights-Biases",
+        "experiment-tracking",
+        "production-ML"
+      ],
+      "_path": "podcasts/en/ai/gradient-dissent.md",
+      "_deep": true
+    },
+    {
+      "title": "Hard Fork",
+      "slug": "hard-fork",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "The New York Times",
+      "hosts": [
+        "Kevin Roose",
+        "Casey Newton"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "NYT Audio app"
+      ],
+      "rss": "https://feeds.simplecast.com/dHoohVNH",
+      "subscribe_links": {
+        "apple_podcasts_id": "1528594034",
+        "spotify_id": "6b4ChVOhF02MxY3tzj5mhH",
+        "youtube_channel": "@hardfork"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "tech news",
+        "business",
+        "NYT",
+        "weekly recap"
+      ],
+      "_path": "podcasts/en/ai/hard-fork.md",
+      "_deep": true
+    },
+    {
+      "title": "High Agency",
+      "slug": "high-agency",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "TODO（独立出品 / 个人 IP 化运营）",
+      "hosts": [
+        "TODO（年轻 AI 创业者社群向主播,具体身份待核）"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "X / Twitter"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO",
+        "youtube": "TODO"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "startup",
+        "个人IP",
+        "AI-builder",
+        "短访谈",
+        "growth"
+      ],
+      "_path": "podcasts/en/ai/high-agency.md",
+      "_deep": true
+    },
+    {
+      "title": "In Machines We Trust",
+      "slug": "in-machines-we-trust",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "MIT Technology Review",
+      "hosts": [
+        "Jennifer Strong(主持人)",
+        "Anthony Green(制片人,后期)",
+        "Emma Cillekens(制片人)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "Google Podcasts",
+        "Stitcher",
+        "TuneIn",
+        "MIT Technology Review 网站"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple_podcasts_id": "TODO",
+        "spotify_id": "TODO",
+        "mit_super_topic": "https://www.technologyreview.com/supertopic/in-machines-we-trust/"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "AI",
+        "AI policy",
+        "AI ethics",
+        "automation",
+        "MIT Technology Review",
+        "AI in daily life"
+      ],
+      "_path": "podcasts/en/ai/in-machines-we-trust.md",
+      "_deep": true
+    },
+    {
+      "title": "Last Week in AI",
+      "slug": "last-week-in-ai",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "Skynet Today（AI 研究/科普媒体）",
+      "hosts": [
+        "Andrey Kurenkov — Skynet Today 联合创始人，独立 AI 研究员/科普作者（斯坦福大学 Symbolic Systems 系）",
+        "Daniel Whitenack（早期客座/共同主持）"
+      ],
+      "platforms": [
+        "YouTube",
+        "Apple Podcasts",
+        "Spotify",
+        "Google Podcasts",
+        "小宇宙（被中文 AI 圈搬运）"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "youtube": "https://www.youtube.com/@LastWeekinAI",
+        "apple": "TODO",
+        "spotify": "TODO",
+        "skynet": "https://www.skynettoday.com"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "AI-news",
+        "weekly-roundup",
+        "LLM",
+        "research",
+        "AI-policy",
+        "AI-business"
+      ],
+      "_path": "podcasts/en/ai/last-week-in-ai.md",
+      "_deep": true
+    },
+    {
+      "title": "Latent Space",
+      "slug": "latent-space",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "Latent Space (独立出品,定位 AI Engineer 媒体)",
+      "hosts": [
+        "swyx (Shawn Wang) — AI engineer / writer / community builder",
+        "Alessio Fanelli — Investor at Decibel Partners, engineer"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "latent.space(官网 + 文字稿 + 配套 newsletter)"
+      ],
+      "rss": "https://www.latent.space/rss",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO",
+        "youtube": "TODO",
+        "website": "https://www.latent.space"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "AI-engineering",
+        "LLM",
+        "research",
+        "builders",
+        "developer-tools",
+        "newsletter",
+        "community"
+      ],
+      "_path": "podcasts/en/ai/latent-space.md",
+      "_deep": true
+    },
+    {
+      "title": "Lex Fridman Podcast",
+      "slug": "lex-fridman-podcast",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "独立",
+      "hosts": [
+        "Lex Fridman"
+      ],
+      "platforms": [
+        "YouTube",
+        "Apple Podcasts",
+        "Spotify",
+        "X(原 Twitter)"
+      ],
+      "rss": "https://lexfridman.com/feed/podcast/",
+      "subscribe_links": {
+        "apple_podcasts_id": "1434243584",
+        "spotify_id": "2VRS1IJCTn2eTl9N9YeLgL",
+        "youtube_channel": "@lexfridman"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "long-form interview",
+        "AGI",
+        "AI research",
+        "tech leadership"
+      ],
+      "_path": "podcasts/en/ai/lex-fridman-podcast.md",
+      "_deep": true
+    },
+    {
+      "title": "Me, Myself, and AI",
+      "slug": "me-myself-and-ai",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "MIT Sloan Management Review + Boston Consulting Group (BCG)",
+      "hosts": [
+        "Sam Ransbotham",
+        "Shervin Khodabandeh"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "MIT SMR 网站",
+        "RSS"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple_podcasts_id": "TODO",
+        "spotify_id": "TODO",
+        "mit_smr_url": "https://sloanreview.mit.edu/audio/me-myself-and-ai/"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "business",
+        "AI adoption",
+        "leadership",
+        "MIT Sloan",
+        "BCG"
+      ],
+      "_path": "podcasts/en/ai/me-myself-and-ai.md",
+      "_deep": true
+    },
+    {
+      "title": "No Priors",
+      "slug": "no-priors",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "Conviction（Sarah Guo 旗下风投） × Elad Gil 独立基金",
+      "hosts": [
+        "Sarah Guo — Conviction 创始人（前 Greylock Partners 合伙人，10 年）",
+        "Elad Gil — 连续创业者、Twitter 前企业战略 VP、Color Health 创始人、《High Growth Handbook》作者"
+      ],
+      "platforms": [
+        "YouTube（视频主阵地）",
+        "Apple Podcasts",
+        "Spotify",
+        "Conviction 官网"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "youtube": "https://www.youtube.com/@NoPriors",
+        "apple": "TODO",
+        "spotify": "TODO",
+        "conviction": "https://www.convicition.com"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "AI-investing",
+        "startup",
+        "founders",
+        "frontier-tech",
+        "AI-3.0",
+        "硅谷",
+        "投资人"
+      ],
+      "_path": "podcasts/en/ai/no-priors.md",
+      "_deep": true
+    },
+    {
+      "title": "Possible",
+      "slug": "possible",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "Reid Hoffman 独立出品",
+      "hosts": [
+        "Reid Hoffman(LinkedIn 联合创始人,Greylock 合伙人)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/possible/id1668084225",
+        "spotify": "TODO",
+        "youtube": "TODO"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "AI",
+        "未来",
+        "深度访谈",
+        "Reid Hoffman",
+        "co-pilot 主持"
+      ],
+      "_path": "podcasts/en/ai/possible.md",
+      "_deep": true
+    },
+    {
+      "title": "Practical AI",
+      "slug": "practical-ai",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "Changelog（The Changelog 旗下，以开发者 Podcast 著称的独立播客网络）",
+      "hosts": [
+        "Daniel Whitenack（Data Dan）— 数据科学家、Prediction Guard 创始人；曾服务两家 startup 和 4000+ 员工的国际 NGO；Purdue University 客座讲师",
+        "Chris Benson — AI/ML/DL 实践者，长期与 Adobe、Honeywell 等企业合作；曾任 AI 伦理委员会成员"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "Changelog 官网（show notes 极详尽）",
+        "RSS"
+      ],
+      "rss": "https://changelog.com/practicalai/feed",
+      "subscribe_links": {
+        "website": "https://practicalai.fm",
+        "changelog": "https://changelog.com/practicalai",
+        "apple": "TODO",
+        "spotify": "TODO",
+        "youtube": "TODO"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "machine-learning",
+        "MLOps",
+        "data-science",
+        "LLMs",
+        "developer",
+        "production",
+        "ethics"
+      ],
+      "_path": "podcasts/en/ai/practical-ai.md",
+      "_deep": true
+    },
+    {
+      "title": "Robot Brains Podcast",
+      "slug": "robot-brains-podcast",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "独立",
+      "hosts": [
+        "Pieter Abbeel(主持人,UC Berkeley 教授 / BAIR 联合主任 / Berkeley Robot Learning Lab 主任 / 前 Covariant 创始人 / 总裁 / 首席科学家)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "RSS"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple_podcasts_id": "TODO",
+        "spotify_id": "TODO",
+        "youtube_channel": "TODO"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "AI",
+        "robotics",
+        "embodied AI",
+        "deep reinforcement learning",
+        "robot foundation models",
+        "AI research"
+      ],
+      "_path": "podcasts/en/ai/robot-brains-podcast.md",
+      "_deep": true
+    },
+    {
+      "title": "The AI Daily Brief (Nathaniel Whittemore)",
+      "slug": "ai-daily-brief",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "独立出品（个人 IP 化运营，2022-2023 创办）",
+      "hosts": [
+        "Nathaniel Whittemore — AI 行业内容创作者 / 媒体人"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "官网 / Substack"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO",
+        "youtube": "https://www.youtube.com/@TheAIDailyBrief",
+        "substack": "TODO"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "news-brief",
+        "daily",
+        "LLM",
+        "industry-news"
+      ],
+      "_path": "podcasts/en/ai/ai-daily-brief.md",
+      "_deep": true
+    },
+    {
+      "title": "The AI Podcast (NVIDIA)",
+      "slug": "the-ai-podcast-nvidia",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "NVIDIA（AI 芯片与计算平台巨头）",
+      "hosts": [
+        "Noah Kravitz — NVIDIA 资深内容与品牌团队，技术记者出身，长期主持 NVIDIA 官方播客（2017- ）"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "NVIDIA 官网",
+        "SoundCloud",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "website": "https://blogs.nvidia.com/ai-podcast/",
+        "apple": "TODO",
+        "spotify": "TODO",
+        "nvidia_blog": "https://blogs.nvidia.com/ai-podcast/"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "NVIDIA",
+        "GPU",
+        "enterprise-AI",
+        "AI-infrastructure",
+        "AI-applied",
+        "corporate-podcast"
+      ],
+      "_path": "podcasts/en/ai/the-ai-podcast-nvidia.md",
+      "_deep": true
+    },
+    {
+      "title": "The Cognitive Revolution",
+      "slug": "the-cognitive-revolution",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "独立出品（Waymark 联合创始人 Nathan Labenz 创办）",
+      "hosts": [
+        "Nathan Labenz — Waymark 联合创始人（AI 驱动视频创作工具公司）；前 Cognitive Computation / health tech 创业者；X 平台活跃 AI 观察者"
+      ],
+      "platforms": [
+        "YouTube（视频主阵地，含完整 transcript）",
+        "Apple Podcasts",
+        "Spotify",
+        "RSS",
+        "cognitiverevolution.ai 官网（newsletter + episodes）"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "website": "https://www.cognitiverevolution.ai",
+        "youtube": "https://www.youtube.com/@cognitive-revolution",
+        "apple": "TODO",
+        "spotify": "TODO"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "AI-safety",
+        "frontier-models",
+        "agents",
+        "AI-policy",
+        "AI-business",
+        "长访谈",
+        "scout-reports"
+      ],
+      "_path": "podcasts/en/ai/the-cognitive-revolution.md",
+      "_deep": true
+    },
+    {
+      "title": "The TWIML AI Podcast (formerly This Week in Machine Learning & AI)",
+      "slug": "twiml-ai-podcast",
+      "language": "en",
+      "category": "ai",
+      "status": "active",
+      "network": "TWIML（Sam Charrington 创立的独立 AI 媒体，旗下有 TWIML Events 线下大会、The AI Platforms 平台）",
+      "hosts": [
+        "Sam Charrington — TWIML 创始人，分析师/前科技公司产品经理，长期关注 ML/AI 平台与企业落地"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "Google Podcasts",
+        "Podcast Addict",
+        "RSS",
+        "twimlai.com 官网（show notes 极详尽）"
+      ],
+      "rss": "https://twimlai.com/feed",
+      "subscribe_links": {
+        "website": "https://twimlai.com",
+        "apple": "TODO",
+        "spotify": "TODO",
+        "youtube": "https://www.youtube.com/@TWIML"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "machine-learning",
+        "MLOps",
+        "data-science",
+        "research",
+        "enterprise-AI",
+        "longform",
+        "长寿"
+      ],
+      "_path": "podcasts/en/ai/twiml-ai-podcast.md",
+      "_deep": true
+    },
+    {
+      "title": "B2B Growth",
+      "slug": "b2b-growth",
+      "language": "en",
+      "category": "business",
+      "status": "active",
+      "network": "Sweet Fish Media(3x Inc. 5000 获奖的 B2B 播客 / 视频代理公司)",
+      "hosts": [
+        "轮值主持(Sweet Fish 团队;James Carbary 任执行制作人)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "spotify": "https://open.spotify.com/show/2xoP8KMB1GYUXkSVTEojZ0",
+        "apple": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-05",
+      "tags": [
+        "b2b",
+        "marketing",
+        "saas",
+        "demand-generation",
+        "content-marketing"
+      ],
+      "_path": "podcasts/en/business/b2b-growth.md",
+      "_deep": true
+    },
+    {
+      "title": "BG2 Pod",
+      "slug": "bg2-pod",
+      "language": "en",
+      "category": "business",
+      "status": "active",
+      "network": "Brad Gerstner & Bill Gurley 独立出品",
+      "hosts": [
+        "Brad Gerstner(Altimeter Capital 创始人 / CIO)",
+        "Bill Gurley(Benchmark 普通合伙人)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "iHeart"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/bg2pod-with-brad-gerstner-and-bill-gurley/id1727278168",
+        "website": "https://www.bg2pod.com/",
+        "youtube": "https://www.youtube.com/playlist?list=PL6Jwmvh8DLmc9WZsrCIgsW_5IDWncrqV5"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "风险投资",
+        "公开市场",
+        "科技",
+        "AI",
+        "硅谷顶层对话"
+      ],
+      "_path": "podcasts/en/business/bg2-pod.md",
+      "_deep": true
+    },
+    {
+      "title": "Founder's Journal",
+      "slug": "founder-s-journal",
+      "language": "en",
+      "category": "business",
+      "status": "active",
+      "network": "Morning Brew(2020 年被 Business Insider 收购多数股权)",
+      "hosts": [
+        "Alex Lieberman — Morning Brew 联合创始人(前 CEO / 执行董事长)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "官网 foundersjournalpod.morningbrew.com"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/id1509276485",
+        "website": "https://foundersjournalpod.morningbrew.com/"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-05",
+      "tags": [
+        "entrepreneurship",
+        "founders",
+        "startups",
+        "morning-brew",
+        "solo-show"
+      ],
+      "_path": "podcasts/en/business/founder-s-journal.md",
+      "_deep": true
+    },
+    {
+      "title": "How I Built This with Guy Raz",
+      "slug": "how-i-built-this",
+      "language": "en",
+      "category": "business",
+      "status": "active",
+      "network": "NPR / Wondery (Amazon)",
+      "hosts": [
+        "Guy Raz (NPR correspondent, host of TED Radio Hour, founder of Built In Public)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "NPR One",
+        "Wondery+ (premium ad-free)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/how-i-built-this/id1150510297",
+        "npr": "https://www.npr.org/podcasts/510313/how-i-built-this"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "founders",
+        "company-history",
+        "entrepreneurship",
+        "narrative",
+        "npr",
+        "wondery",
+        "guy-raz"
+      ],
+      "_path": "podcasts/en/business/how-i-built-this.md",
+      "_deep": true
+    },
+    {
+      "title": "Indie Hackers",
+      "slug": "indie-hackers",
+      "language": "en",
+      "category": "business",
+      "status": "active",
+      "network": "Indie Hackers (acquired by Stripe, 2017); hosted & produced via Transistor.fm",
+      "hosts": [
+        "Courtland Allen (founder, originally from Stripe; co-host)",
+        "Channing Allen (Courtland's sister, co-host from 2020)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "Pocket Casts",
+        "Overcast",
+        "Transistor.fm (hosting)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "transistor": "https://feeds.transistor.fm/indie-hackers",
+        "site": "https://www.indiehackers.com"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "bootstrapping",
+        "indie",
+        "founders",
+        "saas",
+        "lifestyle-business",
+        "community",
+        "stripe",
+        "transistor"
+      ],
+      "_path": "podcasts/en/business/indie-hackers.md",
+      "_deep": true
+    },
+    {
+      "title": "Masters of Scale with Reid Hoffman",
+      "slug": "masters-of-scale",
+      "language": "en",
+      "category": "business",
+      "status": "active",
+      "network": "WaitWhat (originally with LinkedIn; later Spotify exclusive window)",
+      "hosts": [
+        "Reid Hoffman (LinkedIn co-founder, Greylock partner)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "MasterClass",
+        "WaitWhat"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/masters-of-scale-with-reid-hoffman/id1227851740",
+        "spotify": "https://open.spotify.com/show/1m3lR9BXXtkNTCSK4P9T0P",
+        "waitwhat": "https://www.waitwhat.com/shows/masters-of-scale"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "founders",
+        "vc",
+        "scaling",
+        "leadership",
+        "blitzscaling",
+        "network-effects",
+        "waitwhat",
+        "linkedin"
+      ],
+      "_path": "podcasts/en/business/masters-of-scale.md",
+      "_deep": true
+    },
+    {
+      "title": "Money Stuff: The Podcast",
+      "slug": "money-stuff",
+      "language": "en",
+      "category": "business",
+      "status": "active",
+      "network": "Bloomberg",
+      "hosts": [
+        "Matt Levine(Bloomberg Opinion 金融专栏作家,《Money Stuff》原版主笔)",
+        "Katie Greifeld(Bloomberg 主持)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "Bloomberg 官网"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/bm/podcast/money-stuff-the-podcast/id1739582836",
+        "spotify": "https://open.spotify.com/show/11yAA5VXm0IJeZoKL4Fqah",
+        "website": "https://www.bloomberg.com/podcasts/series/money-stuff",
+        "newsletter": "https://www.bloomberg.com/account/newsletters/money-stuff"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "金融",
+        "市场",
+        "专栏",
+        "Matt Levine",
+        "幽默金融"
+      ],
+      "_path": "podcasts/en/business/money-stuff.md",
+      "_deep": true
+    },
+    {
+      "title": "SaaStr Podcast",
+      "slug": "saastr-podcast",
+      "language": "en",
+      "category": "business",
+      "status": "active",
+      "network": "SaaStr, Inc. (Jason Lemkin) — Annual Conference + Podcast + YouTube ecosystem",
+      "hosts": [
+        "Jason Lemkin (founder & CEO of SaaStr; primary host)",
+        "Rotating guest hosts (CMOs, CROs, VCs, AI founders) — varies per session"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube (primary long-form archive)",
+        "SaaStr.com (transcripts + show notes)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/the-official-saastr-podcast/id981085138",
+        "site": "https://www.saastr.com/podcast/",
+        "youtube": "https://www.youtube.com/saastr"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "saas",
+        "b2b",
+        "founders",
+        "sales",
+        "gtm",
+        "ai",
+        "conference",
+        "jason-lemkin"
+      ],
+      "_path": "podcasts/en/business/saastr-podcast.md",
+      "_deep": true
+    },
+    {
+      "title": "TBPN",
+      "slug": "tbpn",
+      "language": "en",
+      "category": "business",
+      "status": "active",
+      "network": "OpenAI(2026-04 收购;此前独立创办运营)",
+      "hosts": [
+        "John Coogan — 联合创始人 / 主播,科技创业者 / YouTube 创作者",
+        "Jordi Hays — 联合创始人 / 主播"
+      ],
+      "platforms": [
+        "X / Twitter(直播)",
+        "YouTube(直播 + 回放)",
+        "Apple Podcasts",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO",
+        "youtube": "TODO",
+        "openai": "https://openai.com/index/openai-acquires-tbpn/"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "tech",
+        "business",
+        "live-streaming",
+        "AI",
+        "media",
+        "OpenAI",
+        "venture"
+      ],
+      "_path": "podcasts/en/business/tbpn.md",
+      "_deep": true
+    },
+    {
+      "title": "The Knowledge Project",
+      "slug": "the-knowledge-project",
+      "language": "en",
+      "category": "business",
+      "status": "active",
+      "network": "Farnam Street",
+      "hosts": [
+        "Shane Parrish(Farnam Street 创始人,前加拿大情报分析师)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "Farnam Street 博客"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/the-knowledge-project/id1231546117",
+        "website": "https://fs.blog/podcast/"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "决策",
+        "思维模型",
+        "深度访谈",
+        "Farnam Street"
+      ],
+      "_path": "podcasts/en/business/the-knowledge-project.md",
+      "_deep": true
+    },
+    {
+      "title": "The Prof G Pod with Scott Galloway",
+      "slug": "the-prof-g-pod",
+      "language": "en",
+      "category": "business",
+      "status": "active",
+      "network": "Vox Media Podcast Network × Prof G Media",
+      "hosts": [
+        "Scott Galloway — NYU Stern 教授 / 畅销书作者 / 连续创业者(单人主理,板块轮换)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "profgmedia.com(Substack 付费层)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/the-prof-g-pod-with-scott-galloway/id1498802610",
+        "spotify": "TODO",
+        "youtube": "TODO",
+        "website": "https://scottgalloway.profgmedia.com/podcasts/"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "business",
+        "tech",
+        "markets",
+        "strategy",
+        "career",
+        "education"
+      ],
+      "_path": "podcasts/en/business/the-prof-g-pod.md",
+      "_deep": true
+    },
+    {
+      "title": "The Twenty Minute VC (20VC)",
+      "slug": "20vc",
+      "language": "en",
+      "category": "business",
+      "status": "active",
+      "network": "20VC Ltd.(Harry Stebbings 旗下)",
+      "hosts": [
+        "Harry Stebbings(20VC 创始人,前 VC 投资人)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/nl/podcast/the-twenty-minute-vc-20vc-venture-capital-startup/id958230465",
+        "website": "https://www.thetwentyminutevc.com/",
+        "youtube": "https://www.youtube.com/@20VC"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "风险投资",
+        "创业",
+        "20 分钟短访谈",
+        "投资人播客"
+      ],
+      "_path": "podcasts/en/business/20vc.md",
+      "_deep": true
+    },
+    {
+      "title": "a16z Podcast",
+      "slug": "a16z-podcast",
+      "language": "en",
+      "category": "business",
+      "status": "active",
+      "network": "Andreessen Horowitz (a16z) — owned and produced by the firm",
+      "hosts": [
+        "Sonal Chokshi (Editor in Chief, host across most feeds since ~2018)",
+        "Rotating a16z general partners and editorial staff (Marc Andreessen, Ben Horowitz, Andrew Chen, Jeff Jordan, Connie Chan, David George, Vijay Pande, Chris Dixon, etc.)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "a16z.com (transcripts + show notes)",
+        "Substack-style email digests"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/a16z-podcast/id842818211",
+        "site": "https://a16z.com/podcasts/",
+        "crypto": "https://a16zcrypto.com/posts/podcast/"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "vc",
+        "tech",
+        "crypto",
+        "ai",
+        "bio",
+        "growth",
+        "andreessen-horowitz",
+        "a16z"
+      ],
+      "_path": "podcasts/en/business/a16z-podcast.md",
+      "_deep": true
+    },
+    {
+      "title": "Comedy Bang! Bang!",
+      "slug": "comedy-bang-bang",
+      "language": "en",
+      "category": "comedy",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/comedy/comedy-bang-bang.md",
+      "_deep": false
+    },
+    {
+      "title": "Conan O'Brien Needs A Friend",
+      "slug": "conan-obrien-needs-a-friend",
+      "language": "en",
+      "category": "comedy",
+      "status": "active",
+      "network": "Team Coco / SiriusXM",
+      "hosts": [
+        "Conan O'Brien"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "SiriusXM"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "comedy",
+        "celebrity-interview",
+        "entertainment",
+        "late-night"
+      ],
+      "_path": "podcasts/en/comedy/conan-obrien-needs-a-friend.md",
+      "_deep": true
+    },
+    {
+      "title": "Doughboys",
+      "slug": "doughboys",
+      "language": "en",
+      "category": "comedy",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/comedy/doughboys.md",
+      "_deep": false
+    },
+    {
+      "title": "Good Hang with Amy Poehler",
+      "slug": "good-hang-with-amy-poehler",
+      "language": "en",
+      "category": "comedy",
+      "status": "todo",
+      "network": "The Ringer",
+      "hosts": [
+        "Amy Poehler（演员,《Parks and Recreation》女主,SNL 老牌卡司）"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "喜剧",
+        "访谈",
+        "名人"
+      ],
+      "_path": "podcasts/en/comedy/good-hang-with-amy-poehler.md",
+      "_deep": false
+    },
+    {
+      "title": "How Did This Get Played?",
+      "slug": "how-did-this-get-played",
+      "language": "en",
+      "category": "comedy",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/comedy/how-did-this-get-played.md",
+      "_deep": false
+    },
+    {
+      "title": "My Brother, My Brother and Me",
+      "slug": "my-brother-my-brother-and-me",
+      "language": "en",
+      "category": "comedy",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/comedy/my-brother-my-brother-and-me.md",
+      "_deep": false
+    },
+    {
+      "title": "Office Ladies",
+      "slug": "office-ladies",
+      "language": "en",
+      "category": "comedy",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/comedy/office-ladies.md",
+      "_deep": false
+    },
+    {
+      "title": "SmartLess",
+      "slug": "smartless",
+      "language": "en",
+      "category": "comedy",
+      "status": "active",
+      "network": "Wondery / Amazon (earlier independent)",
+      "hosts": [
+        "Jason Bateman",
+        "Sean Hayes",
+        "Will Arnett"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "Amazon Music / Wondery+"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "comedy",
+        "celebrity-interview",
+        "entertainment",
+        "hollywood"
+      ],
+      "_path": "podcasts/en/comedy/smartless.md",
+      "_deep": true
+    },
+    {
+      "title": "The Bill Simmons Podcast",
+      "slug": "the-bill-simmons-podcast",
+      "language": "en",
+      "category": "comedy",
+      "status": "active",
+      "network": "Spotify (audio) / Netflix (video) / Bill Simmons Media Group",
+      "hosts": [
+        "Bill Simmons"
+      ],
+      "platforms": [
+        "Spotify",
+        "Apple Podcasts",
+        "YouTube",
+        "Netflix",
+        "The Ringer"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/the-bill-simmons-podcast/id358597484",
+        "spotify": "https://open.spotify.com/show/5lANf1JEOYZdmDMsVp1DkF",
+        "youtube": "https://www.youtube.com/@BillSimmons"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "sports",
+        "pop-culture",
+        "longform-interview",
+        "nba",
+        "media"
+      ],
+      "_path": "podcasts/en/comedy/the-bill-simmons-podcast.md",
+      "_deep": true
+    },
+    {
+      "title": "The Joe Rogan Experience",
+      "slug": "the-joe-rogan-experience",
+      "language": "en",
+      "category": "comedy",
+      "status": "active",
+      "network": "Independent (Joe Rogan)",
+      "hosts": [
+        "Joe Rogan"
+      ],
+      "platforms": [
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "private (Spotify exclusive feed)",
+      "subscribe_links": {
+        "spotify": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "longform-interview",
+        "comedy",
+        "culture",
+        "sports",
+        "controversy"
+      ],
+      "_path": "podcasts/en/comedy/the-joe-rogan-experience.md",
+      "_deep": true
+    },
+    {
+      "title": "99% Invisible",
+      "slug": "99-invisible",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/culture/99-invisible.md",
+      "_deep": false
+    },
+    {
+      "title": "Armchair Expert",
+      "slug": "armchair-expert",
+      "language": "en",
+      "category": "culture",
+      "status": "active",
+      "network": "Amazon Wondery",
+      "hosts": [
+        "Dax Shepard",
+        "Monica Padman (co-host / producer)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "Amazon Music / Wondery+"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/armchair-expert-with-dax-shepard/id1182845466",
+        "spotify": "https://open.spotify.com/show/0UWScpf6mxhIwgFMejpbka",
+        "youtube": "https://www.youtube.com/@ArmchairExpertPodcast"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "celebrity-interview",
+        "psychology",
+        "recovery",
+        "longform-interview"
+      ],
+      "_path": "podcasts/en/culture/armchair-expert.md",
+      "_deep": true
+    },
+    {
+      "title": "Beautiful Stories from Anonymous People",
+      "slug": "beautiful-stories",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "intimate-topics",
+        "anonymous-call",
+        "interview-format"
+      ],
+      "_path": "podcasts/en/culture/beautiful-stories.md",
+      "_deep": false
+    },
+    {
+      "title": "Call Her Daddy",
+      "slug": "call-her-daddy",
+      "language": "en",
+      "category": "culture",
+      "status": "active",
+      "network": "SiriusXM(2024 起,~$125M/3 年;Unwell Network 全球广告代理)",
+      "hosts": [
+        "Alex Cooper — Unwell Network 创始人"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "SiriusXM app(Podcasts+ 无广告层)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO",
+        "youtube": "TODO",
+        "siriusxm": "https://www.siriusxm.com/blog/alex-cooper"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "women",
+        "relationships",
+        "sex",
+        "comedy",
+        "interview",
+        "unwell-network"
+      ],
+      "_path": "podcasts/en/culture/call-her-daddy.md",
+      "_deep": true
+    },
+    {
+      "title": "Dear Sugars",
+      "slug": "dear-sugars",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "longform-interview",
+        "intimate-topics",
+        "advice-format"
+      ],
+      "_path": "podcasts/en/culture/dear-sugars.md",
+      "_deep": false
+    },
+    {
+      "title": "Death, Sex & Money",
+      "slug": "death-sex-money",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "longform-interview",
+        "intimate-topics",
+        "profile"
+      ],
+      "_path": "podcasts/en/culture/death-sex-money.md",
+      "_deep": false
+    },
+    {
+      "title": "Decoder Ring",
+      "slug": "decoder-ring",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "行业案例",
+        "cultural-investigation",
+        "narrative-nonfiction",
+        "micro-history"
+      ],
+      "_path": "podcasts/en/culture/decoder-ring.md",
+      "_deep": false
+    },
+    {
+      "title": "Ear Hustle",
+      "slug": "ear-hustle",
+      "language": "en",
+      "category": "culture",
+      "status": "active",
+      "network": "PRX + Radiotopia(2019-2022) + Ear Hustle Inc.(2023 起独立)",
+      "hosts": [
+        "Earlonne Woods(联合主理,前 San Quentin 州立监狱服刑 21 年,2018 出狱)",
+        "Nigel Poor(联合主理,艺术家 / 摄影学者,Sacramento 州立大学教授)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "PRX.org",
+        "earhustlesq.com"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/gb/podcast/ear-hustle/id1240841298",
+        "website": "https://www.earhustlesq.com/about",
+        "wikipedia": "https://en.wikipedia.org/wiki/Ear_Hustle"
+      },
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "embedded",
+        "scene-tape",
+        "oral-history"
+      ],
+      "_path": "podcasts/en/culture/ear-hustle.md",
+      "_deep": true
+    },
+    {
+      "title": "Everything is Alive",
+      "slug": "everything-is-alive",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "interview-format",
+        "creative-process",
+        "narrative-nonfiction"
+      ],
+      "_path": "podcasts/en/culture/everything-is-alive.md",
+      "_deep": false
+    },
+    {
+      "title": "Fresh Air",
+      "slug": "fresh-air",
+      "language": "en",
+      "category": "culture",
+      "status": "active",
+      "network": "WHYY / NPR",
+      "hosts": [
+        "Terry Gross",
+        "Tonya Mosley"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "NPR One"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "interview",
+        "arts",
+        "culture",
+        "journalism",
+        "current-affairs"
+      ],
+      "_path": "podcasts/en/culture/fresh-air.md",
+      "_deep": true
+    },
+    {
+      "title": "Giggly Squad",
+      "slug": "giggly-squad",
+      "language": "en",
+      "category": "culture",
+      "status": "active",
+      "network": "独立出品(分发合作方待核;原档注 Acast)",
+      "hosts": [
+        "Hannah Berner — 喜剧演员 /《Summer House》前主演",
+        "Paige DeSorbo — 时尚评论人 /《Summer House》前主演"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube(视频播客)",
+        "Substack(会员)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/giggly-squad/id1536352412",
+        "spotify": "TODO",
+        "youtube": "TODO",
+        "website": "https://gigglysquad.com/"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "comedy",
+        "pop-culture",
+        "reality-tv",
+        "fashion",
+        "women",
+        "live-tour"
+      ],
+      "_path": "podcasts/en/culture/giggly-squad.md",
+      "_deep": true
+    },
+    {
+      "title": "Heavyweight",
+      "slug": "heavyweight",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "longform-interview",
+        "profile",
+        "narrative-nonfiction"
+      ],
+      "_path": "podcasts/en/culture/heavyweight.md",
+      "_deep": false
+    },
+    {
+      "title": "Invisibilia",
+      "slug": "invisibilia",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "behavioral-science",
+        "narrative-nonfiction",
+        "documentary"
+      ],
+      "_path": "podcasts/en/culture/invisibilia.md",
+      "_deep": false
+    },
+    {
+      "title": "Longform",
+      "slug": "longform",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "longform-interview",
+        "meta-methodology",
+        "writer-craft"
+      ],
+      "_path": "podcasts/en/culture/longform.md",
+      "_deep": false
+    },
+    {
+      "title": "Love + Radio",
+      "slug": "love-and-radio",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "行业案例",
+        "narrative-nonfiction",
+        "intimate-topics",
+        "profile"
+      ],
+      "_path": "podcasts/en/culture/love-and-radio.md",
+      "_deep": false
+    },
+    {
+      "title": "Modern Wisdom",
+      "slug": "modern-wisdom",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "network": "Chris Williamson 独立出品",
+      "hosts": [
+        "Chris Williamson（YouTuber / 播客主）"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "男性成长",
+        "文化",
+        "心理",
+        "长访谈"
+      ],
+      "_path": "podcasts/en/culture/modern-wisdom.md",
+      "_deep": false
+    },
+    {
+      "title": "On Purpose with Jay Shetty",
+      "slug": "on-purpose-with-jay-shetty",
+      "language": "en",
+      "category": "culture",
+      "status": "active",
+      "network": "Spotify / Netflix (2026 三年期联合发行协议)",
+      "hosts": [
+        "Jay Shetty"
+      ],
+      "platforms": [
+        "Spotify",
+        "Apple Podcasts",
+        "YouTube",
+        "Netflix"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/on-purpose-with-jay-shetty/id1331773780",
+        "spotify": "https://open.spotify.com/show/5EqqbW8i7fFZBhB2iS0zq1",
+        "youtube": "https://www.youtube.com/@jayshetty"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "wellness",
+        "mindfulness",
+        "longform-interview",
+        "self-improvement",
+        "celebrity-interview"
+      ],
+      "_path": "podcasts/en/culture/on-purpose-with-jay-shetty.md",
+      "_deep": true
+    },
+    {
+      "title": "On the Media",
+      "slug": "on-the-media",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "meta-journalism",
+        "media-criticism",
+        "news-analysis"
+      ],
+      "_path": "podcasts/en/culture/on-the-media.md",
+      "_deep": false
+    },
+    {
+      "title": "S-Town",
+      "slug": "s-town",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "investigative-reporting",
+        "embedded",
+        "narrative-nonfiction"
+      ],
+      "_path": "podcasts/en/culture/s-town.md",
+      "_deep": false
+    },
+    {
+      "title": "Scene on Radio",
+      "slug": "scene-on-radio",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "narrative-nonfiction",
+        "documentary",
+        "power-and-culture"
+      ],
+      "_path": "podcasts/en/culture/scene-on-radio.md",
+      "_deep": false
+    },
+    {
+      "title": "Sold Out",
+      "slug": "sold-out",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "行业案例",
+        "investigative-reporting",
+        "housing",
+        "urban-policy"
+      ],
+      "_path": "podcasts/en/culture/sold-out.md",
+      "_deep": false
+    },
+    {
+      "title": "Song Exploder",
+      "slug": "song-exploder",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "deconstruction",
+        "interview-format",
+        "creative-process"
+      ],
+      "_path": "podcasts/en/culture/song-exploder.md",
+      "_deep": false
+    },
+    {
+      "title": "StoryCorps",
+      "slug": "storycorps",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "oral-history",
+        "archive-project",
+        "live-event"
+      ],
+      "_path": "podcasts/en/culture/storycorps.md",
+      "_deep": false
+    },
+    {
+      "title": "Strangers",
+      "slug": "strangers",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "longform-interview",
+        "intimate-topics",
+        "profile"
+      ],
+      "_path": "podcasts/en/culture/strangers.md",
+      "_deep": false
+    },
+    {
+      "title": "The Breakfast Club",
+      "slug": "the-breakfast-club",
+      "language": "en",
+      "category": "culture",
+      "status": "active",
+      "network": "iHeartMedia(Power 105.1 晨间广播)× Netflix(2026-06-01 起每日直播)",
+      "hosts": [
+        "Charlamagne Tha God(Lenard McKelvey)",
+        "DJ Envy(RaaShaun Casey)",
+        "Jess Hilarious(Jessica Moore,2024-01 起常驻)"
+      ],
+      "platforms": [
+        "广播 Power 105.1 (WWPR-FM)",
+        "Netflix(每日直播)",
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "iHeartRadio"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO",
+        "youtube": "TODO",
+        "iheart": "TODO"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "hip-hop",
+        "morning-show",
+        "radio",
+        "interview",
+        "black-culture",
+        "netflix"
+      ],
+      "_path": "podcasts/en/culture/the-breakfast-club.md",
+      "_deep": true
+    },
+    {
+      "title": "The Diary Of A CEO",
+      "slug": "diary-of-a-ceo",
+      "language": "en",
+      "category": "culture",
+      "status": "active",
+      "network": "Independent (Steven Bartlett)",
+      "hosts": [
+        "Steven Bartlett"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "youtube": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "longform-interview",
+        "entrepreneurship",
+        "psychology",
+        "self-improvement",
+        "business"
+      ],
+      "_path": "podcasts/en/culture/diary-of-a-ceo.md",
+      "_deep": true
+    },
+    {
+      "title": "The Documentary",
+      "slug": "the-documentary",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "investigative-reporting",
+        "global-field-reporting",
+        "documentary"
+      ],
+      "_path": "podcasts/en/culture/the-documentary.md",
+      "_deep": false
+    },
+    {
+      "title": "The Experiment",
+      "slug": "the-experiment",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "narrative-nonfiction",
+        "longform-interview",
+        "documentary"
+      ],
+      "_path": "podcasts/en/culture/the-experiment.md",
+      "_deep": false
+    },
+    {
+      "title": "The Joe Budden Podcast",
+      "slug": "the-joe-budden-podcast",
+      "language": "en",
+      "category": "culture",
+      "status": "active",
+      "network": "独立(Joe Budden Network;CEO Ian Schwartzman)",
+      "hosts": [
+        "Joe Budden — 说唱歌手转型的主播 / 文化评论人"
+      ],
+      "platforms": [
+        "YouTube(直播)",
+        "Apple Podcasts",
+        "Spotify",
+        "Patreon(会员层)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO",
+        "youtube": "TODO",
+        "patreon": "TODO",
+        "forbes": "https://www.forbes.com/sites/mattcraig/2026/07/30/why-podcast-pioneer-joe-budden-will-never-sell-out/"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "hip-hop",
+        "music",
+        "culture",
+        "commentary",
+        "patreon",
+        "independent"
+      ],
+      "_path": "podcasts/en/culture/the-joe-budden-podcast.md",
+      "_deep": true
+    },
+    {
+      "title": "The Mel Robbins Podcast",
+      "slug": "the-mel-robbins-podcast",
+      "language": "en",
+      "category": "culture",
+      "status": "active",
+      "network": "SiriusXM(2024 起多年期约;另有一档 SiriusXM 独家周更节目)",
+      "hosts": [
+        "Mel Robbins — 励志演说家 /《The 5 Second Rule》《The Let Them Theory》作者"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "SiriusXM app(Podcasts+ 早听 / 无广告)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/the-mel-robbins-podcast/id1646101002",
+        "spotify": "TODO",
+        "youtube": "TODO",
+        "siriusxm": "https://www.siriusxm.com/blog/mel-robbins-podcast",
+        "website": "https://www.melrobbins.com/episode/episode-70/"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "self-improvement",
+        "motivation",
+        "mental-health",
+        "women",
+        "siriusxm"
+      ],
+      "_path": "podcasts/en/culture/the-mel-robbins-podcast.md",
+      "_deep": true
+    },
+    {
+      "title": "The Memory Palace",
+      "slug": "the-memory-palace",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "historical-narrative",
+        "micro-history",
+        "documentary"
+      ],
+      "_path": "podcasts/en/culture/the-memory-palace.md",
+      "_deep": false
+    },
+    {
+      "title": "The Moth",
+      "slug": "the-moth",
+      "language": "en",
+      "category": "culture",
+      "status": "active",
+      "network": "The Moth(独立非营利)",
+      "hosts": [
+        "George Dawes Green(创始人,1997 起至今)",
+        "轮值主持人(Moth Mainstage / SLAM Showcase 主持人)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "themoth.org(完整文字稿 + 音频)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/the-moth-podcast/id275699983",
+        "website": "https://www.themoth.org/",
+        "stories": "https://www.themoth.org/stories"
+      },
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "行业案例",
+        "oral-history",
+        "live-event",
+        "storytelling"
+      ],
+      "_path": "podcasts/en/culture/the-moth.md",
+      "_deep": true
+    },
+    {
+      "title": "The New Yorker Radio Hour",
+      "slug": "new-yorker-radio-hour",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "行业案例",
+        "literary-journalism",
+        "longform-interview",
+        "cultural-reporting"
+      ],
+      "_path": "podcasts/en/culture/new-yorker-radio-hour.md",
+      "_deep": false
+    },
+    {
+      "title": "The Profile",
+      "slug": "the-profile",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "short-interview",
+        "profile",
+        "archive-format"
+      ],
+      "_path": "podcasts/en/culture/the-profile.md",
+      "_deep": false
+    },
+    {
+      "title": "The School of Greatness",
+      "slug": "the-school-of-greatness",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/culture/the-school-of-greatness.md",
+      "_deep": false
+    },
+    {
+      "title": "The Telepathy Tapes",
+      "slug": "the-telepathy-tapes",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "network": "Ky Dickens 独立出品",
+      "hosts": [
+        "Ky Dickens（纪录片导演,《The Science of Seance》《The 13th Step》导演）"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "超心理学",
+        "纪录片",
+        "神秘"
+      ],
+      "_path": "podcasts/en/culture/the-telepathy-tapes.md",
+      "_deep": false
+    },
+    {
+      "title": "The Tim Ferriss Show",
+      "slug": "the-tim-ferriss-show",
+      "language": "en",
+      "category": "culture",
+      "status": "active",
+      "network": "Independent (Tim Ferriss)",
+      "hosts": [
+        "Tim Ferriss"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "longform-interview",
+        "self-improvement",
+        "business",
+        "performance",
+        "lifestyle"
+      ],
+      "_path": "podcasts/en/culture/the-tim-ferriss-show.md",
+      "_deep": true
+    },
+    {
+      "title": "This American Life",
+      "slug": "this-american-life",
+      "language": "en",
+      "category": "culture",
+      "status": "active",
+      "network": "WBEZ Chicago(主) + PRX(分发)",
+      "hosts": [
+        "Ira Glass(创始人/主理,1995 起至今)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "WBEZ 官网",
+        "公广播电台(全美 500+ 站)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/this-american-life/id201671138",
+        "website": "https://www.thisamericanlife.org/",
+        "wbez": "https://www.wbez.org/shows/this-american-life/3a1c5e4c-e819-4d1f-af06-f71bb69957b6"
+      },
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "narrative-nonfiction",
+        "scene-tape",
+        "longform-interview"
+      ],
+      "_path": "podcasts/en/culture/this-american-life.md",
+      "_deep": true
+    },
+    {
+      "title": "WTF with Marc Maron",
+      "slug": "wtf-with-marc-maron",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/culture/wtf-with-marc-maron.md",
+      "_deep": false
+    },
+    {
+      "title": "Wind of Change",
+      "slug": "wind-of-change",
+      "language": "en",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "行业案例",
+        "investigative-reporting",
+        "cold-war-history",
+        "longform-narrative"
+      ],
+      "_path": "podcasts/en/culture/wind-of-change.md",
+      "_deep": false
+    },
+    {
+      "title": "50 Things That Made the Modern Economy",
+      "slug": "50-things-that-made-the-modern-economy",
+      "language": "en",
+      "category": "education",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/education/50-things-that-made-the-modern-economy.md",
+      "_deep": false
+    },
+    {
+      "title": "Freakonomics Radio",
+      "slug": "freakonomics-radio",
+      "language": "en",
+      "category": "education",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/education/freakonomics-radio.md",
+      "_deep": false
+    },
+    {
+      "title": "Stuff You Should Know",
+      "slug": "stuff-you-should-know",
+      "language": "en",
+      "category": "education",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/education/stuff-you-should-know.md",
+      "_deep": false
+    },
+    {
+      "title": "TED Talks Daily",
+      "slug": "ted-talks-daily",
+      "language": "en",
+      "category": "education",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/education/ted-talks-daily.md",
+      "_deep": false
+    },
+    {
+      "title": "Mind Pump Podcast",
+      "slug": "mind-pump-podcast",
+      "language": "en",
+      "category": "health",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/health/mind-pump-podcast.md",
+      "_deep": false
+    },
+    {
+      "title": "The Doctor's Farmacy",
+      "slug": "the-doctor-s-farmacy",
+      "language": "en",
+      "category": "health",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/health/the-doctor-s-farmacy.md",
+      "_deep": false
+    },
+    {
+      "title": "The Model Health Show",
+      "slug": "the-model-health-show",
+      "language": "en",
+      "category": "health",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/health/the-model-health-show.md",
+      "_deep": false
+    },
+    {
+      "title": "Dan Carlin's Hardcore History",
+      "slug": "hardcore-history",
+      "language": "en",
+      "category": "history",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/history/hardcore-history.md",
+      "_deep": false
+    },
+    {
+      "title": "Fall of Civilizations",
+      "slug": "fall-of-civilizations",
+      "language": "en",
+      "category": "history",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/history/fall-of-civilizations.md",
+      "_deep": false
+    },
+    {
+      "title": "Revolutions",
+      "slug": "revolutions",
+      "language": "en",
+      "category": "history",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/history/revolutions.md",
+      "_deep": false
+    },
+    {
+      "title": "The History of Rome",
+      "slug": "the-history-of-rome",
+      "language": "en",
+      "category": "history",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/history/the-history-of-rome.md",
+      "_deep": false
+    },
+    {
+      "title": "The Rest is History",
+      "slug": "the-rest-is-history",
+      "language": "en",
+      "category": "history",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/history/the-rest-is-history.md",
+      "_deep": false
+    },
+    {
+      "title": "Throughline",
+      "slug": "throughline",
+      "language": "en",
+      "category": "history",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/history/throughline.md",
+      "_deep": false
+    },
+    {
+      "title": "Consider This from NPR",
+      "slug": "consider-this-from-npr",
+      "language": "en",
+      "category": "news",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/news/consider-this-from-npr.md",
+      "_deep": false
+    },
+    {
+      "title": "In the Dark",
+      "slug": "in-the-dark",
+      "language": "en",
+      "category": "news",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "investigative-reporting",
+        "serialized-investigation",
+        "criminal-justice"
+      ],
+      "_path": "podcasts/en/news/in-the-dark.md",
+      "_deep": false
+    },
+    {
+      "title": "New Heights",
+      "slug": "new-heights",
+      "language": "en",
+      "category": "news",
+      "status": "active",
+      "network": "Wave Sports + Entertainment(制作)× iHeartMedia(分发)",
+      "hosts": [
+        "Jason Kelce — 前费城老鹰队中锋,Super Bowl LII 冠军",
+        "Travis Kelce — 堪萨斯酋长队近端锋,Super Bowl LVII / LVIII 冠军"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO",
+        "youtube": "TODO",
+        "wikipedia": "https://en.wikipedia.org/wiki/New_Heights"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "sports",
+        "NFL",
+        "football",
+        "celebrity",
+        "interview"
+      ],
+      "_path": "podcasts/en/news/new-heights.md",
+      "_deep": true
+    },
+    {
+      "title": "Pardon My Take",
+      "slug": "pardon-my-take",
+      "language": "en",
+      "category": "news",
+      "status": "active",
+      "network": "Barstool Sports",
+      "hosts": [
+        "Dan \"Big Cat\" Katz",
+        "PFT Commenter(Eric Sollenberger)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "Netflix(2026 起,视频版)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO",
+        "youtube": "https://www.youtube.com/@PardonMyTakePodcast",
+        "netflix": "https://www.netflix.com/title/82667228",
+        "barstool": "https://www.barstoolsports.com/shows/11/pardon-my-take"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "sports",
+        "comedy",
+        "NFL",
+        "barstool",
+        "morning-show"
+      ],
+      "_path": "podcasts/en/news/pardon-my-take.md",
+      "_deep": true
+    },
+    {
+      "title": "Planet Money",
+      "slug": "planet-money",
+      "language": "en",
+      "category": "news",
+      "status": "active",
+      "network": "NPR",
+      "hosts": [
+        "Rotating (NPR economics reporters)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "economics",
+        "business",
+        "narrative",
+        "journalism",
+        "explainer"
+      ],
+      "_path": "podcasts/en/news/planet-money.md",
+      "_deep": true
+    },
+    {
+      "title": "Pod Save America",
+      "slug": "pod-save-america",
+      "language": "en",
+      "category": "news",
+      "status": "active",
+      "network": "Audioboom (2025 起;此前 SiriusXM)",
+      "hosts": [
+        "Jon Favreau",
+        "Jon Lovett",
+        "Dan Pfeiffer",
+        "Tommy Vietor"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "Audioboom",
+        "Crooked Media"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/pod-save-america/id1220706316",
+        "spotify": "https://open.spotify.com/show/3HBKsKwHQYxV7r8cHdkjjj",
+        "youtube": "https://www.youtube.com/@PodSaveAmerica"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "politics",
+        "left-wing",
+        "obama-alumni",
+        "news-commentary"
+      ],
+      "_path": "podcasts/en/news/pod-save-america.md",
+      "_deep": true
+    },
+    {
+      "title": "Post Reports",
+      "slug": "post-reports",
+      "language": "en",
+      "category": "news",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/news/post-reports.md",
+      "_deep": false
+    },
+    {
+      "title": "Reveal",
+      "slug": "reveal",
+      "language": "en",
+      "category": "news",
+      "status": "active",
+      "network": "Center for Investigative Reporting(CIR,The Reveal Project 旗下)",
+      "hosts": [
+        "Al Letson(主理人 / 执行制片人,2015 起至今)",
+        "轮值记者与编辑团队"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "PRX.org",
+        "revealnews.org(同步发布完整调查文章)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/reveal/id886009669",
+        "website": "https://revealnews.org/podcast/",
+        "episodes": "https://revealnews.org/episodes/"
+      },
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "investigative-reporting",
+        "longform-interview"
+      ],
+      "_path": "podcasts/en/news/reveal.md",
+      "_deep": true
+    },
+    {
+      "title": "Sway",
+      "slug": "sway",
+      "language": "en",
+      "category": "news",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/news/sway.md",
+      "_deep": false
+    },
+    {
+      "title": "The Argument",
+      "slug": "the-argument",
+      "language": "en",
+      "category": "news",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/news/the-argument.md",
+      "_deep": false
+    },
+    {
+      "title": "The Daily",
+      "slug": "the-daily",
+      "language": "en",
+      "category": "news",
+      "status": "active",
+      "network": "The New York Times",
+      "hosts": [
+        "Michael Barbaro",
+        "Sabrina Tavernise"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "news",
+        "journalism",
+        "daily",
+        "current-affairs",
+        "politics"
+      ],
+      "_path": "podcasts/en/news/the-daily.md",
+      "_deep": true
+    },
+    {
+      "title": "The Rachel Maddow Show",
+      "slug": "the-rachel-maddow-show",
+      "language": "en",
+      "category": "news",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/news/the-rachel-maddow-show.md",
+      "_deep": false
+    },
+    {
+      "title": "The Rest Is Politics",
+      "slug": "the-rest-is-politics",
+      "language": "en",
+      "category": "news",
+      "status": "active",
+      "network": "Goalhanger Podcasts",
+      "hosts": [
+        "Alastair Campbell(前英国首相布莱尔幕僚长,前工党总联络官)",
+        "Rory Stewart(英国作家 / 政治家,前国际发展大臣,2019 保守党领袖候选人)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/gb/podcast/the-rest-is-politics/id1645565811",
+        "spotify": "TODO",
+        "youtube": "TODO"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "时政",
+        "英国",
+        "深度对谈",
+        "跨光谱对话"
+      ],
+      "_path": "podcasts/en/news/the-rest-is-politics.md",
+      "_deep": true
+    },
+    {
+      "title": "The Shawn Ryan Show",
+      "slug": "the-shawn-ryan-show",
+      "language": "en",
+      "category": "news",
+      "status": "todo",
+      "network": "Shawn Ryan Show 独立出品",
+      "hosts": [
+        "Shawn Ryan（前 Navy SEAL,前 CIA 承包商）"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "时事",
+        "军事",
+        "文化",
+        "长访谈"
+      ],
+      "_path": "podcasts/en/news/the-shawn-ryan-show.md",
+      "_deep": false
+    },
+    {
+      "title": "The Tucker Carlson Show",
+      "slug": "the-tucker-carlson-show",
+      "language": "en",
+      "category": "news",
+      "status": "active",
+      "network": "TCN(Tucker Carlson Network;发行合作 Red Seat Ventures)",
+      "hosts": [
+        "Tucker Carlson — 前 Fox News 黄金档主播(2023 离任)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube(主频道 + TCN 频道)",
+        "X / Twitter",
+        "TCN(订阅制官网,2023-12 上线)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO",
+        "youtube": "TODO",
+        "tcn": "TODO",
+        "wikipedia": "https://en.wikipedia.org/wiki/The_Tucker_Carlson_Show"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "politics",
+        "news",
+        "interview",
+        "conservative",
+        "independent-media"
+      ],
+      "_path": "podcasts/en/news/the-tucker-carlson-show.md",
+      "_deep": true
+    },
+    {
+      "title": "Today in Focus",
+      "slug": "today-in-focus",
+      "language": "en",
+      "category": "news",
+      "status": "active",
+      "network": "The Guardian",
+      "hosts": [
+        "Nosheen Iqbal",
+        "Rotating Guardian journalists"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "news",
+        "journalism",
+        "current-affairs",
+        "UK",
+        "international"
+      ],
+      "_path": "podcasts/en/news/today-in-focus.md",
+      "_deep": true
+    },
+    {
+      "title": "Hidden Brain",
+      "slug": "hidden-brain",
+      "language": "en",
+      "category": "science",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/science/hidden-brain.md",
+      "_deep": false
+    },
+    {
+      "title": "Huberman Lab",
+      "slug": "huberman-lab",
+      "language": "en",
+      "category": "science",
+      "status": "active",
+      "network": "Independent (Andrew Huberman)",
+      "hosts": [
+        "Andrew Huberman"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "youtube": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "neuroscience",
+        "health",
+        "self-improvement",
+        "science",
+        "biology"
+      ],
+      "_path": "podcasts/en/science/huberman-lab.md",
+      "_deep": true
+    },
+    {
+      "title": "Ologies",
+      "slug": "ologies",
+      "language": "en",
+      "category": "science",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/science/ologies.md",
+      "_deep": false
+    },
+    {
+      "title": "Radiolab",
+      "slug": "radiolab",
+      "language": "en",
+      "category": "science",
+      "status": "active",
+      "network": "WNYC Studios / NPR",
+      "hosts": [
+        "Lulu Miller",
+        "Latif Nasser"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "science",
+        "narrative",
+        "philosophy",
+        "documentary",
+        "storytelling"
+      ],
+      "_path": "podcasts/en/science/radiolab.md",
+      "_deep": true
+    },
+    {
+      "title": "Science Talk",
+      "slug": "science-talk",
+      "language": "en",
+      "category": "science",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/science/science-talk.md",
+      "_deep": false
+    },
+    {
+      "title": "Science Vs",
+      "slug": "science-vs",
+      "language": "en",
+      "category": "science",
+      "status": "active",
+      "network": "Gimlet / Spotify",
+      "hosts": [
+        "Wendy Zukerman"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "science",
+        "skepticism",
+        "health",
+        "explainer",
+        "evidence-based"
+      ],
+      "_path": "podcasts/en/science/science-vs.md",
+      "_deep": true
+    },
+    {
+      "title": "The Peter Attia Drive",
+      "slug": "the-peter-attia-drive",
+      "language": "en",
+      "category": "science",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/science/the-peter-attia-drive.md",
+      "_deep": false
+    },
+    {
+      "title": "Acquired",
+      "slug": "acquired",
+      "language": "en",
+      "category": "tech",
+      "status": "active",
+      "network": "Independent",
+      "hosts": [
+        "Ben Gilbert",
+        "David Rosenthal"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "Overcast"
+      ],
+      "rss": "https://acquired.fm/rss",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "business",
+        "tech",
+        "vc",
+        "company-history",
+        "longform"
+      ],
+      "_path": "podcasts/en/tech/acquired.md",
+      "_deep": true
+    },
+    {
+      "title": "All-In Podcast",
+      "slug": "all-in",
+      "language": "en",
+      "category": "tech",
+      "status": "active",
+      "network": "Independent (All-In Media)",
+      "hosts": [
+        "Chamath Palihapitiya",
+        "Jason Calacanis",
+        "David Sacks",
+        "David Friedberg"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "youtube": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "vc",
+        "tech",
+        "politics",
+        "business",
+        "debate"
+      ],
+      "_path": "podcasts/en/tech/all-in.md",
+      "_deep": true
+    },
+    {
+      "title": "Exponent",
+      "slug": "exponent",
+      "language": "en",
+      "category": "tech",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/tech/exponent.md",
+      "_deep": false
+    },
+    {
+      "title": "Founders Podcast",
+      "slug": "founders",
+      "language": "en",
+      "category": "tech",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/tech/founders.md",
+      "_deep": false
+    },
+    {
+      "title": "Land of the Giants",
+      "slug": "land-of-the-giants",
+      "language": "en",
+      "category": "tech",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "行业案例",
+        "investigative-reporting",
+        "tech-industry",
+        "longform-narrative"
+      ],
+      "_path": "podcasts/en/tech/land-of-the-giants.md",
+      "_deep": false
+    },
+    {
+      "title": "Lenny's Podcast",
+      "slug": "lennys-podcast",
+      "language": "en",
+      "category": "tech",
+      "status": "active",
+      "network": "Independent (Lenny Rachitsky)",
+      "hosts": [
+        "Lenny Rachitsky"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "Overcast"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "product-management",
+        "tech",
+        "career",
+        "startups",
+        "growth"
+      ],
+      "_path": "podcasts/en/tech/lennys-podcast.md",
+      "_deep": true
+    },
+    {
+      "title": "Logan Bartlett Show",
+      "slug": "logan-bartlett-show",
+      "language": "en",
+      "category": "tech",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/tech/logan-bartlett-show.md",
+      "_deep": false
+    },
+    {
+      "title": "My First Million",
+      "slug": "my-first-million",
+      "language": "en",
+      "category": "tech",
+      "status": "active",
+      "network": "Shaan Puri & Sam Parr 独立出品",
+      "hosts": [
+        "Shaan Puri(连续创业者,前 Bebo CEO)",
+        "Sam Parr(The Hustle 创始人,HubSpot 旗下)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/my-first-million/id1469759170",
+        "spotify": "https://open.spotify.com/show/3mliji9352UAk3XnWElnDV",
+        "website": "https://www.mfmpod.com/",
+        "youtube": "https://www.youtube.com/@MyFirstMillionPod"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "创业",
+        "商业灵感",
+        "头脑风暴",
+        "副业"
+      ],
+      "_path": "podcasts/en/tech/my-first-million.md",
+      "_deep": true
+    },
+    {
+      "title": "Pivot",
+      "slug": "pivot",
+      "language": "en",
+      "category": "tech",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/tech/pivot.md",
+      "_deep": false
+    },
+    {
+      "title": "Reply All",
+      "slug": "reply-all",
+      "language": "en",
+      "category": "tech",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "field-research",
+        "方法论范本",
+        "internet-deep-dive",
+        "narrative-nonfiction",
+        "investigative-reporting"
+      ],
+      "_path": "podcasts/en/tech/reply-all.md",
+      "_deep": false
+    },
+    {
+      "title": "Search Engine",
+      "slug": "search-engine",
+      "language": "en",
+      "category": "tech",
+      "status": "active",
+      "network": "PJ Vogt 独立出品",
+      "hosts": [
+        "PJ Vogt(前 Reply All 联合主理人,Gimlet Media 创始团队成员)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "Substack"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/search-engine/id1668081778",
+        "spotify": "https://open.spotify.com/show/76VOmPpOHaTyA1OaRc4BDv",
+        "website": "https://www.searchengine.show/",
+        "substack": "https://pjvogt.substack.com/"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "AI",
+        "互联网文化",
+        "深度访谈",
+        "PJ Vogt",
+        "好奇心播客"
+      ],
+      "_path": "podcasts/en/tech/search-engine.md",
+      "_deep": true
+    },
+    {
+      "title": "Stratechery (Update + Interview)",
+      "slug": "stratechery",
+      "language": "en",
+      "category": "tech",
+      "status": "active",
+      "network": "独立出品(订阅制:Stratechery Plus);Ben Thompson 个人媒体",
+      "hosts": [
+        "Ben Thompson — 策略分析师,Stratechery 创始人(2014)"
+      ],
+      "platforms": [
+        "官网 stratechery.com(订阅)",
+        "Apple Podcasts",
+        "YouTube(部分访谈)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "website": "https://stratechery.com/stratechery-plus/"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-05",
+      "tags": [
+        "tech-strategy",
+        "analysis",
+        "platforms",
+        "aggregation-theory",
+        "newsletter",
+        "subscription"
+      ],
+      "_path": "podcasts/en/tech/stratechery.md",
+      "_deep": true
+    },
+    {
+      "title": "The Vergecast",
+      "slug": "the-vergecast",
+      "language": "en",
+      "category": "tech",
+      "status": "active",
+      "network": "The Verge (Vox Media)",
+      "hosts": [
+        "Nilay Patel"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "tech",
+        "consumer-tech",
+        "news",
+        "policy",
+        "gadgets"
+      ],
+      "_path": "podcasts/en/tech/the-vergecast.md",
+      "_deep": true
+    },
+    {
+      "title": "This Week in Startups",
+      "slug": "this-week-in-startups",
+      "language": "en",
+      "category": "tech",
+      "status": "active",
+      "network": "Independent (Launch / Jason Calacanis)",
+      "hosts": [
+        "Jason Calacanis"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "startups",
+        "vc",
+        "founders",
+        "angel-investing",
+        "tech"
+      ],
+      "_path": "podcasts/en/tech/this-week-in-startups.md",
+      "_deep": true
+    },
+    {
+      "title": "Training Data",
+      "slug": "training-data",
+      "language": "en",
+      "category": "tech",
+      "status": "todo",
+      "network": "Sequoia Capital",
+      "hosts": [
+        "Sonya Huang / Pat Grady（红杉资本合伙人）"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "spotify": "TODO"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "AI",
+        "风险投资",
+        "红杉"
+      ],
+      "_path": "podcasts/en/tech/training-data.md",
+      "_deep": false
+    },
+    {
+      "title": "Waveform: The MKBHD Podcast",
+      "slug": "waveform-the-mkbhd-podcast",
+      "language": "en",
+      "category": "tech",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/tech/waveform-the-mkbhd-podcast.md",
+      "_deep": false
+    },
+    {
+      "title": "Crime Junkie",
+      "slug": "crime-junkie",
+      "language": "en",
+      "category": "true-crime",
+      "status": "active",
+      "network": "Audiochuck / Tubi (video) / Red Seat Ventures (ads)",
+      "hosts": [
+        "Ashley Flowers",
+        "Brit Prawat"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "YouTube",
+        "Tubi (FAST 频道)",
+        "iHeart"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/crime-junkie/id1322200189",
+        "spotify": "https://open.spotify.com/show/5oPzHcD7M55V1F5fFf6Mbn"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "true-crime",
+        "women-host",
+        "investigative",
+        "audiochuck"
+      ],
+      "_path": "podcasts/en/true-crime/crime-junkie.md",
+      "_deep": true
+    },
+    {
+      "title": "Dateline NBC",
+      "slug": "dateline-nbc",
+      "language": "en",
+      "category": "true-crime",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/true-crime/dateline-nbc.md",
+      "_deep": false
+    },
+    {
+      "title": "Last Podcast On The Left",
+      "slug": "the-last-podcast-on-the-left",
+      "language": "en",
+      "category": "true-crime",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/true-crime/the-last-podcast-on-the-left.md",
+      "_deep": false
+    },
+    {
+      "title": "Morbid",
+      "slug": "morbid",
+      "language": "en",
+      "category": "true-crime",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/true-crime/morbid.md",
+      "_deep": false
+    },
+    {
+      "title": "My Favorite Murder",
+      "slug": "my-favorite-murder",
+      "language": "en",
+      "category": "true-crime",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/true-crime/my-favorite-murder.md",
+      "_deep": false
+    },
+    {
+      "title": "Serial",
+      "slug": "serial",
+      "language": "en",
+      "category": "true-crime",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/en/true-crime/serial.md",
+      "_deep": false
+    },
+    {
+      "title": "AI BigBang 大爆炸",
+      "slug": "ai-bigbang",
+      "language": "zh",
+      "category": "ai",
+      "status": "active",
+      "network": "独立出品 / 小宇宙平台",
+      "hosts": [
+        "TODO(主播阵容以节目页最新公布为准)"
+      ],
+      "platforms": [
+        "小宇宙",
+        "Apple Podcasts",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/678f525e4e508dca697578d3",
+        "apple": "TODO",
+        "spotify": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "AI",
+        "大模型",
+        "AI创业",
+        "行业观察",
+        "IPO",
+        "AI智能体"
+      ],
+      "_path": "podcasts/zh/ai/ai-bigbang.md",
+      "_deep": true
+    },
+    {
+      "title": "AI 早知道",
+      "slug": "ai-zao-zhi-dao",
+      "language": "zh",
+      "category": "ai",
+      "status": "active",
+      "network": "独立 / 后厂村之谜生态",
+      "hosts": [
+        "顾琦",
+        "潘乱"
+      ],
+      "platforms": [
+        "小宇宙",
+        "Apple Podcasts",
+        "Spotify",
+        "喜马拉雅"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple_podcasts_id": "TODO",
+        "xiaoyuzhou_id": "TODO"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "互联网",
+        "新闻速递",
+        "嘉宾访谈",
+        "中文播客"
+      ],
+      "_path": "podcasts/zh/ai/ai-zao-zhi-dao.md",
+      "_deep": true
+    },
+    {
+      "title": "AI 每周谈",
+      "slug": "ai-mei-zhou-tan",
+      "language": "zh",
+      "category": "ai",
+      "status": "active",
+      "network": "独立出品（与「品牌出海说」账号关联运营）",
+      "hosts": [
+        "AI 每周谈 Eric（前亚马逊员工，自称'老巴信徒'）"
+      ],
+      "platforms": [
+        "小宇宙",
+        "Apple Podcasts",
+        "Spotify"
+      ],
+      "rss": "https://media.xyzcdn.net/688a34636f5a275f1cba40fd/rss.xml",
+      "subscribe_links": {
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/688a34636f5a275f1cba40fd",
+        "apple": "https://podcasts.apple.com/us/podcast/ai%E6%AF%8F%E5%91%A8%E8%B0%88/id1856190518",
+        "spotify": "https://open.spotify.com/show/5Wu0DSsbtJytkLiiP5NEUC",
+        "xiaoyuzhou_namecard": "https://namecard.xiaoyuzhoufm.com/u86uc"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "AI商业",
+        "美股七巨头",
+        "大公司战略",
+        "通勤",
+        "付费单集"
+      ],
+      "_path": "podcasts/zh/ai/ai-mei-zhou-tan.md",
+      "_deep": true
+    },
+    {
+      "title": "What's Next | 科技早知道(原「硅谷早知道」)",
+      "slug": "gui-gu-zao-zhi-dao",
+      "language": "zh",
+      "category": "ai",
+      "status": "active",
+      "network": "声动活泼(上海斛律网络科技有限公司)",
+      "hosts": [
+        "徐涛(创始人/制作人,原 36 氪驻硅谷记者)",
+        "丁教(联合主播/制作人)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "喜马拉雅",
+        "蜻蜓 FM",
+        "网易云音乐",
+        "懒人听书",
+        "微信公众号(声动活泼)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple_podcasts_id": "1361458105",
+        "qtfm_url": "https://www.qtfm.cn/channels/285643",
+        "lrts_album_id": "578646"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "AI",
+        "硅谷",
+        "科技",
+        "商业",
+        "出海",
+        "中文播客",
+        "全球科技"
+      ],
+      "_path": "podcasts/zh/ai/gui-gu-zao-zhi-dao.md",
+      "_deep": true
+    },
+    {
+      "title": "十字路口 Crossing",
+      "slug": "shi-zi-lu-kou",
+      "language": "zh",
+      "category": "ai",
+      "status": "active",
+      "network": "独立 / 新世相声音森林播客计划",
+      "hosts": [
+        "杨远骋 Koji(主理人,新世相 / 躺岛联合创始人)",
+        "Ronghui(联合主播,科技 VC,前《第一财经周刊》驻硅谷记者)"
+      ],
+      "platforms": [
+        "小宇宙",
+        "微信公众号(十字路口)",
+        "Apple Podcasts",
+        "网易云音乐",
+        "微博(@杨远骋Koji)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "xiaoyuzhou_url": "https://www.xiaoyuzhoufm.com/podcast/十字路口",
+        "weibo": "@杨远骋Koji",
+        "netease_program_id": "2546266701",
+        "douban_podcast_url": "https://www.douban.com/podcast/十字路口"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "AI",
+        "科技",
+        "创业",
+        "投资",
+        "商业",
+        "中文播客",
+        "AI 时代"
+      ],
+      "_path": "podcasts/zh/ai/shi-zi-lu-kou.md",
+      "_deep": true
+    },
+    {
+      "title": "原点 Talk",
+      "slug": "yuan-dian-talk",
+      "language": "zh",
+      "category": "ai",
+      "status": "active",
+      "network": "至顶科技 × 北京 AI 原点社区（联合出品）",
+      "hosts": [
+        "高飞（至顶科技 CEO 兼总编辑、《高飞的电子替身》主理人）",
+        "路飞（至顶 AI 实验室联合主理人，分享会主持）"
+      ],
+      "platforms": [
+        "小宇宙",
+        "Apple Podcasts",
+        "喜马拉雅",
+        "科技行者视频矩阵（B 站、视频号、YouTube）"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "xiaoyuzhou": "TODO",
+        "apple": "TODO",
+        "ximalaya": "TODO",
+        "techwalker": "https://www.techwalker.com/"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "AI创业",
+        "Agent",
+        "AI硬件",
+        "AI出海",
+        "OPC",
+        "深度访谈",
+        "圆桌",
+        "产业媒体"
+      ],
+      "_path": "podcasts/zh/ai/yuan-dian-talk.md",
+      "_deep": true
+    },
+    {
+      "title": "晚点聊 LateTalk",
+      "slug": "wan-dian-liao",
+      "language": "zh",
+      "category": "ai",
+      "status": "active",
+      "network": "独立 / 后厂村之谜 / 乱翻书生态",
+      "hosts": [
+        "洪浩",
+        "陈晶",
+        "汉洋"
+      ],
+      "platforms": [
+        "小宇宙",
+        "Apple Podcasts",
+        "Spotify",
+        "喜马拉雅",
+        "网易云音乐"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple_podcasts_id": "1581277093",
+        "xiaoyuzhou_id": "TODO",
+        "spotify_id": "TODO"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "互联网",
+        "创业",
+        "深度访谈",
+        "中文播客"
+      ],
+      "_path": "podcasts/zh/ai/wan-dian-liao.md",
+      "_deep": true
+    },
+    {
+      "title": "智能涌现",
+      "slug": "zhi-neng-yong-xian",
+      "language": "zh",
+      "category": "ai",
+      "status": "active",
+      "network": "36 氪",
+      "hosts": [
+        "郭海惟",
+        "36 氪科技报道组"
+      ],
+      "platforms": [
+        "36 氪开氪",
+        "小宇宙",
+        "Apple Podcasts",
+        "喜马拉雅"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple_podcasts_id": "TODO",
+        "xiaoyuzhou_id": "TODO",
+        "kaike_url": "TODO"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "36氪",
+        "新闻速递",
+        "行业访谈",
+        "中文播客"
+      ],
+      "_path": "podcasts/zh/ai/zhi-neng-yong-xian.md",
+      "_deep": true
+    },
+    {
+      "title": "王煜全前哨",
+      "slug": "wang-yu-quan-qian-shao",
+      "language": "zh",
+      "category": "ai",
+      "status": "active",
+      "network": "得到 APP(主)+ 头条 + 微信 + bilibili 直播(多元分发)",
+      "hosts": [
+        "王煜全(主理人,海银资本创始合伙人 / Frost & Sullivan 中国区首席顾问)"
+      ],
+      "platforms": [
+        "得到 APP《前哨王煜全》专栏",
+        "得到 APP《全球创新 260 讲》专栏",
+        "今日头条(认证作者)",
+        "微信公众号(王煜全 / 前哨)",
+        "bilibili 直播(认证:王煜全官方账号)",
+        "视频号(王煜全)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "get_app_url": "得到 APP《前哨王煜全》",
+        "toutiao_uid": "MS4wLjABAAAAgQsUagWcFc9sMcP5sm6slQQKLkike64hwz7iaoxu19Q",
+        "bilibili_uid": "398423151",
+        "weibo": "TODO"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "AI",
+        "全球科技",
+        "投资",
+        "创新",
+        "科技趋势",
+        "海银资本",
+        "前哨大会"
+      ],
+      "_path": "podcasts/zh/ai/wang-yu-quan-qian-shao.md",
+      "_deep": true
+    },
+    {
+      "title": "硬地骇客(Hard Hacker / Indie Hacker 中文社区)",
+      "slug": "ying-di-hai-ke",
+      "language": "zh",
+      "category": "ai",
+      "status": "active",
+      "network": "独立(硬地骇客社区)",
+      "hosts": [
+        "三位 10 年+互联网创业者(社区匿名,公开场合以\"硬地骇客团队\"出现)"
+      ],
+      "platforms": [
+        "小宇宙",
+        "喜马拉雅",
+        "Apple Podcasts",
+        "网易云音乐",
+        "微博(@硬地骇客)",
+        "知识星球",
+        "官网 hardhacker.com",
+        "book.hardhacker.com"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "netease_dj_id": "1002505479",
+        "weibo": "@硬地骇客",
+        "hardhacker_website": "https://hardhacker.com",
+        "knowledge_planet": "t.zsxq.com"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "AI",
+        "独立开发",
+        "Indie Hacker",
+        "超级个体",
+        "Vibe Coding",
+        "AI Agent",
+        "创业"
+      ],
+      "_path": "podcasts/zh/ai/ying-di-hai-ke.md",
+      "_deep": true
+    },
+    {
+      "title": "老石谈芯",
+      "slug": "lao-shi-tan-xin",
+      "language": "zh",
+      "category": "ai",
+      "status": "active",
+      "network": "独立",
+      "hosts": [
+        "老石(本名待核)"
+      ],
+      "platforms": [
+        "bilibili",
+        "今日头条",
+        "微博",
+        "YouTube(视频号)",
+        "视频号(微信)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "bilibili_uid": "612932327",
+        "weibo": "@laoshitanxin",
+        "toutiao": "@MS4wLjABAAAARFJM4Qju79XUyTAECqPWntMSQXoOpTEyg6_njQVXfHo"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "芯片",
+        "半导体",
+        "科普",
+        "硬科技",
+        "访谈",
+        "中文播客"
+      ],
+      "_path": "podcasts/zh/ai/lao-shi-tan-xin.md",
+      "_deep": true
+    },
+    {
+      "title": "钱皓频道",
+      "slug": "qian-hao-pin-dao",
+      "language": "zh",
+      "category": "ai",
+      "status": "active",
+      "network": "独立(VC 视角自媒体)",
+      "hosts": [
+        "钱皓(皓哥)"
+      ],
+      "platforms": [
+        "视频号(微信)",
+        "抖音",
+        "小宇宙",
+        "bilibili",
+        "微博",
+        "简书 / 钛媒体 / 虎嗅"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "weibo": "@bensonqian",
+        "video_account": "钱皓频道"
+      },
+      "added_date": "2026-08-04",
+      "updated_date": "2026-08-04",
+      "tags": [
+        "AI",
+        "互联网",
+        "VC 视角",
+        "商业洞察",
+        "中文播客"
+      ],
+      "_path": "podcasts/zh/ai/qian-hao-pin-dao.md",
+      "_deep": true
+    },
+    {
+      "title": "BB商业与品牌",
+      "slug": "bb-shang-ye",
+      "language": "zh",
+      "category": "business",
+      "status": "active",
+      "network": "BB商业与品牌工作室(独立出品)",
+      "hosts": [
+        "BB商业与品牌主播团队(具体名单 TODO)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "其他主流平台"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/bb%E5%95%86%E4%B8%9A%E4%B8%8E%E5%93%81%E7%89%8C/id1637797363",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/episode/637ba2d25dbc72a30cc3454c"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "商业",
+        "品牌",
+        "营销",
+        "中文商业播客",
+        "CPA中文播客奖"
+      ],
+      "_path": "podcasts/zh/business/bb-shang-ye.md",
+      "_deep": true
+    },
+    {
+      "title": "三五环",
+      "slug": "san-wu-huan",
+      "language": "zh",
+      "category": "business",
+      "status": "active",
+      "network": "独立出品",
+      "hosts": [
+        "刘飞"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "商业",
+        "互联网",
+        "产品经理",
+        "职场",
+        "创业"
+      ],
+      "_path": "podcasts/zh/business/san-wu-huan.md",
+      "_deep": true
+    },
+    {
+      "title": "创业内幕 Startup Insider",
+      "slug": "chuang-ye-nei-mu",
+      "language": "zh",
+      "category": "business",
+      "status": "active",
+      "network": "创业内幕工作室(独立出品)",
+      "hosts": [
+        "主播团队(具体名单 TODO)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "其他主流平台"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E5%88%9B%E4%B8%9A%E5%86%85%E5%B9%95-startup-insider/id1448032419"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "创业",
+        "创投",
+        "中文创业播客",
+        "投资人",
+        "商业模式"
+      ],
+      "_path": "podcasts/zh/business/chuang-ye-nei-mu.md",
+      "_deep": true
+    },
+    {
+      "title": "半拿铁 | 商业沉浮录",
+      "slug": "ban-na-tie",
+      "language": "zh",
+      "category": "business",
+      "status": "active",
+      "network": "独立(刘飞 + 潇磊)",
+      "hosts": [
+        "刘飞(主理人,前互联网大厂产品经理)",
+        "潇磊(联合主播,前传媒系统财经口)"
+      ],
+      "platforms": [
+        "小宇宙",
+        "喜马拉雅",
+        "Apple Podcasts",
+        "网易云音乐",
+        "微博(@刘飞Lufy)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "xiaoyuzhou_id": "TODO",
+        "apple_podcasts_id": "TODO",
+        "ximalaya_url": "https://www.ximalaya.com/album/半拿铁",
+        "netease_dj_id": "973374372",
+        "weibo": "@刘飞Lufy"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-08-05",
+      "tags": [
+        "商业故事",
+        "互联网",
+        "AI 时代商业",
+        "创业",
+        "中文播客",
+        "跨界访谈"
+      ],
+      "_path": "podcasts/zh/business/ban-na-tie.md",
+      "_deep": true
+    },
+    {
+      "title": "商业就是这样",
+      "slug": "shangye-jiushi-zheyang",
+      "language": "zh",
+      "category": "business",
+      "status": "active",
+      "network": "JustPod / 第一财经YiMagazine",
+      "hosts": [
+        "肖文杰",
+        "约小亚"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "商业",
+        "公司",
+        "行业分析",
+        "财经"
+      ],
+      "_path": "podcasts/zh/business/shangye-jiushi-zheyang.md",
+      "_deep": true
+    },
+    {
+      "title": "张小珺Jùn|商业访谈录",
+      "slug": "zhang-xiaojun-shangye-fangtan-lu",
+      "language": "zh",
+      "category": "business",
+      "status": "active",
+      "network": "腾讯新闻(多期首发平台);张小珺主理",
+      "hosts": [
+        "张小珺 — 商业报道出身的访谈人(详细履历 **TODO**)"
+      ],
+      "platforms": [
+        "小宇宙",
+        "Apple Podcasts",
+        "腾讯新闻(图文首发)",
+        "B 站 / 喜马拉雅(分发情况 **TODO**)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "xiaoyuzhou": "TODO",
+        "apple": "TODO",
+        "tencent": "https://view.inews.qq.com/a/20240301A02V0Y00 (EP59 杨植麟 首发页)"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-05",
+      "tags": [
+        "商业",
+        "访谈",
+        "AI",
+        "大模型",
+        "创业",
+        "中国AI",
+        "张小珺"
+      ],
+      "_path": "podcasts/zh/business/zhang-xiaojun-shangye-fangtan-lu.md",
+      "_deep": true
+    },
+    {
+      "title": "搞钱女孩",
+      "slug": "gao-qian-nv-hai",
+      "language": "zh",
+      "category": "business",
+      "status": "active",
+      "network": "搞钱女孩工作室(独立出品)",
+      "hosts": [
+        "搞钱女孩主播团队(具体名单 TODO)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "蜻蜓 FM"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E6%90%9E%E9%92%B1%E5%A5%B3%E5%AD%A9/id1676099257",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/63d945ece725b5378a158d29",
+        "qtfm": "https://www.qtfm.cn/channels/490926/"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "商业",
+        "女性",
+        "财经",
+        "副业",
+        "搞钱"
+      ],
+      "_path": "podcasts/zh/business/gao-qian-nv-hai.md",
+      "_deep": true
+    },
+    {
+      "title": "深聊投资人",
+      "slug": "shen-liao-tou-zi-ren",
+      "language": "zh",
+      "category": "business",
+      "status": "active",
+      "network": "深聊投资人工作室(独立出品)",
+      "hosts": [
+        "深聊投资人主播团队(投资人 / 媒体人,具体名单 TODO)"
+      ],
+      "platforms": [
+        "小宇宙",
+        "Apple Podcasts",
+        "视频播客(2026-06 公募基金入局)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/64fd0af374608e56758439d4",
+        "apple": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "投资",
+        "VC",
+        "深度对话",
+        "中文投资播客",
+        "公募基金"
+      ],
+      "_path": "podcasts/zh/business/shen-liao-tou-zi-ren.md",
+      "_deep": true
+    },
+    {
+      "title": "知行小酒馆",
+      "slug": "zhi-xing-xiao-jiu-guan",
+      "language": "zh",
+      "category": "business",
+      "status": "active",
+      "network": "知行小酒馆工作室(独立出品)",
+      "hosts": [
+        "知行小酒馆主播团队(具体名单 TODO)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E7%9F%A5%E8%A1%8C%E5%B0%8F%E9%85%92%E9%A6%86/id1559695855",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/6013f9f58e2f7ee375cf4216",
+        "youtube": "https://www.youtube.com/@allinthebeer"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "理财",
+        "价值投资",
+        "投资实操",
+        "财经播客"
+      ],
+      "_path": "podcasts/zh/business/zhi-xing-xiao-jiu-guan.md",
+      "_deep": true
+    },
+    {
+      "title": "多新鲜呐",
+      "slug": "duo-xin-xian-na",
+      "language": "zh",
+      "category": "comedy",
+      "status": "todo",
+      "network": "B 站原创视频播客",
+      "hosts": [
+        "于谦（相声演员,德云社）"
+      ],
+      "platforms": [
+        "哔哩哔哩"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "bilibili": "TODO"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "视频播客",
+        "综艺",
+        "二次元",
+        "生活方式"
+      ],
+      "_path": "podcasts/zh/comedy/duo-xin-xian-na.md",
+      "_deep": false
+    },
+    {
+      "title": "GQ 实验室",
+      "slug": "gq-lab",
+      "language": "zh",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "田野调查",
+        "行业案例",
+        "长访谈",
+        "生活方式",
+        "人物特写"
+      ],
+      "_path": "podcasts/zh/culture/gq-lab.md",
+      "_deep": false
+    },
+    {
+      "title": "GQ 报道",
+      "slug": "gq-bao-dao",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "智族 GQ(康泰纳仕中国)",
+      "hosts": [
+        "GQ 编辑部 / 轮值主笔"
+      ],
+      "platforms": [
+        "小宇宙(智族Talk)",
+        "Apple Podcasts",
+        "GQ 智族官网",
+        "GQ 智族 微信公众号"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/5e280faa418a84a0461f9e09",
+        "site": "https://www.gq.com.cn"
+      },
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "田野调查",
+        "行业案例",
+        "长访谈",
+        "人物特写"
+      ],
+      "_path": "podcasts/zh/culture/gq-bao-dao.md",
+      "_deep": true
+    },
+    {
+      "title": "Talk三联",
+      "slug": "talk-sanlian",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "三联中读(三联生活传媒有限公司,《三联生活周刊》出品方)",
+      "hosts": [
+        "《三联生活周刊》记者 / 主笔轮值(肖楚舟・主笔、魏倩・主笔、孙若茜・主任记者等;主编李鸿谷不定期对谈)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "三联中读 APP",
+        "小宇宙 / Spotify 等第三方平台",
+        "B站《三联生活周刊》账号(视频版)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/talk%E4%B8%89%E8%81%94/id1605725063",
+        "website": "https://www.lifeweek.com.cn/articleList/21737"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "文化",
+        "新闻",
+        "书业",
+        "三联生活周刊",
+        "封面故事",
+        "记者对谈"
+      ],
+      "_path": "podcasts/zh/culture/talk-sanlian.md",
+      "_deep": true
+    },
+    {
+      "title": "上海书评",
+      "slug": "shang-hai-shu-ping",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "澎湃新闻 / 近读工作室",
+      "hosts": [
+        "近读工作室团队 + 嘉宾轮值(许子东、骆以军、许纪霖、姜进、毛尖 等)"
+      ],
+      "platforms": [
+        "小宇宙",
+        "Apple Podcasts",
+        "喜马拉雅",
+        "澎湃新闻客户端"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/kh/podcast/%E4%B8%8A%E6%B5%B7%E4%B9%A6%E8%AF%84/id1866546904",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/6937dab663ff2f73b2b1e533",
+        "site": "https://www.thepaper.cn"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "书评",
+        "学术",
+        "文学",
+        "澎湃播客矩阵",
+        "近读工作室"
+      ],
+      "_path": "podcasts/zh/culture/shang-hai-shu-ping.md",
+      "_deep": true
+    },
+    {
+      "title": "东亚观察局",
+      "slug": "dong-ya-guan-cha-ju",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "JustPod",
+      "hosts": [
+        "杨一",
+        "梵一如",
+        "沙青青"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "东亚",
+        "国际",
+        "时政",
+        "日本",
+        "韩国"
+      ],
+      "_path": "podcasts/zh/culture/dong-ya-guan-cha-ju.md",
+      "_deep": true
+    },
+    {
+      "title": "乱翻书",
+      "slug": "luan-fan-shu",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "独立出品",
+      "hosts": [
+        "潘乱"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "读书",
+        "商业",
+        "互联网",
+        "产品",
+        "知识"
+      ],
+      "_path": "podcasts/zh/culture/luan-fan-shu.md",
+      "_deep": true
+    },
+    {
+      "title": "人间 theLivings",
+      "slug": "ren-jian-the-livings",
+      "language": "zh",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "田野调查",
+        "行业案例",
+        "非虚构叙事",
+        "人物特写",
+        "长访谈"
+      ],
+      "_path": "podcasts/zh/culture/ren-jian-the-livings.md",
+      "_deep": false
+    },
+    {
+      "title": "冰川思想库",
+      "slug": "bing-chuan-si-xiang-ku",
+      "language": "zh",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "田野调查",
+        "行业案例",
+        "文化政策",
+        "思想评论",
+        "长访谈"
+      ],
+      "_path": "podcasts/zh/culture/bing-chuan-si-xiang-ku.md",
+      "_deep": false
+    },
+    {
+      "title": "剥洋葱",
+      "slug": "bo-yang-cong",
+      "language": "zh",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "田野调查",
+        "行业案例",
+        "调查报道",
+        "非虚构叙事",
+        "长访谈"
+      ],
+      "_path": "podcasts/zh/culture/bo-yang-cong.md",
+      "_deep": false
+    },
+    {
+      "title": "大内密谈",
+      "slug": "da-nei-mi-tan",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "独立出品",
+      "hosts": [
+        "相征",
+        "伍叁伍肆（多位常驻）"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify",
+        "网易云音乐"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "音乐",
+        "流行文化",
+        "文娱",
+        "娱乐",
+        "亚文化"
+      ],
+      "_path": "podcasts/zh/culture/da-nei-mi-tan.md",
+      "_deep": true
+    },
+    {
+      "title": "如此城市 CityTells",
+      "slug": "ru-ci-cheng-shi",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "澎湃新闻 / 澎湃研究所",
+      "hosts": [
+        "澎湃研究所·试说新语工作室(编辑团队)"
+      ],
+      "platforms": [
+        "小宇宙",
+        "Apple Podcasts",
+        "喜马拉雅",
+        "澎湃新闻客户端"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/ca/podcast/%E5%A6%82%E6%AD%A4%E5%9F%8E%E5%B8%82citytells/id1653355375",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/632817c6953e23f946ae9896",
+        "site": "https://m.thepaper.cn/newsDetail_forward_122251"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "城市",
+        "文化",
+        "人文",
+        "澎湃播客矩阵",
+        "城市叙事"
+      ],
+      "_path": "podcasts/zh/culture/ru-ci-cheng-shi.md",
+      "_deep": true
+    },
+    {
+      "title": "小天章",
+      "slug": "xiao-tian-zhang",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "章泽天个人节目(独立出品)",
+      "hosts": [
+        "章泽天(主理 / 京东集团 CFO 顾问)"
+      ],
+      "platforms": [
+        "小宇宙",
+        "Apple Podcasts",
+        "小红书(视频切片「小天章 ON AIR」)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E5%B0%8F%E5%A4%A9%E7%AB%A0/id1868296281",
+        "xiaohongshu": "小天章 ON AIR",
+        "baike": "https://baike.baidu.com/item/%E3%80%8A%E5%B0%8F%E5%A4%A9%E7%AB%A0%E3%80%8B/67376116"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "访谈",
+        "名人",
+        "女性成长",
+        "视频播客",
+        "章泽天"
+      ],
+      "_path": "podcasts/zh/culture/xiao-tian-zhang.md",
+      "_deep": true
+    },
+    {
+      "title": "岩中花述",
+      "slug": "yan-zhong-hua-shu",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "Toate(品牌播客)",
+      "hosts": [
+        "陈鲁豫(主理)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "其他主流平台"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E5%B2%A9%E4%B8%AD%E8%8A%B1%E8%BF%B0/id1582119137",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/625635587bfca4e73e990703",
+        "baike": "https://baike.baidu.com/item/%E5%B2%A9%E4%B8%AD%E8%8A%B1%E8%BF%B0/60874031"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "文化",
+        "访谈",
+        "鲁豫",
+        "女性题材",
+        "品牌播客"
+      ],
+      "_path": "podcasts/zh/culture/yan-zhong-hua-shu.md",
+      "_deep": true
+    },
+    {
+      "title": "开放三明治",
+      "slug": "san-ming-zhi",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "中国三明治(英文名 Sandwichina)",
+      "hosts": [
+        "中国三明治编辑团队(轮值主播)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "sandwichina.com 官网"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E5%BC%80%E6%94%BE%E4%B8%89%E6%98%8E%E6%B2%BB/id1521236806",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/5ef9c9916d766074279c2962",
+        "site": "https://sandwichina.com",
+        "instagram": "https://www.instagram.com/p/DSSaU1hEgo8/"
+      },
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "田野调查",
+        "行业案例",
+        "长访谈",
+        "非虚构叙事",
+        "写作工作坊",
+        "中国三明治"
+      ],
+      "_path": "podcasts/zh/culture/san-ming-zhi.md",
+      "_deep": true
+    },
+    {
+      "title": "忽左忽右",
+      "slug": "hu-zuo-hu-you",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "JustPod",
+      "hosts": [
+        "程衍樑（Ian）",
+        "杨一"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "人文",
+        "社科",
+        "时政",
+        "访谈",
+        "国际视野"
+      ],
+      "_path": "podcasts/zh/culture/hu-zuo-hu-you.md",
+      "_deep": true
+    },
+    {
+      "title": "故事FM",
+      "slug": "gushi-fm",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "独立出品",
+      "hosts": [
+        "寇爱哲"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify",
+        "网易云音乐"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "纪实",
+        "叙事",
+        "口述史",
+        "普通人故事",
+        "非虚构"
+      ],
+      "_path": "podcasts/zh/culture/gushi-fm.md",
+      "_deep": true
+    },
+    {
+      "title": "故事硬核",
+      "slug": "gu-shi-ying-he",
+      "language": "zh",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "田野调查",
+        "行业案例",
+        "非虚构叙事",
+        "长访谈",
+        "文学叙事"
+      ],
+      "_path": "podcasts/zh/culture/gu-shi-ying-he.md",
+      "_deep": false
+    },
+    {
+      "title": "文化纵横",
+      "slug": "wen-hua-zong-heng",
+      "language": "zh",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "田野调查",
+        "行业案例",
+        "文化政策",
+        "思想评论",
+        "长访谈"
+      ],
+      "_path": "podcasts/zh/culture/wen-hua-zong-heng.md",
+      "_deep": false
+    },
+    {
+      "title": "是个人物",
+      "slug": "ren-wu",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "人物杂志 / 澎湃新闻(关联)",
+      "hosts": [
+        "《人物》杂志主笔团队(轮值主播)",
+        "嘉宾主笔(《人物》杂志编辑)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Podimo",
+        "Podwise"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E6%98%AF%E4%B8%AA%E4%BA%BA%E7%89%A9/id1613136334",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/60e6bffed1be90bbd96e4b26",
+        "podimo": "https://podimo.com/dk/shows/shi-ge-ren-wu",
+        "podwise": "https://app.podwise.ai/dashboard/podcasts/6377"
+      },
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "田野调查",
+        "行业案例",
+        "长访谈",
+        "人物特写",
+        "非虚构叙事",
+        "人物杂志"
+      ],
+      "_path": "podcasts/zh/culture/ren-wu.md",
+      "_deep": true
+    },
+    {
+      "title": "棱镜",
+      "slug": "leng-jing",
+      "language": "zh",
+      "category": "culture",
+      "status": "todo",
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "田野调查",
+        "行业案例",
+        "调查报道",
+        "金融科技",
+        "长访谈"
+      ],
+      "_path": "podcasts/zh/culture/leng-jing.md",
+      "_deep": false
+    },
+    {
+      "title": "正午",
+      "slug": "zheng-wu",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "正午故事(独立非虚构写作平台)",
+      "hosts": [
+        "郭玉洁(主理人,作家 / 资深媒体人)",
+        "正午编辑部(轮值主笔)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "正午故事官网 / 微信公众号"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/72-%E9%80%83%E9%81%BF%E8%BF%98%E6%98%AF%E9%9D%A2%E5%AF%B9%E7%8E%B0%E5%AE%9E-%E5%9C%A8%E6%96%87%E5%AD%A6%E4%B8%AD%E4%B8%88%E9%87%8F%E4%B8%8E%E4%B8%96%E7%95%8C%E7%9A%84%E8%B7%9D%E7%A6%BB/id1557453933",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/episode/6648566982b428eafd67be0d",
+        "site": "https://zhengwu.org"
+      },
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "田野调查",
+        "行业案例",
+        "非虚构叙事",
+        "人物特写"
+      ],
+      "_path": "podcasts/zh/culture/zheng-wu.md",
+      "_deep": true
+    },
+    {
+      "title": "没理想编辑部",
+      "slug": "mei-lixiang-bianjibu",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "看理想(新媒体部出品)",
+      "hosts": [
+        "荞木(看理想编辑)",
+        "小田(看理想编辑)",
+        "林蓝(看理想编辑)",
+        "思臻(看理想编辑)"
+      ],
+      "platforms": [
+        "小宇宙",
+        "Apple Podcasts",
+        "看理想 APP",
+        "豆瓣播客"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/5e2aaf28418a84a046542eb7",
+        "apple": "https://podcasts.apple.com/cn/podcast/id1494093522",
+        "douban": "https://m.douban.com/podcast/subject/36747893/"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "文化",
+        "生活",
+        "编辑部",
+        "闲聊",
+        "看理想",
+        "书业"
+      ],
+      "_path": "podcasts/zh/culture/mei-lixiang-bianjibu.md",
+      "_deep": true
+    },
+    {
+      "title": "涟漪效应",
+      "slug": "lian-yi-xiao-ying",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "澎湃新闻 / 人物 / 镜相栏目",
+      "hosts": [
+        "澎湃人物 / 镜相栏目编辑团队(轮值主播)"
+      ],
+      "platforms": [
+        "小宇宙",
+        "Apple Podcasts",
+        "喜马拉雅",
+        "澎湃新闻客户端"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E6%B6%9F%E6%BC%AA%E6%95%88%E5%BA%94/id1690763732",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/60c01ce32f4e95c951ae051f",
+        "site": "https://m.thepaper.cn/list_35570"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "文化",
+        "人物",
+        "文艺评论",
+        "澎湃播客矩阵",
+        "调查报道"
+      ],
+      "_path": "podcasts/zh/culture/lian-yi-xiao-ying.md",
+      "_deep": true
+    },
+    {
+      "title": "澎湃·镜相",
+      "slug": "peng-pai-jing-xiang",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "澎湃新闻(镜相栏目)",
+      "hosts": [
+        "澎湃新闻镜相栏目编辑团队"
+      ],
+      "platforms": [
+        "澎湃新闻客户端",
+        "小宇宙",
+        "Apple Podcasts"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "site": "https://m.thepaper.cn/list_35570",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "田野调查",
+        "方法论范本",
+        "调查报道",
+        "非虚构叙事",
+        "长访谈"
+      ],
+      "_path": "podcasts/zh/culture/peng-pai-jing-xiang.md",
+      "_deep": true
+    },
+    {
+      "title": "看理想圆桌",
+      "slug": "kan-lixiang-yuanzhuo",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "看理想(理想国旗下文化品牌,「知识的剧场」)",
+      "hosts": [
+        "看理想编辑部轮值主持 + 嘉宾制"
+      ],
+      "platforms": [
+        "看理想 APP",
+        "Apple Podcasts",
+        "Spotify",
+        "小宇宙",
+        "豆瓣播客"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "app": "https://www.vistopia.com.cn/detail/13",
+        "apple": "https://podcasts.apple.com/cn/podcast/id1418358464",
+        "spotify": "https://open.spotify.com/show/5w6PzX1ad5BwtHXbDk8mIo",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/5e4ff4c7418a84a046977618",
+        "douban": "https://m.douban.com/podcast/subject/36729608/"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "文化",
+        "人文",
+        "理想国",
+        "看理想",
+        "圆桌",
+        "书业"
+      ],
+      "_path": "podcasts/zh/culture/kan-lixiang-yuanzhuo.md",
+      "_deep": true
+    },
+    {
+      "title": "真实故事",
+      "slug": "zhen-shi-gu-shi",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "真实故事计划(独立非虚构写作平台,2015 创立)",
+      "hosts": [
+        "雷磊(创始人,资深媒体人 / 非虚构写作者)",
+        "真实故事编辑团队(轮值主笔)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify",
+        "真实故事计划官网 / 微信公众号"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/ep16-%E7%9C%9F%E5%AE%9E%E5%8F%88%E5%B8%A6%E5%8A%B2%E5%84%BF%E7%9A%84%E6%95%85%E4%BA%8B%E5%A1%91%E9%80%A0%E6%88%91%E4%BB%AC%E8%87%AA%E5%B7%B1-%E5%AF%B9%E8%AF%9D%E7%8C%AB%E6%95%99%E6%8E%88/id1864792027",
+        "spotify": "https://open.spotify.com/show/1mupJWN9YpLwcL94h4pBDD",
+        "site": "https://zhenshigushi.org"
+      },
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "田野调查",
+        "行业案例",
+        "口述史",
+        "非虚构叙事",
+        "长访谈"
+      ],
+      "_path": "podcasts/zh/culture/zhen-shi-gu-shi.md",
+      "_deep": true
+    },
+    {
+      "title": "端传媒",
+      "slug": "duan-chuan-mei",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "端传媒(Initium Media,The Initium Project)",
+      "hosts": [
+        "端传媒编辑团队(轮值主播,具体名单 TODO)"
+      ],
+      "platforms": [
+        "端传媒官网",
+        "Spotify",
+        "Apple Podcasts",
+        "Acast"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://apps.apple.com/us/app/%E7%AB%AF%E4%BC%A0%E5%AA%92-initium-media/id1020176943",
+        "site": "https://theinitium.com/zh-hans/",
+        "audio": "https://theinitium.com/audio-zh-hans/"
+      },
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "田野调查",
+        "行业案例",
+        "调查报道",
+        "非虚构叙事",
+        "长访谈",
+        "端传媒"
+      ],
+      "_path": "podcasts/zh/culture/duan-chuan-mei.md",
+      "_deep": true
+    },
+    {
+      "title": "自然光",
+      "slug": "zi-ran-guang",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "哔哩哔哩(B站)原创视频播客 / 个人出品",
+      "hosts": [
+        "窦文涛(主理人,前凤凰卫视《锵锵三人行》1998 起、《圆桌派》主持人)"
+      ],
+      "platforms": [
+        "哔哩哔哩(BV 号)",
+        "小宇宙",
+        "Apple Podcasts / Spotify(同步同步音频版)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "bilibili": "https://space.bilibili.com/35467563(窦文涛 B 站个人空间,「自然光」节目页)",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/自然光"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-09",
+      "tags": [
+        "视频播客",
+        "聊客",
+        "哲学",
+        "文化",
+        "书房对谈",
+        "4小时长访谈"
+      ],
+      "_path": "podcasts/zh/culture/zi-ran-guang.md",
+      "_deep": true
+    },
+    {
+      "title": "螺丝在拧紧",
+      "slug": "luosi-zai-ningjin",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "单读(吴琦主编的《单读》mook 团队;Apple「单读频道」)",
+      "hosts": [
+        "吴琦 —《单读》主编,文化与非虚构对谈主持人"
+      ],
+      "platforms": [
+        "Apple Podcasts(单读频道)",
+        "小宇宙等第三方播客平台"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/id1555601768"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "文化",
+        "访谈",
+        "单读",
+        "非虚构",
+        "青年文化",
+        "书业"
+      ],
+      "_path": "podcasts/zh/culture/luosi-zai-ningjin.md",
+      "_deep": true
+    },
+    {
+      "title": "言外之易",
+      "slug": "yan-wai-zhi-yi",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "新浪新闻",
+      "hosts": [
+        "易立竞(主理 / 资深媒体人,前《人物》主笔 / 《立场》主持人)"
+      ],
+      "platforms": [
+        "哔哩哔哩",
+        "新浪微博",
+        "抖音",
+        "小宇宙"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "bilibili": "https://www.bilibili.com/video/BV1c7Lc6yE1j/",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/6a028cc3f83a21c67c102515"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "视频播客",
+        "深度访谈",
+        "名人访谈",
+        "3-4 小时长访谈",
+        "易立竞"
+      ],
+      "_path": "podcasts/zh/culture/yan-wai-zhi-yi.md",
+      "_deep": true
+    },
+    {
+      "title": "读库立体声",
+      "slug": "duku-liti-sheng",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "读库(老六张立宪创办的 MOOK 品牌)",
+      "hosts": [
+        "张立宪(老六)— 读库主编 / 出版人"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "微信公众号 / 微博「读库」(动态)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E8%AF%BB%E5%BA%93%E7%AB%8B%E4%BD%93%E5%A3%B0/id1613486499"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "出版",
+        "书业",
+        "读库",
+        "对谈",
+        "阅读",
+        "张立宪"
+      ],
+      "_path": "podcasts/zh/culture/duku-liti-sheng.md",
+      "_deep": true
+    },
+    {
+      "title": "谷雨实验室",
+      "slug": "gu-yu-shi-yan-shi",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "腾讯新闻(谷雨工作室)",
+      "hosts": [
+        "腾讯新闻谷雨团队(总编辑 + 调查记者)",
+        "轮值主笔(每期由具体记者担纲)"
+      ],
+      "platforms": [
+        "腾讯新闻 App",
+        "微信公众号(谷雨实验室)",
+        "腾讯新闻网页",
+        "Apple Podcasts / 小宇宙(同步音频版)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO",
+        "site": "https://news.qq.com/omn/author/8QMd3Hta64Advz3Z"
+      },
+      "added_date": "2026-09-11",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "田野调查",
+        "行业案例",
+        "调查报道",
+        "驻场式"
+      ],
+      "_path": "podcasts/zh/culture/gu-yu-shi-yan-shi.md",
+      "_deep": true
+    },
+    {
+      "title": "跳岛FM",
+      "slug": "tiao-dao-fm",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "中信出版集团(中信出版·大方,文学事业部)",
+      "hosts": [
+        "主播由大方团队轮值(首位主播筱狸/董子琪,前界面文化记者,2020-03 至 2020-10;此后宝婷等接力)",
+        "制作人:何润哲;项目负责人:张舒语"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "小宇宙",
+        "官网 tiaodao.typlog.io",
+        "三联中读 / 豆瓣播客等"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E8%B7%B3%E5%B2%9Bfm/id1504037049",
+        "spotify": "https://open.spotify.com/show/5DW2eJ8Q4hL0OwglpR6Abz",
+        "website": "https://tiaodao.typlog.io/",
+        "douban": "https://m.douban.com/podcast/subject/36680265/"
+      },
+      "added_date": "2026-08-05",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "文学",
+        "书业",
+        "出版",
+        "访谈",
+        "文化",
+        "中信出版"
+      ],
+      "_path": "podcasts/zh/culture/tiao-dao-fm.md",
+      "_deep": true
+    },
+    {
+      "title": "陈鲁豫·慢谈",
+      "slug": "chen-lu-yu-man-tan",
+      "language": "zh",
+      "category": "culture",
+      "status": "active",
+      "network": "bilibili(2025-08-18 独家上线);陈鲁豫主理",
+      "hosts": [
+        "陈鲁豫 — 资深媒体人 / 主持人(凤凰卫视《鲁豫有约》主持多年)"
+      ],
+      "platforms": [
+        "B 站(独家视频)",
+        "小宇宙 / 音频端(分发情况 **TODO**)",
+        "微博 / 抖音(账号运营情况 **TODO**)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "bilibili": "TODO(账号「陈鲁豫-慢谈」)"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-05",
+      "tags": [
+        "访谈",
+        "视频播客",
+        "文化",
+        "名人",
+        "女性主播",
+        "B站",
+        "陈鲁豫"
+      ],
+      "_path": "podcasts/zh/culture/chen-lu-yu-man-tan.md",
+      "_deep": true
+    },
+    {
+      "title": "疯投圈",
+      "slug": "feng-tou-quan",
+      "language": "zh",
+      "category": "finance",
+      "status": "active",
+      "network": "独立出品",
+      "hosts": [
+        "黄海"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "消费投资",
+        "新消费",
+        "品牌",
+        "创投",
+        "财经"
+      ],
+      "_path": "podcasts/zh/finance/feng-tou-quan.md",
+      "_deep": true
+    },
+    {
+      "title": "面基",
+      "slug": "mian-ji",
+      "language": "zh",
+      "category": "finance",
+      "status": "active",
+      "network": "独立出品",
+      "hosts": [
+        "老钱(主理人,金融从业背景;具体履历 **TODO**)"
+      ],
+      "platforms": [
+        "小宇宙",
+        "Apple Podcasts"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/6388760f22567e8ea6ad070f",
+        "apple": "https://podcasts.apple.com/cn/podcast/id1686741064"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-05",
+      "tags": [
+        "金融",
+        "投资",
+        "A股",
+        "量化",
+        "理财",
+        "圆桌",
+        "独立播客"
+      ],
+      "_path": "podcasts/zh/finance/mian-ji.md",
+      "_deep": true
+    },
+    {
+      "title": "什么电台",
+      "slug": "shenme-diantai",
+      "language": "zh",
+      "category": "life",
+      "status": "active",
+      "network": "独立出品",
+      "hosts": [
+        "阿彬",
+        "乌鸦"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "影视",
+        "流行文化",
+        "娱乐",
+        "美剧",
+        "电影"
+      ],
+      "_path": "podcasts/zh/life/shenme-diantai.md",
+      "_deep": true
+    },
+    {
+      "title": "凹凸电波",
+      "slug": "ao-tu-dian-bo",
+      "language": "zh",
+      "category": "life",
+      "status": "active",
+      "network": "凹凸电波 / 独立出品",
+      "hosts": [
+        "伍叁伍肆",
+        "Captain",
+        "Z姐"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify",
+        "网易云音乐"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "娱乐",
+        "情感",
+        "闲聊",
+        "青年文化",
+        "两性"
+      ],
+      "_path": "podcasts/zh/life/ao-tu-dian-bo.md",
+      "_deep": true
+    },
+    {
+      "title": "午夜上发条",
+      "slug": "wu-ye-shang-fa-tiao",
+      "language": "zh",
+      "category": "life",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/zh/life/wu-ye-shang-fa-tiao.md",
+      "_deep": false
+    },
+    {
+      "title": "大方",
+      "slug": "da-fang",
+      "language": "zh",
+      "category": "life",
+      "status": "active",
+      "network": "中信大方 / JustPod",
+      "hosts": [
+        "大方"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "读书",
+        "文学",
+        "出版",
+        "访谈",
+        "知识"
+      ],
+      "_path": "podcasts/zh/life/da-fang.md",
+      "_deep": true
+    },
+    {
+      "title": "天真不天真",
+      "slug": "tian-zhen-bu-tian-zhen",
+      "language": "zh",
+      "category": "life",
+      "status": "active",
+      "network": "天真不天真工作室(独立出品)",
+      "hosts": [
+        "主理团队(具体名单 TODO)"
+      ],
+      "platforms": [
+        "小宇宙",
+        "Apple Podcasts",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/65cef9e3cace72dff8d98de3",
+        "apple": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "访谈",
+        "个人成长",
+        "自我认知",
+        "杨天真",
+        "中长访谈"
+      ],
+      "_path": "podcasts/zh/life/tian-zhen-bu-tian-zhen.md",
+      "_deep": true
+    },
+    {
+      "title": "无聊斋",
+      "slug": "wu-liao-zhai",
+      "language": "zh",
+      "category": "life",
+      "status": "active",
+      "network": "独立出品",
+      "hosts": [
+        "大老王",
+        "六姐"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify",
+        "网易云音乐"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "喜剧",
+        "脱口秀",
+        "娱乐",
+        "闲聊",
+        "访谈"
+      ],
+      "_path": "podcasts/zh/life/wu-liao-zhai.md",
+      "_deep": true
+    },
+    {
+      "title": "日谈公园",
+      "slug": "ri-tan-gong-yuan",
+      "language": "zh",
+      "category": "life",
+      "status": "active",
+      "network": "日谈公园 / 独立出品",
+      "hosts": [
+        "李叔",
+        "小伙子"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify",
+        "网易云音乐"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "文化",
+        "娱乐",
+        "闲聊",
+        "影音",
+        "访谈"
+      ],
+      "_path": "podcasts/zh/life/ri-tan-gong-yuan.md",
+      "_deep": true
+    },
+    {
+      "title": "自我进化论",
+      "slug": "zi-wo-jin-hua-lun",
+      "language": "zh",
+      "category": "life",
+      "status": "active",
+      "network": "自我进化论工作室(独立出品)",
+      "hosts": [
+        "颜晓静(主理人)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E8%87%AA%E6%88%91%E8%BF%9B%E5%8C%96%E8%AE%BA/id1498170617",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/episode/6756a51217cd5416ada1e911",
+        "spotify": "https://open.spotify.com/episode/7JDjOfb4Ijq1WLoc199aMU"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "自我进化",
+        "个人成长",
+        "心理学",
+        "对话",
+        "中长访谈"
+      ],
+      "_path": "podcasts/zh/life/zi-wo-jin-hua-lun.md",
+      "_deep": true
+    },
+    {
+      "title": "谭立人",
+      "slug": "er-tong-bu-yi",
+      "language": "zh",
+      "category": "life",
+      "status": "active",
+      "network": "谭立人工作室(独立出品)",
+      "hosts": [
+        "谭立人(主理)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "其他主流平台"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E8%B0%AD%E7%AB%8B%E4%BA%BA/id1771401634"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "个人成长",
+        "心理学",
+        "选择",
+        "焦虑",
+        "自我"
+      ],
+      "_path": "podcasts/zh/life/er-tong-bu-yi.md",
+      "_deep": true
+    },
+    {
+      "title": "907编辑部",
+      "slug": "907-bian-ji-bu",
+      "language": "zh",
+      "category": "news",
+      "status": "todo",
+      "network": "澎湃新闻 / 国际新闻部",
+      "hosts": [
+        "澎湃国际新闻部编辑团队"
+      ],
+      "platforms": [
+        "小宇宙",
+        "苹果播客",
+        "喜马拉雅",
+        "澎湃新闻客户端"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "xiaoyuzhou": "TODO",
+        "site": "https://www.thepaper.cn"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "国际时政",
+        "新闻评论",
+        "澎湃",
+        "高完播率"
+      ],
+      "_path": "podcasts/zh/news/907-bian-ji-bu.md",
+      "_deep": false
+    },
+    {
+      "title": "Sinica Podcast",
+      "slug": "sinica",
+      "language": "zh",
+      "category": "news",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/zh/news/sinica.md",
+      "_deep": false
+    },
+    {
+      "title": "声动早咖啡",
+      "slug": "sheng-dong-zao-ka-fei-news",
+      "language": "zh",
+      "category": "news",
+      "status": "active",
+      "network": "声动活泼(SoundWave,头部中文播客制作公司)",
+      "hosts": [
+        "声动活泼团队轮值主播(具体班底 **TODO**)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "官网 sheng-espresso.fireside.fm",
+        "蜻蜓 FM / Amazon Music 等分发"
+      ],
+      "rss": "https://sheng-espresso.fireside.fm/rss (待核)",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/tw/podcast/id1573189055",
+        "website": "https://sheng-espresso.fireside.fm/"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-05",
+      "tags": [
+        "商业新闻",
+        "晨间简报",
+        "日更",
+        "声动活泼",
+        "科技商业"
+      ],
+      "_path": "podcasts/zh/news/sheng-dong-zao-ka-fei-news.md",
+      "_deep": true
+    },
+    {
+      "title": "岛岛连线",
+      "slug": "dao-dao-lian-xian",
+      "language": "zh",
+      "category": "news",
+      "status": "active",
+      "network": "王骁(Stella)个人出品 / 视频播客",
+      "hosts": [
+        "王骁 Stella(主理人,前观察者网 / 风云直播主持人)"
+      ],
+      "platforms": [
+        "新浪微博",
+        "微信视频号",
+        "哔哩哔哩",
+        "小宇宙(同步音频)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "weibo": "@王骁Stella",
+        "bilibili": "TODO"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-09",
+      "tags": [
+        "时政",
+        "视频播客",
+        "访谈",
+        "外交",
+        "国际关系"
+      ],
+      "_path": "podcasts/zh/news/dao-dao-lian-xian.md",
+      "_deep": true
+    },
+    {
+      "title": "端闻",
+      "slug": "duan-wen",
+      "language": "zh",
+      "category": "news",
+      "status": "active",
+      "network": "端传媒(Initium Media)",
+      "hosts": [
+        "端传媒编辑团队(轮值主播,具体名单 TODO)"
+      ],
+      "platforms": [
+        "Spotify",
+        "Acast",
+        "Apple Podcasts",
+        "端传媒网站 audio 频道"
+      ],
+      "rss": "https://feeds.acast.com/public/shows/66b07190af99592b5329f43a",
+      "subscribe_links": {
+        "spotify": "https://open.spotify.com/show/6wmjViv2qxneOD7uoU3Mwb",
+        "website": "https://theinitium.com/audio-zh-hans/",
+        "apple": "https://apps.apple.com/us/app/%E7%AB%AF%E4%BC%A0%E5%AA%92-initium-media/id1020176943"
+      },
+      "added_date": "2026-09-09",
+      "updated_date": "2026-09-09",
+      "tags": [
+        "中文新闻",
+        "香港",
+        "国际时政",
+        "端传媒",
+        "深度报道"
+      ],
+      "_path": "podcasts/zh/news/duan-wen.md",
+      "_deep": true
+    },
+    {
+      "title": "怡楽播客",
+      "slug": "yi-le-bo-ke",
+      "language": "zh",
+      "category": "story",
+      "status": "todo",
+      "network": "TODO",
+      "hosts": [
+        "TODO"
+      ],
+      "platforms": [
+        "TODO"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {},
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "故事"
+      ],
+      "_path": "podcasts/zh/story/yi-le-bo-ke.md",
+      "_deep": false
+    },
+    {
+      "title": "犯罪象限",
+      "slug": "fan-zui-xiang-xian",
+      "language": "zh",
+      "category": "story",
+      "status": "active",
+      "network": "犯罪象限工作室(独立出品)",
+      "hosts": [
+        "犯罪象限主播团队(具体名单 TODO)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E7%8A%AF%E7%BD%AA%E8%B1%A1%E9%99%90/id1781844472",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/6714f829dedea9159c2ecf2a"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "罪案",
+        "悬疑",
+        "真实案件",
+        "田野调查",
+        "中文罪案播客"
+      ],
+      "_path": "podcasts/zh/story/fan-zui-xiang-xian.md",
+      "_deep": true
+    },
+    {
+      "title": "竹林之中",
+      "slug": "zhu-lin-zhi-zhong",
+      "language": "zh",
+      "category": "story",
+      "status": "active",
+      "network": "竹林之中工作室(独立出品)",
+      "hosts": [
+        "竹林之中主播团队(具体名单 TODO)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Replaio",
+        "喜马拉雅"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E7%AB%B9%E6%9E%97%E4%B9%8B%E4%B8%AD/id1721293506",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/652cac8736a1383a66641260",
+        "replaio": "https://replaio.com/podcasts/podcast-uoxUWl",
+        "ximalaya": "https://www.ximalaya.com/album/79610723.xml"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "罪案",
+        "悬疑",
+        "真实案件",
+        "田野调查",
+        "中文罪案播客"
+      ],
+      "_path": "podcasts/zh/story/zhu-lin-zhi-zhong.md",
+      "_deep": true
+    },
+    {
+      "title": "记录在案(财新)",
+      "slug": "ji-lu-zai-an",
+      "language": "zh",
+      "category": "story",
+      "status": "active",
+      "network": "财新传媒(财新 FM)",
+      "hosts": [
+        "财新调查记者团队(轮值主播)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "蜻蜓 FM",
+        "小宇宙",
+        "财新网"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E8%AE%B0%E5%BD%95%E5%9C%A8%E6%A1%88/id1558621042",
+        "qtfm": "https://www.qtfm.cn/channels/401004/"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "田野调查",
+        "调查报道",
+        "财新",
+        "音频深度报道",
+        "驻场式"
+      ],
+      "_path": "podcasts/zh/story/ji-lu-zai-an.md",
+      "_deep": true
+    },
+    {
+      "title": "霓达播客",
+      "slug": "ni-da-bo-ke",
+      "language": "zh",
+      "category": "story",
+      "status": "active",
+      "network": "霓达播客工作室(独立出品)",
+      "hosts": [
+        "霓达主播团队(具体名单 TODO)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "小宇宙"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E9%9C%93%E8%BE%BE%E6%95%85%E4%BA%8B/id1675204249",
+        "spotify": "https://open.spotify.com/show/4QX7gpNTCGIEfAOjk9GIPJ",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/620e4b8f52d497504647ce24"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "故事",
+        "真人故事",
+        "情感",
+        "个人叙事",
+        "城市生活"
+      ],
+      "_path": "podcasts/zh/story/ni-da-bo-ke.md",
+      "_deep": true
+    },
+    {
+      "title": "黑猫侦探社俱乐部",
+      "slug": "hei-mao-zhen-tan-she",
+      "language": "zh",
+      "category": "story",
+      "status": "active",
+      "network": "黑猫侦探社工作室(独立出品)",
+      "hosts": [
+        "咪仔(主创 / 资深内容策划)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Buzzsprout",
+        "Amazon Music"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E9%BB%91%E7%8C%AB%E4%BE%A6%E6%8E%A2%E7%A4%BE%E4%BF%B1%E4%B9%90%E9%83%A8/id1769860004",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/60c9efbc21a514053c1e73e5",
+        "buzzsprout": "https://www.buzzsprout.com/1825438/episodes",
+        "podcasters": "https://podcasters.apple.com/zh-cn/support/5533-featured-profile-black-cat-detective"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "罪案",
+        "悬疑",
+        "真实案件",
+        "田野调查",
+        "中文罪案播客"
+      ],
+      "_path": "podcasts/zh/story/hei-mao-zhen-tan-she.md",
+      "_deep": true
+    },
+    {
+      "title": "Digital Gym",
+      "slug": "digital-gym",
+      "language": "zh",
+      "category": "tech",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/zh/tech/digital-gym.md",
+      "_deep": false
+    },
+    {
+      "title": "SaaS 客研室",
+      "slug": "saas-ke-yan-shi",
+      "language": "zh",
+      "category": "tech",
+      "status": "todo",
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "待收录"
+      ],
+      "_path": "podcasts/zh/tech/saas-ke-yan-shi.md",
+      "_deep": false
+    },
+    {
+      "title": "TechBuzz China by Pandaily",
+      "slug": "techbuzz-china",
+      "language": "zh",
+      "category": "tech",
+      "status": "active",
+      "network": "Pandaily",
+      "hosts": [
+        "Pandaily 英文编辑团队(轮值主播)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "Amazon Music",
+        "ART19",
+        "Pandaily 官网"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/tech-buzz-china-by-pandaily/id1378670805",
+        "spotify": "https://open.spotify.com/show/5zVaHAZrSnikofwFVj2w4S",
+        "art19": "https://art19.com/shows/tech-buzz",
+        "site": "https://pandaily.com/category/podcast"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "科技",
+        "中国科技出海",
+        "英文播客",
+        "创投",
+        "weekly-news"
+      ],
+      "_path": "podcasts/zh/tech/techbuzz-china.md",
+      "_deep": true
+    },
+    {
+      "title": "声东击西",
+      "slug": "sheng-dong-ji-xi",
+      "language": "zh",
+      "category": "tech",
+      "status": "active",
+      "network": "硅星人Pro / 独立出品",
+      "hosts": [
+        "一凡"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "科技",
+        "国际视野",
+        "商业",
+        "硅谷"
+      ],
+      "_path": "podcasts/zh/tech/sheng-dong-ji-xi.md",
+      "_deep": true
+    },
+    {
+      "title": "捕蛇者说",
+      "slug": "bu-she-zhe-shuo",
+      "language": "zh",
+      "category": "tech",
+      "status": "active",
+      "network": "独立出品",
+      "hosts": [
+        "杨森",
+        "涛叔",
+        "老袁"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "编程",
+        "软件工程",
+        "程序员",
+        "职场",
+        "开发者"
+      ],
+      "_path": "podcasts/zh/tech/bu-she-zhe-shuo.md",
+      "_deep": true
+    },
+    {
+      "title": "硅基聊天室",
+      "slug": "gui-ji-liao-tian-shi",
+      "language": "zh",
+      "category": "tech",
+      "status": "active",
+      "network": "B 站原创视频播客(AI 内容团队出品)",
+      "hosts": [
+        "B 站 AI 内容团队",
+        "AI Agent(机器人对人类对谈形式)"
+      ],
+      "platforms": [
+        "哔哩哔哩",
+        "微信视频号",
+        "抖音"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "bilibili": "TODO"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "视频播客",
+        "AI",
+        "机器人",
+        "硅基生命",
+        "B 站"
+      ],
+      "_path": "podcasts/zh/tech/gui-ji-liao-tian-shi.md",
+      "_deep": true
+    },
+    {
+      "title": "硅谷101",
+      "slug": "guigu-101",
+      "language": "zh",
+      "category": "tech",
+      "status": "active",
+      "network": "硅谷101 / 独立出品",
+      "hosts": [
+        "陈茜（Zara）"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify",
+        "YouTube"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO",
+        "youtube": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "硅谷",
+        "科技",
+        "风投",
+        "创投",
+        "AI"
+      ],
+      "_path": "podcasts/zh/tech/guigu-101.md",
+      "_deep": true
+    },
+    {
+      "title": "硬地骇客",
+      "slug": "yingdi-haike",
+      "language": "zh",
+      "category": "tech",
+      "status": "active",
+      "network": "独立出品",
+      "hosts": [
+        "Macing",
+        "Misa",
+        "Leon"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "独立开发",
+        "出海",
+        "Indie Hacker",
+        "SaaS",
+        "创业"
+      ],
+      "_path": "podcasts/zh/tech/yingdi-haike.md",
+      "_deep": true
+    },
+    {
+      "title": "科技早知道",
+      "slug": "keji-zao-zhidao",
+      "language": "zh",
+      "category": "tech",
+      "status": "active",
+      "network": "JustPod / 极客公园",
+      "hosts": [
+        "王俊煜（斑马,前豌豆荚创始人）",
+        "丁教（Diane）"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-08-03",
+      "tags": [
+        "科技",
+        "互联网",
+        "前沿趋势",
+        "AI"
+      ],
+      "_path": "podcasts/zh/tech/keji-zao-zhidao.md",
+      "_deep": true
+    },
+    {
+      "title": "罗永浩的十字路口",
+      "slug": "luo-yonghao-shi-zi-lu-kou",
+      "language": "zh",
+      "category": "tech",
+      "status": "active",
+      "network": "抖音精选(主要合作平台);罗永浩个人 IP 节目",
+      "hosts": [
+        "罗永浩 — 细红线科技创始人 / 前锤子科技创始人 / 前交个朋友主播"
+      ],
+      "platforms": [
+        "抖音精选(独家合作,直播 + 正片)",
+        "B 站",
+        "Apple Podcasts",
+        "小宇宙",
+        "Spotify / YouTube(分发情况 **TODO**)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "douyin": "TODO",
+        "bilibili": "TODO",
+        "apple": "TODO",
+        "xiaoyuzhou": "TODO"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-05",
+      "tags": [
+        "科技",
+        "商业",
+        "视频播客",
+        "访谈",
+        "名人",
+        "抖音",
+        "罗永浩"
+      ],
+      "_path": "podcasts/zh/tech/luo-yonghao-shi-zi-lu-kou.md",
+      "_deep": true
+    },
+    {
+      "title": "道听途说",
+      "slug": "dao-ting-tu-shuo",
+      "language": "zh",
+      "category": "tech",
+      "status": "active",
+      "network": "假艺术节(Fake Festival)",
+      "hosts": [
+        "橘子(Orange Elephant)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "Podimo",
+        "Podwise",
+        "EarsOnMe"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E9%81%93%E5%90%AC%E9%80%94%E8%AF%B4/id1448029483",
+        "spotify": "https://open.spotify.com/show/4fimR7CO3KjS194pjXkKOf",
+        "podimo": "https://podimo.com/nl/shows/dao-ting-tu-shuo",
+        "podwise": "https://app.podwise.ai/dashboard/podcasts/146",
+        "earsonme": "https://earsonme.com/podcasts/RkcPK9gc",
+        "site": "https://fakefestival.org/by/orangeelephant/2020/"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-09-11",
+      "tags": [
+        "艺术",
+        "戏剧",
+        "表演",
+        "设计",
+        "文化访谈"
+      ],
+      "_path": "podcasts/zh/tech/dao-ting-tu-shuo.md",
+      "_deep": true
+    }
+  ]
+}
