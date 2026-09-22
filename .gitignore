@@ -49,6 +49,10 @@ frontend/playwright-report
 *~
 .qoder
 
+# macOS 复制粘贴产生的 "xxx 2" 重复文件(2026-08-21 / 2026-09-22 两次事故)
+* 2
+* 2.*
+
 # OS
 .DS_Store
 Thumbs.db
