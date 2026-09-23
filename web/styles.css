@@ -498,6 +498,9 @@ code {
 .guide li { margin: 4px 0; }
 .guide hr { border: 0; border-top: 1px solid var(--line); margin: 26px 0; }
 
+.guide-back { margin: 0 0 16px; font-size: 14px; }
+.guide-back a { font-weight: 600; }
+
 /* ---------- footer ---------- */
 
 .site-footer {

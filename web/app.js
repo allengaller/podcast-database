@@ -52,13 +52,36 @@ function catHue(c) { return CAT_HUES[c] || 210; }
 
 /* ---------- markdown (small subset for featured guides) ---------- */
 
+// App-path dir ("featured/..." form) of the markdown file being rendered,
+// used to resolve relative .md links into in-app hash routes.
+let MD_CTX = null;
+
+function resolveNoteLink(url) {
+  const parts = MD_CTX.dir.split("/").filter(Boolean);
+  for (const seg of url.split("/")) {
+    if (seg === "" || seg === ".") continue;
+    if (seg === "..") parts.pop();
+    else parts.push(seg);
+  }
+  const appPath = parts.join("/");
+  if (!appPath.startsWith("featured/")) return null;
+  const guide = GUIDES.find((g) => g.file === "../podcasts/" + appPath);
+  return "#featured/" + (guide ? guide.id : appPath.slice("featured/".length));
+}
+
 function mdInline(s) {
   return esc(s)
     .replace(/`([^`]+)`/g, "<code>$1</code>")
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
     .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (m, text, url) => {
-      if (!/^(https?:\/\/|\/|#)/i.test(url)) return `${text}`;
-      return `<a href="${url}" target="_blank" rel="noopener">${text}</a>`;
+      if (/^(https?:\/\/|\/|#)/i.test(url)) {
+        return `<a href="${url}" target="_blank" rel="noopener">${text}</a>`;
+      }
+      if (/\.md$/i.test(url) && MD_CTX) {
+        const hash = resolveNoteLink(url);
+        if (hash) return `<a href="${hash}">${text}</a>`;
+      }
+      return `${text}`;
     });
 }
 
@@ -272,30 +295,53 @@ function switchTab(tab) {
     b.classList.toggle("active", b.dataset.tab === tab));
   $("#view-browse").hidden = tab !== "browse";
   $("#view-featured").hidden = tab !== "featured";
-  if (tab === "featured") loadGuide(currentGuideId());
+  if (tab === "featured") {
+    const r = featuredRoute();
+    loadGuide(r.guide, r.path);
+  }
 }
 
-function currentGuideId() {
-  const m = location.hash.match(/^#featured\/([\w-]+)/);
-  return m ? m[1] : GUIDES[0].id;
+function featuredRoute() {
+  const m = location.hash.match(/^#featured(?:\/(.*))?$/);
+  const rest = m && m[1] ? m[1].replace(/\/+$/, "") : "";
+  if (!rest) return { guide: GUIDES[0].id, path: null };
+  if (!rest.includes("/")) {
+    if (GUIDES.some((g) => g.id === rest)) return { guide: rest, path: null };
+    return { guide: GUIDES[0].id, path: rest };
+  }
+  const first = rest.split("/")[0];
+  return {
+    guide: GUIDES.some((g) => g.id === first) ? first : GUIDES[0].id,
+    path: rest.includes("..") ? null : rest,
+  };
 }
 
-async function loadGuide(id) {
+async function loadGuide(id, path = null) {
   const guide = GUIDES.find((g) => g.id === id) || GUIDES[0];
-  if (location.hash !== `#featured/${guide.id}`) location.hash = `#featured/${guide.id}`;
+  if (!path && location.hash !== `#featured/${guide.id}`) location.hash = `#featured/${guide.id}`;
   $("#guideNav").innerHTML = GUIDES.map((g) =>
     `<button type="button" class="chip${g.id === guide.id ? " active" : ""}" data-guide="${esc(g.id)}">${esc(g.name)}</button>`
   ).join("");
   const body = $("#guideBody");
   body.innerHTML = `<p class="guide-loading">加载专题中…</p>`;
+  MD_CTX = { dir: path ? "featured/" + path.replace(/[^/]*$/, "") : "featured/" };
   try {
-    const res = await fetch(guide.file);
+    const res = await fetch(path ? `../podcasts/featured/${encodeURI(path)}` : guide.file);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    body.innerHTML = mdToHtml(await res.text());
+    const back = path
+      ? `<p class="guide-back"><a href="#featured/${guide.id}">← 返回${esc(guide.name)}专题</a></p>`
+      : "";
+    body.innerHTML = back + mdToHtml(await res.text());
+    window.scrollTo(0, 0);
   } catch (err) {
+    const gh = path
+      ? `${REPO}/blob/main/podcasts/featured/${encodeURI(path)}`
+      : `${REPO}/blob/main/podcasts/featured/${guide.id}.md`;
     body.innerHTML = `<p class="guide-loading">加载失败(${esc(err.message)})。
       若通过 file:// 打开,请改用本地静态服务:<code>python3 -m http.server</code>。
-      也可在 GitHub 阅读:<a href="${REPO}/blob/main/podcasts/featured/${esc(guide.id)}.md" target="_blank" rel="noopener">${esc(guide.name)}</a></p>`;
+      也可在 GitHub 阅读:<a href="${gh}" target="_blank" rel="noopener">${esc(guide.name)}</a></p>`;
+  } finally {
+    MD_CTX = null;
   }
 }
 
@@ -372,7 +418,10 @@ function bindEvents() {
   window.addEventListener("hashchange", () => {
     const tab = location.hash.startsWith("#featured") ? "featured" : "browse";
     if ($("#view-browse").hidden === (tab === "browse")) switchTab(tab);
-    else if (tab === "featured") loadGuide(currentGuideId());
+    else if (tab === "featured") {
+      const r = featuredRoute();
+      loadGuide(r.guide, r.path);
+    }
   });
 }
 

@@ -3,7 +3,7 @@ title: "置顶学习专题:《硅谷 101》"
 type: featured-study-guide
 source_entry: ../zh/tech/guigu-101.md
 added_date: 2026-09-22
-updated_date: 2026-09-22
+updated_date: 2026-09-23
 ---
 
 # 《硅谷 101》学习专题
@@ -44,17 +44,17 @@ updated_date: 2026-09-22
 
 选"行业变革级"的锚点单集,理解节目看世界的主轴:
 
-- [E196《稳定币之战》](https://sv101.fireside.fm/206) —— 稳定币与跨境支付格局的产业级梳理
-- [S3E93 · ChatGPT 与搜索之争](https://sv101.fireside.fm/97) —— AI 如何改写搜索与流量格局
-- [GPT-3 特辑](https://sv101.fireside.fm/23) —— 大模型叙事的早期起点,可用 2026 视角回看验证
-- [E162 · 清华姚班专题](https://sv101.fireside.fm/168) —— 中国顶尖 AI 人才谱系
+- [E196《稳定币之战》](https://sv101.fireside.fm/206) —— 稳定币与跨境支付格局的产业级梳理 → [研读笔记](./guigu-101/e196-stablecoin-wars.md)
+- [S3E93 · ChatGPT 与搜索之争](https://sv101.fireside.fm/97) —— AI 如何改写搜索与流量格局 → [研读笔记](./guigu-101/s3e93-chatgpt-vs-search.md)
+- [GPT-3 特辑](https://sv101.fireside.fm/23) —— 大模型叙事的早期起点,可用 2026 视角回看验证 → [研读笔记](./guigu-101/gpt3-special.md)
+- [E162 · 清华姚班专题](https://sv101.fireside.fm/168) —— 中国顶尖 AI 人才谱系 → [研读笔记](./guigu-101/e162-yao-ban.md)
 
 ### 阶段二 · 主题打穿(第 3-8 周)
 
 按四条主题线各挑 2-3 集(完整选集清单以[官网 episodes 页](https://sv101.fireside.fm/episodes)为准):
 
 1. **AI 与模型经济**:近期已覆盖推理芯片(E251 方向)、Token 经济与模型公司生态(E249 方向)、AI 内容工程(E245 方向)、开源模型蒸馏(E246 方向)
-2. **智能驾驶 / 机器人**:[E156 · 特斯拉 FSD V12](https://sv101.fireside.fm/162)、[S2E54 · 无人车特辑](https://sv101.fireside.fm/54)
+2. **智能驾驶 / 机器人**:[E156 · 特斯拉 FSD V12](https://sv101.fireside.fm/162)、[S2E54 · 无人车特辑](https://sv101.fireside.fm/54) → [E156 笔记](./guigu-101/e156-tesla-fsd-v12.md) · [S2E54 笔记](./guigu-101/s2e54-darpa-origins.md)
 3. **出海与全球化**:TODO(逐集清单待建)
 4. **硬科技 / 芯片**:TODO(逐集清单待建)
 
@@ -79,15 +79,18 @@ updated_date: 2026-09-22
 
 | # | 单集 | 完成日期 | 笔记位置 |
 | --- | --- | --- | --- |
-| 1 | E196《稳定币之战》 | | |
-| 2 | S3E93 ChatGPT 与搜索之争 | | |
-| 3 | GPT-3 特辑 | | |
-| 4 | E162 清华姚班专题 | | |
-| 5 | E156 特斯拉 FSD V12 | | |
-| 6 | S2E54 无人车特辑 | | |
+| 1 | E196《稳定币之战》 | | [笔记](./guigu-101/e196-stablecoin-wars.md) |
+| 2 | S3E93 ChatGPT 与搜索之争 | | [笔记](./guigu-101/s3e93-chatgpt-vs-search.md) |
+| 3 | GPT-3 特辑 | | [笔记](./guigu-101/gpt3-special.md) |
+| 4 | E162 清华姚班专题 | | [笔记](./guigu-101/e162-yao-ban.md) |
+| 5 | E156 特斯拉 FSD V12 | | [笔记](./guigu-101/e156-tesla-fsd-v12.md) |
+| 6 | S2E54 无人车特辑 | | [笔记](./guigu-101/s2e54-darpa-origins.md) |
 | … | (按官网全集列表续填) | | |
+
+> 研读笔记已为以上 6 期建档(`podcasts/featured/guigu-101/`,总结 / 分析 / 洞察三层,基于官方 shownotes 的预读稿);完成日期待精听后填写。
 
 ## 待核 / TODO
 
 - E245-E265 各集的**确切标题**未逐条核对(主题方向据 Apple Podcasts 节目页,2026-09-22)→ 以[官网 episodes 页](https://sv101.fireside.fm/episodes)为准逐季补齐。
 - 主题线 3/4 的选集清单待建;每年"年度十大"类盘点单集待挖掘。
+- 6 篇单集研读笔记为基于官方 shownotes 的预读稿(2026-09-23):"总结"层待精听逐条校验,"分析 / 洞察"层待精听后修订;主题线 1 / 3 / 4 的选集笔记待扩。

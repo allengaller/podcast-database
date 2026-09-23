@@ -33,10 +33,11 @@
 
 - [《硅谷 101》学习专题](./podcasts/featured/guigu-101.md) —— 中文硅谷深访头部节目,2020 年开播,260+ 集
 - [《This Week in Tech (TWiT)》学习专题](./podcasts/featured/this-week-in-tech.md) —— 英文科技新闻圆桌活化石,2005 年开播,1100+ 期
+- 单集研读笔记:《硅谷 101》学习路径 6 期已建档于 [`podcasts/featured/guigu-101/`](./podcasts/featured/guigu-101/)(总结 / 分析 / 洞察三层,基于官方 shownotes)
 
 ## 网页版(Web App)
 
-[`web/`](./web/) 是一个**零依赖**静态站(纯 HTML/CSS/JS,无构建步骤):浏览 / 检索 231 档语料、按语言 / 赛道 / 状态筛选、查看订阅入口,并直接阅读两个置顶学习专题。数据来自 `dist/podcasts.json`,本地预览:
+[`web/`](./web/) 是一个**零依赖**静态站(纯 HTML/CSS/JS,无构建步骤):浏览 / 检索 231 档语料、按语言 / 赛道 / 状态筛选、查看订阅入口,并直接阅读两个置顶学习专题与《硅谷 101》单集研读笔记。数据来自 `dist/podcasts.json`,本地预览:
 
 ```bash
 python3 -m http.server 8123   # 仓库根目录运行,访问 http://127.0.0.1:8123/web/
