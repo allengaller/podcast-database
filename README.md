@@ -33,7 +33,7 @@
 
 - [《硅谷 101》学习专题](./podcasts/featured/guigu-101.md) —— 中文硅谷深访头部节目,2020 年开播,260+ 集
 - [《This Week in Tech (TWiT)》学习专题](./podcasts/featured/this-week-in-tech.md) —— 英文科技新闻圆桌活化石,2005 年开播,1100+ 期
-- 单集研读笔记:《硅谷 101》学习路径 6 期已建档于 [`podcasts/featured/guigu-101/`](./podcasts/featured/guigu-101/)(总结 / 分析 / 洞察三层,基于官方 shownotes)
+- 单集研读笔记:《硅谷 101》学习路径 9 期已建档于 [`podcasts/featured/guigu-101/`](./podcasts/featured/guigu-101/)(总结 / 分析 / 洞察三层,基于官方 shownotes);TWiT #1102 已建档于 [`podcasts/featured/this-week-in-tech/`](./podcasts/featured/this-week-in-tech/)
 
 ## 网页版(Web App)
 
@@ -49,6 +49,7 @@ python3 -m http.server 8123   # 仓库根目录运行,访问 http://127.0.0.1:81
 - **批次 2(2026-08-03)**:遍历各分类扩充 + 新增垂类(中文 `story/`、英文 `true-crime/` `history/` `education/` `health/`),共补 **77 档 stub**(`status: todo`,仅占位、细节待核实)。
 - **批次 9(2026-09-04)**:批次 8 遗留 **16 档 stub 全部升级为深档**(全部经 web 检索核实,Forbes 2026 收入榜数据回填);同日**收编 cron 遗留未提交 stub 25 档、清理重复档 7 档**,并落地校验 / 统计 / 导出脚本与 CI。详见 [`podcasts/README.md`](./podcasts/README.md)「当前进度」批次 9 段。
 - **批次 10(2026-09-05)**:**8 档升级深档**(罗永浩的十字路口 / 陈鲁豫·慢谈 / 张小珺商业访谈录 / 声动早咖啡 / 面基 / B2B Growth / Founder's Journal / Stratechery),**删除 2 档误档**(office-hours-with-patrick-o-shaughnessy、zh/tech 声动早咖啡重复 stub);zh/news 实现深档零的突破。详见 [`podcasts/README.md`](./podcasts/README.md)「当前进度」批次 10 段。
+- **批次 11(2026-10-02 启动 · 候选方案已拟)**:`zh` 薄类目(comedy 1 / finance 2 / news 5)收口方案 v0.1 入库,等用户拍板;同期新增 4 篇研读笔记(硅谷101 E251 推理芯片之战 / E244 机器人走错路了?/ E247 对话盛颖 xAI;TWiT #1102 AI 幻觉 / 谷歌 / Meta);CRON 推荐索引回填 2026-09-23 至 2026-10-02 共 10 天;GTM 复盘 v0.2 落档(165 → 231 档 / SEC 02 数字加源)。详见 [`ROADMAP.md`](./ROADMAP.md) 2026-10-02 执行记录。
 <!-- corpus:begin:summary -->
 **当前合计**:**231 档**(中文 89 + 英文 142),其中深档 146 档、stub 85 档(截至 2026-09-22;由 `scripts/stats.py` 自动统计,勿手改)
 <!-- corpus:end:summary -->
