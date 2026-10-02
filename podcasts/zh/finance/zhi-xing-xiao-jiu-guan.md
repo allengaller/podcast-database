@@ -2,27 +2,32 @@
 title: "知行小酒馆"
 slug: zhi-xing-xiao-jiu-guan
 language: zh
-category: business
+category: finance
 status: active
-network: "知行小酒馆工作室(独立出品)"
+network: "有知有行"
 hosts:
-  - "知行小酒馆主播团队(具体名单 TODO)"
+  - "孟岩(有知有行创始人,主理人)"
+  - "雨白(轮值主持)"
+  - "一知羊(轮值主持)"
 platforms:
-  - "Apple Podcasts"
   - "小宇宙"
-  - "YouTube"
+  - "Apple Podcasts"
+  - "Spotify"
+  - "网易云音乐"
 rss: "TODO"
 subscribe_links:
   apple: "https://podcasts.apple.com/cn/podcast/%E7%9F%A5%E8%A1%8C%E5%B0%8F%E9%85%92%E9%A6%86/id1559695855"
   xiaoyuzhou: "https://www.xiaoyuzhoufm.com/podcast/6013f9f58e2f7ee375cf4216"
-  youtube: "https://www.youtube.com/@allinthebeer"
 added_date: 2026-08-03
-updated_date: 2026-09-11
+updated_date: 2026-10-02
 tags:
+  - 投资
   - 理财
   - 价值投资
   - 投资实操
-  - 财经播客
+  - 生活哲学
+  - 有知有行
+  - 百万订阅
 ---
 
 # 知行小酒馆

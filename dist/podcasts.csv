@@ -161,8 +161,6 @@ shangye-jiushi-zheyang,商业就是这样,zh,business,active,True,JustPod / 第�
 zhang-xiaojun-shangye-fangtan-lu,张小珺Jùn|商业访谈录,zh,business,active,True,腾讯新闻(多期首发平台);张小珺主理,张小珺 — 商业报道出身的访谈人(详细履历 **TODO**),小宇宙 / Apple Podcasts / 腾讯新闻(图文首发) / B 站 / 喜马拉雅(分发情况 **TODO**),2026-09-04,2026-09-05,商业 / 访谈 / AI / 大模型 / 创业 / 中国AI / 张小珺,podcasts/zh/business/zhang-xiaojun-shangye-fangtan-lu.md
 gao-qian-nv-hai,搞钱女孩,zh,business,active,True,搞钱女孩工作室(独立出品),搞钱女孩主播团队(具体名单 TODO),Apple Podcasts / 小宇宙 / 蜻蜓 FM,2026-08-03,2026-09-11,商业 / 女性 / 财经 / 副业 / 搞钱,podcasts/zh/business/gao-qian-nv-hai.md
 shen-liao-tou-zi-ren,深聊投资人,zh,business,active,True,深聊投资人工作室(独立出品),"深聊投资人主播团队(投资人 / 媒体人,具体名单 TODO)",小宇宙 / Apple Podcasts / 视频播客(2026-06 公募基金入局),2026-08-03,2026-09-11,投资 / VC / 深度对话 / 中文投资播客 / 公募基金,podcasts/zh/business/shen-liao-tou-zi-ren.md
-zhi-xing-xiao-jiu-guan,知行小酒馆,zh,business,active,True,知行小酒馆工作室(独立出品),知行小酒馆主播团队(具体名单 TODO),Apple Podcasts / 小宇宙 / YouTube,2026-08-03,2026-09-11,理财 / 价值投资 / 投资实操 / 财经播客,podcasts/zh/business/zhi-xing-xiao-jiu-guan.md
-duo-xin-xian-na,多新鲜呐,zh,comedy,todo,False,B 站原创视频播客,"于谦（相声演员,德云社）",哔哩哔哩,2026-09-04,2026-09-04,视频播客 / 综艺 / 二次元 / 生活方式,podcasts/zh/comedy/duo-xin-xian-na.md
 gq-lab,GQ 实验室,zh,culture,todo,False,,,,2026-09-11,2026-09-11,田野调查 / 行业案例 / 长访谈 / 生活方式 / 人物特写,podcasts/zh/culture/gq-lab.md
 gq-bao-dao,GQ 报道,zh,culture,active,True,智族 GQ(康泰纳仕中国),GQ 编辑部 / 轮值主笔,小宇宙(智族Talk) / Apple Podcasts / GQ 智族官网 / GQ 智族 微信公众号,2026-09-11,2026-09-11,田野调查 / 行业案例 / 长访谈 / 人物特写,podcasts/zh/culture/gq-bao-dao.md
 talk-sanlian,Talk三联,zh,culture,active,True,"三联中读(三联生活传媒有限公司,《三联生活周刊》出品方)",《三联生活周刊》记者 / 主笔轮值(肖楚舟・主笔、魏倩・主笔、孙若茜・主任记者等;主编李鸿谷不定期对谈),Apple Podcasts / 三联中读 APP / 小宇宙 / Spotify 等第三方平台 / B站《三联生活周刊》账号(视频版),2026-08-05,2026-09-04,文化 / 新闻 / 书业 / 三联生活周刊 / 封面故事 / 记者对谈,podcasts/zh/culture/talk-sanlian.md
@@ -172,6 +170,7 @@ luan-fan-shu,乱翻书,zh,culture,active,True,独立出品,潘乱,Apple Podcasts
 ren-jian-the-livings,人间 theLivings,zh,culture,todo,False,,,,2026-09-11,2026-09-11,田野调查 / 行业案例 / 非虚构叙事 / 人物特写 / 长访谈,podcasts/zh/culture/ren-jian-the-livings.md
 bing-chuan-si-xiang-ku,冰川思想库,zh,culture,todo,False,,,,2026-09-11,2026-09-11,田野调查 / 行业案例 / 文化政策 / 思想评论 / 长访谈,podcasts/zh/culture/bing-chuan-si-xiang-ku.md
 bo-yang-cong,剥洋葱,zh,culture,todo,False,,,,2026-09-11,2026-09-11,田野调查 / 行业案例 / 调查报道 / 非虚构叙事 / 长访谈,podcasts/zh/culture/bo-yang-cong.md
+duo-xin-xian-na,多新鲜呐,zh,culture,todo,False,B 站原创视频播客,"于谦（相声演员,德云社）",哔哩哔哩,2026-09-04,2026-09-04,视频播客 / 综艺 / 二次元 / 生活方式,podcasts/zh/culture/duo-xin-xian-na.md
 da-nei-mi-tan,大内密谈,zh,culture,active,True,独立出品,相征 / 伍叁伍肆（多位常驻）,Apple Podcasts / 小宇宙 / Spotify / 网易云音乐,2026-08-03,2026-08-03,音乐 / 流行文化 / 文娱 / 娱乐 / 亚文化,podcasts/zh/culture/da-nei-mi-tan.md
 ru-ci-cheng-shi,如此城市 CityTells,zh,culture,active,True,澎湃新闻 / 澎湃研究所,澎湃研究所·试说新语工作室(编辑团队),小宇宙 / Apple Podcasts / 喜马拉雅 / 澎湃新闻客户端,2026-09-04,2026-09-11,城市 / 文化 / 人文 / 澎湃播客矩阵 / 城市叙事,podcasts/zh/culture/ru-ci-cheng-shi.md
 xiao-tian-zhang,小天章,zh,culture,active,True,章泽天个人节目(独立出品),章泽天(主理 / 京东集团 CFO 顾问),小宇宙 / Apple Podcasts / 小红书(视频切片「小天章 ON AIR」),2026-09-04,2026-09-11,访谈 / 名人 / 女性成长 / 视频播客 / 章泽天,podcasts/zh/culture/xiao-tian-zhang.md
@@ -197,7 +196,9 @@ duku-liti-sheng,读库立体声,zh,culture,active,True,读库(老六张立宪创
 gu-yu-shi-yan-shi,谷雨实验室,zh,culture,active,True,腾讯新闻(谷雨工作室),腾讯新闻谷雨团队(总编辑 + 调查记者) / 轮值主笔(每期由具体记者担纲),腾讯新闻 App / 微信公众号(谷雨实验室) / 腾讯新闻网页 / Apple Podcasts / 小宇宙(同步音频版),2026-09-11,2026-09-11,田野调查 / 行业案例 / 调查报道 / 驻场式,podcasts/zh/culture/gu-yu-shi-yan-shi.md
 tiao-dao-fm,跳岛FM,zh,culture,active,True,"中信出版集团(中信出版·大方,文学事业部)","主播由大方团队轮值(首位主播筱狸/董子琪,前界面文化记者,2020-03 至 2020-10;此后宝婷等接力) / 制作人:何润哲;项目负责人:张舒语",Apple Podcasts / Spotify / 小宇宙 / 官网 tiaodao.typlog.io / 三联中读 / 豆瓣播客等,2026-08-05,2026-09-04,文学 / 书业 / 出版 / 访谈 / 文化 / 中信出版,podcasts/zh/culture/tiao-dao-fm.md
 chen-lu-yu-man-tan,陈鲁豫·慢谈,zh,culture,active,True,bilibili(2025-08-18 独家上线);陈鲁豫主理,陈鲁豫 — 资深媒体人 / 主持人(凤凰卫视《鲁豫有约》主持多年),B 站(独家视频) / 小宇宙 / 音频端(分发情况 **TODO**) / 微博 / 抖音(账号运营情况 **TODO**),2026-09-04,2026-09-05,访谈 / 视频播客 / 文化 / 名人 / 女性主播 / B站 / 陈鲁豫,podcasts/zh/culture/chen-lu-yu-man-tan.md
+tou-zi-shi-jie,投资世界,zh,finance,active,True,独立出品,蒉莺春(Kate Kui) / 翁怡诺(Vincent),Apple Podcasts / Spotify / 小宇宙(同步),2026-10-02,2026-10-02,投资 / 消费 / 科技 / 趋势 / 政策 / 私募 / 弘章资本,podcasts/zh/finance/tou-zi-shi-jie.md
 feng-tou-quan,疯投圈,zh,finance,active,True,独立出品,黄海,Apple Podcasts / 小宇宙 / Spotify,2026-08-03,2026-08-03,消费投资 / 新消费 / 品牌 / 创投 / 财经,podcasts/zh/finance/feng-tou-quan.md
+zhi-xing-xiao-jiu-guan,知行小酒馆,zh,finance,active,True,有知有行,"孟岩(有知有行创始人,主理人) / 雨白(轮值主持) / 一知羊(轮值主持)",小宇宙 / Apple Podcasts / Spotify / 网易云音乐,2026-08-03,2026-10-02,投资 / 理财 / 价值投资 / 投资实操 / 生活哲学 / 有知有行 / 百万订阅,podcasts/zh/finance/zhi-xing-xiao-jiu-guan.md
 mian-ji,面基,zh,finance,active,True,独立出品,"老钱(主理人,金融从业背景;具体履历 **TODO**)",小宇宙 / Apple Podcasts,2026-08-03,2026-09-05,金融 / 投资 / A股 / 量化 / 理财 / 圆桌 / 独立播客,podcasts/zh/finance/mian-ji.md
 shenme-diantai,什么电台,zh,life,active,True,独立出品,阿彬 / 乌鸦,Apple Podcasts / 小宇宙 / Spotify,2026-08-03,2026-08-03,影视 / 流行文化 / 娱乐 / 美剧 / 电影,podcasts/zh/life/shenme-diantai.md
 ao-tu-dian-bo,凹凸电波,zh,life,active,True,凹凸电波 / 独立出品,伍叁伍肆 / Captain / Z姐,Apple Podcasts / 小宇宙 / Spotify / 网易云音乐,2026-08-03,2026-08-03,娱乐 / 情感 / 闲聊 / 青年文化 / 两性,podcasts/zh/life/ao-tu-dian-bo.md
@@ -208,10 +209,10 @@ wu-liao-zhai,无聊斋,zh,life,active,True,独立出品,大老王 / 六姐,Apple
 ri-tan-gong-yuan,日谈公园,zh,life,active,True,日谈公园 / 独立出品,李叔 / 小伙子,Apple Podcasts / 小宇宙 / Spotify / 网易云音乐,2026-08-03,2026-08-03,文化 / 娱乐 / 闲聊 / 影音 / 访谈,podcasts/zh/life/ri-tan-gong-yuan.md
 zi-wo-jin-hua-lun,自我进化论,zh,life,active,True,自我进化论工作室(独立出品),颜晓静(主理人),Apple Podcasts / 小宇宙 / Spotify,2026-08-03,2026-09-11,自我进化 / 个人成长 / 心理学 / 对话 / 中长访谈,podcasts/zh/life/zi-wo-jin-hua-lun.md
 er-tong-bu-yi,谭立人,zh,life,active,True,谭立人工作室(独立出品),谭立人(主理),Apple Podcasts / 其他主流平台,2026-08-03,2026-09-11,个人成长 / 心理学 / 选择 / 焦虑 / 自我,podcasts/zh/life/er-tong-bu-yi.md
-907-bian-ji-bu,907编辑部,zh,news,todo,False,澎湃新闻 / 国际新闻部,澎湃国际新闻部编辑团队,小宇宙 / 苹果播客 / 喜马拉雅 / 澎湃新闻客户端,2026-09-04,2026-09-04,国际时政 / 新闻评论 / 澎湃 / 高完播率,podcasts/zh/news/907-bian-ji-bu.md
+907-bian-ji-bu,907 编辑部,zh,news,active,True,澎湃新闻(The Paper)/ 国际新闻部,澎湃新闻国际新闻部编辑团队(轮值主播),小宇宙 / Apple Podcasts / 喜马拉雅 / 澎湃新闻客户端 / 官网音频频道,2026-09-04,2026-10-02,国际时政 / 新闻评论 / 澎湃 / 高完播率,podcasts/zh/news/907-bian-ji-bu.md
 sinica,Sinica Podcast,zh,news,todo,False,,,,2026-08-03,2026-08-03,待收录,podcasts/zh/news/sinica.md
 sheng-dong-zao-ka-fei-news,声动早咖啡,zh,news,active,True,"声动活泼(SoundWave,头部中文播客制作公司)",声动活泼团队轮值主播(具体班底 **TODO**),Apple Podcasts / 小宇宙 / 官网 sheng-espresso.fireside.fm / 蜻蜓 FM / Amazon Music 等分发,2026-08-03,2026-09-05,商业新闻 / 晨间简报 / 日更 / 声动活泼 / 科技商业,podcasts/zh/news/sheng-dong-zao-ka-fei-news.md
-dao-dao-lian-xian,岛岛连线,zh,news,active,True,王骁(Stella)个人出品 / 视频播客,"王骁 Stella(主理人,前观察者网 / 风云直播主持人)",新浪微博 / 微信视频号 / 哔哩哔哩 / 小宇宙(同步音频),2026-09-04,2026-09-09,时政 / 视频播客 / 访谈 / 外交 / 国际关系,podcasts/zh/news/dao-dao-lian-xian.md
+dao-dao-lian-xian,岛岛连线,zh,news,active,True,王骁(Stella)个人出品 / 视频播客,"王骁 Stella(主理人,前观察者网 / 风云直播主持人)",新浪微博 / 微信视频号 / 哔哩哔哩 / 小宇宙(同步音频) / Apple Podcasts(以同步情况为准),2026-09-04,2026-10-02,时政 / 视频播客 / 访谈 / 外交 / 国际关系,podcasts/zh/news/dao-dao-lian-xian.md
 duan-wen,端闻,zh,news,active,True,端传媒(Initium Media),"端传媒编辑团队(轮值主播,具体名单 TODO)",Spotify / Acast / Apple Podcasts / 端传媒网站 audio 频道,2026-09-09,2026-09-09,中文新闻 / 香港 / 国际时政 / 端传媒 / 深度报道,podcasts/zh/news/duan-wen.md
 yi-le-bo-ke,怡楽播客,zh,story,todo,False,TODO,TODO,TODO,2026-08-03,2026-09-11,故事,podcasts/zh/story/yi-le-bo-ke.md
 fan-zui-xiang-xian,犯罪象限,zh,story,active,True,犯罪象限工作室(独立出品),犯罪象限主播团队(具体名单 TODO),Apple Podcasts / 小宇宙,2026-08-03,2026-09-11,罪案 / 悬疑 / 真实案件 / 田野调查 / 中文罪案播客,podcasts/zh/story/fan-zui-xiang-xian.md

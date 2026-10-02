@@ -51,7 +51,7 @@ python3 -m http.server 8123   # 仓库根目录运行,访问 http://127.0.0.1:81
 - **批次 10(2026-09-05)**:**8 档升级深档**(罗永浩的十字路口 / 陈鲁豫·慢谈 / 张小珺商业访谈录 / 声动早咖啡 / 面基 / B2B Growth / Founder's Journal / Stratechery),**删除 2 档误档**(office-hours-with-patrick-o-shaughnessy、zh/tech 声动早咖啡重复 stub);zh/news 实现深档零的突破。详见 [`podcasts/README.md`](./podcasts/README.md)「当前进度」批次 10 段。
 - **批次 11(2026-10-02 启动 · 候选方案已拟)**:`zh` 薄类目(comedy 1 / finance 2 / news 5)收口方案 v0.1 入库,等用户拍板;同期新增 4 篇研读笔记(硅谷101 E251 推理芯片之战 / E244 机器人走错路了?/ E247 对话盛颖 xAI;TWiT #1102 AI 幻觉 / 谷歌 / Meta);CRON 推荐索引回填 2026-09-23 至 2026-10-02 共 10 天;GTM 复盘 v0.2 落档(165 → 231 档 / SEC 02 数字加源)。详见 [`ROADMAP.md`](./ROADMAP.md) 2026-10-02 执行记录。
 <!-- corpus:begin:summary -->
-**当前合计**:**231 档**(中文 89 + 英文 142),其中深档 146 档、stub 85 档(截至 2026-09-22;由 `scripts/stats.py` 自动统计,勿手改)
+**当前合计**:**232 档**(中文 90 + 英文 142),其中深档 148 档、stub 84 档(截至 2026-10-02;由 `scripts/stats.py` 自动统计,勿手改)
 <!-- corpus:end:summary -->
 
 ## 编写原则(摘要)

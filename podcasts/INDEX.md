@@ -2,7 +2,7 @@
 
 > 由 `scripts/stats.py` 自动生成,请勿手改。状态为 `active` / `ended` / `hiatus` 的是深档,`todo` 为待收录 stub。
 
-## 中文播客(zh) · 89 档
+## 中文播客(zh) · 90 档
 
 | 节目 | 赛道 | 状态 | 主播(首位) | 最近更新 | 条目 |
 | --- | --- | --- | --- | --- | --- |
@@ -26,8 +26,6 @@
 | 张小珺Jùn|商业访谈录 | business | active | 张小珺 — 商业报道出身的访谈人(详细履历 **TODO**) | 2026-09-05 | [`zhang-xiaojun-shangye-fangtan-lu`](zh/business/zhang-xiaojun-shangye-fangtan-lu.md) |
 | 搞钱女孩 | business | active | 搞钱女孩主播团队(具体名单 TODO) | 2026-09-11 | [`gao-qian-nv-hai`](zh/business/gao-qian-nv-hai.md) |
 | 深聊投资人 | business | active | 深聊投资人主播团队(投资人 / 媒体人,具体名单 TODO) | 2026-09-11 | [`shen-liao-tou-zi-ren`](zh/business/shen-liao-tou-zi-ren.md) |
-| 知行小酒馆 | business | active | 知行小酒馆主播团队(具体名单 TODO) | 2026-09-11 | [`zhi-xing-xiao-jiu-guan`](zh/business/zhi-xing-xiao-jiu-guan.md) |
-| 多新鲜呐 | comedy | todo(stub) | 于谦（相声演员,德云社） | 2026-09-04 | [`duo-xin-xian-na`](zh/comedy/duo-xin-xian-na.md) |
 | GQ 实验室 | culture | todo(stub) | — | 2026-09-11 | [`gq-lab`](zh/culture/gq-lab.md) |
 | GQ 报道 | culture | active | GQ 编辑部 / 轮值主笔 | 2026-09-11 | [`gq-bao-dao`](zh/culture/gq-bao-dao.md) |
 | Talk三联 | culture | active | 《三联生活周刊》记者 / 主笔轮值(肖楚舟・主笔、魏倩・主笔、孙若茜・主任记者等;主编李鸿谷不定期对谈) | 2026-09-04 | [`talk-sanlian`](zh/culture/talk-sanlian.md) |
@@ -37,6 +35,7 @@
 | 人间 theLivings | culture | todo(stub) | — | 2026-09-11 | [`ren-jian-the-livings`](zh/culture/ren-jian-the-livings.md) |
 | 冰川思想库 | culture | todo(stub) | — | 2026-09-11 | [`bing-chuan-si-xiang-ku`](zh/culture/bing-chuan-si-xiang-ku.md) |
 | 剥洋葱 | culture | todo(stub) | — | 2026-09-11 | [`bo-yang-cong`](zh/culture/bo-yang-cong.md) |
+| 多新鲜呐 | culture | todo(stub) | 于谦（相声演员,德云社） | 2026-09-04 | [`duo-xin-xian-na`](zh/culture/duo-xin-xian-na.md) |
 | 大内密谈 | culture | active | 相征 | 2026-08-03 | [`da-nei-mi-tan`](zh/culture/da-nei-mi-tan.md) |
 | 如此城市 CityTells | culture | active | 澎湃研究所·试说新语工作室(编辑团队) | 2026-09-11 | [`ru-ci-cheng-shi`](zh/culture/ru-ci-cheng-shi.md) |
 | 小天章 | culture | active | 章泽天(主理 / 京东集团 CFO 顾问) | 2026-09-11 | [`xiao-tian-zhang`](zh/culture/xiao-tian-zhang.md) |
@@ -62,7 +61,9 @@
 | 谷雨实验室 | culture | active | 腾讯新闻谷雨团队(总编辑 + 调查记者) | 2026-09-11 | [`gu-yu-shi-yan-shi`](zh/culture/gu-yu-shi-yan-shi.md) |
 | 跳岛FM | culture | active | 主播由大方团队轮值(首位主播筱狸/董子琪,前界面文化记者,2020-03 至 2020-10;此后宝婷等接力) | 2026-09-04 | [`tiao-dao-fm`](zh/culture/tiao-dao-fm.md) |
 | 陈鲁豫·慢谈 | culture | active | 陈鲁豫 — 资深媒体人 / 主持人(凤凰卫视《鲁豫有约》主持多年) | 2026-09-05 | [`chen-lu-yu-man-tan`](zh/culture/chen-lu-yu-man-tan.md) |
+| 投资世界 | finance | active | 蒉莺春(Kate Kui) | 2026-10-02 | [`tou-zi-shi-jie`](zh/finance/tou-zi-shi-jie.md) |
 | 疯投圈 | finance | active | 黄海 | 2026-08-03 | [`feng-tou-quan`](zh/finance/feng-tou-quan.md) |
+| 知行小酒馆 | finance | active | 孟岩(有知有行创始人,主理人) | 2026-10-02 | [`zhi-xing-xiao-jiu-guan`](zh/finance/zhi-xing-xiao-jiu-guan.md) |
 | 面基 | finance | active | 老钱(主理人,金融从业背景;具体履历 **TODO**) | 2026-09-05 | [`mian-ji`](zh/finance/mian-ji.md) |
 | 什么电台 | life | active | 阿彬 | 2026-08-03 | [`shenme-diantai`](zh/life/shenme-diantai.md) |
 | 凹凸电波 | life | active | 伍叁伍肆 | 2026-08-03 | [`ao-tu-dian-bo`](zh/life/ao-tu-dian-bo.md) |
@@ -73,10 +74,10 @@
 | 日谈公园 | life | active | 李叔 | 2026-08-03 | [`ri-tan-gong-yuan`](zh/life/ri-tan-gong-yuan.md) |
 | 自我进化论 | life | active | 颜晓静(主理人) | 2026-09-11 | [`zi-wo-jin-hua-lun`](zh/life/zi-wo-jin-hua-lun.md) |
 | 谭立人 | life | active | 谭立人(主理) | 2026-09-11 | [`er-tong-bu-yi`](zh/life/er-tong-bu-yi.md) |
-| 907编辑部 | news | todo(stub) | 澎湃国际新闻部编辑团队 | 2026-09-04 | [`907-bian-ji-bu`](zh/news/907-bian-ji-bu.md) |
+| 907 编辑部 | news | active | 澎湃新闻国际新闻部编辑团队(轮值主播) | 2026-10-02 | [`907-bian-ji-bu`](zh/news/907-bian-ji-bu.md) |
 | Sinica Podcast | news | todo(stub) | — | 2026-08-03 | [`sinica`](zh/news/sinica.md) |
 | 声动早咖啡 | news | active | 声动活泼团队轮值主播(具体班底 **TODO**) | 2026-09-05 | [`sheng-dong-zao-ka-fei-news`](zh/news/sheng-dong-zao-ka-fei-news.md) |
-| 岛岛连线 | news | active | 王骁 Stella(主理人,前观察者网 / 风云直播主持人) | 2026-09-09 | [`dao-dao-lian-xian`](zh/news/dao-dao-lian-xian.md) |
+| 岛岛连线 | news | active | 王骁 Stella(主理人,前观察者网 / 风云直播主持人) | 2026-10-02 | [`dao-dao-lian-xian`](zh/news/dao-dao-lian-xian.md) |
 | 端闻 | news | active | 端传媒编辑团队(轮值主播,具体名单 TODO) | 2026-09-09 | [`duan-wen`](zh/news/duan-wen.md) |
 | 怡楽播客 | story | todo(stub) | TODO | 2026-09-11 | [`yi-le-bo-ke`](zh/story/yi-le-bo-ke.md) |
 | 犯罪象限 | story | active | 犯罪象限主播团队(具体名单 TODO) | 2026-09-11 | [`fan-zui-xiang-xian`](zh/story/fan-zui-xiang-xian.md) |

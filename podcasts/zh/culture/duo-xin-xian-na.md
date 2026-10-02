@@ -2,7 +2,7 @@
 title: "多新鲜呐"
 slug: duo-xin-xian-na
 language: zh
-category: comedy
+category: culture
 status: todo
 network: "B 站原创视频播客"
 hosts:

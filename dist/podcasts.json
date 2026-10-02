@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-22",
+  "generated_at": "2026-10-02",
   "counts": {
-    "total": 231,
-    "zh": 89,
+    "total": 232,
+    "zh": 90,
     "en": 142,
-    "deep": 146,
-    "stub": 85
+    "deep": 148,
+    "stub": 84
   },
   "entries": [
     {
@@ -4398,66 +4398,6 @@
       "_deep": true
     },
     {
-      "title": "知行小酒馆",
-      "slug": "zhi-xing-xiao-jiu-guan",
-      "language": "zh",
-      "category": "business",
-      "status": "active",
-      "network": "知行小酒馆工作室(独立出品)",
-      "hosts": [
-        "知行小酒馆主播团队(具体名单 TODO)"
-      ],
-      "platforms": [
-        "Apple Podcasts",
-        "小宇宙",
-        "YouTube"
-      ],
-      "rss": "TODO",
-      "subscribe_links": {
-        "apple": "https://podcasts.apple.com/cn/podcast/%E7%9F%A5%E8%A1%8C%E5%B0%8F%E9%85%92%E9%A6%86/id1559695855",
-        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/6013f9f58e2f7ee375cf4216",
-        "youtube": "https://www.youtube.com/@allinthebeer"
-      },
-      "added_date": "2026-08-03",
-      "updated_date": "2026-09-11",
-      "tags": [
-        "理财",
-        "价值投资",
-        "投资实操",
-        "财经播客"
-      ],
-      "_path": "podcasts/zh/business/zhi-xing-xiao-jiu-guan.md",
-      "_deep": true
-    },
-    {
-      "title": "多新鲜呐",
-      "slug": "duo-xin-xian-na",
-      "language": "zh",
-      "category": "comedy",
-      "status": "todo",
-      "network": "B 站原创视频播客",
-      "hosts": [
-        "于谦（相声演员,德云社）"
-      ],
-      "platforms": [
-        "哔哩哔哩"
-      ],
-      "rss": "TODO",
-      "subscribe_links": {
-        "bilibili": "TODO"
-      },
-      "added_date": "2026-09-04",
-      "updated_date": "2026-09-04",
-      "tags": [
-        "视频播客",
-        "综艺",
-        "二次元",
-        "生活方式"
-      ],
-      "_path": "podcasts/zh/comedy/duo-xin-xian-na.md",
-      "_deep": false
-    },
-    {
       "title": "GQ 实验室",
       "slug": "gq-lab",
       "language": "zh",
@@ -4694,6 +4634,34 @@
         "长访谈"
       ],
       "_path": "podcasts/zh/culture/bo-yang-cong.md",
+      "_deep": false
+    },
+    {
+      "title": "多新鲜呐",
+      "slug": "duo-xin-xian-na",
+      "language": "zh",
+      "category": "culture",
+      "status": "todo",
+      "network": "B 站原创视频播客",
+      "hosts": [
+        "于谦（相声演员,德云社）"
+      ],
+      "platforms": [
+        "哔哩哔哩"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "bilibili": "TODO"
+      },
+      "added_date": "2026-09-04",
+      "updated_date": "2026-09-04",
+      "tags": [
+        "视频播客",
+        "综艺",
+        "二次元",
+        "生活方式"
+      ],
+      "_path": "podcasts/zh/culture/duo-xin-xian-na.md",
       "_deep": false
     },
     {
@@ -5502,6 +5470,40 @@
       "_deep": true
     },
     {
+      "title": "投资世界",
+      "slug": "tou-zi-shi-jie",
+      "language": "zh",
+      "category": "finance",
+      "status": "active",
+      "network": "独立出品",
+      "hosts": [
+        "蒉莺春(Kate Kui)",
+        "翁怡诺(Vincent)"
+      ],
+      "platforms": [
+        "Apple Podcasts",
+        "Spotify",
+        "小宇宙(同步)"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/us/podcast/%E6%8A%95%E8%B5%84%E4%B8%96%E7%95%8C/id1876138135?l=zh-Hans-CN"
+      },
+      "added_date": "2026-10-02",
+      "updated_date": "2026-10-02",
+      "tags": [
+        "投资",
+        "消费",
+        "科技",
+        "趋势",
+        "政策",
+        "私募",
+        "弘章资本"
+      ],
+      "_path": "podcasts/zh/finance/tou-zi-shi-jie.md",
+      "_deep": true
+    },
+    {
       "title": "疯投圈",
       "slug": "feng-tou-quan",
       "language": "zh",
@@ -5531,6 +5533,43 @@
         "财经"
       ],
       "_path": "podcasts/zh/finance/feng-tou-quan.md",
+      "_deep": true
+    },
+    {
+      "title": "知行小酒馆",
+      "slug": "zhi-xing-xiao-jiu-guan",
+      "language": "zh",
+      "category": "finance",
+      "status": "active",
+      "network": "有知有行",
+      "hosts": [
+        "孟岩(有知有行创始人,主理人)",
+        "雨白(轮值主持)",
+        "一知羊(轮值主持)"
+      ],
+      "platforms": [
+        "小宇宙",
+        "Apple Podcasts",
+        "Spotify",
+        "网易云音乐"
+      ],
+      "rss": "TODO",
+      "subscribe_links": {
+        "apple": "https://podcasts.apple.com/cn/podcast/%E7%9F%A5%E8%A1%8C%E5%B0%8F%E9%85%92%E9%A6%86/id1559695855",
+        "xiaoyuzhou": "https://www.xiaoyuzhoufm.com/podcast/6013f9f58e2f7ee375cf4216"
+      },
+      "added_date": "2026-08-03",
+      "updated_date": "2026-10-02",
+      "tags": [
+        "投资",
+        "理财",
+        "价值投资",
+        "投资实操",
+        "生活哲学",
+        "有知有行",
+        "百万订阅"
+      ],
+      "_path": "podcasts/zh/finance/zhi-xing-xiao-jiu-guan.md",
       "_deep": true
     },
     {
@@ -5844,28 +5883,30 @@
       "_deep": true
     },
     {
-      "title": "907编辑部",
+      "title": "907 编辑部",
       "slug": "907-bian-ji-bu",
       "language": "zh",
       "category": "news",
-      "status": "todo",
-      "network": "澎湃新闻 / 国际新闻部",
+      "status": "active",
+      "network": "澎湃新闻(The Paper)/ 国际新闻部",
       "hosts": [
-        "澎湃国际新闻部编辑团队"
+        "澎湃新闻国际新闻部编辑团队(轮值主播)"
       ],
       "platforms": [
         "小宇宙",
-        "苹果播客",
+        "Apple Podcasts",
         "喜马拉雅",
-        "澎湃新闻客户端"
+        "澎湃新闻客户端",
+        "官网音频频道"
       ],
       "rss": "TODO",
       "subscribe_links": {
         "xiaoyuzhou": "TODO",
+        "apple": "TODO",
         "site": "https://www.thepaper.cn"
       },
       "added_date": "2026-09-04",
-      "updated_date": "2026-09-04",
+      "updated_date": "2026-10-02",
       "tags": [
         "国际时政",
         "新闻评论",
@@ -5873,7 +5914,7 @@
         "高完播率"
       ],
       "_path": "podcasts/zh/news/907-bian-ji-bu.md",
-      "_deep": false
+      "_deep": true
     },
     {
       "title": "Sinica Podcast",
@@ -5936,15 +5977,17 @@
         "新浪微博",
         "微信视频号",
         "哔哩哔哩",
-        "小宇宙(同步音频)"
+        "小宇宙(同步音频)",
+        "Apple Podcasts(以同步情况为准)"
       ],
       "rss": "TODO",
       "subscribe_links": {
         "weibo": "@王骁Stella",
-        "bilibili": "TODO"
+        "bilibili": "TODO",
+        "xiaoyuzhou": "TODO"
       },
       "added_date": "2026-09-04",
-      "updated_date": "2026-09-09",
+      "updated_date": "2026-10-02",
       "tags": [
         "时政",
         "视频播客",

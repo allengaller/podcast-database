@@ -12,12 +12,14 @@ platforms:
   - "微信视频号"
   - "哔哩哔哩"
   - "小宇宙(同步音频)"
+  - "Apple Podcasts(以同步情况为准)"
 rss: "TODO"
 subscribe_links:
   weibo: "@王骁Stella"
   bilibili: "TODO"
+  xiaoyuzhou: "TODO"
 added_date: 2026-09-04
-updated_date: 2026-09-09
+updated_date: 2026-10-02
 tags:
   - 时政
   - 视频播客
