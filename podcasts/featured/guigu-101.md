@@ -3,7 +3,7 @@ title: "置顶学习专题:《硅谷 101》"
 type: featured-study-guide
 source_entry: ../zh/tech/guigu-101.md
 added_date: 2026-09-22
-updated_date: 2026-09-23
+updated_date: 2026-10-02
 ---
 
 # 《硅谷 101》学习专题
@@ -53,10 +53,13 @@ updated_date: 2026-09-23
 
 按四条主题线各挑 2-3 集(完整选集清单以[官网 episodes 页](https://sv101.fireside.fm/episodes)为准):
 
-1. **AI 与模型经济**:近期已覆盖推理芯片(E251 方向)、Token 经济与模型公司生态(E249 方向)、AI 内容工程(E245 方向)、开源模型蒸馏(E246 方向)
+1. **AI 与模型经济** —— 主题线 1 已建首批 3 期笔记:
+   - [E251《推理芯片之战》](https://sv101.fireside.fm/261) —— Groq / Cerebras / OpenAI 三路径 + Bill Dally 设计哲学 → [笔记](./guigu-101/e251-inference-chip-wars.md)
+   - [E247《对话盛颖:xAI、Infra》](https://sv101.fireside.fm/257) —— xAI 视角下的 SGLang 开源与"甄嬛传" → [笔记](./guigu-101/e247-xai-infra-sglang.md)
+   - [E244《机器人走错路了?》](https://sv101.fireside.fm/254) —— 物理世界 AI 的"3D 数据 + 路径分野" → [笔记](./guigu-101/e244-embodied-ai-3d-data.md)
 2. **智能驾驶 / 机器人**:[E156 · 特斯拉 FSD V12](https://sv101.fireside.fm/162)、[S2E54 · 无人车特辑](https://sv101.fireside.fm/54) → [E156 笔记](./guigu-101/e156-tesla-fsd-v12.md) · [S2E54 笔记](./guigu-101/s2e54-darpa-origins.md)
 3. **出海与全球化**:TODO(逐集清单待建)
-4. **硬科技 / 芯片**:TODO(逐集清单待建)
+4. **硬科技 / 芯片**:与主题线 1 部分重叠;E251 已建档,待补充 Tenstorrent / SambaNova / Cerebras 创始人专访等
 
 ### 阶段三 · 跟更 + 方法迁移(第 9-12 周)
 
@@ -85,9 +88,12 @@ updated_date: 2026-09-23
 | 4 | E162 清华姚班专题 | | [笔记](./guigu-101/e162-yao-ban.md) |
 | 5 | E156 特斯拉 FSD V12 | | [笔记](./guigu-101/e156-tesla-fsd-v12.md) |
 | 6 | S2E54 无人车特辑 | | [笔记](./guigu-101/s2e54-darpa-origins.md) |
+| 7 | E251《推理芯片之战》 | 2026-10-02 | [笔记](./guigu-101/e251-inference-chip-wars.md) |
+| 8 | E244《机器人走错路了?》 | 2026-10-02 | [笔记](./guigu-101/e244-embodied-ai-3d-data.md) |
+| 9 | E247《对话盛颖:xAI、Infra》 | 2026-10-02 | [笔记](./guigu-101/e247-xai-infra-sglang.md) |
 | … | (按官网全集列表续填) | | |
 
-> 研读笔记已为以上 6 期建档(`podcasts/featured/guigu-101/`,总结 / 分析 / 洞察三层,基于官方 shownotes 的预读稿);完成日期待精听后填写。
+> 研读笔记已为以上 9 期建档(`podcasts/featured/guigu-101/`,总结 / 分析 / 洞察三层,基于官方 shownotes 的预读稿);完成日期待精听后填写。最新 3 期(E251 / E244 / E247,2026-10-02)为 2026 年第三季度"前沿 AI"主题线首批,横跨算力层(E251)、物理层(E244)与应用基础设施层(E247)。
 
 ## 待核 / TODO
 

@@ -3,7 +3,7 @@ title: "置顶学习专题:《This Week in Tech (TWiT)》"
 type: featured-study-guide
 source_entry: ../en/tech/this-week-in-tech.md
 added_date: 2026-09-22
-updated_date: 2026-09-22
+updated_date: 2026-10-02
 ---
 
 # 《This Week in Tech (TWiT)》学习专题
@@ -77,7 +77,7 @@ Leo 的主持动作(如何开场/打断/收束一个话题):
 | --- | --- | --- | --- |
 | 1 | #1 创刊集(2005-04-18) | | |
 | 2 | #1064 Best of 2025 | | |
-| 3 | #1102(2026-09-20) | | |
+| 3 | #1102(2026-09-20)AI 幻觉 / 谷歌 / Meta | 2026-10-02 | [笔记](./this-week-in-tech/twit-1102-ai-hallucination-military.md) |
 | 4 | #1101 AI 监管 | | |
 | 5 | #1100 数据中心成本 | | |
 | 6 | #1099 Meta 18B 和解 | | |
