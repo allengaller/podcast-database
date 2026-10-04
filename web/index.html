@@ -2,16 +2,30 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="全网热点播客深度研究语料库:浏览、检索 230+ 档中英文头部播客档案,并精读置顶学习专题。">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="全网热点播客深度研究语料库:浏览、检索 232 档中英文头部播客档案,并精读置顶学习专题。">
 <title>Podcast Corpus · 播客语料库</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%239a3d12'/%3E%3Ccircle cx='32' cy='26' r='7' fill='%23faf8f5'/%3E%3Cpath d='M20 44a12 12 0 0 1 24 0' stroke='%23faf8f5' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<!-- Font preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+
+<!-- Display: Newsreader (Google Fonts) · Body: Switzer (Fontshare) · Outlier: JetBrains Mono (Google) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&display=swap">
+
+<link rel="stylesheet" href="tokens.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<a class="skip-link" href="#view-browse">跳到主内容</a>
+
 <header class="site-header">
-  <div class="wrap header-inner">
+  <div class="wrap">
+    <p class="mast-issue">№232 · 2026-10-03 · 中文 90 / ENGLISH 142 · CC BY 4.0</p>
     <div class="brand">
       <h1>Podcast Corpus</h1>
       <p class="tagline">全网热点播客深度研究语料库 · 浏览 / 检索 / 精读</p>
@@ -20,6 +34,7 @@
       <button class="tab active" data-tab="browse" type="button">语料库</button>
       <button class="tab" data-tab="featured" type="button">置顶专题</button>
     </nav>
+    <hr class="mast-rule" aria-hidden="true">
   </div>
   <div class="wrap stats" id="stats" aria-label="语料库统计"></div>
 </header>
@@ -63,9 +78,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>数据源:<code>dist/podcasts.json</code>(由 <code>scripts/export.py</code> 自动生成,勿手改) ·
-      语料采用 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> ·
-      仓库:<a href="https://github.com/allengaller/podcast-database" target="_blank" rel="noopener">allen galler / podcast-database</a></p>
+    <p>数据源 <code>dist/podcasts.json</code> · 由 <code>scripts/export.py</code> 自动生成 · 语料采用 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> · 仓库 <a href="https://github.com/allengaller/podcast-database" target="_blank" rel="noopener">allen galler / podcast-database</a></p>
   </div>
 </footer>
 

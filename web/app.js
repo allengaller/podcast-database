@@ -66,7 +66,8 @@ function resolveNoteLink(url) {
   const appPath = parts.join("/");
   if (!appPath.startsWith("featured/")) return null;
   const guide = GUIDES.find((g) => g.file === "../podcasts/" + appPath);
-  return "#featured/" + (guide ? guide.id : appPath.slice("featured/".length));
+  const rest = appPath.slice("featured/".length).replace(/\.md$/, "");
+  return "#featured/" + (guide ? guide.id : rest);
 }
 
 function mdInline(s) {
@@ -326,7 +327,7 @@ async function loadGuide(id, path = null) {
   body.innerHTML = `<p class="guide-loading">加载专题中…</p>`;
   MD_CTX = { dir: path ? "featured/" + path.replace(/[^/]*$/, "") : "featured/" };
   try {
-    const res = await fetch(path ? `../podcasts/featured/${encodeURI(path)}` : guide.file);
+    const res = await fetch(path ? `../podcasts/featured/${encodeURI(path)}.md` : guide.file);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const back = path
       ? `<p class="guide-back"><a href="#featured/${guide.id}">← 返回${esc(guide.name)}专题</a></p>`
